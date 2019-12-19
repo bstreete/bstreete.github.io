@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <article>
+    <!-- Modified version of m10c theme layouts:
+    https://themes.gohugo.io/hugo-theme-m10c/ -->
+    <h1>{{ .Title }}</h1>
+    <ul class="posts-list">
+      {{ range $index, $element := .Paginator.Pages.ByTitle }}
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="posts-list-item-description">
+            Updated {{ .PublishDate.Format "Jan 2, 2006" }}
+          </span>
+        </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" $ }}
+  </article>
+{{ end }}

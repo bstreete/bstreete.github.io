@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+  <head>
+    <!-- Modified version of m10c theme layouts:
+    https://themes.gohugo.io/hugo-theme-m10c/ -->
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+    <meta charset="utf-8" />
+    {{ hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="{{ .Site.Params.author | default "John Doe" }}" />
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+    {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="{{ .Site.BaseURL }}"><img class="app-header-avatar" src="{{ .Site.Params.avatar | default "avatar.jpg" | relURL }}" alt="{{ .Site.Params.author | default "John Doe" }}" /></a>
+      <h1>{{ .Site.Title }}</h1>
+      {{ $taxo := "tags" }}
+      <p>Quick Links</p>
+      <ul class="{{ $taxo }}">
+          {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
+              {{ range .Pages }}
+                  <li><a href="{{ .Permalink }}">{{ .Title}}</a></li>
+              {{ end }}
+          {{ end }}
+      </ul>
+    </header>
+    <main class="app-container">
+      {{ block "main" . }}
+        {{ .Content }}
+      {{ end }}
+    </main>
+  </body>
+</html>
