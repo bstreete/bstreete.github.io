@@ -2,7 +2,7 @@
 title: "Italian Sausage with Potatoes and Peppers
 "
 date: 2019-12-19T09:58:08-07:00
-draft: true
+draft: false
 tags: ["entree"]
 ---
 

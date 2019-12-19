@@ -1,7 +1,7 @@
 ---
 title: "Sweet Potato Black Bean Chili"
 date: 2019-12-18T18:05:59-07:00
-draft: true
+draft: false
 tags: ["slow cooker", "vegetarian", "entree", "favorites"]
 ---
 

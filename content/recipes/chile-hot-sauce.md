@@ -1,7 +1,7 @@
 ---
 title: "Fresno Chile Hot Sauce"
 date: 2019-12-19T09:06:16-07:00
-draft: true
+draft: false
 tags: ["sauce"]
 ---
 

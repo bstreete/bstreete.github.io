@@ -1,7 +1,7 @@
 ---
 title: "Classic Spritz Cookies "
 date: 2019-12-19T09:51:41-07:00
-draft: true
+draft: false
 tags: ["dessert"]
 ---
 

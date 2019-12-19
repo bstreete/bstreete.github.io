@@ -1,7 +1,7 @@
 ---
 title: "Pappa Al Pomodoro"
 date: 2019-12-19T09:47:10-07:00
-draft: true
+draft: false
 tags: ["vegetarian", "entree"]
 ---
 

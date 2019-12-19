@@ -1,7 +1,7 @@
 ---
 title: "Doug's Home Made Salsa"
 date: 2019-12-19T09:21:49-07:00
-draft: true
+draft: false
 tags: ["sauce"]
 ---
 

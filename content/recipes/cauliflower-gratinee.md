@@ -1,7 +1,7 @@
 ---
 title: "Cauliflower Gratinee"
 date: 2019-12-19T07:11:52-07:00
-draft: true
+draft: false
 tags: ["side"]
 ---
 

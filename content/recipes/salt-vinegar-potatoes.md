@@ -1,7 +1,7 @@
 ---
 title: "Crispy Salt and Vinegar Potatoes"
 date: 2019-12-19T09:48:18-07:00
-draft: true
+draft: false
 tags: ["side", "favorites"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Buffalo Sauce"
 date: 2019-12-19T07:11:42-07:00
-draft: true
+draft: false
 tags: ["sauce", "entree"]
 ---
 

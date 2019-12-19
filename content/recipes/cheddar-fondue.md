@@ -1,7 +1,7 @@
 ---
 title: "Melting Pot Cheddar Cheese Fondue"
 date: 2019-12-19T08:48:41-07:00
-draft: true
+draft: false
 tags: ["sauce", "entree"]
 ---
 

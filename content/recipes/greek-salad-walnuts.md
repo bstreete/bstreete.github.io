@@ -1,7 +1,7 @@
 ---
 title: "Greek Salad with Walnuts "
 date: 2019-12-19T09:29:54-07:00
-draft: true
+draft: false
 tags: ["side"]
 ---
 

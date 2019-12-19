@@ -1,7 +1,7 @@
 ---
 title: "Feta Walnut Pasta"
 date: 2019-12-19T09:26:35-07:00
-draft: true
+draft: false
 tags: ["entree", "favorites"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Savory Feta Cheese Log with Toasted Walnuts and Olives"
 date: 2019-12-19T09:26:35-07:00
-draft: true
+draft: false
 tags: ["side"]
 ---
 

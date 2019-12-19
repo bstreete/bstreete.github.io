@@ -1,7 +1,7 @@
 ---
 title: "Kill City Chili"
 date: 2019-12-19T09:37:59-07:00
-draft: true
+draft: false
 tags: ["entree"]
 ---
 

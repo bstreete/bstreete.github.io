@@ -1,7 +1,7 @@
 ---
 title: "Corn Jalapeno Fritters"
 date: 2019-12-19T09:12:26-07:00
-draft: true
+draft: false
 tags: ["side"]
 ---
 

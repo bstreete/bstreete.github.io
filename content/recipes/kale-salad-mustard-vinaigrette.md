@@ -1,7 +1,7 @@
 ---
 title: "Kale Salad with Mustard Vinaigrette"
 date: 2019-12-19T14:39:20-07:00
-draft: true
+draft: false
 tags: ["side", "vegetarian"]
 ---
 

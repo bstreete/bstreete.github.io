@@ -1,7 +1,7 @@
 ---
 title: "Meaty Beany Chili"
 date: 2019-12-19T09:59:01-07:00
-draft: true
+draft: false
 tags: ["vegetarian", "entree", "slow cooker", "favorites"]
 ---
 

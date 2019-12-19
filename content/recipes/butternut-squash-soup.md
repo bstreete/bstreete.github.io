@@ -1,7 +1,7 @@
 ---
 title: "Roasted Butternut Squash Soup"
 date: 2019-12-19T14:49:43-07:00
-draft: true
+draft: false
 tags: ["entree", "vegetarian"]
 ---
 
