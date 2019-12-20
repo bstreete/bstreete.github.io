@@ -6,7 +6,7 @@ tags: ["sauce", "favorites"]
 author: ["The Garden Kitchen"]
 ---
 
-Source: [The Garden Kitchen](thegardenkitchen.org)
+Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
 
 ### Ingredients
 - 1/2 cup low fat Greek yogurt

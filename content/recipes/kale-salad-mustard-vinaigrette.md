@@ -6,7 +6,7 @@ tags: ["side", "vegetarian"]
 author: ["The Garden Kitchen"]
 ---
 
-Source: [The Garden Kitchen](http://www.thegardenkitchen.org)
+Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
 
 ### Ingredients
 #### Salad
