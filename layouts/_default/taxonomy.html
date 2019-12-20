@@ -6,8 +6,7 @@
     <!-- Primary Difference from standard list is the title. Everything else is 
     identical. -->
     <h1>
-
-      <!-- Author Taxonomy will use a different header line that tags-->
+      <!-- Author Taxonomy will use a different header line than tags-->
       {{ if eq .Page.Type "author"}}
         Recipes by
       {{ else }}
@@ -21,7 +20,6 @@
         {{ . | humanize }}
       {{ end }}
     </h1>
-    
     <ul class="posts-list">
       {{ range $index, $element := .Paginator.Pages.ByTitle }}
         <li class="posts-list-item">

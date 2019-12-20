@@ -1,16 +1,17 @@
-baseURL = "https://bstreete.github.io/"
+baseURL = "https://bstreete.github.io/public/"
 languageCode = "en-us"
 title = "Brayden's Recipes"
 theme = "m10c"
 description = ''
 paginate = 20
 
+## Left for posterity, default color scheme is the pleasant green/gray
 [params.style]
-    darkestColor = "#315659"
-    darkColor = "#253031"
-    primaryColor = "#dad865"
-    lightColor = "#96a879"
-    lightestColor = "#fff"
+  darkestColor = "#161616"
+  darkColor = "#1e1e1e"
+  primaryColor = "#31a98b"
+  lightColor = "#a8a8a8"
+  lightestColor = "#cccccc"
 
 # Overwrite the default taxonomy structure
 [taxonomies]
