@@ -57,3 +57,17 @@ Use an ordered list to format the ingredients. This can be done using `1. ` in m
 3.	Preheat oven to 375°. Combine flour, brown sugar, and cinnamon. Sprinkle berries and flour evenly over bread. Bake about 40 minutes or until golden brown. 
 4.	Top with fresh syrup or berries. 
 </pre>
+
+### Generating the Website
+At this point, you should have a new recipe that needs to be analyzed by Hugo. Run the following command to test locally. If you are developing on another server, the --baseURL option is necessary for links to work. If you are developing locally, that option can be omitted. 
+<pre> hugo server --bind=0.0.0.0 --baseURL=http://<ip_address>:1313</pre>
+
+This will start a webserver at the specified address/port. Hugo will be monitoring for file changes, so if you identify an issue in the generated output, merely saving the original file will regenerate the website (barring exceptions). The webpage should automatically refresh once Hugo finishes. This server runs out of RAM, and does not update the HTML on disk. 
+
+### Committing Changes
+Once your satisfied with the output in the dev environment, you need to generate all of the files. Issue the following command: 
+<pre>hugo</pre>
+
+This will rerender all of the files in the project. The output files will end up in the <project root>/public directory. You need to commit all of the updated files (`git add public/*`) as well as the new or modified source files. Once these files are pushed to GitHub, the new files should appear at the main URL within a few minutes. 
+
+When viewing the repo in GitHub, you can check the deployment status in the Environment screen. It will report which commit has been pushed into the GitHub Pages server. 
