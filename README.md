@@ -68,6 +68,6 @@ This will start a webserver at the specified address/port. Hugo will be monitori
 Once your satisfied with the output in the dev environment, you need to generate all of the files. Issue the following command: 
 <pre>hugo</pre>
 
-This will rerender all of the files in the project. The output files will end up in the <project root>/public directory. You need to commit all of the updated files (`git add public/*`) as well as the new or modified source files. Once these files are pushed to GitHub, the new files should appear at the main URL within a few minutes. 
+This will rerender all of the files in the project. The output files will end up in the <project root>/public directory. You need to commit all of the updated files (`git add public/*`) as well as the new or modified source files. Once these files are pushed to GitHub, the new files should appear at the [main URL](https://bstreete.github.io/public/index.html) within a few minutes. 
 
-When viewing the repo in GitHub, you can check the deployment status in the Environment screen. It will report which commit has been pushed into the GitHub Pages server. 
+When viewing the repo in GitHub, you can check the deployment status in the [Environment](https://github.com/bstreete/bstreete.github.io/deployments) screen. It will report which commit has been pushed into the GitHub Pages server. 
