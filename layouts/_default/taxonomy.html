@@ -4,15 +4,22 @@
     https://themes.gohugo.io/hugo-theme-m10c/ -->
     
     <!-- Primary Difference from standard list is the title. Everything else is 
-    identical. Want to 'humanize' the tags so that they are capitalized like
-    rest of title. Taken from: https://discourse.gohugo.io/t/capitalize-a-title/19518-->
+    identical. -->
     <h1>
-      Recipes with 
+
+      <!-- Author Taxonomy will use a different header line that tags-->
+      {{ if eq .Page.Type "author"}}
+        Recipes by
+      {{ else }}
+        Recipes Tagged with
+      {{ end }}
+      
+      <!--Want to 'humanize' the tags so that they are capitalized like
+      rest of title. Taken from: https://discourse.gohugo.io/t/capitalize-a-title/19518-->
       {{ $name := split .Page.Title " " }}
       {{ range $name }}
         {{ . | humanize }}
       {{ end }}
-       Tag
     </h1>
     
     <ul class="posts-list">

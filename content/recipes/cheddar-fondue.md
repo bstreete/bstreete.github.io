@@ -3,6 +3,7 @@ title: "Melting Pot Cheddar Cheese Fondue"
 date: 2019-12-19T08:48:41-07:00
 draft: false
 tags: ["sauce", "entree"]
+author: ["CopyKat Recipes"]
 ---
 
 Source: [CopyKat Recipes](https://copykat.com/melting-pot-cheddar-cheese-fondue/)

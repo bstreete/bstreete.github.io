@@ -3,6 +3,7 @@ title: "Manga Kalan (Keralan Mango Curry) "
 date: 2019-12-19T09:39:27-07:00
 draft: false
 tags: ["entree"]
+author: ["Saveur"]
 ---
 
 Source: [Saveur Issue 162](https://www.saveur.com/article/recipes/manga-kalan/)

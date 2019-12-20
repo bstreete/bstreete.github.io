@@ -3,6 +3,7 @@ title: "Crepes"
 date: 2019-12-19T10:02:26-07:00
 draft: false
 tags: ["entree"]
+author: ["Veronica Bowers"]
 ---
 
 Source: Veronica Bower's French family

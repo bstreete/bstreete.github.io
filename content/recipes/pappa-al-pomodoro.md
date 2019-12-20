@@ -3,6 +3,7 @@ title: "Pappa Al Pomodoro"
 date: 2019-12-19T09:47:10-07:00
 draft: false
 tags: ["vegetarian", "entree"]
+author: ["Bon Appetit"]
 ---
 
 Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/pappa-al-pomodoro)

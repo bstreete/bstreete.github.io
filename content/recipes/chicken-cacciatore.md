@@ -3,6 +3,7 @@ title: "Slow Cooker Chicken Cacciatore "
 date: 2019-12-19T09:49:31-07:00
 draft: false
 tags: ["entree", "slow cooker"]
+author: ["Kitchen Concoctions"]
 ---
 
 Source: [Kitchen Concoctions ](https://www.kitchen-concoctions.com/2012/07/website-wednesday-slow-cooker-chicken/)

@@ -3,6 +3,7 @@ title: "Kale Salad with Mustard Vinaigrette"
 date: 2019-12-19T14:39:20-07:00
 draft: false
 tags: ["side", "vegetarian"]
+author: ["The Garden Kitchen"]
 ---
 
 Source: [The Garden Kitchen](http://www.thegardenkitchen.org)

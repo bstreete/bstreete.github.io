@@ -3,6 +3,7 @@ title: "Herby Corn Salad"
 date: 2019-12-19T09:19:02-07:00
 draft: false
 tags: ["side"]
+author: ["Bon Appetit"]
 ---
 
 Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/herby-corn-salad)

@@ -20,34 +20,40 @@
       <a href="{{ .Site.BaseURL }}"><img class="app-header-avatar" src="{{ .Site.Params.avatar | default "avatar.jpg" | relURL }}" alt="{{ .Site.Params.author | default "John Doe" }}" /></a>
       <h1>{{ .Site.Title }}</h1>
 
-      <!-- Addition for listing available Tags (no other taxonomies at this point). Taken
-      from: https://www.jakewiesler.com/blog/hugo-taxonomies/. Modified to meet my needs.-->
       <hr>
-      {{ $taxo := "tags" }}
-      <h4>Recipe Categories</h4>
-      {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
-          {{ range .Pages }}
-              <a href="{{ .Permalink }}">{{ .Title}}</a>
-          {{ end }}
-      {{ end }}
-
+      <!-- Hardcoded List of Available Taxonomies-->
+      <p><a href = "{{ .Site.BaseURL }}/author"> Recipes by Author</a>
+      <p><a href = "{{ .Site.BaseURL }}/tags"> Recipes by Tag</a>
     </header>
 
     <main class="app-container">      
+
     <!-- Attempt at adding breadcrumb navigation. Taken from 
     https://discourse.gohugo.io/t/implementing-breadcrumb-navigation-in-hugo/1048 -->
 
     {{ if not .IsHome }}
       {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-      {{ $.Scratch.Add "path" .Site.BaseURL }}
+      {{ $.Scratch.Set "path" .Site.BaseURL }}  <!-- Set - Need to start correctly! -->
       <div class="breadcrumbs">
         <a href="/">home</a>
-        {{ range $index, $element := split $url "/" }}
+
+        <!--Need to account for 0-indexing and that the final slash leads
+        to an empty string.-->
+        {{ $splitPath := split $url "/"}}
+        {{ $splitLen := len $splitPath }}
+        {{ $splitLen := sub $splitLen 2}}
+        
+        {{ range $index, $element := $splitPath }}
           {{ $.Scratch.Add "path" $element }}
-            {{ if ne $element "" }}
+          {{ if ne $element "" }}
+            <!-- The final breadcrumb will have bold text. -->
+            {{ if ne $index $splitLen }}
               // <a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-              {{ $.Scratch.Add "path" "/" }}
-            {{ end }}
+            {{else}}
+              // <a href='{{ $.Scratch.Get "path" }}'><b>{{ . }}</b></a>
+            {{end}}
+            {{ $.Scratch.Add "path" "/" }}
+          {{ end }}
         {{ end }}
       </div>
     {{ end }}

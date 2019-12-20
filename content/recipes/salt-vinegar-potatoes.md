@@ -3,6 +3,7 @@ title: "Crispy Salt and Vinegar Potatoes"
 date: 2019-12-19T09:48:18-07:00
 draft: false
 tags: ["side", "favorites"]
+author: ["Bon Appetit"]
 ---
 
 Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/crispy-salt-and-vinegar-potatoes)

@@ -3,6 +3,7 @@ title: "Sweet Potato Pancakes"
 date: 2019-12-19T10:00:17-07:00
 draft: false
 tags: ["entree", "side"]
+author: ["The Garden Kitchen"]
 ---
 
 Source: [The Garden Kitchen](thegardenkitchen.org)

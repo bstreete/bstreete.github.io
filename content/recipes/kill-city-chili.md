@@ -3,6 +3,7 @@ title: "Kill City Chili"
 date: 2019-12-19T09:37:59-07:00
 draft: false
 tags: ["entree"]
+author: ["Saveur"]
 ---
 
 Source: [Saveur Issue 162 ](https://www.saveur.com/article/recipes/kill-city-chili/)

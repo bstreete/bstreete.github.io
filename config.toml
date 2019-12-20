@@ -12,3 +12,7 @@ paginate = 20
     lightColor = "#96a879"
     lightestColor = "#fff"
 
+# Overwrite the default taxonomy structure
+[taxonomies]
+    tag = "tags"
+    author = "author"

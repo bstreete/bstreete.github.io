@@ -3,6 +3,7 @@ title: "Chile Verde"
 date: 2019-12-19T09:08:35-07:00
 draft: false
 tags: ["entree"]
+author: ["Simply Recipes"]
 ---
 
 Source: [Simply Recipes](https://www.simplyrecipes.com/recipes/chile_verde/)

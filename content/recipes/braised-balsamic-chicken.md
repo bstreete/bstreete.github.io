@@ -3,6 +3,7 @@ title: "Braised Balsamic Chicken"
 date: 2019-12-19T07:11:31-07:00
 draft: false
 tags: ["entree"]
+author: ["All Recipes"]
 ---
 
 Source: [All Recipes by MoonAndBack](https://www.allrecipes.com/recipe/8665/braised-balsamic-chicken/)

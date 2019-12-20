@@ -3,6 +3,7 @@ title: "Roasted Butternut Squash Soup"
 date: 2019-12-19T14:49:43-07:00
 draft: false
 tags: ["entree", "vegetarian"]
+author: ["The Garden Kitchen"]
 ---
 
 Source: [The Garden Kitchen](https://www.thegardenkitchen.org)

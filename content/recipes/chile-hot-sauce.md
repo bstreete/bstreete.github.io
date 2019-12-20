@@ -3,6 +3,7 @@ title: "Fresno Chile Hot Sauce"
 date: 2019-12-19T09:06:16-07:00
 draft: false
 tags: ["sauce"]
+author: ["Bon Appetit"]
 ---
 
 Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/fresno-chile-hot-sauce)

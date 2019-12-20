@@ -3,6 +3,7 @@ title: "Blackberry Vinegar Caramel"
 date: 2019-12-19T07:11:15-07:00
 draft: false
 tags: ["sauce", "dessert"]
+author: ["Bon Appetit"]
 ---
 
 Source: [Bon Appetit May 2014 Issue](https://www.bonappetit.com/recipe/blackberry-vinegar-caramel-sauce)

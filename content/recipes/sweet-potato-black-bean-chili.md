@@ -3,6 +3,7 @@ title: "Sweet Potato Black Bean Chili"
 date: 2019-12-18T18:05:59-07:00
 draft: false
 tags: ["slow cooker", "vegetarian", "entree", "favorites"]
+author: ["All Recipes"]
 ---
 
 Source: [AllRecipes by Chef John](https://www.allrecipes.com/recipe/229730/sweet-potato-and-black-bean-chili/)

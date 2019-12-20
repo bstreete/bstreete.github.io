@@ -3,6 +3,7 @@ title: "Buffalo Sauce"
 date: 2019-12-19T07:11:42-07:00
 draft: false
 tags: ["sauce", "entree"]
+author: ["All Recipes"]
 ---
 
 Source: [AllRecipes by Chef John](https://www.allrecipes.com/recipe/219109/buffalo-chicken-wing-sauce/)
