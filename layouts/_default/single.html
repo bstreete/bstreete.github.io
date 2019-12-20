@@ -7,7 +7,7 @@
       <div class="post-meta">
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-          Updated {{ .PublishDate.Format "Jan 2, 2006" }}
+          Uploaded {{ .PublishDate.Format "Jan 2, 2006" }}
         </div>
         {{- with .Params.tags -}}
         <div>

@@ -15,20 +15,43 @@
 
   </head>
   <body>
+
     <header class="app-header">
       <a href="{{ .Site.BaseURL }}"><img class="app-header-avatar" src="{{ .Site.Params.avatar | default "avatar.jpg" | relURL }}" alt="{{ .Site.Params.author | default "John Doe" }}" /></a>
       <h1>{{ .Site.Title }}</h1>
+
+      <!-- Addition for listing available Tags (no other taxonomies at this point). Taken
+      from: https://www.jakewiesler.com/blog/hugo-taxonomies/. Modified to meet my needs.-->
+      <hr>
       {{ $taxo := "tags" }}
-      <p>Quick Links</p>
-      <ul class="{{ $taxo }}">
-          {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
-              {{ range .Pages }}
-                  <li><a href="{{ .Permalink }}">{{ .Title}}</a></li>
-              {{ end }}
+      <h4>Recipe Categories</h4>
+      {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
+          {{ range .Pages }}
+              <a href="{{ .Permalink }}">{{ .Title}}</a>
           {{ end }}
-      </ul>
+      {{ end }}
+
     </header>
-    <main class="app-container">
+
+    <main class="app-container">      
+    <!-- Attempt at adding breadcrumb navigation. Taken from 
+    https://discourse.gohugo.io/t/implementing-breadcrumb-navigation-in-hugo/1048 -->
+
+    {{ if not .IsHome }}
+      {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+      {{ $.Scratch.Add "path" .Site.BaseURL }}
+      <div class="breadcrumbs">
+        <a href="/">home</a>
+        {{ range $index, $element := split $url "/" }}
+          {{ $.Scratch.Add "path" $element }}
+            {{ if ne $element "" }}
+              // <a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
+              {{ $.Scratch.Add "path" "/" }}
+            {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+    
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}

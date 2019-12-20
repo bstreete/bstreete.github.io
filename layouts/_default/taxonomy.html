@@ -3,7 +3,17 @@
     <!-- Modified version of m10c theme layouts:
     https://themes.gohugo.io/hugo-theme-m10c/ -->
     
-    <h1>{{ .Title }}</h1>
+    <!-- Primary Difference from standard list is the title. Everything else is 
+    identical. Want to 'humanize' the tags so that they are capitalized like
+    rest of title. Taken from: https://discourse.gohugo.io/t/capitalize-a-title/19518-->
+    <h1>
+      Recipes with 
+      {{ $name := split .Page.Title " " }}
+      {{ range $name }}
+        {{ . | humanize }}
+      {{ end }}
+       Tag
+    </h1>
     
     <ul class="posts-list">
       {{ range $index, $element := .Paginator.Pages.ByTitle }}
