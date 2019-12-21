@@ -2,7 +2,7 @@
 title: "Sweet Potato Black Bean Chili"
 date: 2019-12-18T18:05:59-07:00
 draft: false
-tags: ["vegetarian", "entree", "favorites"]
+tags: ["vegetarian", "entree", "favorites", "chili"]
 author: ["All Recipes"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Roasted Butternut Squash Soup"
 date: 2019-12-19T14:49:43-07:00
 draft: false
-tags: ["entree", "vegetarian"]
+tags: ["entree", "vegetarian", "soup"]
 author: ["The Garden Kitchen"]
 ---
 

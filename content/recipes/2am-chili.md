@@ -2,7 +2,7 @@
 title: "2am Chili"
 date: 2019-12-19T09:53:33-07:00
 draft: false
-tags: ["entree"]
+tags: ["entree", "chili"]
 ---
 
 Source: [r/pics](https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/)

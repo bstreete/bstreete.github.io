@@ -2,7 +2,7 @@
 title: "Meaty Beany Chili"
 date: 2019-12-19T09:59:01-07:00
 draft: false
-tags: ["vegetarian", "entree", "slow cooker", "favorites"]
+tags: ["vegetarian", "entree", "slow cooker", "favorites", "chili"]
 author: ["The PPK"]
 ---
 
