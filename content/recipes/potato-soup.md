@@ -2,7 +2,7 @@
 title: "Potato Soup with Bacon and Cheddar"
 date: 2019-12-20T14:52:05-07:00
 draft: false
-tags: ["entree"]
+tags: ["entree", "soup"]
 author: ["Emeril Lagasse"]
 ---
 
