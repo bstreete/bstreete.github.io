@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bstreete.github.io/public/author/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/rib-roast/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/entree/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/favorites/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/genius-kitchen/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/</loc>
+    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
     <lastmod>2019-12-20T17:17:33-07:00</lastmod>
   </url>
@@ -13,37 +53,7 @@
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/author/</loc>
-    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/</loc>
-    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/entree/</loc>
-    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/favorites/</loc>
-    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/</loc>
-    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/tags/slow-cooker/</loc>
-    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/</loc>
     <lastmod>2019-12-20T17:17:33-07:00</lastmod>
   </url>
   
@@ -133,6 +143,11 @@
   </url>
   
   <url>
+    <loc>https://bstreete.github.io/public/tags/soup/</loc>
+    <lastmod>2019-12-20T14:52:05-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/recipes/serbian-beef-potato-bake/</loc>
     <lastmod>2019-12-20T14:50:29-07:00</lastmod>
   </url>
@@ -154,11 +169,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/butternut-squash-soup/</loc>
-    <lastmod>2019-12-19T14:49:43-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/soup/</loc>
     <lastmod>2019-12-19T14:49:43-07:00</lastmod>
   </url>
   
