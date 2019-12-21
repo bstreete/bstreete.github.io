@@ -6,10 +6,37 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Dec 2019 15:04:35 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 20 Dec 2019 17:17:33 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>All Recipes</title>
+      <link>https://bstreete.github.io/public/author/all-recipes/</link>
+      <pubDate>Fri, 20 Dec 2019 17:17:33 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/all-recipes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Just a Taste</title>
+      <link>https://bstreete.github.io/public/author/just-a-taste/</link>
+      <pubDate>Fri, 20 Dec 2019 17:14:22 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/just-a-taste/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Life Cookbook</title>
+      <link>https://bstreete.github.io/public/author/my-life-cookbook/</link>
+      <pubDate>Fri, 20 Dec 2019 17:09:51 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/my-life-cookbook/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Budget Bytes</title>
@@ -53,15 +80,6 @@
       <pubDate>Fri, 20 Dec 2019 14:52:05 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/emeril-lagasse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>All Recipes</title>
-      <link>https://bstreete.github.io/public/author/all-recipes/</link>
-      <pubDate>Fri, 20 Dec 2019 14:50:29 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/all-recipes/</guid>
       <description></description>
     </item>
     

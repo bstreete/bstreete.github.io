@@ -3,47 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/red-beans-rice/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/entree/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/favorites/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/slow-cooker/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/</loc>
+    <lastmod>2019-12-20T17:17:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/falafel-with-tahini/</loc>
+    <lastmod>2019-12-20T17:14:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/just-a-taste/</loc>
+    <lastmod>2019-12-20T17:14:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/vegetarian/</loc>
+    <lastmod>2019-12-20T17:14:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/my-life-cookbook/</loc>
+    <lastmod>2019-12-20T17:09:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/kielbasa-potatoes-peppers/</loc>
+    <lastmod>2019-12-20T17:09:51-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/recipes/not-butter-chicken/</loc>
     <lastmod>2019-12-20T15:04:35-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/author/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/author/budget-bytes/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/entree/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/favorites/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/slow-cooker/</loc>
-    <lastmod>2019-12-20T15:04:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/</loc>
     <lastmod>2019-12-20T15:04:35-07:00</lastmod>
   </url>
   
@@ -98,11 +133,6 @@
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
-    <lastmod>2019-12-20T14:50:29-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/recipes/serbian-beef-potato-bake/</loc>
     <lastmod>2019-12-20T14:50:29-07:00</lastmod>
   </url>
@@ -129,11 +159,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/author/the-garden-kitchen/</loc>
-    <lastmod>2019-12-19T14:49:43-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/vegetarian/</loc>
     <lastmod>2019-12-19T14:49:43-07:00</lastmod>
   </url>
   
