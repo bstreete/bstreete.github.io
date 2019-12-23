@@ -9,7 +9,7 @@
         {{ if .Params.original_link }}
           <div>
             {{ partial "icon.html" (dict "ctx" $ "name" "external-link") }}
-            <a href="{{ .Params.original_link }}">Original Source</a>
+            <a class="tag" href="{{ .Params.original_link }}">Original Source</a>
           </div>
         {{ end }}
         
