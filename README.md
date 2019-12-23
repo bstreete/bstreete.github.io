@@ -10,6 +10,8 @@ This will create a new markdown file with some template information. Populate th
 ### Metadata for Tagging
 This portion (called [Front Matter](https://gohugo.io/content-management/front-matter/) in Hugo jargon) drives the automatic tagging system in Hugo. Tags and author entries can have multiple listings separated by commas. The title entry is the displayed name when viewing the final output. 
 
+The `prep`, `cook`, and `original_link` fields are optional. These will the prep time, cooking time, and link to original source metadata to the top of the final page. This data is only displayed if it exists. The `original_link` field should point back to the website that provided the initial recipe.  
+
 <pre>
 ---
 title: "Baked French Toast"
@@ -17,18 +19,13 @@ date: 2019-12-19T09:56:29-07:00
 draft: false
 tags: ["entree", "favorites"]
 author: ["Lis Handley", "Handleys"]
+prep: "Overnight"
+cook: "45 min"
 ---
 </pre>
 
 ### Page Content
-After the front matter, the visible portion of the page should be listed. The template will pre-define the location of the source, ingredients, and directions block, but this can be overwritten. 
-
-#### Notes on Sources
-Typically, source annotations should include a link to the original author when possible. Link will be generated from markdown syntax like so: `[Display Name](https://link.path)`. 
-
-<pre>
-Source: Lis Handley
-</pre> 
+After the front matter, the visible portion of the page should be listed. The template will pre-define the location of the ingredients and directions block, but this can be overwritten. 
 
 #### Ingredients
 Use an unordered list (bullets) to format all of the ingredients. This can be done in markdown with a `- ` preceding the line. The whitespace is required. 
