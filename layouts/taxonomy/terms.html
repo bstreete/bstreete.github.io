@@ -1,0 +1,24 @@
+{{ define "main" }}
+<!--Defines the home/author or home/tag pages that list all 
+available taxonomy terms for a given category. -->
+  <article>    
+    <h1>
+      <!-- Author Taxonomy will use a different header line than tags-->
+      {{ if eq .Page.Type "author"}}
+        All Authors
+      {{ else }}
+        All Recipe Tags
+      {{ end }}
+    </h1>
+    <ul class="posts-list">
+      {{ range .Data.Terms.Alphabetical }}
+        <li class="posts-list-item">
+            <a class="posts-list-item-title" href="{{ .Page.Permalink }}">
+              {{ .Page.Title }}
+            </a> 
+            {{ .Count }}
+        </li>
+      {{ end }}
+    </ul>
+  </article>
+{{ end }}

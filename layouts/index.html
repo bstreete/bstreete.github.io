@@ -1,15 +1,16 @@
 {{ define "main" }}
   <article>
-    <h1>{{ .Title }}</h1>
     <ul class="posts-list">
 
-      <!-- Logic to sort all available recipes by Title first, 
-      before paginating. This means the final page listing will
-      be correctly sorted alphabetically before generating the 
-      entries for the current page. -->
+      <!-- Logic to sort all recipes by title, similar to list handling,
+        but modified to account for the fact that the home page needs to 
+        reference the recipes section first.  -->
       {{ $pageSlice := slice }}
-      {{ range where .Pages.ByTitle "Type" "recipes"}}
-        {{ $pageSlice = $pageSlice | append .Page}}
+        <!-- Tell Hugo to use the recipes section instead of root -->
+      {{ with .Site.GetPage "/recipes"}}
+        {{ range where .Pages.ByTitle "Section" "recipes"}}
+            {{ $pageSlice = $pageSlice | append .Page}}
+        {{ end }}
       {{ end }}
       
       <!-- Iterate over the resorted pages, Paginate command will

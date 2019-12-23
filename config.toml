@@ -3,7 +3,10 @@ languageCode = "en-us"
 title = "Brayden's Recipes"
 theme = "m10c"
 description = ''
-paginate = 20
+paginate = 15
+prep = ''
+cook = ''
+original_link = "none"
 
 ## Left for posterity, default color scheme is the pleasant green/gray
 [params.style]
