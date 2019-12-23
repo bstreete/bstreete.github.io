@@ -6,10 +6,28 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Dec 2019 07:11:35 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Dec 2019 14:45:39 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Budget Bytes</title>
+      <link>https://bstreete.github.io/public/author/budget-bytes/</link>
+      <pubDate>Mon, 23 Dec 2019 14:45:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/budget-bytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New York Times</title>
+      <link>https://bstreete.github.io/public/author/new-york-times/</link>
+      <pubDate>Mon, 23 Dec 2019 14:42:06 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/new-york-times/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Food Network</title>
@@ -66,15 +84,6 @@
     </item>
     
     <item>
-      <title>Budget Bytes</title>
-      <link>https://bstreete.github.io/public/author/budget-bytes/</link>
-      <pubDate>Fri, 20 Dec 2019 15:04:35 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/budget-bytes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Sunset</title>
       <link>https://bstreete.github.io/public/author/sunset/</link>
       <pubDate>Fri, 20 Dec 2019 15:02:36 -0700</pubDate>
@@ -107,15 +116,6 @@
       <pubDate>Fri, 20 Dec 2019 14:52:05 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/emeril-lagasse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>New York Times</title>
-      <link>https://bstreete.github.io/public/author/new-york-times/</link>
-      <pubDate>Fri, 20 Dec 2019 14:46:16 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/new-york-times/</guid>
       <description></description>
     </item>
     

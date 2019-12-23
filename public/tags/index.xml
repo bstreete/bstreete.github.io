@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Dec 2019 07:11:35 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Dec 2019 14:45:39 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>entree</title>
       <link>https://bstreete.github.io/public/tags/entree/</link>
-      <pubDate>Sun, 22 Dec 2019 07:11:35 -0700</pubDate>
+      <pubDate>Mon, 23 Dec 2019 14:45:39 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/entree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>favorites</title>
+      <link>https://bstreete.github.io/public/tags/favorites/</link>
+      <pubDate>Mon, 23 Dec 2019 14:45:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/favorites/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vegetarian</title>
+      <link>https://bstreete.github.io/public/tags/vegetarian/</link>
+      <pubDate>Mon, 23 Dec 2019 14:45:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/vegetarian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pasta</title>
+      <link>https://bstreete.github.io/public/tags/pasta/</link>
+      <pubDate>Mon, 23 Dec 2019 14:42:06 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/pasta/</guid>
       <description></description>
     </item>
     
@@ -26,24 +53,6 @@
       <pubDate>Sun, 22 Dec 2019 07:11:35 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/slow-cooker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>favorites</title>
-      <link>https://bstreete.github.io/public/tags/favorites/</link>
-      <pubDate>Sun, 22 Dec 2019 07:07:58 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/favorites/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vegetarian</title>
-      <link>https://bstreete.github.io/public/tags/vegetarian/</link>
-      <pubDate>Fri, 20 Dec 2019 17:14:22 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/vegetarian/</guid>
       <description></description>
     </item>
     
