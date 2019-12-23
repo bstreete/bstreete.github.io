@@ -6,10 +6,28 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2019 12:31:07 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2019 07:11:35 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Food Network</title>
+      <link>https://bstreete.github.io/public/author/food-network/</link>
+      <pubDate>Sun, 22 Dec 2019 07:11:35 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/food-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Delish</title>
+      <link>https://bstreete.github.io/public/author/delish/</link>
+      <pubDate>Sun, 22 Dec 2019 07:07:58 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/delish/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Genius Kitchen</title>
@@ -138,11 +156,11 @@
     </item>
     
     <item>
-      <title>Handleys</title>
-      <link>https://bstreete.github.io/public/author/handleys/</link>
+      <title>Handley Family</title>
+      <link>https://bstreete.github.io/public/author/handley-family/</link>
       <pubDate>Thu, 19 Dec 2019 09:56:29 -0700</pubDate>
       
-      <guid>https://bstreete.github.io/public/author/handleys/</guid>
+      <guid>https://bstreete.github.io/public/author/handley-family/</guid>
       <description></description>
     </item>
     
