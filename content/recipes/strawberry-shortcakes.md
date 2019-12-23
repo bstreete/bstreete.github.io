@@ -1,5 +1,5 @@
 ---
-title: "Strawberry Shortcakes"
+title: "Basically Strawberry Shortcakes"
 date: 2019-12-23T15:09:39-07:00
 draft: false
 tags: ["dessert"]
