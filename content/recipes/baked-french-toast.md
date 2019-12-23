@@ -3,10 +3,10 @@ title: "Baked French Toast"
 date: 2019-12-19T09:56:29-07:00
 draft: false
 tags: ["entree", "favorites"]
-author: ["Lis Handley", "Handleys"]
+author: ["Lis Handley", "Handley Family"]
+prep: "Overnight"
+cook: "45 min"
 ---
-
-Source: Lis Handley
 
 ### Ingredients
 - Loaf of French bread

@@ -4,9 +4,10 @@ date: 2019-12-20T14:50:29-07:00
 draft: false
 tags: ["entree"]
 author: ["All Recipes"]
+prep: "30 min"
+cook: "1 hr"
+original_link: "https://www.allrecipes.com/recipe/70589/serbian-ground-beef-veggie-and-potato-bake/print/?recipeType=Recipe&servings=4&isMetric=false"
 ---
-
-Source: [All Recipes by amanda1432](https://www.allrecipes.com/recipe/70589/serbian-ground-beef-veggie-and-potato-bake/print/?recipeType=Recipe&servings=4&isMetric=false)
 
 ### Ingredients
 

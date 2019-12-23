@@ -7,9 +7,6 @@ tags: ["entree"]
 author: ["Robyn Dafoe"]
 ---
 
-Source: Robyn Dafoe
-
-
 ### Ingredients
 - 1 1/2 pounds Italian sausage
 - 3 to 5 Russet potatoes

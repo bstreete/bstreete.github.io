@@ -4,9 +4,10 @@ date: 2019-12-20T15:00:34-07:00
 draft: false
 tags: ["entree", "pressure cooker"]
 author: ["I Don't Have Time for That!"]
+prep: "Optional - Delete if not needed"
+cook: "Optional - Delete if not needed"
+original_link: "https://www.idonthavetimeforthat.com/instant-pot-guinness-mac-cheese/"
 ---
-
-Source: [I Don't Have Time for That!](https://www.idonthavetimeforthat.com/instant-pot-guinness-mac-cheese/)
 
 ### Ingredients
 - 1 lb Elbow Noodles

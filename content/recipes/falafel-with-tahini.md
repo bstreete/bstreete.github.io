@@ -4,9 +4,10 @@ date: 2019-12-20T17:14:22-07:00
 draft: false
 tags: ["entree", "vegetarian", "favorites"]
 author: ["Just a Taste"]
+prep: "1 hr 30 min"
+cook: "10 min"
+original_link: "https://www.justataste.com/homemade-falafel-with-tahini-sauce/"
 ---
-
-Source: [Just a Taste](https://www.justataste.com/homemade-falafel-with-tahini-sauce/)
 
 ### Ingredients
 

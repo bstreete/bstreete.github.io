@@ -4,9 +4,9 @@ date: 2019-12-20T15:02:36-07:00
 draft: false
 tags: ["entree"]
 author: ["Sunset"]
+cook: "5 hours"
+original_link: "https://www.sunset.com/recipe/la-taqueria-carnitas/"
 ---
-
-Source: [Sunset](https://www.sunset.com/recipe/la-taqueria-carnitas/)
 
 ### Ingredients
 - 1 boned, tied pork shoulder or butt (4 to 5 lb.)

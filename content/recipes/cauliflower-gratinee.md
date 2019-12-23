@@ -4,9 +4,8 @@ date: 2019-12-19T07:11:52-07:00
 draft: false
 tags: ["side"]
 author: ["Joy of Cooking"]
+cook: "1 hour"
 ---
-
-Source: [Joy of Cooking](https://www.simonandschuster.com/joyofcooking)
 
 ### Ingredients   
   

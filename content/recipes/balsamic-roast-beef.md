@@ -4,9 +4,8 @@ date: 2019-12-19T07:01:01-07:00
 draft: false
 tags: ["slow cooker", "entree"]
 author: ["Add a Pinch"]
+original_link : "https://addapinch.com/balsamic-roast-beef-recipe/"
 ---
-Source: [AddAPinch.com](https://addapinch.com/balsamic-roast-beef-recipe/)
-
 ### Ingredients
 - 3 – 4 lb chuck roast
 - 1 c beef broth

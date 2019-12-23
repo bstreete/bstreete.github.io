@@ -4,9 +4,9 @@ date: 2019-12-19T09:06:16-07:00
 draft: false
 tags: ["sauce"]
 author: ["Bon Appetit"]
+original_link: "https://www.bonappetit.com/recipe/fresno-chile-hot-sauce"
+cook: "30 min"
 ---
-
-Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/fresno-chile-hot-sauce)
 
 ### Ingredients
 - 1/2 lb stemmed Fresno chiles (8 - 10)

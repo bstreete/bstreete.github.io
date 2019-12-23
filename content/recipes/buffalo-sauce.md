@@ -4,9 +4,9 @@ date: 2019-12-19T07:11:42-07:00
 draft: false
 tags: ["sauce", "entree"]
 author: ["All Recipes"]
+original_link: "https://www.allrecipes.com/recipe/219109/buffalo-chicken-wing-sauce/"
+cook: "10 min"
 ---
-
-Source: [AllRecipes by Chef John](https://www.allrecipes.com/recipe/219109/buffalo-chicken-wing-sauce/)
 
 ### Ingredients 
 

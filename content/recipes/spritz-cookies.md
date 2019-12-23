@@ -2,11 +2,10 @@
 title: "Classic Spritz Cookies "
 date: 2019-12-19T09:51:41-07:00
 draft: false
-tags: ["dessert"]
+tags: ["dessert", "cookies"]
 author: ["Wilton"]
+original_link: "https://www.wilton.com/classic-spritz-cookies/WLRECIP-25.html"
 ---
-
-Source: [Wilton Home ](https://www.wilton.com/classic-spritz-cookies/WLRECIP-25.html)
 
 ### Ingredients
 - 3 1/2 c all purpose flour

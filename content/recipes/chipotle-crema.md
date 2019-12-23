@@ -4,9 +4,8 @@ date: 2019-12-19T09:55:27-07:00
 draft: false
 tags: ["sauce", "favorites"]
 author: ["The Garden Kitchen"]
+cook: "15 min"
 ---
-
-Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
 
 ### Ingredients
 - 1/2 cup low fat Greek yogurt

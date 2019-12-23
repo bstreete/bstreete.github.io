@@ -5,8 +5,6 @@ draft: false
 tags: ["side"]
 ---
 
-Source: Athenos and Colavita Ad
-
 ### Ingredients
 - 8 oz feta cheese, crumbled
 - 4 oz cream cheese, softened

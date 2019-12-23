@@ -6,8 +6,6 @@ tags: ["entree", "side"]
 author: ["The Garden Kitchen"]
 ---
 
-Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
-
 ### Ingredients
 - 1 pound sweet potatoes (about 2 medium), peeled and coarsely grated
 - 2 scallions, finely chopped

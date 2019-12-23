@@ -4,9 +4,8 @@ date: 2019-12-19T09:12:26-07:00
 draft: false
 tags: ["side"]
 author: ["Bon Appetit"]
+original_link : "https://www.bonappetit.com/recipe/corn-jalapeno-fritters"
 ---
-
-Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/corn-jalapeno-fritters)
 
 ### Ingredients
 - 2 beaten large eggs

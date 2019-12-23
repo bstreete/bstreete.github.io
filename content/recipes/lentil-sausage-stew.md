@@ -4,9 +4,10 @@ date: 2019-12-20T14:55:13-07:00
 draft: false
 tags: ["entree", "favorites"]
 author: ["Budget Bytes"]
+prep: "15 min"
+cook: "1 hr"
+original_link: "https://www.budgetbytes.com/lentil-sausage-stew/"
 ---
-
-Source: [Budget Bytes](https://www.budgetbytes.com/lentil-sausage-stew/)
 
 ### Ingredients
 - 1/2 lb Italian sausage

@@ -4,9 +4,10 @@ date: 2019-12-19T09:40:54-07:00
 draft: false
 tags: ["bread"]
 author: ["All Recipes"]
+prep: "20 min"
+cook: "45 min"
+original_link: "https://www.allrecipes.com/recipe/61858/herb-batter-bread/"
 ---
-
-Source: [All Recipes](https://www.allrecipes.com/recipe/61858/herb-batter-bread/)
 
 ### Ingredients
 - 3 c all purpose flour

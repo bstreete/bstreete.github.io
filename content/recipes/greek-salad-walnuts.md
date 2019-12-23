@@ -5,8 +5,6 @@ draft: false
 tags: ["side", "salad"]
 ---
 
-Source: Athenos and Colavita Ad
-
 ### Ingredients
 
 #### Salad

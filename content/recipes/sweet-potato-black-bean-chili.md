@@ -4,9 +4,9 @@ date: 2019-12-18T18:05:59-07:00
 draft: false
 tags: ["vegetarian", "entree", "favorites", "chili"]
 author: ["All Recipes"]
+cook: "1 hr 30 min"
+original_link: "https://www.allrecipes.com/recipe/229730/sweet-potato-and-black-bean-chili/"
 ---
-
-Source: [AllRecipes by Chef John](https://www.allrecipes.com/recipe/229730/sweet-potato-and-black-bean-chili/)
 
 ### Ingredients
 - 2 lbs sweet potatoes, peeled and cubed

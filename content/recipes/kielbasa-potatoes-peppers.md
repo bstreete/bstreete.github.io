@@ -4,9 +4,10 @@ date: 2019-12-20T17:09:51-07:00
 draft: false
 tags: ["entree"]
 author: ["My Life Cookbook"]
+prep: "5 min"
+cook: "1 hr"
+original_link: "https://mylifecookbook.com/potatoes-peppers-and-kielbasa-skillet-dinner/"
 ---
-
-Source: [My Life Cookbook](https://mylifecookbook.com/potatoes-peppers-and-kielbasa-skillet-dinner/)
 
 ### Ingredients
 - 3 Tablespoons olive oil

@@ -4,9 +4,10 @@ date: 2019-12-20T14:52:05-07:00
 draft: false
 tags: ["entree", "soup"]
 author: ["Emeril Lagasse"]
+prep: "20 min"
+cook: "1 hr"
+original_link: "https://www.emerils.com/130744/potato-soup-bacon-and-cheddar"
 ---
-
-Source: [Emeril](https://www.emerils.com/130744/potato-soup-bacon-and-cheddar)
 
 ### Ingredients
 

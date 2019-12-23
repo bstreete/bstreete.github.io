@@ -6,8 +6,6 @@ tags: ["sauce"]
 author: ["Doug Silhacek"]
 ---
 
-Source: Doug Silhacek
-
 ### Ingredients
 - 1/3 bunch of cilantro
 - 1/2 small white onion
