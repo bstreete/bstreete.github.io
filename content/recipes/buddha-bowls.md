@@ -1,0 +1,37 @@
+---
+title: "Buddha Bowls"
+date: 2019-12-22T07:07:58-07:00
+draft: false
+tags: ["entree", "favorites"]
+author: ["Delish"]
+prep: "10 min"
+cook: "30 min"
+original_link: "https://www.delish.com/cooking/menus/recipes/a50768/buddha-bowls-recipe/"
+---
+
+### Ingredients
+- 1 large sweet potato, peeled and cut into 1/2-inch cubes
+- 1 large red onion, diced
+- 3 tbsp. extra-virgin olive oil, divided
+- Kosher salt
+- Freshly ground black pepper
+- 1 lb. boneless, skinless chicken breasts
+- 1/2 tsp. garlic powder
+- 1/2 tsp. ground ginger
+- 1 small clove garlic, minced
+- 2 tbsp. creamy peanut butter
+- 1/4 c. Juice of 1 lime
+- 1 tbsp. low-sodium soy sauce
+- 1 tbsp. honey
+- 1 tbsp. toasted sesame oil
+- 4 c. cooked brown rice
+- 1 avocado, thinly sliced
+- 2 c. baby spinach
+- 1 tbsp. Freshly chopped cilantro, for garnish
+- 1 tsp. Toasted sesame seeds
+
+### Directions
+1. Preheat oven to 425°. On a large baking sheet, toss sweet potatoes and onion with 1 tablespoon of oil and season with salt and pepper. Bake until tender, 20 to 25 minutes. 
+1. Meanwhile, in a large skillet over medium- high heat, heat 1 tablespoon of oil. Season chicken with garlic powder, ginger, salt, and pepper. Cook until golden and no longer pink, 8 minutes per side. Let rest 10 minutes, then slice.
+1. In a small bowl, whisk together garlic, peanut butter, lime juice, soy sauce, and honey. Whisk in sesame oil and remaining 1 tablespoon olive oil until smooth.
+1. Divide rice among four bowls and top each with sweet potato mixture, chicken, avocado, and baby spinach. Sprinkle with cilantro and sesame seeds and drizzle with dressing before serving.
