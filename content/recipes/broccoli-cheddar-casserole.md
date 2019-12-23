@@ -9,6 +9,9 @@ cook: "40 mins"
 original_link: "https://www.budgetbytes.com/broccoli-cheddar-casserole/"
 ---
 
+#### Notes 
+You can omit the cayenne if sensitive to heat. 
+
 ### Ingredients
 - 1 lb. frozen broccoli florets
 - 8 oz. medium or sharp cheddar, shredded
