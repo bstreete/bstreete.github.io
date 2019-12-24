@@ -7,6 +7,5 @@ assignees: ''
 
 ---
 
-**Page Name**
 - [ ] Typo 1 description
 - [ ] Typo 2 description
