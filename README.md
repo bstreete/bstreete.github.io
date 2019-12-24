@@ -3,9 +3,10 @@
 
 ## Adding a New Recipe
 Checkout/clone a copy of the repo. Inside the root of the project, enter the following command: 
-<pre>hugo new recipes/<recipe_name>.md </pre>
+<pre>hugo new recipes/recipe-name.md </pre>
 
-This will create a new markdown file with some template information. Populate the recipe as needed. Here is an example file from the repo. 
+This will create a new markdown file with some template information. Populate the recipe as needed. Here is an example file from the repo.
+**Note:** Dashes in the filename will be automatically converted to a space in the generated page title. 
 
 ### Metadata for Tagging
 This portion (called [Front Matter](https://gohugo.io/content-management/front-matter/) in Hugo jargon) drives the automatic tagging system in Hugo. Tags and author entries can have multiple listings separated by commas. The title entry is the displayed name when viewing the final output. 
