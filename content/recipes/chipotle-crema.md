@@ -16,7 +16,7 @@ cook: "15 min"
 
 ### Directions
 1.	Wash hands with soap and warm water.
-2.	Place all ingredients in a samll bowl and stir until smooth. 
+2.	Place all ingredients in a small bowl and stir until smooth. 
 3.	Taste and add more lime, chipotle, or honey if needed.
 4.	Serve cold on sandwiches, wraps, or hamburgers. Keeps for up to one week in a sealed container in the refrigerator. 
 

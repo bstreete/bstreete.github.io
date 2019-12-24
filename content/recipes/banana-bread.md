@@ -21,7 +21,7 @@ author: ["Linda Kelly", "Kelly Family"]
 1. Cream butter and sugar until light. 
 1. Add beaten eggs and mashed bananas.
 1. Sift flour and salt together and add to the first mixture. 
-1. Add baking soda, vanilla, and nuts and mix ewll. 
+1. Add baking soda, vanilla, and nuts and mix well. 
 1. Bake for 1 hour to 1 hour 15 minutes at 325­°. 
 
 #### Notes
