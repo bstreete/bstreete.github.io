@@ -4,8 +4,6 @@ date: 2019-12-20T15:00:34-07:00
 draft: false
 tags: ["entree", "pressure cooker"]
 author: ["I Don't Have Time for That!"]
-prep: "Optional - Delete if not needed"
-cook: "Optional - Delete if not needed"
 original_link: "https://www.idonthavetimeforthat.com/instant-pot-guinness-mac-cheese/"
 ---
 
@@ -16,7 +14,7 @@ original_link: "https://www.idonthavetimeforthat.com/instant-pot-guinness-mac-ch
 - 2 Tablespoons Butter
 - 1 Tablespoon Dry Mustard Powder
 - 2 Ounces Cream Cheese cut into cubes
-- 1 Can Eveporated Milk
+- 1 Can Evaporated Milk
 - 1/2 Teaspoon Salt
 - 1/2 Teaspoon Pepper or to taste
 - 14 Ounces Kerrygold Irish Cheddar 2 bricks
