@@ -1,12 +1,12 @@
 ---
-title: "Oat 'n Chocalate Bars"
+title: "Oat 'n Chocolate Bars"
 date: 2019-12-23T16:07:06-07:00
 draft: false
 tags: ["dessert", "bread"]
 author: ["Lis Handley", "Handley Family"]
 ---
 #### Notes
-Can doulbe recipe and use a 13" by 9" pan. Do not attempt to do more than double or the end result is soggy. 
+Can double recipe and use a 13" by 9" pan. Do not attempt to do more than double or the end result is soggy. 
 
 ### Ingredients
 - 1/2 cup flour
