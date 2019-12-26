@@ -3,7 +3,7 @@ title: "Spinach and Bacon Quiche"
 date: 2019-12-23T15:28:11-07:00
 draft: false
 tags: ["entree"]
-author: ["Paula Deen"]
+author: ["Paula Deen", "Food Network"]
 prep: "15 min"
 cook: "45 min"
 original_link: "https://www.foodnetwork.com/recipes/paula-deen/spinach-and-bacon-quiche-recipe-2131172"
