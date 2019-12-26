@@ -3,7 +3,7 @@ title: "Chile Relleno Casserole"
 date: 2019-12-26T07:42:52-07:00
 draft: false
 tags: ["entree"]
-author: ["Linda Kelly", "Kelly Family"]d
+author: ["Linda Kelly", "Kelly Family"]
 cook: "1 hr"
 ---
 
