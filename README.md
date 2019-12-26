@@ -1,5 +1,6 @@
 ## Dependencies 
 - [Hugo 0.61 Extended](https://gohugo.io/getting-started/installing/)
+- [Hugo Theme Submodule](https://github.com/vaga/hugo-theme-m10c/tree/8c58c64e190edc6d1f124869faf7b68d7b9b72f9)
 
 ## Adding a New Recipe
 Checkout/clone a copy of the repo. Inside the root of the project, enter the following command: 

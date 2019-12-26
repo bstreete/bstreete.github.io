@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2019 12:31:07 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2019 18:36:17 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dessert</title>
+      <link>https://bstreete.github.io/public/tags/dessert/</link>
+      <pubDate>Sun, 22 Dec 2019 18:36:17 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/dessert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fast</title>
+      <link>https://bstreete.github.io/public/tags/fast/</link>
+      <pubDate>Sun, 22 Dec 2019 18:36:17 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/fast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paleo</title>
+      <link>https://bstreete.github.io/public/tags/paleo/</link>
+      <pubDate>Sun, 22 Dec 2019 18:36:17 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/paleo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>entree</title>
@@ -62,15 +89,6 @@
       <pubDate>Fri, 20 Dec 2019 14:52:05 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/soup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dessert</title>
-      <link>https://bstreete.github.io/public/tags/dessert/</link>
-      <pubDate>Fri, 20 Dec 2019 14:46:16 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/dessert/</guid>
       <description></description>
     </item>
     
