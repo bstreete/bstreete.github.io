@@ -3,8 +3,7 @@ title: "Chile Relleno Casserole"
 date: 2019-12-26T07:42:52-07:00
 draft: false
 tags: ["entree"]
-author: ["Linda Kelly", "Kelly Family"]
-prep: "Optional - Delete if not needed"
+author: ["Linda Kelly", "Kelly Family"]d
 cook: "1 hr"
 ---
 
@@ -21,4 +20,3 @@ cook: "1 hr"
 1. Lay chiles flat in bottom of casserole dish sprayed with cooking spray. Sprinkle two cups of cheese over the chiles, then add a second layer of chiles. 
 1. Mix eggs, milk, flour, salt, and pepper together and pour over chiles. Sprinkle two more cups of cheese over the top.
 1. Bake in oven uncovered for 50 to 60 minutes.
- 
