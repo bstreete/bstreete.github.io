@@ -4,68 +4,11 @@
   
   <url>
     <loc>https://bstreete.github.io/public/author/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-=======
     <lastmod>2019-12-25T08:14:43-07:00</lastmod>
->>>>>>> 9afdb12fcec43dded6a3932c8a01d1302ed11f09
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/dessert/</loc>
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/fast/</loc>
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/paleo/</loc>
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/paleo-ginger-molasses-cookies/</loc>
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/</loc>
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/</loc>
-    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/rib-roast/</loc>
-    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/entree/</loc>
-    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/favorites/</loc>
-    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/author/genius-kitchen/</loc>
-    <lastmod>2019-12-21T12:31:07-07:00</lastmod>
-=======
     <lastmod>2019-12-25T08:14:43-07:00</lastmod>
   </url>
   
@@ -147,7 +90,6 @@
   <url>
     <loc>https://bstreete.github.io/public/author/robyn-dafoe/</loc>
     <lastmod>2019-12-25T07:55:45-07:00</lastmod>
->>>>>>> 9afdb12fcec43dded6a3932c8a01d1302ed11f09
   </url>
   
   <url>
@@ -356,6 +298,21 @@
   </url>
   
   <url>
+    <loc>https://bstreete.github.io/public/tags/fast/</loc>
+    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/paleo/</loc>
+    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/paleo-ginger-molasses-cookies/</loc>
+    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/recipes/slow-cook-pot-roast/</loc>
     <lastmod>2019-12-22T07:11:35-07:00</lastmod>
   </url>
@@ -471,14 +428,6 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://bstreete.github.io/public/author/new-york-times/</loc>
-    <lastmod>2019-12-20T14:46:16-07:00</lastmod>
-  </url>
-  
-  <url>
-=======
->>>>>>> 9afdb12fcec43dded6a3932c8a01d1302ed11f09
     <loc>https://bstreete.github.io/public/recipes/butternut-squash-soup/</loc>
     <lastmod>2019-12-19T14:49:43-07:00</lastmod>
   </url>
