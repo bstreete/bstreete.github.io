@@ -3,7 +3,7 @@ title: "Blueberry Rum Pie"
 date: 2019-12-23T15:53:46-07:00
 draft: false
 tags: ["dessert", "pie"]
-author: ["Lis Handley", "Handley Family"]
+author: ["Lis Handley", "Handley Family", "Family"]
 prep: "30 min"
 cook: "25 min"
 ---

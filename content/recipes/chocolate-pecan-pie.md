@@ -3,7 +3,7 @@ title: "Chocolate Pecan Pie"
 date: 2019-12-23T16:12:23-07:00
 draft: false
 tags: ["dessert", "pie"]
-author: ["Lis Handley", "Handley Family" ]
+author: ["Lis Handley", "Handley Family", "Family"]
 ---
 
 ### Ingredients

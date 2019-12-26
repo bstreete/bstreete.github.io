@@ -3,7 +3,7 @@ title: "Chicken Forestier"
 date: 2019-12-26T07:48:48-07:00
 draft: false
 tags: ["entree"]
-author: ["Linda Kelly", "Kelly Family"]
+author: ["Linda Kelly", "Kelly Family", "Family"]
 ---
 
 ### Ingredients

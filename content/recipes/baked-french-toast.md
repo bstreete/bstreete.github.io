@@ -3,7 +3,7 @@ title: "Baked French Toast"
 date: 2019-12-19T09:56:29-07:00
 draft: false
 tags: ["entree", "favorites", "bread"]
-author: ["Lis Handley", "Handley Family"]
+author: ["Lis Handley", "Handley Family", "Family"]
 prep: "Overnight"
 cook: "45 min"
 ---

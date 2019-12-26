@@ -3,7 +3,7 @@ title: "Chicken Picatta"
 date: 2019-12-25T08:07:21-07:00
 draft: false
 tags: ["entree", "favorites"]
-author: ["Tracy Handley", "Handley Family"]
+author: ["Tracy Handley", "Handley Family", "Family"]
 
 ---
 Recommend serving over angelhair pasta with a side of roasted asparagus. 

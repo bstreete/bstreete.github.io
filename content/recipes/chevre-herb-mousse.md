@@ -3,7 +3,7 @@ title: "Chevre and Herb Mousse"
 date: 2019-12-26T07:38:22-07:00
 draft: false
 tags: ["side"]
-author: ["Linda Kelly", "Kelly Family"]
+author: ["Linda Kelly", "Kelly Family", "Family"]
 ---
 
 ### Ingredients
