@@ -3,7 +3,7 @@ title: "Muffulettas"
 date: 2019-12-26T07:56:25-07:00
 draft: false
 tags: ["entree"]
-author: ["Laura McGowan"]
+author: ["Laura McGowan", "Family"]
 ---
 
 Pronounced moof-uh-leh-tuh
