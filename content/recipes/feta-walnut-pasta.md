@@ -5,8 +5,6 @@ draft: false
 tags: ["entree", "favorites"]
 ---
 
-Source: Athenos and Colavita Ad
-
 ### Ingredients
 - 8 oz rotelle or fusilli pasta
 - 1/2 c chopped walnuts

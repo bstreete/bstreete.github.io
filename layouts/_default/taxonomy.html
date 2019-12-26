@@ -1,16 +1,18 @@
 {{ define "main" }}
   <article>
-    <!-- Modified version of m10c theme layouts:
-    https://themes.gohugo.io/hugo-theme-m10c/ -->
+  <!-- Modified version of m10c theme layouts:
+  https://themes.gohugo.io/hugo-theme-m10c/ -->
     
-    <!-- Primary Difference from standard list is the title. Everything else is 
-    identical. -->
+  <!-- This template defines how content associated with a particular
+  taxonomy term is displayed (ex: Recipes from All Recipes). Similar
+  behavior to a standard list display. Only noticeable difference is
+  the title.-->
     <h1>
       <!-- Author Taxonomy will use a different header line than tags-->
       {{ if eq .Page.Type "author"}}
-        Recipes by
+        All Recipes by
       {{ else }}
-        Recipes Tagged with
+        All Recipes Tagged with
       {{ end }}
       
       <!--Want to 'humanize' the tags so that they are capitalized like
@@ -21,7 +23,7 @@
       {{ end }}
     </h1>
     <ul class="posts-list">
-      {{ range $index, $element := .Paginator.Pages.ByTitle }}
+      {{ range .Pages.ByTitle }}
         <li class="posts-list-item">
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
@@ -30,6 +32,5 @@
         </li>
       {{ end }}
     </ul>
-    {{ partial "pagination.html" $ }}
   </article>
 {{ end }}

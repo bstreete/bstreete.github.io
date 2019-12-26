@@ -3,8 +3,8 @@ title: "Cheesecake"
 date: 2019-12-19T09:04:50-07:00
 draft: false
 tags: ["dessert"]
+cook: "45 min"
 ---
-Source: Unknown
 
 ### Ingredients
 -   1 graham (or other) crust

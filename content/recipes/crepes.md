@@ -6,8 +6,6 @@ tags: ["entree"]
 author: ["Veronica Bowers"]
 ---
 
-Source: Veronica Bower's French family
-
 ### Ingredients
 - 1 cup flour
 - 1 cup milk

@@ -3,9 +3,10 @@ title: "2am Chili"
 date: 2019-12-19T09:53:33-07:00
 draft: false
 tags: ["entree", "chili"]
+original_link : "https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/"
+prep: "30 min"
+cook: "4 hours"
 ---
-
-Source: [r/pics](https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/)
 
 ### Ingredients
 - 2 tablespoons flour

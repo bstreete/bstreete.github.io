@@ -4,9 +4,9 @@ date: 2019-12-21T12:31:07-07:00
 draft: false
 tags: ["entree", "favorites"]
 author: ["Genius Kitchen"]
+cook: "1 hr 30 min"
+original_link: "https://www.geniuskitchen.com/recipe/cross-rib-roast-61718"
 ---
-
-Source: [Genius Kitchen](https://www.geniuskitchen.com/recipe/cross-rib-roast-61718)
 
 ### Ingredients
 - 2 pounds cross-rib roast

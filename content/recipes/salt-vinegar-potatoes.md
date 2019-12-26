@@ -4,9 +4,8 @@ date: 2019-12-19T09:48:18-07:00
 draft: false
 tags: ["side", "favorites"]
 author: ["Bon Appetit"]
+original_link: "https://www.bonappetit.com/recipe/crispy-salt-and-vinegar-potatoes"
 ---
-
-Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/crispy-salt-and-vinegar-potatoes)
 
 ### Ingredients
 - 2 lb. Baby Yukon Gold potatoes, halved, quartered if large

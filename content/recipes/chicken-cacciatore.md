@@ -4,9 +4,9 @@ date: 2019-12-19T09:49:31-07:00
 draft: false
 tags: ["entree", "slow cooker"]
 author: ["Kitchen Concoctions"]
+original_link: "https://www.kitchen-concoctions.com/2012/07/website-wednesday-slow-cooker-chicken/"
+cook: "4 to 5 hours"
 ---
-
-Source: [Kitchen Concoctions ](https://www.kitchen-concoctions.com/2012/07/website-wednesday-slow-cooker-chicken/)
 
 ### Ingredients
 - 4 skinless, boneless chicken breasts, trimmed and sliced

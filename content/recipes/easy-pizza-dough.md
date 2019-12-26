@@ -4,9 +4,9 @@ date: 2019-12-19T09:23:16-07:00
 draft: false
 tags: ["bread"]
 author: ["Betty Crocker"]
+prep: "30 min"
+cook: "25 min"
 ---
-
-Source: [Betty Crocker](https://www.bettycrocker.com)
 
 ### Ingredients
 - 1 c warm water

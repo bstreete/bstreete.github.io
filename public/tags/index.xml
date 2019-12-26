@@ -6,7 +6,11 @@
     <description>Recent content in Tags on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Sun, 22 Dec 2019 18:36:17 -0700</lastBuildDate>
+=======
+    <lastBuildDate>Wed, 25 Dec 2019 08:14:43 -0700</lastBuildDate>
+>>>>>>> 9afdb12fcec43dded6a3932c8a01d1302ed11f09
     
 	<atom:link href="https://bstreete.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -41,34 +45,121 @@
     <item>
       <title>entree</title>
       <link>https://bstreete.github.io/public/tags/entree/</link>
-      <pubDate>Sat, 21 Dec 2019 12:31:07 -0700</pubDate>
+      <pubDate>Wed, 25 Dec 2019 08:14:43 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/entree/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>pasta</title>
+      <link>https://bstreete.github.io/public/tags/pasta/</link>
+      <pubDate>Wed, 25 Dec 2019 08:14:43 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/pasta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>favorites</title>
       <link>https://bstreete.github.io/public/tags/favorites/</link>
-      <pubDate>Sat, 21 Dec 2019 12:31:07 -0700</pubDate>
+      <pubDate>Wed, 25 Dec 2019 08:07:21 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/favorites/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>salsa</title>
+      <link>https://bstreete.github.io/public/tags/salsa/</link>
+      <pubDate>Wed, 25 Dec 2019 08:02:59 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/salsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sauce</title>
+      <link>https://bstreete.github.io/public/tags/sauce/</link>
+      <pubDate>Wed, 25 Dec 2019 08:02:59 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/sauce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chili</title>
+      <link>https://bstreete.github.io/public/tags/chili/</link>
+      <pubDate>Wed, 25 Dec 2019 07:53:27 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/chili/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>slow cooker</title>
       <link>https://bstreete.github.io/public/tags/slow-cooker/</link>
-      <pubDate>Fri, 20 Dec 2019 17:17:33 -0700</pubDate>
+      <pubDate>Wed, 25 Dec 2019 07:49:14 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/slow-cooker/</guid>
       <description></description>
     </item>
     
     <item>
+<<<<<<< HEAD
+      <title>salad</title>
+      <link>https://bstreete.github.io/public/tags/salad/</link>
+      <pubDate>Thu, 19 Dec 2019 14:39:20 -0700</pubDate>
+=======
+      <title>dessert</title>
+      <link>https://bstreete.github.io/public/tags/dessert/</link>
+      <pubDate>Mon, 23 Dec 2019 16:12:23 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/dessert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pie</title>
+      <link>https://bstreete.github.io/public/tags/pie/</link>
+      <pubDate>Mon, 23 Dec 2019 16:12:23 -0700</pubDate>
+>>>>>>> 9afdb12fcec43dded6a3932c8a01d1302ed11f09
+      
+      <guid>https://bstreete.github.io/public/tags/pie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bread</title>
+      <link>https://bstreete.github.io/public/tags/bread/</link>
+      <pubDate>Mon, 23 Dec 2019 16:07:06 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/bread/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>side</title>
+      <link>https://bstreete.github.io/public/tags/side/</link>
+      <pubDate>Mon, 23 Dec 2019 15:31:52 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/side/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>soup</title>
+      <link>https://bstreete.github.io/public/tags/soup/</link>
+      <pubDate>Mon, 23 Dec 2019 14:51:20 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/soup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>vegetarian</title>
       <link>https://bstreete.github.io/public/tags/vegetarian/</link>
-      <pubDate>Fri, 20 Dec 2019 17:14:22 -0700</pubDate>
+      <pubDate>Mon, 23 Dec 2019 14:51:20 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/vegetarian/</guid>
       <description></description>
@@ -84,15 +175,6 @@
     </item>
     
     <item>
-      <title>soup</title>
-      <link>https://bstreete.github.io/public/tags/soup/</link>
-      <pubDate>Fri, 20 Dec 2019 14:52:05 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/soup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>salad</title>
       <link>https://bstreete.github.io/public/tags/salad/</link>
       <pubDate>Thu, 19 Dec 2019 14:39:20 -0700</pubDate>
@@ -102,38 +184,11 @@
     </item>
     
     <item>
-      <title>side</title>
-      <link>https://bstreete.github.io/public/tags/side/</link>
-      <pubDate>Thu, 19 Dec 2019 14:39:20 -0700</pubDate>
+      <title>cookies</title>
+      <link>https://bstreete.github.io/public/tags/cookies/</link>
+      <pubDate>Thu, 19 Dec 2019 09:51:41 -0700</pubDate>
       
-      <guid>https://bstreete.github.io/public/tags/side/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chili</title>
-      <link>https://bstreete.github.io/public/tags/chili/</link>
-      <pubDate>Thu, 19 Dec 2019 09:59:01 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/chili/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sauce</title>
-      <link>https://bstreete.github.io/public/tags/sauce/</link>
-      <pubDate>Thu, 19 Dec 2019 09:55:27 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/sauce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bread</title>
-      <link>https://bstreete.github.io/public/tags/bread/</link>
-      <pubDate>Thu, 19 Dec 2019 09:45:44 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/bread/</guid>
+      <guid>https://bstreete.github.io/public/tags/cookies/</guid>
       <description></description>
     </item>
     

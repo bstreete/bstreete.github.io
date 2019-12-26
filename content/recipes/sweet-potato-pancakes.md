@@ -6,8 +6,6 @@ tags: ["entree", "side"]
 author: ["The Garden Kitchen"]
 ---
 
-Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
-
 ### Ingredients
 - 1 pound sweet potatoes (about 2 medium), peeled and coarsely grated
 - 2 scallions, finely chopped
@@ -24,7 +22,7 @@ Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
 2.	Stir together all ingredients, except oil, until well mixed.
 3.	Heat a small amount of oil in a deep nonstick or cast iron skillet over medium-high heat until hot but not smoking. Spoon 2 tablespoons of potato mixture per pancake onto hot oiled pan and flatten to 3-inch diameter with a spatula.
 4.	Reduce heat to medium and cook until golden, about 1 1/2 minutes on each side. 
-5.	Transfer pancakes wiht spatula to paper towels to drain. 
+5.	Transfer pancakes with spatula to paper towels to drain. 
 6.	Repeat with remaining mixture. Serve hot and enjoy!
 
 Note: Substitute the sweet potatoes for regular potatoes, carrots, or zucchini. 

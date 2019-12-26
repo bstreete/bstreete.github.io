@@ -2,11 +2,9 @@
 title: "Doug's Home Made Salsa"
 date: 2019-12-19T09:21:49-07:00
 draft: false
-tags: ["sauce"]
+tags: ["sauce", "salsa"]
 author: ["Doug Silhacek"]
 ---
-
-Source: Doug Silhacek
 
 ### Ingredients
 - 1/3 bunch of cilantro

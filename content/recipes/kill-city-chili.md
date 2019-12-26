@@ -4,9 +4,9 @@ date: 2019-12-19T09:37:59-07:00
 draft: false
 tags: ["entree", "chili"]
 author: ["Saveur"]
+cook: "1 hr"
+original_link: "https://www.saveur.com/article/recipes/kill-city-chili/"
 ---
-
-Source: [Saveur Issue 162 ](https://www.saveur.com/article/recipes/kill-city-chili/)
 
 ### Ingredients
 - 3 tbsp olive oil

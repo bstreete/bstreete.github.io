@@ -4,9 +4,8 @@ date: 2019-12-19T14:49:43-07:00
 draft: false
 tags: ["entree", "vegetarian", "soup"]
 author: ["The Garden Kitchen"]
+cook: "1 hr 30 min"
 ---
-
-Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
 
 ### Ingredients
 - 1 Large (2 to 3 pound) butternut squash

@@ -6,8 +6,6 @@ tags: ["side", "vegetarian", "salad"]
 author: ["The Garden Kitchen"]
 ---
 
-Source: [The Garden Kitchen](https://www.thegardenkitchen.org)
-
 ### Ingredients
 #### Salad
 - Medium bunch of kale (best with Lacinto aka 'Dinosaur' kale)

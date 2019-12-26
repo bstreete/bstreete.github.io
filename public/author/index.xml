@@ -6,10 +6,176 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Sun, 22 Dec 2019 18:36:17 -0700</lastBuildDate>
+=======
+    <lastBuildDate>Wed, 25 Dec 2019 08:14:43 -0700</lastBuildDate>
+>>>>>>> 9afdb12fcec43dded6a3932c8a01d1302ed11f09
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Food Network</title>
+      <link>https://bstreete.github.io/public/author/food-network/</link>
+      <pubDate>Wed, 25 Dec 2019 08:14:43 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/food-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Handley Family</title>
+      <link>https://bstreete.github.io/public/author/handley-family/</link>
+      <pubDate>Wed, 25 Dec 2019 08:07:21 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/handley-family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tracy Handley</title>
+      <link>https://bstreete.github.io/public/author/tracy-handley/</link>
+      <pubDate>Wed, 25 Dec 2019 08:07:21 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/tracy-handley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unknown</title>
+      <link>https://bstreete.github.io/public/author/unknown/</link>
+      <pubDate>Wed, 25 Dec 2019 08:02:59 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/unknown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robyn Dafoe</title>
+      <link>https://bstreete.github.io/public/author/robyn-dafoe/</link>
+      <pubDate>Wed, 25 Dec 2019 07:55:45 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/robyn-dafoe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All Recipes</title>
+      <link>https://bstreete.github.io/public/author/all-recipes/</link>
+      <pubDate>Wed, 25 Dec 2019 07:53:27 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/all-recipes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sue Gallaher</title>
+      <link>https://bstreete.github.io/public/author/sue-gallaher/</link>
+      <pubDate>Wed, 25 Dec 2019 07:40:51 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/sue-gallaher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lis Handley</title>
+      <link>https://bstreete.github.io/public/author/lis-handley/</link>
+      <pubDate>Mon, 23 Dec 2019 16:12:23 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/lis-handley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Christina Carbone</title>
+      <link>https://bstreete.github.io/public/author/christina-carbone/</link>
+      <pubDate>Mon, 23 Dec 2019 15:48:57 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/christina-carbone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kelly Family</title>
+      <link>https://bstreete.github.io/public/author/kelly-family/</link>
+      <pubDate>Mon, 23 Dec 2019 15:44:57 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/kelly-family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linda Kelly</title>
+      <link>https://bstreete.github.io/public/author/linda-kelly/</link>
+      <pubDate>Mon, 23 Dec 2019 15:44:57 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/linda-kelly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Budget Bytes</title>
+      <link>https://bstreete.github.io/public/author/budget-bytes/</link>
+      <pubDate>Mon, 23 Dec 2019 15:38:17 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/budget-bytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paula Deen</title>
+      <link>https://bstreete.github.io/public/author/paula-deen/</link>
+      <pubDate>Mon, 23 Dec 2019 15:28:11 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/paula-deen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alton Brown</title>
+      <link>https://bstreete.github.io/public/author/alton-brown/</link>
+      <pubDate>Mon, 23 Dec 2019 15:20:32 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/alton-brown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bon Appetit</title>
+      <link>https://bstreete.github.io/public/author/bon-appetit/</link>
+      <pubDate>Mon, 23 Dec 2019 15:09:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/bon-appetit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Souplantation</title>
+      <link>https://bstreete.github.io/public/author/souplantation/</link>
+      <pubDate>Mon, 23 Dec 2019 15:06:13 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/souplantation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New York Times</title>
+      <link>https://bstreete.github.io/public/author/new-york-times/</link>
+      <pubDate>Mon, 23 Dec 2019 14:42:06 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/new-york-times/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Delish</title>
+      <link>https://bstreete.github.io/public/author/delish/</link>
+      <pubDate>Sun, 22 Dec 2019 07:07:58 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/delish/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Genius Kitchen</title>
@@ -17,15 +183,6 @@
       <pubDate>Sat, 21 Dec 2019 12:31:07 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/genius-kitchen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>All Recipes</title>
-      <link>https://bstreete.github.io/public/author/all-recipes/</link>
-      <pubDate>Fri, 20 Dec 2019 17:17:33 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/all-recipes/</guid>
       <description></description>
     </item>
     
@@ -44,15 +201,6 @@
       <pubDate>Fri, 20 Dec 2019 17:09:51 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/my-life-cookbook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Budget Bytes</title>
-      <link>https://bstreete.github.io/public/author/budget-bytes/</link>
-      <pubDate>Fri, 20 Dec 2019 15:04:35 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/budget-bytes/</guid>
       <description></description>
     </item>
     
@@ -93,15 +241,6 @@
     </item>
     
     <item>
-      <title>New York Times</title>
-      <link>https://bstreete.github.io/public/author/new-york-times/</link>
-      <pubDate>Fri, 20 Dec 2019 14:46:16 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/new-york-times/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>The Garden Kitchen</title>
       <link>https://bstreete.github.io/public/author/the-garden-kitchen/</link>
       <pubDate>Thu, 19 Dec 2019 14:49:43 -0700</pubDate>
@@ -129,33 +268,6 @@
     </item>
     
     <item>
-      <title>Robyn Dafoe</title>
-      <link>https://bstreete.github.io/public/author/robyn-dafoe/</link>
-      <pubDate>Thu, 19 Dec 2019 09:58:08 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/robyn-dafoe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Handleys</title>
-      <link>https://bstreete.github.io/public/author/handleys/</link>
-      <pubDate>Thu, 19 Dec 2019 09:56:29 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/handleys/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lis Handley</title>
-      <link>https://bstreete.github.io/public/author/lis-handley/</link>
-      <pubDate>Thu, 19 Dec 2019 09:56:29 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/lis-handley/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Wilton</title>
       <link>https://bstreete.github.io/public/author/wilton/</link>
       <pubDate>Thu, 19 Dec 2019 09:51:41 -0700</pubDate>
@@ -170,24 +282,6 @@
       <pubDate>Thu, 19 Dec 2019 09:49:31 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/kitchen-concoctions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bon Appetit</title>
-      <link>https://bstreete.github.io/public/author/bon-appetit/</link>
-      <pubDate>Thu, 19 Dec 2019 09:48:18 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/bon-appetit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tracy Handley</title>
-      <link>https://bstreete.github.io/public/author/tracy-handley/</link>
-      <pubDate>Thu, 19 Dec 2019 09:45:44 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/tracy-handley/</guid>
       <description></description>
     </item>
     

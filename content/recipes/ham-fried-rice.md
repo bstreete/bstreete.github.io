@@ -4,9 +4,10 @@ date: 2019-12-20T14:58:14-07:00
 draft: false
 tags: ["entree"]
 author: ["The Recipe Critic"]
+prep: "10 min"
+cook: "20 min"
+original_link: "https://therecipecritic.com/ham-fried-rice/"
 ---
-
-Source: [The Recipe Critic](https://therecipecritic.com/ham-fried-rice/ )
 
 ### Ingredients
 

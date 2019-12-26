@@ -4,9 +4,9 @@ date: 2019-12-19T09:08:35-07:00
 draft: false
 tags: ["entree"]
 author: ["Simply Recipes"]
+original_link: "https://www.simplyrecipes.com/recipes/chile_verde/"
+cook: "3 hours"
 ---
-
-Source: [Simply Recipes](https://www.simplyrecipes.com/recipes/chile_verde/)
 
 ### Ingredients
 - 1 1/2 pounds tomatillos

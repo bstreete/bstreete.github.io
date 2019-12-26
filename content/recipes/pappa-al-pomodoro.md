@@ -4,9 +4,8 @@ date: 2019-12-19T09:47:10-07:00
 draft: false
 tags: ["vegetarian", "entree", "soup"]
 author: ["Bon Appetit"]
+original_link: "https://www.bonappetit.com/recipe/pappa-al-pomodoro"
 ---
-
-Source: [Bon Appetit August 2014](https://www.bonappetit.com/recipe/pappa-al-pomodoro)
 
 ### Ingredients
 - 2 lb tomatoes, cored and quartered

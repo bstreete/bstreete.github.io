@@ -4,9 +4,10 @@ date: 2019-12-20T15:04:35-07:00
 draft: false
 tags: ["entree", "slow cooker", "favorites"]
 author: ["Budget Bytes"]
+prep: "10 min"
+cook: "1 hr 20 min"
+original_link: "https://www.budgetbytes.com/not-butter-chicken/"
 ---
-
-Source: [Budget Bytes](https://www.budgetbytes.com/not-butter-chicken/)
 
 ### Ingredients
 - 1.25 lbs. 2 lg chicken breasts

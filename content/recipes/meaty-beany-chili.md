@@ -4,9 +4,9 @@ date: 2019-12-19T09:59:01-07:00
 draft: false
 tags: ["vegetarian", "entree", "slow cooker", "favorites", "chili"]
 author: ["The PPK"]
+cook: "8 hrs"
+original_link: "https://www.theppk.com/2013/10/meat-beany-chili-corn-muffins-video/"
 ---
-
-Source: [The PPK](https://www.theppk.com/2013/10/meat-beany-chili-corn-muffins-video/)
 
 ### Ingredients
 - 1 tablespoon olive oil

@@ -4,9 +4,8 @@ date: 2019-12-20T14:46:16-07:00
 draft: false
 tags: ["dessert", "favorites"]
 author: ["New York Times"]
+original_link: "https://cooking.nytimes.com/recipes/1014112-apple-green-chile-pie-with-cheddar-crust"
 ---
-
-Source: [New York Times](https://cooking.nytimes.com/recipes/1014112-apple-green-chile-pie-with-cheddar-crust)
 
 ### Ingredients
 

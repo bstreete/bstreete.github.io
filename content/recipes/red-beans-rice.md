@@ -4,9 +4,10 @@ date: 2019-12-20T17:17:33-07:00
 draft: false
 tags: ["entree", "slow cooker", "favorites"]
 author: ["All Recipes"]
+prep: "25 min"
+cook: "3 hr "
+original_link: "https://www.allrecipes.com/recipe/58211/authentic-louisiana-red-beans-and-rice/print/?recipeType=Recipe&servings=8&isMetric=false"
 ---
-
-Source: [All Recipes by Miami Beach](https://www.allrecipes.com/recipe/58211/authentic-louisiana-red-beans-and-rice/print/?recipeType=Recipe&servings=8&isMetric=false)
 
 Note: Can cook in a slow cooker with two cans of prepared kidney beans for four to six hours on low. 
 

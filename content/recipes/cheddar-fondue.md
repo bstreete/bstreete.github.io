@@ -4,9 +4,9 @@ date: 2019-12-19T08:48:41-07:00
 draft: false
 tags: ["sauce", "entree"]
 author: ["CopyKat Recipes"]
+original_link: "https://copykat.com/melting-pot-cheddar-cheese-fondue/"
+cook: "20 min"
 ---
-
-Source: [CopyKat Recipes](https://copykat.com/melting-pot-cheddar-cheese-fondue/)
 
 ### Ingredients
 - 6 oz medium sharp cheddar cheese

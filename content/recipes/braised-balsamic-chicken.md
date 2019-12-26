@@ -4,9 +4,10 @@ date: 2019-12-19T07:11:31-07:00
 draft: false
 tags: ["entree"]
 author: ["All Recipes"]
+original_link: "https://www.allrecipes.com/recipe/8665/braised-balsamic-chicken/"
+prep: "10 min"
+cook: "25 min"
 ---
-
-Source: [All Recipes by MoonAndBack](https://www.allrecipes.com/recipe/8665/braised-balsamic-chicken/)
 
 ### Ingredients
    
