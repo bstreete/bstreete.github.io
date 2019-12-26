@@ -3,7 +3,7 @@ title: "The Best Chicken Marsala"
 date: 2019-12-23T15:48:57-07:00
 draft: false
 tags: ["entree"]
-author: ["Christina Carbone"]
+author: ["Christina Carbone", "Family"]
 cook: "30 min"
 ---
 

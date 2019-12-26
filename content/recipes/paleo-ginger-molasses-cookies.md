@@ -2,15 +2,12 @@
 title: "Paleo Ginger Molasses Cookies"
 date: 2019-12-22T18:36:17-07:00
 draft: false
-tags: ["fast", "dessert", "paleo"]
-author: [""]
+tags: ["fast", "dessert", "paleo", "cookies"]
+author: ["Ambitious Kitchen"]
+original_link: "https://www.ambitiouskitchen.com/paleo-ginger-molasses-cookies/"
+prep: "5 min"
+cook: "12 min"
 ---
-
-Source: [Ambitious Kitchen](https://www.ambitiouskitchen.com/paleo-ginger-molasses-cookies/)
-
-Prep Time: 5 minutes
-Cook Time: 8-11 minutes
-Total Time: 14 minutes
 
 Notes:
 Makes about 10-15 cookies. Can be doubled or tripled easily. If coconut sugar is not available, granulated or raw sugar will both work.

@@ -6,10 +6,46 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2019 08:14:43 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 07:56:25 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Family</title>
+      <link>https://bstreete.github.io/public/author/family/</link>
+      <pubDate>Thu, 26 Dec 2019 07:56:25 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laura McGowan</title>
+      <link>https://bstreete.github.io/public/author/laura-mcgowan/</link>
+      <pubDate>Thu, 26 Dec 2019 07:56:25 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/laura-mcgowan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kelly Family</title>
+      <link>https://bstreete.github.io/public/author/kelly-family/</link>
+      <pubDate>Thu, 26 Dec 2019 07:48:48 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/kelly-family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linda Kelly</title>
+      <link>https://bstreete.github.io/public/author/linda-kelly/</link>
+      <pubDate>Thu, 26 Dec 2019 07:48:48 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/linda-kelly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Food Network</title>
@@ -93,24 +129,6 @@
     </item>
     
     <item>
-      <title>Kelly Family</title>
-      <link>https://bstreete.github.io/public/author/kelly-family/</link>
-      <pubDate>Mon, 23 Dec 2019 15:44:57 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/kelly-family/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linda Kelly</title>
-      <link>https://bstreete.github.io/public/author/linda-kelly/</link>
-      <pubDate>Mon, 23 Dec 2019 15:44:57 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/linda-kelly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Budget Bytes</title>
       <link>https://bstreete.github.io/public/author/budget-bytes/</link>
       <pubDate>Mon, 23 Dec 2019 15:38:17 -0700</pubDate>
@@ -161,6 +179,15 @@
       <pubDate>Mon, 23 Dec 2019 14:42:06 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/new-york-times/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ambitious Kitchen</title>
+      <link>https://bstreete.github.io/public/author/ambitious-kitchen/</link>
+      <pubDate>Sun, 22 Dec 2019 18:36:17 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/ambitious-kitchen/</guid>
       <description></description>
     </item>
     

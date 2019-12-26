@@ -3,7 +3,7 @@ title: "Banana Bread"
 date: 2019-12-23T15:44:57-07:00
 draft: false
 tags: ["dessert", "bread"]
-author: ["Linda Kelly", "Kelly Family"]
+author: ["Linda Kelly", "Kelly Family", "Family"]
 ---
 
 ### Ingredients

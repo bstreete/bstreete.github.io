@@ -4,7 +4,7 @@ title: "Italian Sausage with Potatoes and Peppers
 date: 2019-12-19T09:58:08-07:00
 draft: false
 tags: ["entree"]
-author: ["Robyn Dafoe"]
+author: ["Robyn Dafoe", "Family"]
 ---
 
 ### Ingredients
