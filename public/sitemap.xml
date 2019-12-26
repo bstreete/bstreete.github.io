@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://bstreete.github.io/public/author/family/</loc>
+    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/author/laura-mcgowan/</loc>
     <lastmod>2019-12-26T07:56:25-07:00</lastmod>
   </url>
@@ -39,11 +44,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/chicken-forestier/</loc>
-    <lastmod>2019-12-26T07:48:48-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/author/family/</loc>
     <lastmod>2019-12-26T07:48:48-07:00</lastmod>
   </url>
   
@@ -328,6 +328,16 @@
   </url>
   
   <url>
+    <loc>https://bstreete.github.io/public/author/ambitious-kitchen/</loc>
+    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/cookies/</loc>
+    <lastmod>2019-12-22T18:36:17-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/tags/fast/</loc>
     <lastmod>2019-12-22T18:36:17-07:00</lastmod>
   </url>
@@ -524,11 +534,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/spritz-cookies/</loc>
-    <lastmod>2019-12-19T09:51:41-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/cookies/</loc>
     <lastmod>2019-12-19T09:51:41-07:00</lastmod>
   </url>
   
