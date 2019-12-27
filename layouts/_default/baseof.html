@@ -12,7 +12,6 @@
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
-
   </head>
   <body>
 
@@ -21,8 +20,15 @@
 
       <hr>
       <!-- Hardcoded List of Available Taxonomies-->
-      <p><a href = "{{ .Site.BaseURL }}/author"> Recipes by Author</a>
-      <p><a href = "{{ .Site.BaseURL }}/tags"> Recipes by Tag</a>
+      <p><a href = "{{ .Site.BaseURL }}/author"> 
+        {{ partial "icon.html" (dict "ctx" $ "name" "book") }} Authors</a>
+      <p><a href = "{{ .Site.BaseURL }}/tags"> 
+        {{ partial "icon.html" (dict "ctx" $ "name" "tag") }} Tags</a>
+
+      <hr> 
+      <p>
+        
+        <a href = "https://github.com/bstreete/bstreete.github.io">{{ partial "icon.html" (dict "ctx" $ "name" "github") }} Contribute</a>
     </header>
 
     <main class="app-container">      
