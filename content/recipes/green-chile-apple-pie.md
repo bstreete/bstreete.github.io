@@ -2,7 +2,7 @@
 title: "Apple Green-Chile Pie With Cheddar Crust"
 date: 2019-12-20T14:46:16-07:00
 draft: false
-tags: ["dessert", "favorites"]
+tags: ["dessert", "favorites", "pie"]
 author: ["New York Times"]
 original_link: "https://cooking.nytimes.com/recipes/1014112-apple-green-chile-pie-with-cheddar-crust"
 ---
