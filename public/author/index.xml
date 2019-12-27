@@ -6,24 +6,33 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Dec 2019 07:56:25 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2019 09:26:32 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Family</title>
+      <title>family</title>
       <link>https://bstreete.github.io/public/author/family/</link>
-      <pubDate>Thu, 26 Dec 2019 07:56:25 -0700</pubDate>
+      <pubDate>Fri, 27 Dec 2019 09:26:32 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/family/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Tracy Handley</title>
+      <link>https://bstreete.github.io/public/author/tracy-handley/</link>
+      <pubDate>Fri, 27 Dec 2019 09:26:32 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/tracy-handley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Laura McGowan</title>
       <link>https://bstreete.github.io/public/author/laura-mcgowan/</link>
-      <pubDate>Thu, 26 Dec 2019 07:56:25 -0700</pubDate>
+      <pubDate>Fri, 27 Dec 2019 09:06:52 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/laura-mcgowan/</guid>
       <description></description>
@@ -62,15 +71,6 @@
       <pubDate>Wed, 25 Dec 2019 08:07:21 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/handley-family/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tracy Handley</title>
-      <link>https://bstreete.github.io/public/author/tracy-handley/</link>
-      <pubDate>Wed, 25 Dec 2019 08:07:21 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/tracy-handley/</guid>
       <description></description>
     </item>
     

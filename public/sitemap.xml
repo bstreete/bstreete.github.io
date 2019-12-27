@@ -4,41 +4,86 @@
   
   <url>
     <loc>https://bstreete.github.io/public/author/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/entree/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/author/family/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/author/laura-mcgowan/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/muffulettas/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
+    <loc>https://bstreete.github.io/public/recipes/perfect-sauce-gravy-base/</loc>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/</loc>
-    <lastmod>2019-12-26T07:56:25-07:00</lastmod>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/sauce/</loc>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/tags/</loc>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/tracy-handley/</loc>
+    <lastmod>2019-12-27T09:26:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/entree/</loc>
+    <lastmod>2019-12-27T09:17:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/baked-beef-stew/</loc>
+    <lastmod>2019-12-27T09:17:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/dessert/</loc>
+    <lastmod>2019-12-27T09:12:41-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/lemon-bars/</loc>
+    <lastmod>2019-12-27T09:12:41-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/justin-wilson-bbq-ham/</loc>
+    <lastmod>2019-12-27T09:06:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/laura-mcgowan/</loc>
+    <lastmod>2019-12-27T09:06:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/pasta/</loc>
+    <lastmod>2019-12-27T08:59:26-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/white-lasagna/</loc>
+    <lastmod>2019-12-27T08:59:26-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/muffulettas/</loc>
     <lastmod>2019-12-26T07:56:25-07:00</lastmod>
   </url>
   
@@ -83,11 +128,6 @@
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/tags/pasta/</loc>
-    <lastmod>2019-12-25T08:14:43-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/recipes/chicken-picatta/</loc>
     <lastmod>2019-12-25T08:07:21-07:00</lastmod>
   </url>
@@ -103,22 +143,12 @@
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/author/tracy-handley/</loc>
-    <lastmod>2019-12-25T08:07:21-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/recipes/nectarine-salsa/</loc>
     <lastmod>2019-12-25T08:02:59-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/tags/salsa/</loc>
-    <lastmod>2019-12-25T08:02:59-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/sauce/</loc>
     <lastmod>2019-12-25T08:02:59-07:00</lastmod>
   </url>
   
@@ -174,11 +204,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/chocolate-pecan-pie/</loc>
-    <lastmod>2019-12-23T16:12:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/dessert/</loc>
     <lastmod>2019-12-23T16:12:23-07:00</lastmod>
   </url>
   
