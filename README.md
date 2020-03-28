@@ -2,6 +2,8 @@
 - [Hugo 0.61 Extended](https://gohugo.io/getting-started/installing/)
 - [Hugo Theme m10c](https://github.com/vaga/hugo-theme-m10c) 
   - **Note:** Add the `--recursive` flag to your git clone command to correctly checkout the theme.
+  - If you've already cloned without the `--recursive`, you can also manually update just the submodule: `git submodule update --init`.
+  
 ## Adding a New Recipe
 Checkout/clone a copy of the repo. Inside the root of the project, enter the following command: 
 <pre>hugo new recipes/recipe-name.md </pre>
