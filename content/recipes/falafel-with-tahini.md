@@ -27,7 +27,7 @@ original_link: "https://www.justataste.com/homemade-falafel-with-tahini-sauce/"
 
 #### Tahini Sauce
 -  1/4 cups plain yogurt (full fat or non-fat)
-- /4 cup tahini (sesame paste)
+- 1/4 cup tahini (sesame paste)
 -  Tablespoons fresh lemon juice
 
 ### Directions
