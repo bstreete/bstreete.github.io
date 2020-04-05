@@ -20,15 +20,15 @@
 
       <hr>
       <!-- Hardcoded List of Available Taxonomies-->
-      <p><a href = "{{ .Site.BaseURL }}/author"> 
+      <p><a href = "{{ .Site.BaseURL }}author"> 
         {{ partial "icon.html" (dict "ctx" $ "name" "book") }} Authors</a>
-      <p><a href = "{{ .Site.BaseURL }}/tags"> 
+      <p><a href = "{{ .Site.BaseURL }}tags"> 
         {{ partial "icon.html" (dict "ctx" $ "name" "tag") }} Tags</a>
-
-      <hr> 
-      <p>
         
-        <a href = "https://github.com/bstreete/bstreete.github.io">{{ partial "icon.html" (dict "ctx" $ "name" "github") }} Contribute</a>
+      <hr> 
+
+      <p><a href = "https://github.com/bstreete/bstreete.github.io">
+        {{ partial "icon.html" (dict "ctx" $ "name" "github") }} Contribute</a>
     </header>
 
     <main class="app-container">      
@@ -40,7 +40,7 @@
       {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
       {{ $.Scratch.Set "path" .Site.BaseURL }}  <!-- Set - Need to start correctly! -->
       <div class="breadcrumbs">
-        <a href="/">home</a>
+        <a href="/public">home</a>
 
         <!--Need to account for 0-indexing and that the final slash leads
         to an empty string.-->
