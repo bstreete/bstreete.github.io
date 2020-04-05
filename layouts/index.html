@@ -1,29 +1,18 @@
 {{ define "main" }}
-  <article>
-    <ul class="posts-list">
+<!-- Modified version of m10c default index.html. Changed formatting to not 
+report read times.-->
 
-      <!-- Logic to sort all recipes by title, similar to list handling,
-        but modified to account for the fact that the home page needs to 
-        reference the recipes section first.  -->
-      {{ $pageSlice := slice }}
-        <!-- Tell Hugo to use the recipes section instead of root -->
-      {{ with .Site.GetPage "/recipes"}}
-        {{ range where .Pages.ByTitle "Section" "recipes"}}
-            {{ $pageSlice = $pageSlice | append .Page}}
-        {{ end }}
-      {{ end }}
-      
-      <!-- Iterate over the resorted pages, Paginate command will
-      limit the entries to match the configurated pagination limit-->
-      {{ range (.Paginate $pageSlice).Pages}}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            Uploaded {{ .PublishDate.Format "Jan 2, 2006" }}
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{ partial "pagination.html" $ }}
-  </article>
+<article>
+  <h1>Most Recent Recipe Additions</h1>
+  <ul class="posts-list">
+    {{ range $index, $element := .Paginator.Pages }}
+      <li class="posts-list-item">
+        <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="posts-list-item-description">
+          Uploaded {{ .PublishDate.Format "Jan 2, 2006" }}
+        </span>
+      </li>
+    {{ end }}
+  </ul>
+</article>
 {{ end }}

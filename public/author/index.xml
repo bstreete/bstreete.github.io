@@ -6,10 +6,37 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Mar 2020 09:06:35 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 07:52:09 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>family</title>
+      <link>https://bstreete.github.io/public/author/family/</link>
+      <pubDate>Sun, 05 Apr 2020 07:52:09 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tracy Handley</title>
+      <link>https://bstreete.github.io/public/author/tracy-handley/</link>
+      <pubDate>Sun, 05 Apr 2020 07:52:09 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/tracy-handley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cage</title>
+      <link>https://bstreete.github.io/public/author/cage/</link>
+      <pubDate>Sun, 05 Apr 2020 07:39:03 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/cage/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Best-Ever Curry Cookbook</title>
@@ -44,24 +71,6 @@
       <pubDate>Mon, 20 Jan 2020 10:10:37 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/the-bread-machine-cookbook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>family</title>
-      <link>https://bstreete.github.io/public/author/family/</link>
-      <pubDate>Fri, 27 Dec 2019 09:26:32 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/family/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tracy Handley</title>
-      <link>https://bstreete.github.io/public/author/tracy-handley/</link>
-      <pubDate>Fri, 27 Dec 2019 09:26:32 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/tracy-handley/</guid>
       <description></description>
     </item>
     
