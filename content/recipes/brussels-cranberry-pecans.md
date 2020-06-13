@@ -1,5 +1,5 @@
 ---
-title: "Brussel Sprouts with Cranberries and Pecans"
+title: "Brussels Sprouts with Cranberries and Pecans"
 date: 2020-06-13T07:27:15-07:00
 draft: false
 tags: ["side"]
