@@ -6,10 +6,28 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2020 07:27:15 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 21:21:39 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spend with Pennies</title>
+      <link>https://bstreete.github.io/public/author/spend-with-pennies/</link>
+      <pubDate>Fri, 06 Nov 2020 21:21:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/spend-with-pennies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>King Arthur Baking Company</title>
+      <link>https://bstreete.github.io/public/author/king-arthur-baking-company/</link>
+      <pubDate>Fri, 06 Nov 2020 15:52:27 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/king-arthur-baking-company/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Rachel Schultz</title>
@@ -39,7 +57,7 @@
     </item>
     
     <item>
-      <title>family</title>
+      <title>Family</title>
       <link>https://bstreete.github.io/public/author/family/</link>
       <pubDate>Sun, 05 Apr 2020 07:52:09 -0700</pubDate>
       
