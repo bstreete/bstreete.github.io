@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2020 21:21:39 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2020 16:32:09 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,54 @@
     <item>
       <title>entree</title>
       <link>https://bstreete.github.io/public/tags/entree/</link>
-      <pubDate>Fri, 06 Nov 2020 21:21:39 -0700</pubDate>
+      <pubDate>Mon, 09 Nov 2020 16:32:09 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/entree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>favorite</title>
+      <link>https://bstreete.github.io/public/tags/favorite/</link>
+      <pubDate>Mon, 09 Nov 2020 16:32:09 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/favorite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Greek</title>
+      <link>https://bstreete.github.io/public/tags/greek/</link>
+      <pubDate>Mon, 09 Nov 2020 16:32:09 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/greek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pasta</title>
+      <link>https://bstreete.github.io/public/tags/pasta/</link>
+      <pubDate>Mon, 09 Nov 2020 16:27:07 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/pasta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>soup</title>
+      <link>https://bstreete.github.io/public/tags/soup/</link>
+      <pubDate>Mon, 09 Nov 2020 16:22:44 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/soup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pizza</title>
+      <link>https://bstreete.github.io/public/tags/pizza/</link>
+      <pubDate>Mon, 09 Nov 2020 16:15:25 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/pizza/</guid>
       <description></description>
     </item>
     
@@ -129,15 +174,6 @@
     </item>
     
     <item>
-      <title>pasta</title>
-      <link>https://bstreete.github.io/public/tags/pasta/</link>
-      <pubDate>Fri, 27 Dec 2019 08:59:26 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/pasta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>salsa</title>
       <link>https://bstreete.github.io/public/tags/salsa/</link>
       <pubDate>Wed, 25 Dec 2019 08:02:59 -0700</pubDate>
@@ -170,15 +206,6 @@
       <pubDate>Mon, 23 Dec 2019 16:12:23 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/pie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>soup</title>
-      <link>https://bstreete.github.io/public/tags/soup/</link>
-      <pubDate>Mon, 23 Dec 2019 14:51:20 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/soup/</guid>
       <description></description>
     </item>
     
