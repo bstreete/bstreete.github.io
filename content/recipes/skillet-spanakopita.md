@@ -2,7 +2,7 @@
 title: "Skillet Spanakopita"
 date: 2020-11-09T16:32:09-07:00
 draft: false
-tags: ["entree", "favorite", "Greek"]
+tags: ["entree", "favorites", "Greek"]
 author: ["Mark Bittman"]
 cook: "45 minutes"
 ---
