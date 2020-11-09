@@ -2,18 +2,20 @@
 title: "Easy Pizza Dough"
 date: 2019-12-19T09:23:16-07:00
 draft: false
-tags: ["bread"]
+tags: ["bread", "pizza"]
 author: ["Betty Crocker"]
 prep: "30 min"
 cook: "25 min"
 ---
 
 ### Ingredients
+
 - 1 c warm water
 - 1 package of yeast
 - 1 tsp salt
 - 2 1/2 c of flour
 - 2 Tbsp olive oil
+
 ### Directions
 
 1. Dissolve yeast in warm water
