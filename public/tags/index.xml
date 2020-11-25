@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 16:32:09 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 10:57:02 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>entree</title>
       <link>https://bstreete.github.io/public/tags/entree/</link>
-      <pubDate>Mon, 09 Nov 2020 16:32:09 -0700</pubDate>
+      <pubDate>Wed, 25 Nov 2020 10:57:02 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/entree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vegetarian</title>
+      <link>https://bstreete.github.io/public/tags/vegetarian/</link>
+      <pubDate>Wed, 25 Nov 2020 10:57:02 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/vegetarian/</guid>
       <description></description>
     </item>
     
@@ -62,15 +71,6 @@
       <pubDate>Mon, 09 Nov 2020 16:15:25 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/pizza/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vegetarian</title>
-      <link>https://bstreete.github.io/public/tags/vegetarian/</link>
-      <pubDate>Fri, 06 Nov 2020 21:21:39 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/vegetarian/</guid>
       <description></description>
     </item>
     
