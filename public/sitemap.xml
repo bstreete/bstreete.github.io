@@ -3,13 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bstreete.github.io/public/author/</loc>
-    <lastmod>2020-11-25T10:57:02-07:00</lastmod>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/</loc>
-    <lastmod>2020-11-25T10:57:02-07:00</lastmod>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/bread/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/bread-machine/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/bread-machine-cinnamon-rolls/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/breakfast/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/dessert/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/</loc>
+    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
   </url>
   
   <url>
@@ -24,16 +64,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/lentil-sloppy-joes/</loc>
-    <lastmod>2020-11-25T10:57:02-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/</loc>
-    <lastmod>2020-11-25T10:57:02-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/</loc>
     <lastmod>2020-11-25T10:57:02-07:00</lastmod>
   </url>
   
@@ -118,16 +148,6 @@
   </url>
   
   <url>
-    <loc>https://bstreete.github.io/public/tags/bread/</loc>
-    <lastmod>2020-11-06T15:52:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/bread-machine/</loc>
-    <lastmod>2020-11-06T15:52:27-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/recipes/bread-machine-sourdough/</loc>
     <lastmod>2020-11-06T15:52:27-07:00</lastmod>
   </url>
@@ -169,11 +189,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/tags/cookie/</loc>
-    <lastmod>2020-06-13T07:15:21-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/dessert/</loc>
     <lastmod>2020-06-13T07:15:21-07:00</lastmod>
   </url>
   
@@ -365,11 +380,6 @@
   <url>
     <loc>https://bstreete.github.io/public/author/robyn-dafoe/</loc>
     <lastmod>2019-12-25T07:55:45-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
-    <lastmod>2019-12-25T07:53:27-07:00</lastmod>
   </url>
   
   <url>
@@ -719,11 +729,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/baked-french-toast/</loc>
-    <lastmod>2019-12-19T09:56:29-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/breakfast/</loc>
     <lastmod>2019-12-19T09:56:29-07:00</lastmod>
   </url>
   

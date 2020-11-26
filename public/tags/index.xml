@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2020 10:57:02 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2020 08:31:39 -0700</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bread</title>
+      <link>https://bstreete.github.io/public/tags/bread/</link>
+      <pubDate>Thu, 26 Nov 2020 08:31:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/bread/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bread machine</title>
+      <link>https://bstreete.github.io/public/tags/bread-machine/</link>
+      <pubDate>Thu, 26 Nov 2020 08:31:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/bread-machine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>breakfast</title>
+      <link>https://bstreete.github.io/public/tags/breakfast/</link>
+      <pubDate>Thu, 26 Nov 2020 08:31:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/breakfast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dessert</title>
+      <link>https://bstreete.github.io/public/tags/dessert/</link>
+      <pubDate>Thu, 26 Nov 2020 08:31:39 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/tags/dessert/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>entree</title>
@@ -75,24 +111,6 @@
     </item>
     
     <item>
-      <title>bread</title>
-      <link>https://bstreete.github.io/public/tags/bread/</link>
-      <pubDate>Fri, 06 Nov 2020 15:52:27 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/bread/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bread machine</title>
-      <link>https://bstreete.github.io/public/tags/bread-machine/</link>
-      <pubDate>Fri, 06 Nov 2020 15:52:27 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/bread-machine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>sourdough</title>
       <link>https://bstreete.github.io/public/tags/sourdough/</link>
       <pubDate>Fri, 06 Nov 2020 15:52:27 -0700</pubDate>
@@ -116,15 +134,6 @@
       <pubDate>Sat, 13 Jun 2020 07:15:21 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/cookie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dessert</title>
-      <link>https://bstreete.github.io/public/tags/dessert/</link>
-      <pubDate>Sat, 13 Jun 2020 07:15:21 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/dessert/</guid>
       <description></description>
     </item>
     
@@ -242,15 +251,6 @@
       <pubDate>Thu, 19 Dec 2019 14:39:20 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/tags/salad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>breakfast</title>
-      <link>https://bstreete.github.io/public/tags/breakfast/</link>
-      <pubDate>Thu, 19 Dec 2019 09:56:29 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/tags/breakfast/</guid>
       <description></description>
     </item>
     
