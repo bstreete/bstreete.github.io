@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
-    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bstreete.github.io/public/author/</loc>
-    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://bstreete.github.io/public/</loc>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/food-city/</loc>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/pico_de_gallo/</loc>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/recipes/</loc>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/salsa/</loc>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/tags/</loc>
+    <lastmod>2022-06-05T07:36:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bstreete.github.io/public/author/all-recipes/</loc>
     <lastmod>2020-11-26T08:31:39-07:00</lastmod>
   </url>
   
@@ -39,16 +64,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/tags/dessert/</loc>
-    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/recipes/</loc>
-    <lastmod>2020-11-26T08:31:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/</loc>
     <lastmod>2020-11-26T08:31:39-07:00</lastmod>
   </url>
   
@@ -359,11 +374,6 @@
   
   <url>
     <loc>https://bstreete.github.io/public/recipes/nectarine-salsa/</loc>
-    <lastmod>2019-12-25T08:02:59-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bstreete.github.io/public/tags/salsa/</loc>
     <lastmod>2019-12-25T08:02:59-07:00</lastmod>
   </url>
   
