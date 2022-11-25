@@ -1,10 +1,12 @@
 ---
 title: Horseradish Sauce
 date: 2022-11-20
-draft: true
+draft: false
 tags: [dinner, holiday, sauce]
-author: ["Linda Kelly's half-uncle's wife at the Holiday in in Columbia, South Carolina"]
+author: ["Linda Kelly"]
 ---
+
+Courtesy of Linda Kelly's half-uncle's wife at the Holiday Inn in Columbia, South Carolina.
 
 ### Ingredients
 - fresh horseradish root

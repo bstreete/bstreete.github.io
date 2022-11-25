@@ -1,10 +1,12 @@
 ---
 title: Coca-Cola Ham
 date: 2022-11-20
-draft: true
+draft: false
 tags: [dinner, holiday]
-author: ["Linda Kelly's half-uncle's wife at the Holiday in in Columbia, South Carolina"]
+author: ["Linda Kelly"]
 ---
+
+Courtesy of Linda Kelly's half-uncle's wife at the Holiday Inn in Columbia, South Carolina.
 
 ### Ingredients
 - 1 pre-cooked ham, ~7-9 lbs

@@ -6,10 +6,19 @@
     <description>Recent content in Author on Brayden&#39;s Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jun 2022 07:36:52 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Nov 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://bstreete.github.io/public/author/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linda Kelly</title>
+      <link>https://bstreete.github.io/public/author/linda-kelly/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/linda-kelly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Food City</title>
@@ -156,6 +165,15 @@
     </item>
     
     <item>
+      <title>Sunset</title>
+      <link>https://bstreete.github.io/public/author/sunset/</link>
+      <pubDate>Sun, 29 Mar 2020 08:48:12 -0700</pubDate>
+      
+      <guid>https://bstreete.github.io/public/author/sunset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sunset Oriental Cookbook</title>
       <link>https://bstreete.github.io/public/author/sunset-oriental-cookbook/</link>
       <pubDate>Sun, 29 Mar 2020 08:48:12 -0700</pubDate>
@@ -188,15 +206,6 @@
       <pubDate>Thu, 26 Dec 2019 07:48:48 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/kelly-family/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linda Kelly</title>
-      <link>https://bstreete.github.io/public/author/linda-kelly/</link>
-      <pubDate>Thu, 26 Dec 2019 07:48:48 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/linda-kelly/</guid>
       <description></description>
     </item>
     
@@ -341,15 +350,6 @@
       <pubDate>Fri, 20 Dec 2019 17:09:51 -0700</pubDate>
       
       <guid>https://bstreete.github.io/public/author/my-life-cookbook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sunset</title>
-      <link>https://bstreete.github.io/public/author/sunset/</link>
-      <pubDate>Fri, 20 Dec 2019 15:02:36 -0700</pubDate>
-      
-      <guid>https://bstreete.github.io/public/author/sunset/</guid>
       <description></description>
     </item>
     
