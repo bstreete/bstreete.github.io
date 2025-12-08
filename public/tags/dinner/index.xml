@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dinner on Brayden&#39;s Recipes</title>
+    <link>https://bstreete.github.io/public/tags/dinner/</link>
+    <description>Recent content in dinner on Brayden&#39;s Recipes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Nov 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bstreete.github.io/public/tags/dinner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coca-Cola Ham</title>
+      <link>https://bstreete.github.io/public/recipes/coca-cola-ham/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bstreete.github.io/public/recipes/coca-cola-ham/</guid>
+      <description>Courtesy of Linda Kelly&amp;rsquo;s half-uncle&amp;rsquo;s wife at the Holiday Inn in Columbia, South Carolina.
+Ingredients  1 pre-cooked ham, ~7-9 lbs 2 L Coca-Cola 2 L ginger ale (not diet) 1 large can pineapple juice or concentrate (~1 L) 1 large chunk ginger root, peeled and sliced dijon-style mustard maraschino cherries whole pineapple rings whole cloves  Directions  Place ham in large stockpot. Add Coca-Cola, ginger ale, and ~3/4 of the pineapple juice until ham is fully submerged.</description>
+    </item>
+    
+    <item>
+      <title>Horseradish Sauce</title>
+      <link>https://bstreete.github.io/public/recipes/horseradish-sauce/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bstreete.github.io/public/recipes/horseradish-sauce/</guid>
+      <description>Courtesy of Linda Kelly&amp;rsquo;s half-uncle&amp;rsquo;s wife at the Holiday Inn in Columbia, South Carolina.
+Ingredients  fresh horseradish root vinegar (apple cider or white?) pickled beets  Directions  Peel horseradish root and chop Combine horseradish root and vinegar in a food processor and blend, adding more vinegar as a necessary to keep mixture slightly wet. Add pickled beets and blend. Aim for something that that is a vaguely menacing purple-y pink.</description>
+    </item>
+    
+  </channel>
+</rss>
