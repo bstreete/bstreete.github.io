@@ -1,0 +1,32 @@
+///
+.. title: Chipotle Guacamole
+.. slug: chipotle-guacamole
+.. date: 2025-12-08 13:32:25 UTC-07:00
+.. tags: salsa, guacamole
+.. category: recipes
+.. link: https://www.today.com/food/how-chipotle-makes-its-guacamole-t179918
+.. description: 
+.. author: Chipotle
+.. type: text
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 2 ripe Hass avocados
+| 2 teaspoons lime juice
+| 2 tablespoons cilantro, chopped
+| 1/4 cup red onion, diced,
+| 1/2 jalapeño (including seeds), diced
+| 1/4 teaspoon kosher salt
+|===
+
+## Directions
+
+. Cut the avocados in half and remove pits carefully.
+. Scoop the avocados into a bowl.
+. Toss and coat with lime juice.
+. Add the salt and mash until a smooth consistency is achieved.
+. Fold in the remaining ingredients and mix.
+. Taste the guac and adjust seasoning, if necessary.

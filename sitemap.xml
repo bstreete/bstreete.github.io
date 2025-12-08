@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>http://192.168.1.128:8000/archive.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/</loc>
-  <lastmod>2025-12-08T16:22:00Z</lastmod>
+  <lastmod>2025-12-08T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/add-a-pinch/</loc>
@@ -56,6 +56,10 @@
  <url>
   <loc>http://192.168.1.128:8000/authors/cage/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/authors/chipotle/</loc>
+  <lastmod>2025-12-08T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/christina-carbone/</loc>
@@ -231,7 +235,7 @@
  </url>
  <url>
   <loc>http://192.168.1.128:8000/categories/</loc>
-  <lastmod>2025-12-08T16:22:00Z</lastmod>
+  <lastmod>2025-12-08T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/categories/bread-machine/</loc>
@@ -310,6 +314,10 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/categories/guacamole/</loc>
+  <lastmod>2025-12-08T20:34:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/categories/holiday/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -383,43 +391,43 @@
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-1.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-10.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-2.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-3.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-4.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-5.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-6.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-7.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-8.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-9.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/listings/</loc>
@@ -431,7 +439,7 @@
  </url>
  <url>
   <loc>http://192.168.1.128:8000/listings/hello.py.html</loc>
-  <lastmod>2025-12-08T17:10:00Z</lastmod>
+  <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/2am-chili/</loc>
@@ -576,6 +584,10 @@
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/chipotle-crema/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/chipotle-guacamole/</loc>
+  <lastmod>2025-12-08T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/chocolate-pecan-pie/</loc>
