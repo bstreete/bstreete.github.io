@@ -25,7 +25,7 @@ SITE_URL = "http://192.168.1.128:8000/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://bstreete.github.io/"
-BLOG_EMAIL = "n.tesla@example.com"
+BLOG_EMAIL = "bstreete@users.noreply.github.com"
 BLOG_DESCRIPTION = "Collection of recipes and random thoughts"  # (translatable)
 
 # Nikola is multilingual!
