@@ -2108,7 +2108,3 @@ blockquote, blockquote > p { font-style: italic; }
 	h3 { page-break-after: avoid; }
 }
 
-.td {
-    padding-left: 5px;
-}
-
