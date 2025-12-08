@@ -74,3 +74,6 @@ To check all available commands:
 ```
 ~/nikola-env/bin nikola help
 ```
+
+The `convert.sh` script was created to convert from Hugo style posts in Markdown to Nikola style Asciidoctor output. 
+It is far from perfect, but it converted ~90% of the previous posts relatively accurately. 
