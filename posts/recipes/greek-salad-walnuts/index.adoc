@@ -1,0 +1,42 @@
+///
+.. title: Greek Salad with Walnuts 
+.. slug: greek-salad-walnuts
+.. date: 2019-12-19T09:29:54-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: side, salad
+///
+
+## Ingredients
+
+### Salad
+[cols="<,<"]
+|===
+| 1 package (10 oz) mixed salad greens
+| 1 c ripe olives
+| 3 plum tomatoes cut into wedges
+| 1 small red onion, thinly sliced
+| 1/2 medium cucumber, peeled, cut into wedges
+| 1/2 c coarsely chopped walnuts
+| 8 oz feta cheese
+|===
+
+### Dressing
+[cols="<,<"]
+|===
+
+| 1/2 c Extra Virgin Olive Oil
+| 1/4 c lemon juice
+| 1 clove garlic, minced
+| 1 tsp dried oregano leaves
+| 1/4 tsp pepper
+| 1/4 tsp salt
+
+|===
+
+## Directions
+. Mix salad dressings together.
+. Toss greens, olives, tomatoes, onion, and cucumber with dressing. Spoon into serving plate.
+. Toast walnuts in a large non-stick skillet on medium-high heat for 5 minutes, stirring constantly.
+. Arrange cheese over salad; sprinkle with walnuts.

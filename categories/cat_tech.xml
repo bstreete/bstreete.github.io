@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Technical Projects)</title><link>http://192.168.1.128:8000/</link><description>Posts about various technical focused projects. Sorted from newest to oldest.</description><atom:link href="http://192.168.1.128:8000/categories/cat_tech.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:n.tesla@example.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Mon, 08 Dec 2025 16:39:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Changing to the Gruberwine Theme</title><link>http://192.168.1.128:8000/posts/tech/changing-to-the-gruberwine-theme/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;After converting most of the Hugo posts from toml to Asciidoc, I didn’t like the formatting.
+I tried out a few of the &lt;a href="https://themes.getnikola.com/"&gt;built-in themes&lt;/a&gt; and ended up with the Gruberwine theme.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;# Installing gruberwine
+nikola theme -i gruberwine&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I didn’t like the default behavior of using link metadata as the title link on index pages.
+I modified a few of the provided templates to comment out that logic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-go" data-lang="go"&gt;{# Original Version
+    {% if post.meta('link') %}
+        &amp;lt;/a&amp;gt;&amp;lt;a href="{{ post.meta('link') }}" class="u-url"&amp;gt;
+    {% endif %}
+
+    {% if post.should_show_title() %}
+        {{ post.title() }}
+    {% endif %}
+#}
+
+{# Modified Version #}
+{# Force permalinks here instead of external links like in original #}
+{{ post.title() }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I liked the provided &lt;code&gt;post_list_with_expansion&lt;/code&gt; template used for index pages, but I realized I wanted to have multiple types of index pages sorted by date or alphabetized.
+I duplicated the original template and added a manual index page for recipes that uses a different sort in the short code.
+Since I didn’t specify a start/stop index, it contains all of the recipes on the site, and it’s auto-generated using the existing infrastructure.
+I removed dates from the custom template, because it read better to me.
+See &lt;a href="http://192.168.1.128:8000/posts/recipes/recipe-index/"&gt;the Recipe Index page&lt;/a&gt; for an example sorted alphabetically compared to the default &lt;a href="http://192.168.1.128:8000/categories/cat_recipes"&gt;Recipe Category page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Custom Index Page&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-go" data-lang="go"&gt; {{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}} &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/changing-to-the-gruberwine-theme/</guid><pubDate>Mon, 08 Dec 2025 13:41:32 GMT</pubDate></item><item><title>Migrating from Hugo to Nikola with Asciidoc</title><link>http://192.168.1.128:8000/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;I’ve had a small recipe website for a while using Hugo with some custom short-codes to enable additional metadata that I thought would be useful.
+After a few years, I’ve soured a little bit on &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, mostly because I don’t use Go much, debugging or adding capabilities was not as intuitive for me.
+I’ve been using &lt;a href="https://docs.asciidoctor.org"&gt;Asciidoctor&lt;/a&gt; for document generation at work, and I wanted to continue playing with that.
+I found the slightly more complex markdown just powerful enough for complex technical documents without being as cumbersome as LaTEX.
+I found &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; searching old Asciidoctor forum posts, and it appears to fit the bill.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_setup"&gt;Setup&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I followed the &lt;a href="https://getnikola.com/getting-started.html"&gt;Getting Started&lt;/a&gt; guide, and it just worked.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;# Install dependencies through package manager
+sudo apt install python3.12-venv
+sudo apt install asciidoctor
+
+# Setup Python Virtual Environment
+python3 -m venv nikola-env
+cd nikola-env/
+bin/python -m pip install -U pip setuptools wheel
+bin/python -m pip install -U "Nikola[extras]"
+
+# Install the Asciidoc Plugin
+bin/nikola
+bin/nikola plugin -i asciidoc&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After finishing setup, I have the following tool versions installed:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;# Installed Versions
+$  ~/nikola-env/bin/python --version
+Python 3.12.3
+
+$ ~/nikola-env/bin/nikola --version
+Nikola v8.3.3
+
+$ asciidoctor --version
+Asciidoctor 2.0.20 [https://asciidoctor.org]
+Runtime Environment (ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]) (lc:UTF-8 fs:UTF-8 in:UTF-8 ex:UTF-8)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The sample &lt;code&gt;conf.py&lt;/code&gt; printed to the screen included notes on enabling Asciidoc/Asciidoctor compilers and choosing the binary name.
+I used the following tweaks.
+I have not needed to change the options yet, but I may investigate that in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python" data-lang="python"&gt;# Add the asciidoc compiler to your COMPILERS dict.
+COMPILERS["asciidoc"] = ['.adoc']
+
+# Add asciidoc files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.adoc", "posts", "post.tmpl"),)
+PAGES = PAGES + (("pages/*.adoc", "pages", "page.tmpl"),)
+
+ASCIIDOC_BINARY = "asciidoctor"
+
+# Specify options to the asciidoc compiler (as a string).
+# ASCIIDOC_OPTIONS = ""&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I went with the &lt;a href="https://themes.getnikola.com/v8/material-theme/"&gt;Material Theme&lt;/a&gt; that was easily available.
+Adding the theme took little effort (no submodules like in my Hugo attempt a few years ago).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;$bin/nikola theme -i material-theme
+
+# In conf.py, add the following to change the active theme
+THEME="material-theme"&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_tweaks"&gt;Tweaks&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I’ve made a few tweaks to formatting, but I’m otherwise very happy with the out of the box experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python" data-lang="python"&gt;# conf.py changes:
+# Remove Hours, Minutes, Seconds from post dates
+DATE_FORMAT = 'yyyy-MM-dd'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-css" data-lang="css"&gt;/* themes/material-theme/assets/css/ripples.css: */
+/*# Adding a little bit of padding to table cells so recipe pages can be a little more compact*/
+td {
+  padding-left: 10px;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_other_notes"&gt;Other Notes&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It took me a silly amount of time to recognize that the &lt;code&gt;link&lt;/code&gt; metadata needed to &lt;strong&gt;not&lt;/strong&gt; include quotes.
+If included, the &lt;code&gt;SITE_URL&lt;/code&gt; was appended to the entire string which broke links.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;# Correct
+.. link: https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+# Links to https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+
+# Incorrect
+.. link: "https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/"
+# Links to &amp;lt;SITE_URL&amp;gt;/posts/recipes/2am-chili/%22https:/www.reddit.com/r/pics/comments/jkc1j/2am_chili/%22&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</guid><pubDate>Sun, 07 Dec 2025 14:54:51 GMT</pubDate></item></channel></rss>

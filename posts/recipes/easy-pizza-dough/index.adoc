@@ -1,0 +1,35 @@
+///
+.. title: Easy Pizza Dough
+.. slug: easy-pizza-dough
+.. date: 2019-12-19T09:23:16-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: bread, pizza
+.. author: Betty Crocker
+.. preptime: 30 min
+.. cooktime: 25 min
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+
+| 1 c warm water
+| 1 package of yeast
+| 1 tsp salt
+| 2 1/2 c of flour
+| 2 Tbsp olive oil
+
+|===
+
+## Directions
+
+. Dissolve yeast in warm water
+. Mix in flour, salt, and oil in 20 hard strokes. (Don't overmix)
+. Let rest 20 minutes.
+. Flour your hands, and divide into two portions.
+. On an oiled and cornmealed pan, pat the dough into an ~ 11 in. circle using your hands.
+. Bake at 425 for 10 minutes.
+. Remove from oven and add toppings. Return to oven for another 10 minutes or until the edges are golden brown.

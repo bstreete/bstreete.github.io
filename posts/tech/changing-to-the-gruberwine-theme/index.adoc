@@ -1,0 +1,51 @@
+///
+.. title: Changing to the Gruberwine Theme
+.. slug: changing-to-the-gruberwine-theme
+.. date: 2025-12-08 06:41:32 UTC-07:00
+.. tags: nikola
+.. category: tech
+.. link: 
+.. description: 
+.. type: text
+///
+
+After converting most of the Hugo posts from toml to Asciidoc, I didn't like the formatting. 
+I tried out a few of the https://themes.getnikola.com/[built-in themes] and ended up with the Gruberwine theme. 
+
+[source,sh]
+----
+# Installing gruberwine
+nikola theme -i gruberwine
+----
+
+I didn't like the default behavior of using link metadata as the title link on index pages. 
+I modified a few of the provided templates to comment out that logic. 
+
+[source,go]
+----
+{# Original Version
+    {% if post.meta('link') %}
+        </a><a href="{{ post.meta('link') }}" class="u-url">
+    {% endif %}
+    
+    {% if post.should_show_title() %}
+        {{ post.title() }}
+    {% endif %}
+#} 
+
+{# Modified Version #}
+{# Force permalinks here instead of external links like in original #}
+{{ post.title() }}
+----
+
+I liked the provided `post_list_with_expansion` template used for index pages, but I realized I wanted to have multiple types of index pages sorted by date or alphabetized. 
+I duplicated the original template and added a manual index page for recipes that uses a different sort in the short code. 
+Since I didn't specify a start/stop index, it contains all of the recipes on the site, and it's auto-generated using the existing infrastructure. 
+I removed dates from the custom template, because it read better to me. 
+See link:/posts/recipes/recipe-index/[the Recipe Index page] for an example sorted alphabetically compared to the default link:/categories/cat_recipes[Recipe Category page].
+
+.Custom Index Page
+[source,go]
+----
+{{% raw %}} {{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}} {{% /raw %}}
+----

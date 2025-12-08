@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Brayden Streeter)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/brayden-streeter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:n.tesla@example.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Mon, 08 Dec 2025 16:39:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Changing to the Gruberwine Theme</title><link>http://192.168.1.128:8000/posts/tech/changing-to-the-gruberwine-theme/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;After converting most of the Hugo posts from toml to Asciidoc, I didn’t like the formatting.
+I tried out a few of the &lt;a href="https://themes.getnikola.com/"&gt;built-in themes&lt;/a&gt; and ended up with the Gruberwine theme.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;# Installing gruberwine
+nikola theme -i gruberwine&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I didn’t like the default behavior of using link metadata as the title link on index pages.
+I modified a few of the provided templates to comment out that logic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-go" data-lang="go"&gt;{# Original Version
+    {% if post.meta('link') %}
+        &amp;lt;/a&amp;gt;&amp;lt;a href="{{ post.meta('link') }}" class="u-url"&amp;gt;
+    {% endif %}
+
+    {% if post.should_show_title() %}
+        {{ post.title() }}
+    {% endif %}
+#}
+
+{# Modified Version #}
+{# Force permalinks here instead of external links like in original #}
+{{ post.title() }}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I liked the provided &lt;code&gt;post_list_with_expansion&lt;/code&gt; template used for index pages, but I realized I wanted to have multiple types of index pages sorted by date or alphabetized.
+I duplicated the original template and added a manual index page for recipes that uses a different sort in the short code.
+Since I didn’t specify a start/stop index, it contains all of the recipes on the site, and it’s auto-generated using the existing infrastructure.
+I removed dates from the custom template, because it read better to me.
+See &lt;a href="http://192.168.1.128:8000/posts/recipes/recipe-index/"&gt;the Recipe Index page&lt;/a&gt; for an example sorted alphabetically compared to the default &lt;a href="http://192.168.1.128:8000/categories/cat_recipes"&gt;Recipe Category page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Custom Index Page&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-go" data-lang="go"&gt; {{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}} &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/changing-to-the-gruberwine-theme/</guid><pubDate>Mon, 08 Dec 2025 13:41:32 GMT</pubDate></item><item><title>Migrating from Hugo to Nikola with Asciidoc</title><link>http://192.168.1.128:8000/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;I’ve had a small recipe website for a while using Hugo with some custom short-codes to enable additional metadata that I thought would be useful.
+After a few years, I’ve soured a little bit on &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, mostly because I don’t use Go much, debugging or adding capabilities was not as intuitive for me.
+I’ve been using &lt;a href="https://docs.asciidoctor.org"&gt;Asciidoctor&lt;/a&gt; for document generation at work, and I wanted to continue playing with that.
+I found the slightly more complex markdown just powerful enough for complex technical documents without being as cumbersome as LaTEX.
+I found &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; searching old Asciidoctor forum posts, and it appears to fit the bill.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_setup"&gt;Setup&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I followed the &lt;a href="https://getnikola.com/getting-started.html"&gt;Getting Started&lt;/a&gt; guide, and it just worked.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;# Install dependencies through package manager
+sudo apt install python3.12-venv
+sudo apt install asciidoctor
+
+# Setup Python Virtual Environment
+python3 -m venv nikola-env
+cd nikola-env/
+bin/python -m pip install -U pip setuptools wheel
+bin/python -m pip install -U "Nikola[extras]"
+
+# Install the Asciidoc Plugin
+bin/nikola
+bin/nikola plugin -i asciidoc&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After finishing setup, I have the following tool versions installed:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;# Installed Versions
+$  ~/nikola-env/bin/python --version
+Python 3.12.3
+
+$ ~/nikola-env/bin/nikola --version
+Nikola v8.3.3
+
+$ asciidoctor --version
+Asciidoctor 2.0.20 [https://asciidoctor.org]
+Runtime Environment (ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]) (lc:UTF-8 fs:UTF-8 in:UTF-8 ex:UTF-8)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The sample &lt;code&gt;conf.py&lt;/code&gt; printed to the screen included notes on enabling Asciidoc/Asciidoctor compilers and choosing the binary name.
+I used the following tweaks.
+I have not needed to change the options yet, but I may investigate that in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python" data-lang="python"&gt;# Add the asciidoc compiler to your COMPILERS dict.
+COMPILERS["asciidoc"] = ['.adoc']
+
+# Add asciidoc files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.adoc", "posts", "post.tmpl"),)
+PAGES = PAGES + (("pages/*.adoc", "pages", "page.tmpl"),)
+
+ASCIIDOC_BINARY = "asciidoctor"
+
+# Specify options to the asciidoc compiler (as a string).
+# ASCIIDOC_OPTIONS = ""&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I went with the &lt;a href="https://themes.getnikola.com/v8/material-theme/"&gt;Material Theme&lt;/a&gt; that was easily available.
+Adding the theme took little effort (no submodules like in my Hugo attempt a few years ago).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-sh" data-lang="sh"&gt;$bin/nikola theme -i material-theme
+
+# In conf.py, add the following to change the active theme
+THEME="material-theme"&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_tweaks"&gt;Tweaks&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I’ve made a few tweaks to formatting, but I’m otherwise very happy with the out of the box experience.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python" data-lang="python"&gt;# conf.py changes:
+# Remove Hours, Minutes, Seconds from post dates
+DATE_FORMAT = 'yyyy-MM-dd'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-css" data-lang="css"&gt;/* themes/material-theme/assets/css/ripples.css: */
+/*# Adding a little bit of padding to table cells so recipe pages can be a little more compact*/
+td {
+  padding-left: 10px;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_other_notes"&gt;Other Notes&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It took me a silly amount of time to recognize that the &lt;code&gt;link&lt;/code&gt; metadata needed to &lt;strong&gt;not&lt;/strong&gt; include quotes.
+If included, the &lt;code&gt;SITE_URL&lt;/code&gt; was appended to the entire string which broke links.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;# Correct
+.. link: https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+# Links to https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+
+# Incorrect
+.. link: "https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/"
+# Links to &amp;lt;SITE_URL&amp;gt;/posts/recipes/2am-chili/%22https:/www.reddit.com/r/pics/comments/jkc1j/2am_chili/%22&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</guid><pubDate>Sun, 07 Dec 2025 14:54:51 GMT</pubDate></item><item><title>Oven-Baked Beef Stew</title><link>http://192.168.1.128:8000/posts/recipes/baked-beef-stew/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1.5 pounds stew beef, cubed&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons cooking oil&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tablespoons all purpose flour&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;15 oz can diced tomatoes&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 clove garlic, minced&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 bay leaf&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon sugar&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon instant beef bullion granules&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 teaspoon dried thyme&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 teaspoon dried oregano&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 teaspoon salt&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon Tabasco sauce&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 medium potatoes cut into 1" cubes&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 small bag baby carrots&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 medium onion cut into wedges&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8 oz can of green beans&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;In a large skillet, brown meat, reserving the drippings.
+Transfer meat to a large casserole.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the skillet, combine tomatoes, garlic, bay leaf, sugar, bullion, thyme, oregano, Tabasco sauce, and salt.
+Add flour, and cook until thickened.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add potatoes, carrots, onions, and green beans with liquid to the casserole.
+Mix in tomato mixture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bake covered at 350° for about 1 1/2 hours or until all ingredients are tender.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>family</category><category>main</category><guid>http://192.168.1.128:8000/posts/recipes/baked-beef-stew/</guid><pubDate>Fri, 27 Dec 2019 16:17:51 GMT</pubDate></item><item><title>Greek Salad with Walnuts </title><link>http://192.168.1.128:8000/posts/recipes/greek-salad-walnuts/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect2"&gt;
+&lt;h4 id="_salad"&gt;Salad&lt;/h4&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 package (10 oz) mixed salad greens&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 c ripe olives&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 plum tomatoes cut into wedges&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 small red onion, thinly sliced&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 medium cucumber, peeled, cut into wedges&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 c coarsely chopped walnuts&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h4 id="_dressing"&gt;Dressing&lt;/h4&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 c Extra Virgin Olive Oil&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 c lemon juice&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 clove garlic, minced&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp dried oregano leaves&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 tsp pepper&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 tsp salt&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;Mix salad dressings together.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Toss greens, olives, tomatoes, onion, and cucumber with dressing. Spoon into serving plate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Toast walnuts in a large non-stick skillet on medium-high heat for 5 minutes, stirring constantly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arrange cheese over salad; sprinkle with walnuts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>salad</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/greek-salad-walnuts/</guid><pubDate>Thu, 19 Dec 2019 16:29:54 GMT</pubDate></item><item><title>Feta Walnut Pasta</title><link>http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8 oz rotelle or fusilli pasta&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 c chopped walnuts&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 clove garlic, minced&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 c sliced green onions&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/3 c extra virgin olive oil&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8 oz feta cheese, crumbled&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;5 oz sliced olives, drained&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 c chopped fresh basil&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;Cook pasta, and drain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Toast walnuts in a large non-stick skillet on medium high heat 5 minutes, stirring constantly. Remove walnuts from skillet, set aside.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cook and stir garlic and onions in oil on medium heat until tender. Add hot cooked pasta, walnuts, cheese, olives, and basil. Cook and stir until heated through and cheese just begins to melt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>entree</category><category>favorites</category><guid>http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/</guid><pubDate>Thu, 19 Dec 2019 16:26:35 GMT</pubDate></item><item><title>Savory Feta Cheese Log with Toasted Walnuts and Olives</title><link>http://192.168.1.128:8000/posts/recipes/feta-cheese-log/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8 oz feta cheese, crumbled&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 oz cream cheese, softened&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 clove garlic, minced&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tbsp extra virgin olive oil&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 c chopped olives&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tbsp sliced green onions&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;Mix feta cheese, cream cheese, and oil with electric mixer on medium speed until well blended. Add olives and onions, mix well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Toast walnuts in a large non-stick skillet on medium-high heat 5 minutes, stirring constantly, cool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shape feta cheese mixture into a log, roll in walnuts. Wrap in plastic wrap and refrigerate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove plastic wrap, serve with assorted crackers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/feta-cheese-log/</guid><pubDate>Thu, 19 Dec 2019 16:26:35 GMT</pubDate></item><item><title>Cheesecake</title><link>http://192.168.1.128:8000/posts/recipes/cheesecake/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 graham (or other) crust&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 pkg cream cheese&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/3 c sugar&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tbls milk&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tbls vanilla&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 egg&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;Mix everything but the crust together. Pour the mix into the crust.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bake in a preheated oven at 350 for 30 minutes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Let cool and enjoy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>dessert</category><guid>http://192.168.1.128:8000/posts/recipes/cheesecake/</guid><pubDate>Thu, 19 Dec 2019 16:04:50 GMT</pubDate></item><item><title>Recipe Index</title><link>http://192.168.1.128:8000/posts/recipes/recipe-index/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;List of all recipes on this site sorted alphabetically.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;
+&lt;!-- Begin post-list post_list_17e6e3aae1854b9bb4615cbf023e27fc --&gt;
+&lt;/p&gt;&lt;div id="post_list_17e6e3aae1854b9bb4615cbf023e27fc" class="post-list"&gt;
+    &lt;ul class="post-list"&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/2am-chili/"&gt;
+                
+                    2am Chili
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/not-butter-chicken/"&gt;
+                
+                    (Not) Butter Chicken
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/green-chile-apple-pie/"&gt;
+                
+                    Apple Green-Chile Pie With Cheddar Crust
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/applesauce-cake/"&gt;
+                
+                    Applesauce Cake VI
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/red-beans-rice/"&gt;
+                
+                    Authentic Louisiana Red Beans and Rice
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/baked-french-toast/"&gt;
+                
+                    Baked French Toast 
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/mac-cheese-gallaher/"&gt;
+                
+                    Baked Mac n' Cheese
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/balsamic-roast-beef/"&gt;
+                
+                    Balsamic Roast Beef
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/banana-bread/"&gt;
+                
+                    Banana Bread
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/strawberry-shortcakes/"&gt;
+                
+                    Basically Strawberry Shortcakes
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/ham-fried-rice/"&gt;
+                
+                    Better than Takeout Ham Fried Rice
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/blackberry-vinegar-caramel/"&gt;
+                
+                    Blackberry Vinegar Caramel
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/blueberry-rum-pie/"&gt;
+                
+                    Blueberry Rum Pie
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/boilermaker-tailgate-chili/"&gt;
+                
+                    Boilermaker Tailgate Chili
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/braised-balsamic-chicken/"&gt;
+                
+                    Braised Balsamic Chicken
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/bread-machine-cinnamon-rolls/"&gt;
+                
+                    Bread Machine Cinnamon Rolls
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/bread-machine-sourdough/"&gt;
+                
+                    Bread Machine Sourdough
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/broccoli-cheddar-casserole/"&gt;
+                
+                    Broccoli Cheddar Casserole
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/brussels-cranberry-pecans/"&gt;
+                
+                    Brussels Sprouts with Cranberries and Pecans
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/buddha-bowls/"&gt;
+                
+                    Buddha Bowls
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/buffalo-sauce/"&gt;
+                
+                    Buffalo Sauce
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/butternut-squash-gnocchi/"&gt;
+                
+                    Butternut Squash Gnocchi with Spinach Sauce
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/carrot-banana-bread/"&gt;
+                
+                    Carrot &amp;amp; Banana Bread
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/carrot-cake/"&gt;
+                
+                    Carrot Cake
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/cauliflower-gratinee/"&gt;
+                
+                    Cauliflower Gratinee
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/cheese-bake/"&gt;
+                
+                    Cheese Bake
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/cheesecake/"&gt;
+                
+                    Cheesecake
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chevre-herb-mousse/"&gt;
+                
+                    Chevre and Herb Mousse
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-forestier/"&gt;
+                
+                    Chicken Forestier
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-picatta/"&gt;
+                
+                    Chicken Picatta
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chile-relleno-casserole/"&gt;
+                
+                    Chile Relleno Casserole
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chile-verde/"&gt;
+                
+                    Chile Verde
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chipotle-crema/"&gt;
+                
+                    Chipotle Crema
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chocolate-pecan-pie/"&gt;
+                
+                    Chocolate Pecan Pie
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/spritz-cookies/"&gt;
+                
+                    Classic Spritz Cookies 
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/coca-cola-ham/"&gt;
+                
+                    Coca-Cola Ham
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/corn-jalapeno-fritters/"&gt;
+                
+                    Corn Jalapeno Fritters
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/country-white-bread/"&gt;
+                
+                    Country White Bread
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/crepes/"&gt;
+                
+                    Crepes
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/salt-vinegar-potatoes/"&gt;
+                
+                    Crispy Salt and Vinegar Potatoes
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/rib-roast/"&gt;
+                
+                    Cross Rib Roast
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/dill-cottage-cheese-bread/"&gt;
+                
+                    Dill Cottage Cheese Bread
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/hilton-cookies/"&gt;
+                
+                    DoubleTree Cookies
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/dougs-salsa/"&gt;
+                
+                    Doug's Home Made Salsa
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/lentil-sheperds-pie/"&gt;
+                
+                    Easy Lentil Shepherd’s Pie
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/easy-pizza-dough/"&gt;
+                
+                    Easy Pizza Dough
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/veggie-calzone/"&gt;
+                
+                    Easy Vegetarian Calzones
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/"&gt;
+                
+                    Feta Walnut Pasta
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chile-hot-sauce/"&gt;
+                
+                    Fresno Chile Hot Sauce
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/greek-salad-walnuts/"&gt;
+                
+                    Greek Salad with Walnuts 
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/corn-salad/"&gt;
+                
+                    Herby Corn Salad
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/hoisin-stir-fry/"&gt;
+                
+                    Hoisin Stir Fry Bowls with Spicy Peanut Sauce
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/falafel-with-tahini/"&gt;
+                
+                    Homemade Falafel with Tahini Sauce
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/indonesian-satay/"&gt;
+                
+                    Indonesian Style Satay
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/instant-pot-mac-and-cheese/"&gt;
+                
+                    Instant Pot Mac and Cheese
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/italian-sausage-potatoes-peppers/"&gt;
+                
+                    Italian Sausage with Potatoes and Peppers
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/justin-wilson-bbq-ham/"&gt;
+                
+                    Justin Wilson Barbeque Ham
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/kale-salad-mustard-vinaigrette/"&gt;
+                
+                    Kale Salad with Mustard Vinaigrette
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/kill-city-chili/"&gt;
+                
+                    Kill City Chili
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/carnitas/"&gt;
+                
+                    La Taqueria Carnitas
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/lemon-bars/"&gt;
+                
+                    Lemon Bars
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/lentil-sausage-stew/"&gt;
+                
+                    Lentil &amp;amp; Sausage Stew
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/lentil-sloppy-joes/"&gt;
+                
+                    Lentil Sloppy Joes
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/manga-kalan/"&gt;
+                
+                    Manga Kalan (Keralan Mango Curry) 
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/meaty-beany-chili/"&gt;
+                
+                    Meaty Beany Chili
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/cheddar-fondue/"&gt;
+                
+                    Melting Pot Cheddar Cheese Fondue
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/muffulettas/"&gt;
+                
+                    Muffulettas
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/nectarine-salsa/"&gt;
+                
+                    Nectarine Salsa
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/no-knead-herb-bread/"&gt;
+                
+                    No Knead Herb Bread
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/oat-chocolate-bars/"&gt;
+                
+                    Oat 'n Chocolate Bars
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/baked-beef-stew/"&gt;
+                
+                    Oven-Baked Beef Stew
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/paleo-ginger-molasses-cookies/"&gt;
+                
+                    Paleo Ginger Molasses Cookies
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/pappa-al-pomodoro/"&gt;
+                
+                    Pappa Al Pomodoro
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/pappardelle-corn/"&gt;
+                
+                    Pappardelle With Corn
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/lemon-cream-caper-pasta/"&gt;
+                
+                    Pasta With Lemon Cream and Capers
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/squash-brown-butter-pasta/"&gt;
+                
+                    Pasta With Sausage, Squash and Sage Brown Butter 
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/pastalaya/"&gt;
+                
+                    Pastalaya
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/perfect-sauce-gravy-base/"&gt;
+                
+                    Perfect Sauce or Gravy Base
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/pico_de_gallo/"&gt;
+                
+                    Pico de Gallo
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/potato-soup/"&gt;
+                
+                    Potato Soup with Bacon and Cheddar
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/kielbasa-potatoes-peppers/"&gt;
+                
+                    Potatoes, Peppers, and Kielbasa Skillet
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/broc-cheddar-soup/"&gt;
+                
+                    Roasted Broccoli &amp;amp; Cheddar Soup
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/butternut-squash-soup/"&gt;
+                
+                    Roasted Butternut Squash Soup
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/runzas/"&gt;
+                
+                    Runzas
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/feta-cheese-log/"&gt;
+                
+                    Savory Feta Cheese Log with Toasted Walnuts and Olives
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/serbian-beef-potato-bake/"&gt;
+                
+                    Serbian Ground Beef, Veggie, and Potato Bake
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/cornbread/"&gt;
+                
+                    Skillet Cornbread
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/skillet-spanakopita/"&gt;
+                
+                    Skillet Spanakopita
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/black-bean-soup/"&gt;
+                
+                    Slow Cooker Black Bean Soup
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-cacciatore/"&gt;
+                
+                    Slow Cooker Chicken Cacciatore 
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/slow-cooker-pork-tacos/"&gt;
+                
+                    Slow Cooker Pork Tacos
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/slow-cook-pot-roast/"&gt;
+                
+                    Slow Cooker Pot Roast
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/spinach-bacon-quiche/"&gt;
+                
+                    Spinach and Bacon Quiche
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/spinach-artichoke-pasta/"&gt;
+                
+                    Spinach Artichoke Pasta
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/sweet-potato-black-bean-chili/"&gt;
+                
+                    Sweet Potato Black Bean Chili
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/sweet-potato-pancakes/"&gt;
+                
+                    Sweet Potato Pancakes
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-marsala/"&gt;
+                
+                    The Best Chicken Marsala
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/tricolour-pulao/"&gt;
+                
+                    Tricolour Pulao
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/white-lasagna/"&gt;
+                
+                    White Lasagna
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+            &lt;li class="post-list-item"&gt;
+                &lt;a href="http://192.168.1.128:8000/posts/recipes/onion-bread/"&gt;
+                
+                    Wry Braid (Onion Bread)
+                &lt;/a&gt;
+
+
+            &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- End post-list post_list_17e6e3aae1854b9bb4615cbf023e27fc --&gt;
+
+&lt;/div&gt;</description><guid>http://192.168.1.128:8000/posts/recipes/recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item></channel></rss>

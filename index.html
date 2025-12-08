@@ -1,12 +1,975 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0 ;url=https://bstreete.github.io/public/index.html">
-        <title>Redirecting to final page</title>
-    </head>
-    <body>
-        If you are not redirected automatically, 
-        follow the <a href="public/index.html">link.</a>
-    </body>
+<!DOCTYPE html>
+<html \ prefix="
+        og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+    " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Collection of recipes and random thoughts">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brayden's Rants and Recipes</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
+<link rel="canonical" href="http://192.168.1.128:8000/">
+<link rel="next" href="index-1.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/tech/changing-to-the-gruberwine-theme/" type="text/html">
+</head>
+<body>
+
+	<a href="#page-content" class="sr-only sr-only-focusable">
+		Skip to main content
+	</a>
+
+	
+
+    <section id="header"><a href=".">
+			<div class="logo">
+					<div id="nologoimage">
+						Brayden's Rants and Recipes
+					</div>
+    		</div>
+			</a>
+    </section><section id="socialNav"><!-- Navigation Menu - on top on small screens, down the left on larger --><div class="navlinks">
+			<a href=".">
+				<div id="titleauth">
+                        by Brayden Streeter
+				</div>
+			</a>
+
+            <!-- Navigation links (hidden by default) -->
+			<div id="navmenuitems">
+				            <a href="#" title="Home">
+                <span class="menuitemtext">Home</span>
+                <span class="menuitemicon"><i class="fa fa-home"></i></span>
+            </a>
+            <a href="archive.html" title="Archives">
+                <span class="menuitemtext">Archives</span>
+                <span class="menuitemicon"><i class="fa fa-folder-open"></i></span>
+            </a>
+            <a href="categories/index.html" title="Tags">
+                <span class="menuitemtext">Tags</span>
+                <span class="menuitemicon"><i class="fa fa-tags"></i></span>
+            </a>
+            <a href="posts/recipes/recipe-index/" title="All Recipes">
+                <span class="menuitemtext">All Recipes</span>
+                <span class="menuitemicon"><i class="fa fa-utensils"></i></span>
+            </a>
+            <a href="https://github.com/bstreete/bstreete.github.io" title="Source">
+                <span class="menuitemtext">Source</span>
+                <span class="menuitemicon"><i class="fa fa-code"></i></span>
+            </a>
+            <a href="rss.xml" title="RSS">
+                <span class="menuitemtext">RSS</span>
+                <span class="menuitemicon"><i class="fa fa-rss"></i></span>
+            </a>
+    
+    
+
+			</div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" id="hamburger" class="icon" onclick="toggleNav()">
+				<i class="fa fa-bars">
+				</i>
+			</a>
+		</div>
+
+	</section><section class="page-content"><div class="content" rel="main">
+    
+    
+<div class="postindex">
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/changing-to-the-gruberwine-theme/" class="u-url">Changing to the Gruberwine Theme</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/tech/changing-to-the-gruberwine-theme/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-08T06:41:32-07:00" title="2025-12-08">2025-12-08</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>After converting most of the Hugo posts from toml to Asciidoc, I didn’t like the formatting.
+I tried out a few of the <a href="https://themes.getnikola.com/">built-in themes</a> and ended up with the Gruberwine theme.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sh" data-lang="sh"># Installing gruberwine
+nikola theme -i gruberwine</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I didn’t like the default behavior of using link metadata as the title link on index pages.
+I modified a few of the provided templates to comment out that logic.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-go" data-lang="go">{# Original Version
+    {% if post.meta('link') %}
+        &lt;/a&gt;&lt;a href="{{ post.meta('link') }}" class="u-url"&gt;
+    {% endif %}
+
+    {% if post.should_show_title() %}
+        {{ post.title() }}
+    {% endif %}
+#}
+
+{# Modified Version #}
+{# Force permalinks here instead of external links like in original #}
+{{ post.title() }}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I liked the provided <code>post_list_with_expansion</code> template used for index pages, but I realized I wanted to have multiple types of index pages sorted by date or alphabetized.
+I duplicated the original template and added a manual index page for recipes that uses a different sort in the short code.
+Since I didn’t specify a start/stop index, it contains all of the recipes on the site, and it’s auto-generated using the existing infrastructure.
+I removed dates from the custom template, because it read better to me.
+See <a href="posts/recipes/recipe-index/">the Recipe Index page</a> for an example sorted alphabetically compared to the default <a href="categories/cat_recipes">Recipe Category page</a>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Custom Index Page</div>
+<div class="content">
+<pre class="highlight"><code class="language-go" data-lang="go"> {{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}} </code></pre>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/" class="u-url">Migrating from Hugo to Nikola with Asciidoc</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-07T07:54:51-07:00" title="2025-12-07">2025-12-07</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>I’ve had a small recipe website for a while using Hugo with some custom short-codes to enable additional metadata that I thought would be useful.
+After a few years, I’ve soured a little bit on <a href="https://gohugo.io/">Hugo</a>, mostly because I don’t use Go much, debugging or adding capabilities was not as intuitive for me.
+I’ve been using <a href="https://docs.asciidoctor.org">Asciidoctor</a> for document generation at work, and I wanted to continue playing with that.
+I found the slightly more complex markdown just powerful enough for complex technical documents without being as cumbersome as LaTEX.
+I found <a href="https://getnikola.com/">Nikola</a> searching old Asciidoctor forum posts, and it appears to fit the bill.</p>
+</div>
+<div class="sect1">
+<h3 id="_setup">Setup</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I followed the <a href="https://getnikola.com/getting-started.html">Getting Started</a> guide, and it just worked.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sh" data-lang="sh"># Install dependencies through package manager
+sudo apt install python3.12-venv
+sudo apt install asciidoctor
+
+# Setup Python Virtual Environment
+python3 -m venv nikola-env
+cd nikola-env/
+bin/python -m pip install -U pip setuptools wheel
+bin/python -m pip install -U "Nikola[extras]"
+
+# Install the Asciidoc Plugin
+bin/nikola
+bin/nikola plugin -i asciidoc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After finishing setup, I have the following tool versions installed:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sh" data-lang="sh"># Installed Versions
+$  ~/nikola-env/bin/python --version
+Python 3.12.3
+
+$ ~/nikola-env/bin/nikola --version
+Nikola v8.3.3
+
+$ asciidoctor --version
+Asciidoctor 2.0.20 [https://asciidoctor.org]
+Runtime Environment (ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]) (lc:UTF-8 fs:UTF-8 in:UTF-8 ex:UTF-8)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The sample <code>conf.py</code> printed to the screen included notes on enabling Asciidoc/Asciidoctor compilers and choosing the binary name.
+I used the following tweaks.
+I have not needed to change the options yet, but I may investigate that in the future.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># Add the asciidoc compiler to your COMPILERS dict.
+COMPILERS["asciidoc"] = ['.adoc']
+
+# Add asciidoc files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.adoc", "posts", "post.tmpl"),)
+PAGES = PAGES + (("pages/*.adoc", "pages", "page.tmpl"),)
+
+ASCIIDOC_BINARY = "asciidoctor"
+
+# Specify options to the asciidoc compiler (as a string).
+# ASCIIDOC_OPTIONS = ""</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I went with the <a href="https://themes.getnikola.com/v8/material-theme/">Material Theme</a> that was easily available.
+Adding the theme took little effort (no submodules like in my Hugo attempt a few years ago).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-sh" data-lang="sh">$bin/nikola theme -i material-theme
+
+# In conf.py, add the following to change the active theme
+THEME="material-theme"</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_tweaks">Tweaks</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’ve made a few tweaks to formatting, but I’m otherwise very happy with the out of the box experience.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># conf.py changes:
+# Remove Hours, Minutes, Seconds from post dates
+DATE_FORMAT = 'yyyy-MM-dd'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">/* themes/material-theme/assets/css/ripples.css: */
+/*# Adding a little bit of padding to table cells so recipe pages can be a little more compact*/
+td {
+  padding-left: 10px;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_other_notes">Other Notes</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It took me a silly amount of time to recognize that the <code>link</code> metadata needed to <strong>not</strong> include quotes.
+If included, the <code>SITE_URL</code> was appended to the entire string which broke links.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code># Correct
+.. link: https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+# Links to https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+
+# Incorrect
+.. link: "https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/"
+# Links to &lt;SITE_URL&gt;/posts/recipes/2am-chili/%22https:/www.reddit.com/r/pics/comments/jkc1j/2am_chili/%22</code></pre>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/coca-cola-ham/" class="u-url">Coca-Cola Ham</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/coca-cola-ham/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2022-11-20T00:00:00-07:00" title="2022-11-20">2022-11-20</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>Courtesy of Linda Kelly’s half-uncle’s wife at the Holiday Inn in Columbia, South Carolina.</p>
+</div>
+<div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 pre-cooked ham, ~7-9 lbs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 L Coca-Cola</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 L ginger ale (<em>not</em> diet)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 large can pineapple juice or concentrate (~1 L)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 large chunk ginger root, peeled and sliced</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dijon-style mustard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maraschino cherries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">whole pineapple rings</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Place ham in large stockpot.
+Add Coca-Cola, ginger ale, and ~3/4 of the pineapple juice until ham is fully submerged.</p>
+</li>
+<li>
+<p>Bring to a boil.</p>
+</li>
+<li>
+<p>Reduce heat to a simmer, continue cooking for 2-3 hours.</p>
+</li>
+<li>
+<p>Turn off heat, cover pot, and let sit overnight (approximately 6 hours).</p>
+</li>
+<li>
+<p>Preheat oven to 350 F.
+Remove ham from liquid and drain.</p>
+</li>
+<li>
+<p>Make glaze by combining mustard, remaining pineapple juice, brown sugar, and dry mustard.
+Mix until dry mustard is well incorporated and brown sugar is dissolved.</p>
+</li>
+<li>
+<p>Score ham in a grid across fatty sections.
+Place cloves into score marks.</p>
+</li>
+<li>
+<p>Decorate ham with pineapple rings and cherries.
+Brush glaze over ham &amp; fruit.</p>
+</li>
+<li>
+<p>Bake ham for 1 1/2 hours (bone-in), brushing with glaze periodically.
+This is basically to bring the hame back up to  temperature, so you may need less time for a boneless ham.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/pico_de_gallo/" class="u-url">Pico de Gallo</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/pico_de_gallo/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2022-06-05T07:36:52-07:00" title="2022-06-05">2022-06-05</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6 Tomatoes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 Onion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 Bunches of Cilantro</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 Fresh Jalapenos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 Canned Jalapenos (La Costena)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 oz Juice from the Canned Jalapenos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 Fresh Lemons or 3oz Lemon Juice Concentrate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Salt to Taste</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Chop Tomatoes in to 1/4 inch pieces</p>
+</li>
+<li>
+<p>Finely Chop Onions</p>
+</li>
+<li>
+<p>Trim Stems from Cilantro and chop</p>
+</li>
+<li>
+<p>Chop both types of Jalapenos</p>
+</li>
+<li>
+<p>Combine chopped ingredients with the juices of the Lemon and the Jalapenos and mix together adding salt to suit your taste</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/bread-machine-cinnamon-rolls/" class="u-url">Bread Machine Cinnamon Rolls</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/bread-machine-cinnamon-rolls/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2020-11-26T08:31:39-07:00" title="2020-11-26">2020-11-26</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<div class="sect2">
+<h4 id="_dough">Dough</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 cup warm milk (110 degrees F/45 degrees C)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 eggs, room temperature</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/3 cup margarine, melted</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4 1/2 cups bread flour</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon salt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup white sugar</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h4 id="_filling">Filling</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody><tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 cup brown sugar, packed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 1/2 tablespoons ground cinnamon</p></td>
+</tr></tbody>
+</table>
+</div>
+<div class="sect2">
+<h4 id="_icing">Icing</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 (3 ounce) package cream cheese, softened</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/4 cup butter, softened</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 1/2 cups confectioners' sugar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 teaspoon vanilla extract</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Place ingredients in the pan of the bread machine in the order recommended by the manufacturer. Select dough cycle; press Start.</p>
+</li>
+<li>
+<p>After the dough has doubled in size turn it out onto a lightly floured surface, cover and let rest for 10 minutes. In a small bowl, combine brown sugar and cinnamon.</p>
+</li>
+<li>
+<p>Roll dough into a 16x21-inch rectangle. Spread dough with 1/3 cup butter and sprinkle evenly with sugar/cinnamon mixture. Roll up dough and cut into 12 rolls. Place rolls in a lightly greased 9x13 inch baking pan. Cover and let rise until nearly doubled, about 30 minutes. Meanwhile, preheat oven to 400 degrees F (200 degrees C).</p>
+</li>
+<li>
+<p>Bake rolls in preheated oven until golden brown, about 15 minutes. While rolls are baking, beat together cream cheese, 1/4 cup butter, confectioners' sugar, vanilla extract and salt. Spread frosting on warm rolls before serving.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/lentil-sloppy-joes/" class="u-url">Lentil Sloppy Joes</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/lentil-sloppy-joes/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2020-11-25T10:57:02-07:00" title="2020-11-25">2020-11-25</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 1/2 cups water or low-sodium vegetable stock</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 onion, chopped</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 red bell pepper, chopped</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 tablespoon chili powder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 ½ cups dried brown lentils</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 15-ounce can diced fire roasted tomatoes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons soy sauce</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons Dijon mustard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons brown sugar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon rice vinegar</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon vegetarian Worcestershire sauce</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">salt to taste</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Place 1 cup of the water or stock in a large pot.</p>
+</li>
+<li>
+<p>Add the onions and bell pepper and cook, stirring occasionally until onions soften slightly, about 5 minutes.</p>
+</li>
+<li>
+<p>Add the chili powder and mix in well. Add the remaining liquid, lentils, tomatoes, and the rest of the seasonings. Mix well, bring to a boil, reduce heat, cover and cook over low heat for one hour, stirring occasionally.</p>
+</li>
+<li>
+<p>Serve on whole-wheat buns, or fresh baked bread, with the trimmings of your choice.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_notes">Notes</h3>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Can use beef stock</p>
+</li>
+<li>
+<p>Serve over King’s Hawaiian rolls</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/skillet-spanakopita/" class="u-url">Skillet Spanakopita</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/skillet-spanakopita/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2020-11-09T16:32:09-07:00" title="2020-11-09">2020-11-09</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>Taken from <strong>How to Cook Everything Fast</strong>, page 468-469</p>
+</div>
+<div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10 to 12 sheets of phyllo dough</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 tablespoons olive oil</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4 scallions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">two 10-ounce bags of spinach</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">salt and pepper</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 eggs</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6 ounces feta cheese (1 1/2 cups crumbled)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon dried dill</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/4 teaspoon nutmeg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4 tablespoons butter</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Remove phyllo from freezer. Heat oven to 350 degrees. Put olive oil in a medium ovenproof skillet over low heat. Trim and chop the scallions and spinach.</p>
+</li>
+<li>
+<p>Raise the heat to medium-high and add scallions and spinach, a handful at a time; sprinkle with salt and pepper. Cook, stirring frequently until the spinach leaves are just wilted, 2 to 3 minutes after the last addition.</p>
+</li>
+<li>
+<p>Crack the eggs into a medium bowl and beat them.</p>
+</li>
+<li>
+<p>Crumble 1 1/2 cups feta and add to the bowl. Add dill and nutmeg. Melt the butter.</p>
+</li>
+<li>
+<p>Cut the phyllo into thin shreds.</p>
+</li>
+<li>
+<p>When the spinach is wilted, stir in the egg and feta mixture and sprinkle the shredded phyllo dough over the top. Drizzle the melted butter over the phyllo.</p>
+</li>
+<li>
+<p>Bake until the phyllo is crisp, about 30 minutes. Cut the pie into wedges and serve hot, warm, or at room temperature.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/butternut-squash-gnocchi/" class="u-url">Butternut Squash Gnocchi with Spinach Sauce</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/butternut-squash-gnocchi/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2020-11-09T16:27:07-07:00" title="2020-11-09">2020-11-09</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<div class="sect2">
+<h4 id="_for_gnocchi">For Gnocchi</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 small butternut squash, about 1 to 1-1/2 pounds</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 egg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1-1/2 cup all-purpose flour, plus more for the work surface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 freshly grated Parmesan cheese</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h4 id="_for_spinach_sauce_optional">For Spinach Sauce (Optional)</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 pound fresh spinach</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons minced onion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons butter, divided</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/4 cup white wine (I actually substituted Pom Juice since I didn’t have a bottle of wine open. It worked great!)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup beef stock</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 tablespoon cream (I used half &amp; half)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">salt and freshly ground pepper to taste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">freshly grated nutmeg</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h4 id="_optional_toppings">Optional Toppings</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>1/2 cup freshly grated Parmesan cheese</p>
+</li>
+<li>
+<p>6 tablespoons butter, melted and lightly browned (beurre noisette)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="sect2">
+<h4 id="_gnocchi_directions">Gnocchi Directions</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Preheat the oven to 400F.
+Place the squash on a baking sheet and pierce with a sharp knife in several places.
+Bake for about 1 to 1-1/2 hours or until a knife can be inserted easily.
+Allow the squash to cool until easy to handle and cut it in half.
+Remove the seeds and fiber and scoop out the flesh with a large spoon and force it through a potato ricer.
+You will need about 1 packed cup of riced squash.
+Alternately, you can place the flesh in a food processor until lightly pureed.
+You just don’t want any lumps.
+<strong>At this point, I placed the squash in a fine-meshed strainer over a bowl, covered and refrigerated it and allowed the excess moisture to drain out overnight.</strong></p>
+</li>
+<li>
+<p>Mix the riced or pureed and strained squash with the egg, flour, Parmesan, salt and pepper and work into a smooth dough.
+If the dough is still sticky, add a little more flour.
+Taking plum-sized pieces of dough, roll into a rope about 1/2 thick on a floured surface.
+With a knife, cut the rope into pieces about 1 inch wide.
+They will resemble a pillow.
+Dust with more flour, if necessary, to keep them from sticking together.
+Repeat with the rest of the dough.
+I left the gnocchi in the pillow shape because they were a little too soft to roll into traditional gnocchi shapes on a gnocchi board or over a fork.
+I’m sure this is a result of the squash having more water content than gnocchi made with potatoes.</p>
+</li>
+<li>
+<p>Have a large bowl of ice water ready near your cooking area.
+Cook the gnocchi in batches in salted boiling water for about 5 minutes or until the gnocchi rise to the surface.
+Using a slotted spoon, remove the gnocchi when they are done and place in the bowl full of ice water to stop the cooking.
+(Or, instead of putting them in ice water, you can serve immediately).
+When all the gnocchi are cooked and chilled in the ice bath, drain and place in a bowl.
+<strong>At this point, you can cover and refrigerate the gnocchi overnight.</strong></p>
+</li>
+<li>
+<p>In a sauté pan over medium heat, add the 6 tablespoons of butter (I used less) and allow it to brown lightly.
+Drain most of the butter into a pyrex dish leaving enough in the pan to saute the gnocchi.
+Add the already-cooled gnocchi and saute until heated through, adding more browned butter, if needed.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h4 id="_spinach_sauce_directions">Spinach Sauce Directions</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Wash and trim the spinach. In a saute pan over medium heat, melt 1 tablespoon of butter. Sauté the onion until softened. Add the spinach, toss and cook until wilted. Puree the spinach mixture in a food processor. Combine the pomegranate juice and meat stock in a sauce pan and bring to a boil. Reduce to about 1/2 cup. Add the spinach puree and bring back to a boil. Remove from heat and add the remaining 1 tablespoon of butter and the cream. Season with salt, pepper and nutmeg. Mix thoroughly and keep warm.</p>
+</li>
+<li>
+<p>Place the spinach sauce on a serving plate, add the sauteed gnocchi and drizzle the rest of the browned butter over the top. Add grated Parmesan and serve.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/broc-cheddar-soup/" class="u-url">Roasted Broccoli &amp; Cheddar Soup</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/broc-cheddar-soup/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2020-11-09T16:22:44-07:00" title="2020-11-09">2020-11-09</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons oil, divided</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 medium leek, white and light green parts thinly sliced</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 medium Yukon Gold potato</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 (16-ounce) bag frozen broccoli, or 1 large bunch broccoli (about 2 pounds), cut into small florets and stems discarded or saved for another use</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6 cups low-sodium vegetable broth, low-sodium chicken broth, or water</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 cup shredded extra-sharp cheddar cheese (4 ounces)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Salt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Freshly ground black pepper</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Arrange a rack in the middle of the oven and heat to 450°F. Heat 1 tablespoon of the oil in a large pot over medium heat until shimmering. Add the leek and cook, stirring - occasionally, until soft, about 5 minutes. Meanwhile, peel and chop the potato into 1-inch chunks.</p>
+</li>
+<li>
+<p>Add the broth or water and potato to the pot and bring to a boil. Meanwhile, spread the broccoli out onto 2 baking pans. Drizzle the remaining 1 tablespoon of oil over the broccoli, - sprinkle with a big pinch of salt and pepper, and roast for 5 minutes. Stir the broccoli and return to the oven for 5 minutes more.</p>
+</li>
+<li>
+<p>Once the soup is boiling, add the broccoli and return to a boil. Reduce the heat as needed and simmer until the vegetables are tender when pierced with a fork, 5 to 7 minutes. Remove - from the heat. Purée soup with an immersion blender or in batches with a regular blender. Add the cheese and stir until melted. Taste and season with salt and pepper as needed.</p>
+</li>
+<li>
+<p>Serve topped with a small dollop of crème fraîche or yogurt, or a squeeze of lemon, and finish with a grind of fresh pepper.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/veggie-calzone/" class="u-url">Easy Vegetarian Calzones</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/recipes/veggie-calzone/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2020-11-09T16:15:25-07:00" title="2020-11-09">2020-11-09</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="sect1">
+<h3 id="_ingredients">Ingredients</h3>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 small head of broccoli</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5 Tbsp. extra-virgin olive oil, divided</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kosher salt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 lb. pizza dough (Recommend [this quick dough recipe](../easy-pizza-dough))</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 cups low-moisture grated mozzarella</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 cup fresh ricotta</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup grated Parmesan, plus more for serving</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 tsp. red pepper flakes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 large garlic clove</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 lemon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup basil leaves</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 large egg</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_directions">Directions</h3>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Preheat oven to 400°. Trim end of stem from 1 head of broccoli, then use a vegetable peeler to remove thick woody exterior of stalk (you can eat the broccoli stalk—it’s the best part!). Coarsely chop entire head of broccoli into 1/2 pieces.</p>
+</li>
+<li>
+<p>Toss broccoli on a rimmed baking sheet with 3 Tbsp. oil; season generously with salt. Roast, tossing once halfway through, until broccoli is browned all over and tender, 20-25 minutes. Let cool.</p>
+</li>
+<li>
+<p>While broccoli is roasting, remove 1 lb. pizza dough from refrigerator and let sit at room temperature (this will make it easier to stretch). Divide into 4 equal pieces and cover loosely with plastic wrap.</p>
+</li>
+<li>
+<p>Combine 2 cups mozzarella, 1 cup ricotta, 1/2 cup Parmesan, and 1/2 tsp. red pepper flakes in a medium bowl. Peel 1 garlic clove and grate on a microplane into bowl, then finely grate zest of 1 lemon into bowl (save remaining lemon for another use).</p>
+</li>
+<li>
+<p>Stack 1/2 cup basil leaves on top of each other and roll into a cigar shape. Slice leaves crosswise as thinly as possible (you can do this in 2 batches if needed). Add basil shreds to bowl.</p>
+</li>
+<li>
+<p>Season cheese mixture with salt, then scrape in roasted broccoli (save the baking sheet, which you’re going to use it to bake the calzones). Stir with a flexible spatula to incorporate.</p>
+</li>
+<li>
+<p>Drizzle 1 Tbsp. oil over reserved baking sheet and spread around with fingers to coat surface. Beat 1 egg in a small bowl with a fork until no streaks remain.</p>
+</li>
+<li>
+<p>Working one piece at a time, roll out dough on a clean dry surface to an 8 round. Brush a thin coating of egg wash around perimeter of dough. Spoon one-quarter of the cheese mixture 1. onto one side of dough.</p>
+</li>
+<li>
+<p>Fold empty half of dough down over filling and press firmly all around edge to seal the two sides to form a half-moon shape. Press really firmly to prevent the calzones from opening 1. during baking. Repeat with remaining pieces of dough and filling, transferring each to prepared sheet as they’re done, spacing evenly.</p>
+</li>
+<li>
+<p>Brush dough all over with remaining egg wash.</p>
+</li>
+<li>
+<p>Do a final crimp around each calzone: fold the outermost 1/2 of border back up and over itself, pinching like crazy to seal.</p>
+</li>
+<li>
+<p>Bake calzones until dough is golden brown all over and bottom is well browned, 30-35 minutes. Transfer calzones to a wire rack. Poke a tiny hole with the tip of a knife into each 1. calzone to let steam escape.</p>
+</li>
+<li>
+<p>Cut calzones in half and serve with marinara sauce alongside. Top with more grated Parmesan.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="index-1.html" rel="prev">Older posts</a>
+            </li>
+        </ul></nav><footer id="footer"><p>Contents © 2025         <a href="mailto:n.tesla@example.com">Brayden Streeter</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+	</section><script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+
+	</script><!-- end fancy dates --><script>
+
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+
+	</script><script src="assets/js/ToggleNav.js">
+	</script>
+</body>
 </html>

@@ -1,0 +1,31 @@
+///
+.. title: Chipotle Crema
+.. slug: chipotle-crema
+.. date: 2019-12-19T09:55:27-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: sauce, favorites
+.. author: The Garden Kitchen
+.. cooktime: 15 min
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 1/2 cup low fat Greek yogurt
+| 1 tablespoon of sauce from chipotle chili peppers in adobo
+| 1 teaspoon lime juice
+| 1/2 teaspoon honey
+| pinch of salt
+
+|===
+
+## Directions
+. Wash hands with soap and warm water.
+. Place all ingredients in a small bowl and stir until smooth. 
+. Taste and add more lime, chipotle, or honey if needed.
+. Serve cold on sandwiches, wraps, or hamburgers. Keeps for up to one week in a sealed container in the refrigerator. 
+
+Note: For a stronger flavor, place 1-2 of the chipotle chiles in a blender with recipe ingredients and blend until smooth.

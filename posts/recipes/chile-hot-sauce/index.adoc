@@ -1,0 +1,29 @@
+///
+.. title: Fresno Chile Hot Sauce
+.. slug: chile-hot-sauce
+.. date: 2019-12-19T09:06:16-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: sauce
+.. author: Bon Appetit
+.. link: https://www.bonappetit.com/recipe/fresno-chile-hot-sauce
+.. cooktime: 30 min
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 1/2 lb stemmed Fresno chiles (8 - 10)
+| 6 peeled garlic cloves
+| 3 tbsp red wine vinegar
+| Salt, to taste
+
+|===
+
+## Directions
+. Cook chiles and garlic in large saucepan of boiling salted water until chiles turn red, about 2 minutes. Drain.
+. Blend chiles, garlic, and vinegar in a blender until almost smooth. Season with salt and let cool.
+. Can be made a week ahead. Cover and chill.
+

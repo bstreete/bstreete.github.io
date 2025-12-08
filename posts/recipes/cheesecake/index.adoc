@@ -1,0 +1,28 @@
+///
+.. title: Cheesecake
+.. slug: cheesecake
+.. date: 2019-12-19T09:04:50-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: dessert
+.. cooktime: 45 min
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+|   1 graham (or other) crust
+|   2 pkg cream cheese
+|   1/3 c sugar
+|   1 tbls milk
+|   1 tbls vanilla
+|   1 egg
+
+|===
+
+## Directions
+. Mix everything but the crust together. Pour the mix into the crust.
+. Bake in a preheated oven at 350 for 30 minutes.
+. Let cool and enjoy.
