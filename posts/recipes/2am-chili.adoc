@@ -1,0 +1,65 @@
+///
+.. title: 2am Chili
+.. slug: 2am-chili
+.. date: 2019-12-19T09:53:33-07:00
+.. tags: chili, dinner, main
+.. category: recipes
+.. author: Reddit
+.. link: https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+.. description: 
+.. type: text
+.. cooktime: 4 hours 
+.. preptime: 30 minutes
+///
+
+// Write your page here.
+// ---
+// title: "2am Chili"
+// date: 2019-12-19T09:53:33-07:00
+// draft: false
+// tags: ["entree", "chili"]
+// original_link : "https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/"
+// prep: "30 min"
+// cook: "4 hours"
+// ---
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 2 tablespoons flour
+| 1 teaspoon basil
+| 1 tablespoon onion powder
+| 4 teaspoons chili powder
+| 2 teaspoons cumin
+| 1 tablespoon cayenne
+| 1 tablespoon garlic powder
+| 2 teaspoons sugar
+| 3 to 4 cloves of garlic
+| 1 onion
+| 1 bell pepper
+| 1 1/2 pounds of ground beef
+| 1 15oz can of tomato sauce
+| 1 15oz can of diced tomatoes
+| 1 15oz can of corn
+| 1 15oz can of kidney beans
+| 1 can of beer (optional)
+|===
+
+## Directions
+
+. Brown the beef in a skillet. 
+. Drain cans of corn and beans. 
+Combine contents of all cans into pot. 
+Bring pot to a boil, then reduce heat to simmer. 
+Add meat when finished browning. 
+. Saute garlic, onion, and pepper in skillet. 
+Add vegetables to pot. 
+. Add remaining ingredients to pot and mix. 
+. Cook for a few hours (longer cooking improves flavor). 
+Can cook in pressure cooker at about 30 minutes at pressure. 
+. Serve with crackers and cheese. 
+
+### Tips 
+
+Can cook the spices in the grease left from browning the ground beef before cooking the vegetables for a richer flavor. 

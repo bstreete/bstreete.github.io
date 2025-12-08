@@ -1,0 +1,38 @@
+///
+.. title: Braised Balsamic Chicken
+.. slug: braised-balsamic-chicken
+.. date: 2019-12-19T07:11:31-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: entree
+.. author: All Recipes
+.. link: https://www.allrecipes.com/recipe/8665/braised-balsamic-chicken/
+.. preptime: 10 min
+.. cooktime: 25 min
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+   
+| 6 skinless, boneless chicken breast halves
+| ground black pepper
+| 1 tsp garlic salt
+| 2 tbsp olive oil
+| 1 onion, thinly sliced
+| 1/2 c balsamic vinegar
+| 1 (14.5 oz) can diced tomatoes
+| 1 tsp dried basil
+| 1 tsp dried oregano
+| 1 tsp dried rosemary
+| 1/2 tsp dried thyme
+
+|===
+
+## Directions
+    
+. Season chicken breasts with black pepper and garlic salt. Heat olive oil in medium skillet.
+. Brown the onion and seasoned chicken breasts.
+. Pour tomatoes and balsamic vinegar over chicken, and add remaining spices. Simmer until chicken is no longer pink and the juices run clear, about 15 minutes.

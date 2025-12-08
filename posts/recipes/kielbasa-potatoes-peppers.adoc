@@ -1,0 +1,39 @@
+///
+.. title: Potatoes, Peppers, and Kielbasa Skillet
+.. slug: kielbasa-potatoes-peppers
+.. date: 2019-12-20T17:09:51-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: entree
+.. author: My Life Cookbook
+.. preptime: 5 min
+.. cooktime: 1 hr
+.. link: https://mylifecookbook.com/potatoes-peppers-and-kielbasa-skillet-dinner/
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 3 Tablespoons olive oil
+| 3 potatoes chopped
+| 2 sweet bell peppers chopped
+| 1 onion chopped
+| 14 oz kielbasa sliced
+| 1/2 teaspoon salt
+| 1/4 teaspoon pepper
+| 1/4 teaspoon oregano
+| 1/4 basil
+| 1 teaspoon crushed garlic
+
+|===
+
+## Directions
+. Preheat oven to 375 degrees.
+. Using 1 Tablespoon of olive oil, spread all over a cast iron or oven proof skillet.
+. In a large bowl add your vegetables and kielbasa. Pour the rest of the olive oil over along with the spices and mix well.
+. Spoon into your skillet and spread evenly.
+. Bake for 1 hour or until potatoes are soft and browned.
+. Serve immediately.
+

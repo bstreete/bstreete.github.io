@@ -1,0 +1,119 @@
+///
+.. title: Migrating from Hugo to Nikola with Asciidoc
+.. slug: migrating-from-hugo-to-nikola-with-asciidoc
+.. date: 2025-12-07 07:54:51 UTC-07:00
+.. tags: nikola
+.. category: tech
+.. link: 
+.. description: 
+.. type: text
+///
+
+I've had a small recipe website for a while using Hugo with some custom short-codes to enable additional metadata that I thought would be useful. 
+After a few years, I've soured a little bit on https://gohugo.io/[Hugo], mostly because I don't use Go much, debugging or adding capabilities was not as intuitive for me. 
+I've been using https://docs.asciidoctor.org[Asciidoctor] for document generation at work, and I wanted to continue playing with that. 
+I found the slightly more complex markdown just powerful enough for complex technical documents without being as cumbersome as LaTEX. 
+I found https://getnikola.com/[Nikola] searching old Asciidoctor forum posts, and it appears to fit the bill. 
+
+## Setup 
+
+I followed the https://getnikola.com/getting-started.html[Getting Started] guide, and it just worked. 
+
+[source,sh]
+----
+# Install dependencies through package manager
+sudo apt install python3.12-venv
+sudo apt install asciidoctor
+
+# Setup Python Virtual Environment 
+python3 -m venv nikola-env
+cd nikola-env/
+bin/python -m pip install -U pip setuptools wheel
+bin/python -m pip install -U "Nikola[extras]"
+
+# Install the Asciidoc Plugin
+bin/nikola
+bin/nikola plugin -i asciidoc
+----
+
+After finishing setup, I have the following tool versions installed:
+
+[source,sh]
+----
+# Installed Versions
+$  ~/nikola-env/bin/python --version
+Python 3.12.3
+
+$ ~/nikola-env/bin/nikola --version
+Nikola v8.3.3
+
+$ asciidoctor --version
+Asciidoctor 2.0.20 [https://asciidoctor.org]
+Runtime Environment (ruby 3.2.3 (2024-01-18 revision 52bb2ac0a6) [x86_64-linux-gnu]) (lc:UTF-8 fs:UTF-8 in:UTF-8 ex:UTF-8)
+----
+
+The sample `conf.py` printed to the screen included notes on enabling Asciidoc/Asciidoctor compilers and choosing the binary name. 
+I used the following tweaks. 
+I have not needed to change the options yet, but I may investigate that in the future. 
+
+[source,python]
+----
+# Add the asciidoc compiler to your COMPILERS dict.
+COMPILERS["asciidoc"] = ['.adoc']
+
+# Add asciidoc files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.adoc", "posts", "post.tmpl"),)
+PAGES = PAGES + (("pages/*.adoc", "pages", "page.tmpl"),)
+
+ASCIIDOC_BINARY = "asciidoctor"
+
+# Specify options to the asciidoc compiler (as a string).
+# ASCIIDOC_OPTIONS = ""
+----
+
+I went with the https://themes.getnikola.com/v8/material-theme/[Material Theme] that was easily available. 
+Adding the theme took little effort (no submodules like in my Hugo attempt a few years ago). 
+
+[source,sh]
+----
+$bin/nikola theme -i material-theme
+
+# In conf.py, add the following to change the active theme 
+THEME="material-theme"
+----
+
+## Tweaks
+
+I've made a few tweaks to formatting, but I'm otherwise very happy with the out of the box experience. 
+
+[source,python]
+----
+# conf.py changes:
+# Remove Hours, Minutes, Seconds from post dates
+DATE_FORMAT = 'yyyy-MM-dd'
+----
+
+[source,css]
+----
+/* themes/material-theme/assets/css/ripples.css: */
+/*# Adding a little bit of padding to table cells so recipe pages can be a little more compact*/
+td {
+  padding-left: 10px;
+}
+----
+
+## Other Notes 
+
+It took me a silly amount of time to recognize that the `link` metadata needed to **not** include quotes. 
+If included, the `SITE_URL` was appended to the entire string which broke links. 
+
+[source]
+----
+# Correct 
+.. link: https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+# Links to https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/
+
+# Incorrect
+.. link: "https://www.reddit.com/r/pics/comments/jkc1j/2am_chili/"
+# Links to <SITE_URL>/posts/recipes/2am-chili/%22https:/www.reddit.com/r/pics/comments/jkc1j/2am_chili/%22
+----

@@ -1,0 +1,35 @@
+///
+.. title: Cross Rib Roast
+.. slug: rib-roast
+.. date: 2019-12-21T12:31:07-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: entree, favorites
+.. author: Genius Kitchen
+.. cooktime: 1 hr 30 min
+.. link: https://www.geniuskitchen.com/recipe/cross-rib-roast-61718
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 2 pounds cross-rib roast
+| 2 tablespoons balsamic vinegar
+| 2 tablespoons minced garlic
+| 2 teaspoons dried thyme
+| 1 teaspoon dried rosemary
+| 1 tablespoon salt
+| 1 teaspoon pepper
+| 1 tablespoon olive oil
+
+|===
+
+## Directions
+. Brush roast with balsamic vinegar. 
+. Make a paste with remaining ingredients and apply to meat.
+. Roast meat at 450 for 15 minutes. Reduce heat to 350 and cook for 40 to 60 minutes, or until internal temperature reaches 125. 
+. Remove from oven; cover loosely with foil and let stand 15 to 25 minutes. 
+
+Note: This results in a well done roast. For a more rare roast, cook until an internal temp of 120. 

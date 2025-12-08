@@ -1,0 +1,31 @@
+///
+.. title: Chocolate Pecan Pie
+.. slug: chocolate-pecan-pie
+.. date: 2019-12-23T16:12:23-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: dessert, pie, family
+.. author: Lis Handley
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 1 15 oz premade pie crust
+| 3 eggs, slightly beaten
+| 1 cup karo light or dark corn syrup
+| 1/2 cup sugar
+| 1/2 cup semisweet chocolate chips, melted
+| 2 tablespoons margarine, melted
+| 1 teaspoon vanilla
+| 1 1/2 cup pecans
+
+|===
+
+## Directions
+. Prepare pie crust according to package directions. Flute as directed. 
+. In medium bowl, stir eggs, corn syrup, sugar, chocolate, margarine, and vanilla until well blended. 
+. Stir in pecans. Pour into the pie crust lined pan. 
+. Bake in 350° oven for 50 to 60 minutes or until knife inserted halfway between center and edge comes out clean. Cool on wire rack. 

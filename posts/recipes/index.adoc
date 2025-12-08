@@ -1,0 +1,17 @@
+///
+.. title: Recipe Index
+.. slug: recipe-index
+.. date: 1970-01-01
+.. tags: 
+.. category: masters
+.. author: 
+.. link: 
+.. description: 
+.. type: text
+.. cooktime: 
+.. preptime: 
+///
+
+List of all recipes on this site sorted alphabetically. 
+
+{{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}}

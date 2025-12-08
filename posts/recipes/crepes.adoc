@@ -1,0 +1,30 @@
+///
+.. title: Crepes
+.. slug: crepes
+.. date: 2019-12-19T10:02:26-07:00
+.. category: recipes
+.. description: 
+.. type: text
+.. tags: entree, family
+.. author: Veronica Bowers
+///
+
+## Ingredients
+
+[cols="<,<"]
+|===
+| 1 cup flour
+| 1 cup milk
+| 1/4 cup sugar (for dinner crepes (ex: ham & cheese), decrease sugar by 1/2)
+| 4 eggs
+| 1 tablespoon oil
+
+|===
+
+## Directions
+. Mix flour, milk, sugar, eggs, and oil in bowl. Batter should be runny.
+. Heat medium size nonstick frying pan to medium heat.
+. Spray pan with cooking spray (only on first crepe).
+. Place 1/4 cup batter in pan an switch around until bottom is covered. Cook on both sides like pancakes.
+
+Serves four people.

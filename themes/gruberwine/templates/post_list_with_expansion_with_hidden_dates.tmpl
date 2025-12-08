@@ -1,0 +1,26 @@
+{#  -*- coding: utf-8 -*- #}
+
+{% block content %}
+<!-- Begin post-list {{ post_list_id }} -->
+<div id="{{ post_list_id }}" class="post-list">
+    {% if posts %}
+    <ul class="post-list">
+        {% for post in posts %}
+            <li class="post-list-item">
+                <a href="{{ post.permalink(lang) }}">
+                
+                    {# Force permalinks here instead of external links like in original #}
+                    {{ post.title() }}
+                </a>
+
+                {% if post and post.should_hide_title() %}
+                    {{ post.text(lang) }}
+                {% endif %}
+
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+<!-- End post-list {{ post_list_id }} -->
+{% endblock %}
