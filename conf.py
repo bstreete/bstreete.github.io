@@ -524,7 +524,7 @@ CATEGORY_DESCRIPTIONS = {
    DEFAULT_LANG: {
        "tech": "Posts about various technical focused projects. Sorted from newest to oldest.",
        "recipes": "Saved recipes for future cooking attempts. Sorted from newest to oldest.",
-       "masters": "Used to organize commom index pages. Sorted from newest to oldest.",
+       "masters": "Used to organize common index pages. Sorted from newest to oldest.",
    },
 }
 
