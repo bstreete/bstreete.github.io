@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Budget Bytes)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/budget-bytes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:n.tesla@example.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Mon, 08 Dec 2025 16:39:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spinach Artichoke Pasta</title><link>http://192.168.1.128:8000/posts/recipes/spinach-artichoke-pasta/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="paragraph"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Budget Bytes)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/budget-bytes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 01:33:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cacio e Pepe</title><link>http://192.168.1.128:8000/posts/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;table class="tableblock frame-all grid-all stretch"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;col style="width: 50%;"&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3/4 tsp salt&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 lb dry spaghetti&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 Tbsp salted butter, divided&lt;/p&gt;&lt;/td&gt;
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp coarsely ground black pepper plus more for garnish&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;In a large skillet bring 6 cups of water and 3/4 teaspoon of salt to a boil.
+Add the dry spaghetti and cook for two minutes less than the package directions call for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reserve a cup of pasta water before draining the spaghetti.
+Place the spaghetti in a bowl and set it close to the stove to keep it warm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the same pan you cooked the spaghetti, melt 2 tablespoons of butter with the black pepper over medium heat.
+Cook until fragrant.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add 1/2 cup of the reserved pasta water to the pan and stir until a glossy sauce forms.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn the heat down to low and add the spaghetti to the pan.
+Top with the grated parmesan and the remaining 2 tablespoons of butter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use tongs to quickly mix the parmesan, butter, spaghetti, and pepper sauce until a creamy sauce forms.
+Serve immediately and garnish with additional pepper and parmesan cheese.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h3 id="_suggestions"&gt;Suggestions&lt;/h3&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I like to use a long noodle-shaped pasta with some texture and toothiness so the sauce can cling to it without overpowering it.
+While tonnarelli is the traditional pasta used in this recipe, spaghetti or bucatini works just as great.
+Steer clear of linguine and angel hair, which will fall apart quickly and become a gummy mess.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If using unsalted butter, add 1/4 teaspoon of salt to the sauce.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If using finely ground black pepper (like the kind that comes pre-ground), use 1/2 teaspoon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Try to use fresh parmesan, which will actually melt.
+If you use the powdery stuff in the green bottle, it will leave you with a grainy sauce.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>pasta</category><guid>http://192.168.1.128:8000/posts/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item><item><title>Spinach Artichoke Pasta</title><link>http://192.168.1.128:8000/posts/recipes/spinach-artichoke-pasta/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Make a double batch.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="sect1"&gt;
