@@ -1,0 +1,84 @@
+///
+.. title: Adding Icons
+.. slug: adding-icons
+.. date: 2025-12-11 15:02:04 UTC-07:00
+.. tags: gimp, nikola
+.. category: tech
+.. link: 
+.. description: 
+.. type: text
+///
+
+I spent this afternoon creating and adding a favicon and logo to the webpage. 
+The original inspiration was to print out some QR codes with a snazzy logo. 
+I used https://www.canva.com/[Canva] to create a simple logo using some of their software engineering templates. 
+I made a simpler version of the icon to use as a favicon for the webpage. 
+
+After downloading the PNGs, I opened the images in https://www.gimp.org/[GIMP]. 
+I added a transparent layer to the image, then deleted the outside white sections of the image to get the desired shapes. 
+
+.Adding favicon and Logo to conf.py
+```python
+FAVICONS = (
+    ("icon", "/favicon.png", "40x40"),
+)
+
+# Note: I used the {SITE_URL} to provide an absolute path, I had issues with relative 
+# pathing on non-root level pages.
+LOGO_URL = f'{SITE_URL}/images/main_logo.png'
+```
+
+After adding the new images, I noticed the logo placement was wonky. 
+The current template I'm using expects a banner style logo across the top of the page. 
+Since I wanted a smaller round logo, that didn't quite fit correctly. 
+I modified the `base.tmpl` to move the logo around a little bit: 
+
+.Removing the Logo from the Header
+```html
+<!-- Was -->
+<div class="logo">
+    {% if logo_url %}
+        <img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo">
+    {% else %}
+        <div id="nologoimage">
+            {{ blog_title }}
+        </div>
+    {% endif %}
+</div>
+
+<!-- Is -->
+<div class="logo">
+    {% if logo_url %}
+        {{ blog_title }}
+    {% else %}
+        <div id="nologoimage">
+            {{ blog_title }}
+        </div>
+    {% endif %}
+</div>
+```
+
+.Adding the Logo to the Nav Bar
+```html
+<!-- Was -->
+<a href="/">
+    <div id="titleauth">
+        {% if show_blog_title %}
+            {{ blog_title }}<br /> by {{ blog_author }}
+        {% else %}
+            by {{ blog_author }}
+        {% endif %}
+    </div>
+</a>
+
+<!-- Is -->
+<a href="/">
+    <div id="titleauth">
+        {% if show_blog_title %}
+            {{ blog_title }}<br /> by {{ blog_author }}
+        {% else %}
+            <img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo">
+        {% endif %}
+    </div>
+</a>
+```

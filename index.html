@@ -14,8 +14,9 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="http://192.168.1.128:8000/">
+<link rel="icon" href="favicon.png" sizes="40x40">
 <link rel="next" href="index-1.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/recipes/coconut-curry-chickpeas/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/tech/adding-icons/" type="text/html">
 </head>
 <body>
 
@@ -27,16 +28,14 @@
 
     <section id="header"><a href=".">
 			<div class="logo">
-					<div id="nologoimage">
-						Brayden's Rants and Recipes
-					</div>
+					Brayden's Rants and Recipes
     		</div>
 			</a>
     </section><section id="socialNav"><!-- Navigation Menu - on top on small screens, down the left on larger --><div class="navlinks">
 			<a href=".">
 				<div id="titleauth">
-                        by Brayden Streeter
-				</div>
+                        <img src="http://192.168.1.128:8000//images/main_logo.png" alt="Brayden's Rants and Recipes" id="logo">
+</div>
 			</a>
 
             <!-- Navigation links (hidden by default) -->
@@ -81,7 +80,96 @@
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/coconut-curry-chickpeas/" class="u-url">Coconut Curry Chickpeas</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/adding-icons/" class="u-url">Adding Icons</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/tech/adding-icons/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-11T15:02:04-07:00" title="2025-12-11">2025-12-11</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>I spent this afternoon creating and adding a favicon and logo to the webpage.
+The original inspiration was to print out some QR codes with a snazzy logo.
+I used <a href="https://www.canva.com/">Canva</a> to create a simple logo using some of their software engineering templates.
+I made a simpler version of the icon to use as a favicon for the webpage.</p>
+</div>
+<div class="paragraph">
+<p>After downloading the PNGs, I opened the images in <a href="https://www.gimp.org/">GIMP</a>.
+I added a transparent layer to the image, then deleted the outside white sections of the image to get the desired shapes.</p>
+</div>
+<div class="listingblock">
+<div class="title">Adding favicon and Logo to conf.py</div>
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">FAVICONS = (
+    ("icon", "/favicon.png", "40x40"),
+)
+
+# Note: I used the {SITE_URL} to provide an absolute path, I had issues with relative
+# pathing on non-root level pages.
+LOGO_URL = f'{SITE_URL}/images/main_logo.png'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After adding the new images, I noticed the logo placement was wonky.
+The current template I’m using expects a banner style logo across the top of the page.
+Since I wanted a smaller round logo, that didn’t quite fit correctly.
+I modified the <code>base.tmpl</code> to move the logo around a little bit:</p>
+</div>
+<div class="listingblock">
+<div class="title">Removing the Logo from the Header</div>
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- Was --&gt;
+&lt;div class="logo"&gt;
+    {% if logo_url %}
+        &lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&gt;
+    {% else %}
+        &lt;div id="nologoimage"&gt;
+            {{ blog_title }}
+        &lt;/div&gt;
+    {% endif %}
+&lt;/div&gt;
+
+&lt;!-- Is --&gt;
+&lt;div class="logo"&gt;
+    {% if logo_url %}
+        {{ blog_title }}
+    {% else %}
+        &lt;div id="nologoimage"&gt;
+            {{ blog_title }}
+        &lt;/div&gt;
+    {% endif %}
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Adding the Logo to the Nav Bar</div>
+<div class="content">
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- Was --&gt;
+&lt;a href="/"&gt;
+    &lt;div id="titleauth"&gt;
+        {% if show_blog_title %}
+            {{ blog_title }}&lt;br /&gt; by {{ blog_author }}
+        {% else %}
+            by {{ blog_author }}
+        {% endif %}
+    &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;!-- Is --&gt;
+&lt;a href="/"&gt;
+    &lt;div id="titleauth"&gt;
+        {% if show_blog_title %}
+            {{ blog_title }}&lt;br /&gt; by {{ blog_author }}
+        {% else %}
+            &lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&gt;
+        {% endif %}
+    &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/coconut-curry-chickpeas/" class="u-url">Coconut Curry Chickpeas</a></h1>
 
         
         <div class="metadata">
@@ -749,67 +837,6 @@ Add more pasta water as needed for a smooth sauce.</p>
 <li>
 <p>Divide the pasta among bowls and top with some of the sauce that’s pooled at the bottom of the pot.
 Garnish with grated Parmesan, black pepper, red-pepper flakes and basil, if using.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/chipotle-guacamole/" class="u-url">Chipotle Guacamole</a></h1>
-
-        
-        <div class="metadata">
-            <p class="dateline"><a href="posts/recipes/chipotle-guacamole/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-08T13:32:25-07:00" title="2025-12-08">2025-12-08</time></a></p>
-
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div class="sect1">
-<h3 id="_ingredients">Ingredients</h3>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 ripe Hass avocados</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 teaspoons lime juice</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons cilantro, chopped</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/4 cup red onion, diced,</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 jalapeño (including seeds), diced</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/4 teaspoon kosher salt</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h3 id="_directions">Directions</h3>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Cut the avocados in half and remove pits carefully.</p>
-</li>
-<li>
-<p>Scoop the avocados into a bowl.</p>
-</li>
-<li>
-<p>Toss and coat with lime juice.</p>
-</li>
-<li>
-<p>Add the salt and mash until a smooth consistency is achieved.</p>
-</li>
-<li>
-<p>Fold in the remaining ingredients and mix.</p>
-</li>
-<li>
-<p>Taste the guac and adjust seasoning, if necessary.</p>
 </li>
 </ol>
 </div>

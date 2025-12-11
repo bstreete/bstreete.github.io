@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Brayden Streeter)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/brayden-streeter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 18:00:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Classıc Peanut Butter Blossom Cookies</title><link>http://192.168.1.128:8000/posts/recipes/peanut-butter-blossom-cookies/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Brayden Streeter)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/brayden-streeter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 22:33:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding Icons</title><link>http://192.168.1.128:8000/posts/tech/adding-icons/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;I spent this afternoon creating and adding a favicon and logo to the webpage.
+The original inspiration was to print out some QR codes with a snazzy logo.
+I used &lt;a href="https://www.canva.com/"&gt;Canva&lt;/a&gt; to create a simple logo using some of their software engineering templates.
+I made a simpler version of the icon to use as a favicon for the webpage.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After downloading the PNGs, I opened the images in &lt;a href="https://www.gimp.org/"&gt;GIMP&lt;/a&gt;.
+I added a transparent layer to the image, then deleted the outside white sections of the image to get the desired shapes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Adding favicon and Logo to conf.py&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python" data-lang="python"&gt;FAVICONS = (
+    ("icon", "/favicon.png", "40x40"),
+)
+
+# Note: I used the {SITE_URL} to provide an absolute path, I had issues with relative
+# pathing on non-root level pages.
+LOGO_URL = f'{SITE_URL}/images/main_logo.png'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After adding the new images, I noticed the logo placement was wonky.
+The current template I’m using expects a banner style logo across the top of the page.
+Since I wanted a smaller round logo, that didn’t quite fit correctly.
+I modified the &lt;code&gt;base.tmpl&lt;/code&gt; to move the logo around a little bit:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Removing the Logo from the Header&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-html" data-lang="html"&gt;&amp;lt;!-- Was --&amp;gt;
+&amp;lt;div class="logo"&amp;gt;
+    {% if logo_url %}
+        &amp;lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&amp;gt;
+    {% else %}
+        &amp;lt;div id="nologoimage"&amp;gt;
+            {{ blog_title }}
+        &amp;lt;/div&amp;gt;
+    {% endif %}
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- Is --&amp;gt;
+&amp;lt;div class="logo"&amp;gt;
+    {% if logo_url %}
+        {{ blog_title }}
+    {% else %}
+        &amp;lt;div id="nologoimage"&amp;gt;
+            {{ blog_title }}
+        &amp;lt;/div&amp;gt;
+    {% endif %}
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Adding the Logo to the Nav Bar&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-html" data-lang="html"&gt;&amp;lt;!-- Was --&amp;gt;
+&amp;lt;a href="/"&amp;gt;
+    &amp;lt;div id="titleauth"&amp;gt;
+        {% if show_blog_title %}
+            {{ blog_title }}&amp;lt;br /&amp;gt; by {{ blog_author }}
+        {% else %}
+            by {{ blog_author }}
+        {% endif %}
+    &amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;
+
+&amp;lt;!-- Is --&amp;gt;
+&amp;lt;a href="/"&amp;gt;
+    &amp;lt;div id="titleauth"&amp;gt;
+        {% if show_blog_title %}
+            {{ blog_title }}&amp;lt;br /&amp;gt; by {{ blog_author }}
+        {% else %}
+            &amp;lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&amp;gt;
+        {% endif %}
+    &amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>gimp</category><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/adding-icons/</guid><pubDate>Thu, 11 Dec 2025 22:02:04 GMT</pubDate></item><item><title>Classıc Peanut Butter Blossom Cookies</title><link>http://192.168.1.128:8000/posts/recipes/peanut-butter-blossom-cookies/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -498,8 +577,8 @@ Mix in tomato mixture.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;
-&lt;!-- Begin post-list post_list_7829e7e8b07e4078b971cac7e01a3ea6 --&gt;
-&lt;/p&gt;&lt;div id="post_list_7829e7e8b07e4078b971cac7e01a3ea6" class="post-list"&gt;
+&lt;!-- Begin post-list post_list_aa1c8e661fb6470aa9b09651eac459c5 --&gt;
+&lt;/p&gt;&lt;div id="post_list_aa1c8e661fb6470aa9b09651eac459c5" class="post-list"&gt;
     &lt;ul class="post-list"&gt;
             &lt;li class="post-list-item"&gt;
                 &lt;a href="http://192.168.1.128:8000/posts/recipes/2am-chili/"&gt;
@@ -1383,6 +1462,6 @@ Mix in tomato mixture.&lt;/p&gt;
             &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-&lt;!-- End post-list post_list_7829e7e8b07e4078b971cac7e01a3ea6 --&gt;
+&lt;!-- End post-list post_list_aa1c8e661fb6470aa9b09651eac459c5 --&gt;
 
 &lt;/div&gt;</description><guid>http://192.168.1.128:8000/posts/recipes/recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item></channel></rss>

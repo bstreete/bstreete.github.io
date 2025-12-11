@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes</title><link>http://192.168.1.128:8000/</link><description>Collection of recipes and random thoughts</description><atom:link href="http://192.168.1.128:8000/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 18:00:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Coconut Curry Chickpeas</title><link>http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes</title><link>http://192.168.1.128:8000/</link><description>Collection of recipes and random thoughts</description><atom:link href="http://192.168.1.128:8000/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 22:33:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding Icons</title><link>http://192.168.1.128:8000/posts/tech/adding-icons/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;p&gt;I spent this afternoon creating and adding a favicon and logo to the webpage.
+The original inspiration was to print out some QR codes with a snazzy logo.
+I used &lt;a href="https://www.canva.com/"&gt;Canva&lt;/a&gt; to create a simple logo using some of their software engineering templates.
+I made a simpler version of the icon to use as a favicon for the webpage.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After downloading the PNGs, I opened the images in &lt;a href="https://www.gimp.org/"&gt;GIMP&lt;/a&gt;.
+I added a transparent layer to the image, then deleted the outside white sections of the image to get the desired shapes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Adding favicon and Logo to conf.py&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-python" data-lang="python"&gt;FAVICONS = (
+    ("icon", "/favicon.png", "40x40"),
+)
+
+# Note: I used the {SITE_URL} to provide an absolute path, I had issues with relative
+# pathing on non-root level pages.
+LOGO_URL = f'{SITE_URL}/images/main_logo.png'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;After adding the new images, I noticed the logo placement was wonky.
+The current template I’m using expects a banner style logo across the top of the page.
+Since I wanted a smaller round logo, that didn’t quite fit correctly.
+I modified the &lt;code&gt;base.tmpl&lt;/code&gt; to move the logo around a little bit:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Removing the Logo from the Header&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-html" data-lang="html"&gt;&amp;lt;!-- Was --&amp;gt;
+&amp;lt;div class="logo"&amp;gt;
+    {% if logo_url %}
+        &amp;lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&amp;gt;
+    {% else %}
+        &amp;lt;div id="nologoimage"&amp;gt;
+            {{ blog_title }}
+        &amp;lt;/div&amp;gt;
+    {% endif %}
+&amp;lt;/div&amp;gt;
+
+&amp;lt;!-- Is --&amp;gt;
+&amp;lt;div class="logo"&amp;gt;
+    {% if logo_url %}
+        {{ blog_title }}
+    {% else %}
+        &amp;lt;div id="nologoimage"&amp;gt;
+            {{ blog_title }}
+        &amp;lt;/div&amp;gt;
+    {% endif %}
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="title"&gt;Adding the Logo to the Nav Bar&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code class="language-html" data-lang="html"&gt;&amp;lt;!-- Was --&amp;gt;
+&amp;lt;a href="/"&amp;gt;
+    &amp;lt;div id="titleauth"&amp;gt;
+        {% if show_blog_title %}
+            {{ blog_title }}&amp;lt;br /&amp;gt; by {{ blog_author }}
+        {% else %}
+            by {{ blog_author }}
+        {% endif %}
+    &amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;
+
+&amp;lt;!-- Is --&amp;gt;
+&amp;lt;a href="/"&amp;gt;
+    &amp;lt;div id="titleauth"&amp;gt;
+        {% if show_blog_title %}
+            {{ blog_title }}&amp;lt;br /&amp;gt; by {{ blog_author }}
+        {% else %}
+            &amp;lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&amp;gt;
+        {% endif %}
+    &amp;lt;/div&amp;gt;
+&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>gimp</category><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/adding-icons/</guid><pubDate>Thu, 11 Dec 2025 22:02:04 GMT</pubDate></item><item><title>Coconut Curry Chickpeas</title><link>http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -583,55 +662,4 @@ Garnish with grated Parmesan, black pepper, red-pepper flakes and basil, if usin
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>lemon</category><category>pasta</category><guid>http://192.168.1.128:8000/posts/recipes/ricotta-and-lemon-pasta/</guid><pubDate>Wed, 10 Dec 2025 04:14:05 GMT</pubDate></item><item><title>Chipotle Guacamole</title><link>http://192.168.1.128:8000/posts/recipes/chipotle-guacamole/</link><dc:creator>Chipotle</dc:creator><description>&lt;div class="sect1"&gt;
-&lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
-&lt;div class="sectionbody"&gt;
-&lt;table class="tableblock frame-all grid-all stretch"&gt;
-&lt;colgroup&gt;
-&lt;col style="width: 50%;"&gt;
-&lt;col style="width: 50%;"&gt;
-&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 ripe Hass avocados&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 teaspoons lime juice&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons cilantro, chopped&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 cup red onion, diced,&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 jalapeño (including seeds), diced&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon kosher salt&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="olist arabic"&gt;
-&lt;ol class="arabic"&gt;
-&lt;li&gt;
-&lt;p&gt;Cut the avocados in half and remove pits carefully.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Scoop the avocados into a bowl.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Toss and coat with lime juice.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add the salt and mash until a smooth consistency is achieved.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Fold in the remaining ingredients and mix.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Taste the guac and adjust seasoning, if necessary.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>guacamole</category><category>salsa</category><guid>http://192.168.1.128:8000/posts/recipes/chipotle-guacamole/</guid><pubDate>Mon, 08 Dec 2025 20:32:25 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>lemon</category><category>pasta</category><guid>http://192.168.1.128:8000/posts/recipes/ricotta-and-lemon-pasta/</guid><pubDate>Wed, 10 Dec 2025 04:14:05 GMT</pubDate></item></channel></rss>
