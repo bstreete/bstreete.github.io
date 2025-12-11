@@ -1,0 +1,29 @@
+///
+.. title: Quick Pizza Dough
+.. slug: quick-pizza-dough
+.. date: 2025-12-11 06:42:36 UTC-07:00
+.. tags: pizza
+.. category: recipes
+.. link: https://cooking.nytimes.com/recipes/1017334-quick-pizza-dough
+.. description: 
+.. type: text
+.. author: Suzanne Lenzer
+///
+
+## Ingredients 
+[cols="<,<"]
+|===
+| 2 cups all-purpose flour (or 1:1 whole wheat)
+| 1 tsp kosher salt
+| 1 tbsp instant yeast
+| 3 tbsp olive oil
+| 1 cup hot tap water
+|===
+
+## Directions
+
+. Mix the dry & wet ingredients separately, then combine. 
+Knead in the food processor until it holds into a ball (adding more flour through the feed tube). By hand, knead in ~1/4 cup more flour ~5 minutes. 
+. Turn the bowl over the dough (upside down) and let rise 15 minutes (prep your toppings now). 
+. Stretch, top and bake 425F ~20 minutes. 
+Makes 2 crusts.
