@@ -22,6 +22,10 @@
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://192.168.1.128:8000/authors/amanda-davis.xml</loc>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://192.168.1.128:8000/authors/ambitious-kitchen.xml</loc>
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
@@ -39,11 +43,11 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/authors/brayden-streeter.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/authors/budget-bytes.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T13:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/authors/cage.xml</loc>
@@ -94,6 +98,10 @@
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://192.168.1.128:8000/authors/holly-nilsson.xml</loc>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://192.168.1.128:8000/authors/i-dont-have-time-for-that.xml</loc>
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
@@ -128,6 +136,10 @@
  <sitemap>
   <loc>http://192.168.1.128:8000/authors/mark-bittman.xml</loc>
   <lastmod>2025-12-08T16:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://192.168.1.128:8000/authors/maureen-oreilly.xml</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/authors/my-life-cookbook.xml</loc>
@@ -186,6 +198,10 @@
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://192.168.1.128:8000/authors/suzanne-lenzer.xml</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://192.168.1.128:8000/authors/the-bread-machine-cookbook.xml</loc>
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
@@ -231,7 +247,7 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/bread.xml</loc>
-  <lastmod>2025-12-08T16:39:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/breakfast.xml</loc>
@@ -243,15 +259,19 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/cat_masters.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://192.168.1.128:8000/categories/cat_pizza.xml</loc>
+  <lastmod>2025-12-11T13:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/cat_recipes.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/cat_tech.xml</loc>
-  <lastmod>2025-12-08T16:39:00Z</lastmod>
+  <lastmod>2025-12-11T01:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/chili.xml</loc>
@@ -263,7 +283,7 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/cookies.xml</loc>
-  <lastmod>2025-12-08T16:39:00Z</lastmod>
+  <lastmod>2025-12-11T13:44:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/dessert.xml</loc>
@@ -314,6 +334,14 @@
   <lastmod>2025-12-08T16:39:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://192.168.1.128:8000/categories/irish.xml</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://192.168.1.128:8000/categories/italian.xml</loc>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://192.168.1.128:8000/categories/lemon.xml</loc>
   <lastmod>2025-12-10T04:16:00Z</lastmod>
  </sitemap>
@@ -331,7 +359,7 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/pasta.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T13:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/pie.xml</loc>
@@ -339,7 +367,7 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/pizza.xml</loc>
-  <lastmod>2025-12-08T16:39:00Z</lastmod>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/categories/pressure-cooker.xml</loc>
@@ -383,10 +411,10 @@
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/rss.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://192.168.1.128:8000/sitemap.xml</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </sitemap>
 </sitemapindex>

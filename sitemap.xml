@@ -7,15 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://192.168.1.128:8000/</loc>
-  <lastmod>2025-12-08T16:22:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/archive.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/</loc>
-  <lastmod>2025-12-10T04:16:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/add-a-pinch/</loc>
@@ -32,6 +32,10 @@
  <url>
   <loc>http://192.168.1.128:8000/authors/alton-brown/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/authors/amanda-davis/</loc>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/ambitious-kitchen/</loc>
@@ -106,6 +110,10 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/authors/holly-nilsson/</loc>
+  <lastmod>2025-12-11T13:57:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/authors/i-dont-have-time-for-that/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -140,6 +148,10 @@
  <url>
   <loc>http://192.168.1.128:8000/authors/mark-bittman/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/authors/maureen-oreilly/</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/authors/my-life-cookbook/</loc>
@@ -198,6 +210,10 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/authors/suzanne-lenzer/</loc>
+  <lastmod>2025-12-11T13:44:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/authors/the-bread-machine-cookbook/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -239,7 +255,7 @@
  </url>
  <url>
   <loc>http://192.168.1.128:8000/categories/</loc>
-  <lastmod>2025-12-10T04:16:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/categories/bread-machine/</loc>
@@ -260,6 +276,10 @@
  <url>
   <loc>http://192.168.1.128:8000/categories/cat_masters/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/categories/cat_pizza/</loc>
+  <lastmod>2025-12-11T13:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/categories/cat_recipes/</loc>
@@ -328,6 +348,14 @@
  <url>
   <loc>http://192.168.1.128:8000/categories/indian/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/categories/irish/</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/categories/italian/</loc>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/categories/lemon/</loc>
@@ -399,43 +427,47 @@
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-1.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-10.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/index-11.html</loc>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-2.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-3.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-4.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-5.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-6.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-7.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-8.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/index-9.html</loc>
-  <lastmod>2025-12-11T01:33:00Z</lastmod>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/listings/</loc>
@@ -450,12 +482,28 @@
   <lastmod>2025-12-08T20:39:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/posts/30-minute-dinner-rolls/</loc>
+  <lastmod>2025-12-11T13:57:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/posts/cacio-e-pepe/</loc>
   <lastmod>2025-12-11T01:33:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/posts/italian-bread/</loc>
+  <lastmod>2025-12-11T14:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/posts/quick-pizza-dough/</loc>
+  <lastmod>2025-12-11T13:44:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/posts/recipes/2am-chili/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/30-minute-dinner-rolls/</loc>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/applesauce-cake/</loc>
@@ -532,6 +580,10 @@
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/butternut-squash-soup/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</loc>
+  <lastmod>2025-12-11T13:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/carnitas/</loc>
@@ -682,6 +734,14 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/irish-soda-bread/</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/italian-bread/</loc>
+  <lastmod>2025-12-11T14:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/posts/recipes/italian-sausage-potatoes-peppers/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -774,6 +834,10 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/peanut-butter-blossom-cookies/</loc>
+  <lastmod>2025-12-11T13:39:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://192.168.1.128:8000/posts/recipes/perfect-sauce-gravy-base/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -784,6 +848,10 @@
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/potato-soup/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://192.168.1.128:8000/posts/recipes/quick-pizza-dough/</loc>
+  <lastmod>2025-12-11T13:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://192.168.1.128:8000/posts/recipes/recipe-index/</loc>
