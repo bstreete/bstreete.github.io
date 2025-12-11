@@ -28,7 +28,7 @@
         <a href="/">
 			<div class="logo">
 				{% if logo_url %}
-					<img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo">
+					{{ blog_title }}
 				{% else %}
 					<div id="nologoimage">
 						{{ blog_title }}
@@ -48,7 +48,7 @@
 				    {% if show_blog_title %}
     					{{ blog_title }}<br /> by {{ blog_author }}
                     {% else %}
-                        by {{ blog_author }}
+                        <img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo">
                     {% endif %}
 				</div>
 			</a>
