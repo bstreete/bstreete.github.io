@@ -20,8 +20,8 @@ BLOG_AUTHOR = "Brayden Streeter"  # (translatable)
 BLOG_TITLE = "Brayden's Rants and Recipes"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-# SITE_URL = "https://bstreete.github.io/"
-SITE_URL = "http://192.168.1.128:8000/"
+SITE_URL = "https://bstreete.github.io/"
+# SITE_URL = "http://192.168.1.128:8000/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://bstreete.github.io/"
