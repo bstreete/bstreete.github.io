@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about kid approved)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/categories/kid-approved.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 23:04:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cacio e Pepe</title><link>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about kid approved)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/kid-approved.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cacio e Pepe</title><link>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -75,7 +75,7 @@ If you use the powdery stuff in the green bottle, it will leave you with a grain
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item><item><title>(Not) Butter Chicken</title><link>http://192.168.1.128:8000/posts/recipes/not-butter-chicken/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item><item><title>(Not) Butter Chicken</title><link>https://bstreete.github.io/posts/recipes/not-butter-chicken/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -138,7 +138,7 @@ If you use the powdery stuff in the green bottle, it will leave you with a grain
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>kid approved</category><category>slow cooker</category><guid>http://192.168.1.128:8000/posts/recipes/not-butter-chicken/</guid><pubDate>Fri, 20 Dec 2019 22:04:35 GMT</pubDate></item><item><title>Feta Walnut Pasta</title><link>http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>kid approved</category><category>slow cooker</category><guid>https://bstreete.github.io/posts/recipes/not-butter-chicken/</guid><pubDate>Fri, 20 Dec 2019 22:04:35 GMT</pubDate></item><item><title>Feta Walnut Pasta</title><link>https://bstreete.github.io/posts/recipes/feta-walnut-pasta/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -184,4 +184,4 @@ If you use the powdery stuff in the green bottle, it will leave you with a grain
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>kid approved</category><guid>http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/</guid><pubDate>Thu, 19 Dec 2019 16:26:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>kid approved</category><guid>https://bstreete.github.io/posts/recipes/feta-walnut-pasta/</guid><pubDate>Thu, 19 Dec 2019 16:26:35 GMT</pubDate></item></channel></rss>

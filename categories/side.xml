@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about side)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/categories/side.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 21:24:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Brussels Sprouts with Cranberries and Pecans</title><link>http://192.168.1.128:8000/posts/recipes/brussels-cranberry-pecans/</link><dc:creator>Rachel Schultz</dc:creator><description>&lt;div class="sect2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about side)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/side.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Brussels Sprouts with Cranberries and Pecans</title><link>https://bstreete.github.io/posts/recipes/brussels-cranberry-pecans/</link><dc:creator>Rachel Schultz</dc:creator><description>&lt;div class="sect2"&gt;
 &lt;h4 id="_tips"&gt;Tips&lt;/h4&gt;
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
@@ -64,7 +64,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/brussels-cranberry-pecans/</guid><pubDate>Sat, 13 Jun 2020 14:27:15 GMT</pubDate></item><item><title>Runzas</title><link>http://192.168.1.128:8000/posts/recipes/runzas/</link><dc:creator>Cage</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>side</category><guid>https://bstreete.github.io/posts/recipes/brussels-cranberry-pecans/</guid><pubDate>Sat, 13 Jun 2020 14:27:15 GMT</pubDate></item><item><title>Runzas</title><link>https://bstreete.github.io/posts/recipes/runzas/</link><dc:creator>Cage</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="sect2"&gt;
@@ -174,7 +174,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>family</category><category>german</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/runzas/</guid><pubDate>Sun, 05 Apr 2020 14:39:03 GMT</pubDate></item><item><title>Tricolour Pulao</title><link>http://192.168.1.128:8000/posts/recipes/tricolour-pulao/</link><dc:creator>Best-Ever Curry Cookbook</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>family</category><category>german</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/runzas/</guid><pubDate>Sun, 05 Apr 2020 14:39:03 GMT</pubDate></item><item><title>Tricolour Pulao</title><link>https://bstreete.github.io/posts/recipes/tricolour-pulao/</link><dc:creator>Best-Ever Curry Cookbook</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -234,7 +234,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>indian</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/tricolour-pulao/</guid><pubDate>Sun, 29 Mar 2020 16:06:35 GMT</pubDate></item><item><title>Chevre and Herb Mousse</title><link>http://192.168.1.128:8000/posts/recipes/chevre-herb-mousse/</link><dc:creator>Linda Kelly</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>indian</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/tricolour-pulao/</guid><pubDate>Sun, 29 Mar 2020 16:06:35 GMT</pubDate></item><item><title>Chevre and Herb Mousse</title><link>https://bstreete.github.io/posts/recipes/chevre-herb-mousse/</link><dc:creator>Linda Kelly</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -275,7 +275,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>family</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/chevre-herb-mousse/</guid><pubDate>Thu, 26 Dec 2019 14:38:22 GMT</pubDate></item><item><title>Skillet Cornbread</title><link>http://192.168.1.128:8000/posts/recipes/cornbread/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect3"&gt;
+&lt;/div&gt;</description><category>family</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/chevre-herb-mousse/</guid><pubDate>Thu, 26 Dec 2019 14:38:22 GMT</pubDate></item><item><title>Skillet Cornbread</title><link>https://bstreete.github.io/posts/recipes/cornbread/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect3"&gt;
 &lt;h5 id="_notes"&gt;Notes&lt;/h5&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;This is a modified version of the original recipe. The chili recipe associated with the cornbread was omitted as I prefer a [different chili recipe](../meaty-beany-chili). The cornbread is quite tasty, but can be cooked independently.&lt;/p&gt;
@@ -333,7 +333,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><category>chili</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/cornbread/</guid><pubDate>Mon, 23 Dec 2019 22:31:52 GMT</pubDate></item><item><title>Kale Salad with Mustard Vinaigrette</title><link>http://192.168.1.128:8000/posts/recipes/kale-salad-mustard-vinaigrette/</link><dc:creator>The Garden Kitchen</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>bread</category><category>chili</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/cornbread/</guid><pubDate>Mon, 23 Dec 2019 22:31:52 GMT</pubDate></item><item><title>Kale Salad with Mustard Vinaigrette</title><link>https://bstreete.github.io/posts/recipes/kale-salad-mustard-vinaigrette/</link><dc:creator>The Garden Kitchen</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="sect2"&gt;
@@ -422,7 +422,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>salad</category><category>side</category><category>vegetarian</category><guid>http://192.168.1.128:8000/posts/recipes/kale-salad-mustard-vinaigrette/</guid><pubDate>Thu, 19 Dec 2019 21:39:20 GMT</pubDate></item><item><title>Sweet Potato Pancakes</title><link>http://192.168.1.128:8000/posts/recipes/sweet-potato-pancakes/</link><dc:creator>The Garden Kitchen</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>salad</category><category>side</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/kale-salad-mustard-vinaigrette/</guid><pubDate>Thu, 19 Dec 2019 21:39:20 GMT</pubDate></item><item><title>Sweet Potato Pancakes</title><link>https://bstreete.github.io/posts/recipes/sweet-potato-pancakes/</link><dc:creator>The Garden Kitchen</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -483,7 +483,7 @@
 &lt;p&gt;Makes roughly 12 pancakes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/sweet-potato-pancakes/</guid><pubDate>Thu, 19 Dec 2019 17:00:17 GMT</pubDate></item><item><title>Crispy Salt and Vinegar Potatoes</title><link>http://192.168.1.128:8000/posts/recipes/salt-vinegar-potatoes/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>entree</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/sweet-potato-pancakes/</guid><pubDate>Thu, 19 Dec 2019 17:00:17 GMT</pubDate></item><item><title>Crispy Salt and Vinegar Potatoes</title><link>https://bstreete.github.io/posts/recipes/salt-vinegar-potatoes/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -525,7 +525,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>favorites</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/salt-vinegar-potatoes/</guid><pubDate>Thu, 19 Dec 2019 16:48:18 GMT</pubDate></item><item><title>Greek Salad with Walnuts </title><link>http://192.168.1.128:8000/posts/recipes/greek-salad-walnuts/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>favorites</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/salt-vinegar-potatoes/</guid><pubDate>Thu, 19 Dec 2019 16:48:18 GMT</pubDate></item><item><title>Greek Salad with Walnuts </title><link>https://bstreete.github.io/posts/recipes/greek-salad-walnuts/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="sect2"&gt;
@@ -596,7 +596,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>salad</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/greek-salad-walnuts/</guid><pubDate>Thu, 19 Dec 2019 16:29:54 GMT</pubDate></item><item><title>Savory Feta Cheese Log with Toasted Walnuts and Olives</title><link>http://192.168.1.128:8000/posts/recipes/feta-cheese-log/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>salad</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/greek-salad-walnuts/</guid><pubDate>Thu, 19 Dec 2019 16:29:54 GMT</pubDate></item><item><title>Savory Feta Cheese Log with Toasted Walnuts and Olives</title><link>https://bstreete.github.io/posts/recipes/feta-cheese-log/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -641,4 +641,4 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/feta-cheese-log/</guid><pubDate>Thu, 19 Dec 2019 16:26:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>side</category><guid>https://bstreete.github.io/posts/recipes/feta-cheese-log/</guid><pubDate>Thu, 19 Dec 2019 16:26:35 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Suzanne Lenzer)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/suzanne-lenzer.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 21:24:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick Pizza Dough</title><link>http://192.168.1.128:8000/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Suzanne Lenzer)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/suzanne-lenzer.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick Pizza Dough</title><link>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -39,4 +39,4 @@ Makes 2 crusts.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>pizza</category><guid>http://192.168.1.128:8000/posts/recipes/quick-pizza-dough/</guid><pubDate>Thu, 11 Dec 2025 13:42:36 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</guid><pubDate>Thu, 11 Dec 2025 13:42:36 GMT</pubDate></item></channel></rss>

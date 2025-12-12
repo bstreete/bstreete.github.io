@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Lis Handley)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/lis-handley.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 21:24:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Chocolate Pecan Pie</title><link>http://192.168.1.128:8000/posts/recipes/chocolate-pecan-pie/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Lis Handley)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/lis-handley.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Chocolate Pecan Pie</title><link>https://bstreete.github.io/posts/recipes/chocolate-pecan-pie/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -48,7 +48,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>dessert</category><category>family</category><category>pie</category><guid>http://192.168.1.128:8000/posts/recipes/chocolate-pecan-pie/</guid><pubDate>Mon, 23 Dec 2019 23:12:23 GMT</pubDate></item><item><title>Oat 'n Chocolate Bars</title><link>http://192.168.1.128:8000/posts/recipes/oat-chocolate-bars/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>dessert</category><category>family</category><category>pie</category><guid>https://bstreete.github.io/posts/recipes/chocolate-pecan-pie/</guid><pubDate>Mon, 23 Dec 2019 23:12:23 GMT</pubDate></item><item><title>Oat 'n Chocolate Bars</title><link>https://bstreete.github.io/posts/recipes/oat-chocolate-bars/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -94,7 +94,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><category>dessert</category><category>family</category><guid>http://192.168.1.128:8000/posts/recipes/oat-chocolate-bars/</guid><pubDate>Mon, 23 Dec 2019 23:07:06 GMT</pubDate></item><item><title>Carrot &amp; Banana Bread</title><link>http://192.168.1.128:8000/posts/recipes/carrot-banana-bread/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect3"&gt;
+&lt;/div&gt;</description><category>bread</category><category>dessert</category><category>family</category><guid>https://bstreete.github.io/posts/recipes/oat-chocolate-bars/</guid><pubDate>Mon, 23 Dec 2019 23:07:06 GMT</pubDate></item><item><title>Carrot &amp; Banana Bread</title><link>https://bstreete.github.io/posts/recipes/carrot-banana-bread/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect3"&gt;
 &lt;h5 id="_notes"&gt;Notes&lt;/h5&gt;
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
@@ -187,7 +187,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><category>dessert</category><category>family</category><guid>http://192.168.1.128:8000/posts/recipes/carrot-banana-bread/</guid><pubDate>Mon, 23 Dec 2019 22:59:34 GMT</pubDate></item><item><title>Blueberry Rum Pie</title><link>http://192.168.1.128:8000/posts/recipes/blueberry-rum-pie/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>bread</category><category>dessert</category><category>family</category><guid>https://bstreete.github.io/posts/recipes/carrot-banana-bread/</guid><pubDate>Mon, 23 Dec 2019 22:59:34 GMT</pubDate></item><item><title>Blueberry Rum Pie</title><link>https://bstreete.github.io/posts/recipes/blueberry-rum-pie/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="sect2"&gt;
@@ -267,7 +267,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>dessert</category><category>family</category><category>pie</category><guid>http://192.168.1.128:8000/posts/recipes/blueberry-rum-pie/</guid><pubDate>Mon, 23 Dec 2019 22:53:46 GMT</pubDate></item><item><title>Baked French Toast </title><link>http://192.168.1.128:8000/posts/recipes/baked-french-toast/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>dessert</category><category>family</category><category>pie</category><guid>https://bstreete.github.io/posts/recipes/blueberry-rum-pie/</guid><pubDate>Mon, 23 Dec 2019 22:53:46 GMT</pubDate></item><item><title>Baked French Toast </title><link>https://bstreete.github.io/posts/recipes/baked-french-toast/</link><dc:creator>Lis Handley</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_notes"&gt;Notes&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
@@ -334,4 +334,4 @@ Bake about 40 minutes or until golden brown.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>breakfast</category><category>family</category><category>favorites</category><guid>http://192.168.1.128:8000/posts/recipes/baked-french-toast/</guid><pubDate>Thu, 19 Dec 2019 16:56:29 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>breakfast</category><category>family</category><category>favorites</category><guid>https://bstreete.github.io/posts/recipes/baked-french-toast/</guid><pubDate>Thu, 19 Dec 2019 16:56:29 GMT</pubDate></item></channel></rss>

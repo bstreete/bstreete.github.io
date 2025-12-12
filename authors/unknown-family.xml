@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Unknown, Family)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/unknown-family.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 21:24:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nectarine Salsa</title><link>http://192.168.1.128:8000/posts/recipes/nectarine-salsa/</link><dc:creator>Unknown, Family</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Unknown, Family)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/unknown-family.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nectarine Salsa</title><link>https://bstreete.github.io/posts/recipes/nectarine-salsa/</link><dc:creator>Unknown, Family</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -42,4 +42,4 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>salsa</category><category>sauce</category><guid>http://192.168.1.128:8000/posts/recipes/nectarine-salsa/</guid><pubDate>Wed, 25 Dec 2019 15:02:59 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>salsa</category><category>sauce</category><guid>https://bstreete.github.io/posts/recipes/nectarine-salsa/</guid><pubDate>Wed, 25 Dec 2019 15:02:59 GMT</pubDate></item></channel></rss>

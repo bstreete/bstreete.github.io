@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Bon Appetit)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/authors/bon-appetit.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 21:24:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Easy Vegetarian Calzones</title><link>http://192.168.1.128:8000/posts/recipes/veggie-calzone/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Bon Appetit)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/bon-appetit.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Easy Vegetarian Calzones</title><link>https://bstreete.github.io/posts/recipes/veggie-calzone/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -83,7 +83,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>pizza</category><guid>http://192.168.1.128:8000/posts/recipes/veggie-calzone/</guid><pubDate>Mon, 09 Nov 2020 23:15:25 GMT</pubDate></item><item><title>Basically Strawberry Shortcakes</title><link>http://192.168.1.128:8000/posts/recipes/strawberry-shortcakes/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>entree</category><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/veggie-calzone/</guid><pubDate>Mon, 09 Nov 2020 23:15:25 GMT</pubDate></item><item><title>Basically Strawberry Shortcakes</title><link>https://bstreete.github.io/posts/recipes/strawberry-shortcakes/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -163,7 +163,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>dessert</category><guid>http://192.168.1.128:8000/posts/recipes/strawberry-shortcakes/</guid><pubDate>Mon, 23 Dec 2019 22:09:39 GMT</pubDate></item><item><title>Crispy Salt and Vinegar Potatoes</title><link>http://192.168.1.128:8000/posts/recipes/salt-vinegar-potatoes/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>dessert</category><guid>https://bstreete.github.io/posts/recipes/strawberry-shortcakes/</guid><pubDate>Mon, 23 Dec 2019 22:09:39 GMT</pubDate></item><item><title>Crispy Salt and Vinegar Potatoes</title><link>https://bstreete.github.io/posts/recipes/salt-vinegar-potatoes/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -205,7 +205,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>favorites</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/salt-vinegar-potatoes/</guid><pubDate>Thu, 19 Dec 2019 16:48:18 GMT</pubDate></item><item><title>Pappa Al Pomodoro</title><link>http://192.168.1.128:8000/posts/recipes/pappa-al-pomodoro/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>favorites</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/salt-vinegar-potatoes/</guid><pubDate>Thu, 19 Dec 2019 16:48:18 GMT</pubDate></item><item><title>Pappa Al Pomodoro</title><link>https://bstreete.github.io/posts/recipes/pappa-al-pomodoro/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -257,7 +257,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>soup</category><category>vegetarian</category><guid>http://192.168.1.128:8000/posts/recipes/pappa-al-pomodoro/</guid><pubDate>Thu, 19 Dec 2019 16:47:10 GMT</pubDate></item><item><title>Herby Corn Salad</title><link>http://192.168.1.128:8000/posts/recipes/corn-salad/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>entree</category><category>soup</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/pappa-al-pomodoro/</guid><pubDate>Thu, 19 Dec 2019 16:47:10 GMT</pubDate></item><item><title>Herby Corn Salad</title><link>https://bstreete.github.io/posts/recipes/corn-salad/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -296,7 +296,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>salad</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/corn-salad/</guid><pubDate>Thu, 19 Dec 2019 16:19:02 GMT</pubDate></item><item><title>Corn Jalapeno Fritters</title><link>http://192.168.1.128:8000/posts/recipes/corn-jalapeno-fritters/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>salad</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/corn-salad/</guid><pubDate>Thu, 19 Dec 2019 16:19:02 GMT</pubDate></item><item><title>Corn Jalapeno Fritters</title><link>https://bstreete.github.io/posts/recipes/corn-jalapeno-fritters/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -346,7 +346,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/corn-jalapeno-fritters/</guid><pubDate>Thu, 19 Dec 2019 16:12:26 GMT</pubDate></item><item><title>Fresno Chile Hot Sauce</title><link>http://192.168.1.128:8000/posts/recipes/chile-hot-sauce/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>side</category><guid>https://bstreete.github.io/posts/recipes/corn-jalapeno-fritters/</guid><pubDate>Thu, 19 Dec 2019 16:12:26 GMT</pubDate></item><item><title>Fresno Chile Hot Sauce</title><link>https://bstreete.github.io/posts/recipes/chile-hot-sauce/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -384,7 +384,7 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>sauce</category><guid>http://192.168.1.128:8000/posts/recipes/chile-hot-sauce/</guid><pubDate>Thu, 19 Dec 2019 16:06:16 GMT</pubDate></item><item><title>Blackberry Vinegar Caramel</title><link>http://192.168.1.128:8000/posts/recipes/blackberry-vinegar-caramel/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>sauce</category><guid>https://bstreete.github.io/posts/recipes/chile-hot-sauce/</guid><pubDate>Thu, 19 Dec 2019 16:06:16 GMT</pubDate></item><item><title>Blackberry Vinegar Caramel</title><link>https://bstreete.github.io/posts/recipes/blackberry-vinegar-caramel/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -422,4 +422,4 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>dessert</category><category>sauce</category><guid>http://192.168.1.128:8000/posts/recipes/blackberry-vinegar-caramel/</guid><pubDate>Thu, 19 Dec 2019 14:11:15 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>dessert</category><category>sauce</category><guid>https://bstreete.github.io/posts/recipes/blackberry-vinegar-caramel/</guid><pubDate>Thu, 19 Dec 2019 14:11:15 GMT</pubDate></item></channel></rss>

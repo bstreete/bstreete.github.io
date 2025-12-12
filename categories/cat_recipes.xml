@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about recipes)</title><link>http://192.168.1.128:8000/</link><description>Saved recipes for future cooking attempts. Sorted from newest to oldest.</description><atom:link href="http://192.168.1.128:8000/categories/cat_recipes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 23:04:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Coconut Curry Chickpeas</title><link>http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about recipes)</title><link>https://bstreete.github.io/</link><description>Saved recipes for future cooking attempts. Sorted from newest to oldest.</description><atom:link href="https://bstreete.github.io/categories/cat_recipes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Coconut Curry Chickpeas</title><link>https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -62,7 +62,7 @@ Serve hot with rice or bread for dipping!&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>curry</category><category>indian</category><category>vegetarian</category><guid>http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/</guid><pubDate>Thu, 11 Dec 2025 17:58:07 GMT</pubDate></item><item><title>White Beans with Mushrooms and Marinara</title><link>http://192.168.1.128:8000/posts/recipes/white-beans-with-mushrooms-and-marinara/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>curry</category><category>indian</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/</guid><pubDate>Thu, 11 Dec 2025 17:58:07 GMT</pubDate></item><item><title>White Beans with Mushrooms and Marinara</title><link>https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -132,7 +132,7 @@ Serve hot, with garlic bread for dipping!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>italian</category><category>pasta</category><category>vegetarian</category><guid>http://192.168.1.128:8000/posts/recipes/white-beans-with-mushrooms-and-marinara/</guid><pubDate>Thu, 11 Dec 2025 17:53:22 GMT</pubDate></item><item><title>Italian Bread</title><link>http://192.168.1.128:8000/posts/recipes/italian-bread/</link><dc:creator>Amanda Davis</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>italian</category><category>pasta</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/</guid><pubDate>Thu, 11 Dec 2025 17:53:22 GMT</pubDate></item><item><title>Italian Bread</title><link>https://bstreete.github.io/posts/recipes/italian-bread/</link><dc:creator>Amanda Davis</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -210,7 +210,7 @@ Slash the top diagonally across the top every couple of inches with a sharp knif
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><category>italian</category><guid>http://192.168.1.128:8000/posts/recipes/italian-bread/</guid><pubDate>Thu, 11 Dec 2025 14:01:23 GMT</pubDate></item><item><title>30 Minute Dinner Rolls</title><link>http://192.168.1.128:8000/posts/recipes/30-minute-dinner-rolls/</link><dc:creator>Holly Nilsson</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>bread</category><category>italian</category><guid>https://bstreete.github.io/posts/recipes/italian-bread/</guid><pubDate>Thu, 11 Dec 2025 14:01:23 GMT</pubDate></item><item><title>30 Minute Dinner Rolls</title><link>https://bstreete.github.io/posts/recipes/30-minute-dinner-rolls/</link><dc:creator>Holly Nilsson</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -283,7 +283,7 @@ Place in a greased pan and cover with parchment paper and a kitchen towel.&lt;/p
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><guid>http://192.168.1.128:8000/posts/recipes/30-minute-dinner-rolls/</guid><pubDate>Thu, 11 Dec 2025 13:55:24 GMT</pubDate></item><item><title>Irish Soda Bread</title><link>http://192.168.1.128:8000/posts/recipes/irish-soda-bread/</link><dc:creator>Maureen O'Reilly</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>bread</category><guid>https://bstreete.github.io/posts/recipes/30-minute-dinner-rolls/</guid><pubDate>Thu, 11 Dec 2025 13:55:24 GMT</pubDate></item><item><title>Irish Soda Bread</title><link>https://bstreete.github.io/posts/recipes/irish-soda-bread/</link><dc:creator>Maureen O'Reilly</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -357,7 +357,7 @@ Beat until foamy.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><category>irish</category><guid>http://192.168.1.128:8000/posts/recipes/irish-soda-bread/</guid><pubDate>Thu, 11 Dec 2025 13:49:57 GMT</pubDate></item><item><title>Quick Pizza Dough</title><link>http://192.168.1.128:8000/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>bread</category><category>irish</category><guid>https://bstreete.github.io/posts/recipes/irish-soda-bread/</guid><pubDate>Thu, 11 Dec 2025 13:49:57 GMT</pubDate></item><item><title>Quick Pizza Dough</title><link>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -397,7 +397,7 @@ Makes 2 crusts.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>pizza</category><guid>http://192.168.1.128:8000/posts/recipes/quick-pizza-dough/</guid><pubDate>Thu, 11 Dec 2025 13:42:36 GMT</pubDate></item><item><title>Classıc Peanut Butter Blossom Cookies</title><link>http://192.168.1.128:8000/posts/recipes/peanut-butter-blossom-cookies/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</guid><pubDate>Thu, 11 Dec 2025 13:42:36 GMT</pubDate></item><item><title>Classıc Peanut Butter Blossom Cookies</title><link>https://bstreete.github.io/posts/recipes/peanut-butter-blossom-cookies/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -452,7 +452,7 @@ Remove from cookie sheets to cooling rack.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cookies</category><guid>http://192.168.1.128:8000/posts/recipes/peanut-butter-blossom-cookies/</guid><pubDate>Thu, 11 Dec 2025 13:36:04 GMT</pubDate></item><item><title>Cacio e Pepe</title><link>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>cookies</category><guid>https://bstreete.github.io/posts/recipes/peanut-butter-blossom-cookies/</guid><pubDate>Thu, 11 Dec 2025 13:36:04 GMT</pubDate></item><item><title>Cacio e Pepe</title><link>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -528,7 +528,7 @@ If you use the powdery stuff in the green bottle, it will leave you with a grain
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item><item><title>Ricotta and Lemon Pasta</title><link>http://192.168.1.128:8000/posts/recipes/ricotta-and-lemon-pasta/</link><dc:creator>Ali Slagle</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item><item><title>Ricotta and Lemon Pasta</title><link>https://bstreete.github.io/posts/recipes/ricotta-and-lemon-pasta/</link><dc:creator>Ali Slagle</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -583,7 +583,7 @@ Garnish with grated Parmesan, black pepper, red-pepper flakes and basil, if usin
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>lemon</category><category>pasta</category><guid>http://192.168.1.128:8000/posts/recipes/ricotta-and-lemon-pasta/</guid><pubDate>Wed, 10 Dec 2025 04:14:05 GMT</pubDate></item><item><title>Chipotle Guacamole</title><link>http://192.168.1.128:8000/posts/recipes/chipotle-guacamole/</link><dc:creator>Chipotle</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>lemon</category><category>pasta</category><guid>https://bstreete.github.io/posts/recipes/ricotta-and-lemon-pasta/</guid><pubDate>Wed, 10 Dec 2025 04:14:05 GMT</pubDate></item><item><title>Chipotle Guacamole</title><link>https://bstreete.github.io/posts/recipes/chipotle-guacamole/</link><dc:creator>Chipotle</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -634,4 +634,4 @@ Garnish with grated Parmesan, black pepper, red-pepper flakes and basil, if usin
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>guacamole</category><category>salsa</category><guid>http://192.168.1.128:8000/posts/recipes/chipotle-guacamole/</guid><pubDate>Mon, 08 Dec 2025 20:32:25 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>guacamole</category><category>salsa</category><guid>https://bstreete.github.io/posts/recipes/chipotle-guacamole/</guid><pubDate>Mon, 08 Dec 2025 20:32:25 GMT</pubDate></item></channel></rss>

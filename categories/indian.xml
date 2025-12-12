@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about indian)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/categories/indian.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 21:24:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Coconut Curry Chickpeas</title><link>http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about indian)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/indian.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Coconut Curry Chickpeas</title><link>https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -62,7 +62,7 @@ Serve hot with rice or bread for dipping!&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>curry</category><category>indian</category><category>vegetarian</category><guid>http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/</guid><pubDate>Thu, 11 Dec 2025 17:58:07 GMT</pubDate></item><item><title>Tricolour Pulao</title><link>http://192.168.1.128:8000/posts/recipes/tricolour-pulao/</link><dc:creator>Best-Ever Curry Cookbook</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>curry</category><category>indian</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/</guid><pubDate>Thu, 11 Dec 2025 17:58:07 GMT</pubDate></item><item><title>Tricolour Pulao</title><link>https://bstreete.github.io/posts/recipes/tricolour-pulao/</link><dc:creator>Best-Ever Curry Cookbook</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -122,4 +122,4 @@ Serve hot with rice or bread for dipping!&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>indian</category><category>side</category><guid>http://192.168.1.128:8000/posts/recipes/tricolour-pulao/</guid><pubDate>Sun, 29 Mar 2020 16:06:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>entree</category><category>favorites</category><category>indian</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/tricolour-pulao/</guid><pubDate>Sun, 29 Mar 2020 16:06:35 GMT</pubDate></item></channel></rss>

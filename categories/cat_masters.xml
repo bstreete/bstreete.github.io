@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Category Pages)</title><link>http://192.168.1.128:8000/</link><description>Used to organize common index pages. Sorted from newest to oldest.</description><atom:link href="http://192.168.1.128:8000/categories/cat_masters.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 00:28:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Kid Recipe Index</title><link>http://192.168.1.128:8000/posts/recipes/kid-recipe-index/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Category Pages)</title><link>https://bstreete.github.io/</link><description>Used to organize common index pages. Sorted from newest to oldest.</description><atom:link href="https://bstreete.github.io/categories/cat_masters.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Kid Recipe Index</title><link>https://bstreete.github.io/posts/recipes/kid-recipe-index/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;List of recipes the kids (usually) are happy to eat.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
@@ -8,7 +8,7 @@
 &lt;/p&gt;&lt;div id="post_list_057705cc04a346dfaa3bbbdcf8e9c59b" class="post-list"&gt;
     &lt;ul class="post-list"&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/not-butter-chicken/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/not-butter-chicken/"&gt;
                 
                     (Not) Butter Chicken
                 &lt;/a&gt;
@@ -16,7 +16,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cacio-e-pepe/"&gt;
                 
                     Cacio e Pepe
                 &lt;/a&gt;
@@ -24,7 +24,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/feta-walnut-pasta/"&gt;
                 
                     Feta Walnut Pasta
                 &lt;/a&gt;
@@ -35,7 +35,7 @@
 &lt;/div&gt;
 &lt;!-- End post-list post_list_057705cc04a346dfaa3bbbdcf8e9c59b --&gt;
 
-&lt;/div&gt;</description><guid>http://192.168.1.128:8000/posts/recipes/kid-recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item><item><title>Recipe Index</title><link>http://192.168.1.128:8000/posts/recipes/recipe-index/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;/div&gt;</description><guid>https://bstreete.github.io/posts/recipes/kid-recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item><item><title>Recipe Index</title><link>https://bstreete.github.io/posts/recipes/recipe-index/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;List of all recipes on this site sorted alphabetically.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
@@ -44,7 +44,7 @@
 &lt;/p&gt;&lt;div id="post_list_2676d37f6de547838fe70e049ed33c6e" class="post-list"&gt;
     &lt;ul class="post-list"&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/2am-chili/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/2am-chili/"&gt;
                 
                     2am Chili
                 &lt;/a&gt;
@@ -52,7 +52,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/30-minute-dinner-rolls/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/30-minute-dinner-rolls/"&gt;
                 
                     30 Minute Dinner Rolls
                 &lt;/a&gt;
@@ -60,7 +60,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/not-butter-chicken/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/not-butter-chicken/"&gt;
                 
                     (Not) Butter Chicken
                 &lt;/a&gt;
@@ -68,7 +68,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/green-chile-apple-pie/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/green-chile-apple-pie/"&gt;
                 
                     Apple Green-Chile Pie With Cheddar Crust
                 &lt;/a&gt;
@@ -76,7 +76,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/applesauce-cake/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/applesauce-cake/"&gt;
                 
                     Applesauce Cake VI
                 &lt;/a&gt;
@@ -84,7 +84,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/red-beans-rice/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/red-beans-rice/"&gt;
                 
                     Authentic Louisiana Red Beans and Rice
                 &lt;/a&gt;
@@ -92,7 +92,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/baked-french-toast/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/baked-french-toast/"&gt;
                 
                     Baked French Toast 
                 &lt;/a&gt;
@@ -100,7 +100,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/mac-cheese-gallaher/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/mac-cheese-gallaher/"&gt;
                 
                     Baked Mac n' Cheese
                 &lt;/a&gt;
@@ -108,7 +108,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/balsamic-roast-beef/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/balsamic-roast-beef/"&gt;
                 
                     Balsamic Roast Beef
                 &lt;/a&gt;
@@ -116,7 +116,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/banana-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/banana-bread/"&gt;
                 
                     Banana Bread
                 &lt;/a&gt;
@@ -124,7 +124,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/strawberry-shortcakes/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/strawberry-shortcakes/"&gt;
                 
                     Basically Strawberry Shortcakes
                 &lt;/a&gt;
@@ -132,7 +132,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/ham-fried-rice/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/ham-fried-rice/"&gt;
                 
                     Better than Takeout Ham Fried Rice
                 &lt;/a&gt;
@@ -140,7 +140,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/blackberry-vinegar-caramel/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/blackberry-vinegar-caramel/"&gt;
                 
                     Blackberry Vinegar Caramel
                 &lt;/a&gt;
@@ -148,7 +148,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/blueberry-rum-pie/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/blueberry-rum-pie/"&gt;
                 
                     Blueberry Rum Pie
                 &lt;/a&gt;
@@ -156,7 +156,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/boilermaker-tailgate-chili/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/boilermaker-tailgate-chili/"&gt;
                 
                     Boilermaker Tailgate Chili
                 &lt;/a&gt;
@@ -164,7 +164,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/braised-balsamic-chicken/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/braised-balsamic-chicken/"&gt;
                 
                     Braised Balsamic Chicken
                 &lt;/a&gt;
@@ -172,7 +172,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/bread-machine-cinnamon-rolls/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/bread-machine-cinnamon-rolls/"&gt;
                 
                     Bread Machine Cinnamon Rolls
                 &lt;/a&gt;
@@ -180,7 +180,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/bread-machine-sourdough/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/bread-machine-sourdough/"&gt;
                 
                     Bread Machine Sourdough
                 &lt;/a&gt;
@@ -188,7 +188,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/broccoli-cheddar-casserole/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/broccoli-cheddar-casserole/"&gt;
                 
                     Broccoli Cheddar Casserole
                 &lt;/a&gt;
@@ -196,7 +196,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/brussels-cranberry-pecans/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/brussels-cranberry-pecans/"&gt;
                 
                     Brussels Sprouts with Cranberries and Pecans
                 &lt;/a&gt;
@@ -204,7 +204,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/buddha-bowls/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/buddha-bowls/"&gt;
                 
                     Buddha Bowls
                 &lt;/a&gt;
@@ -212,7 +212,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/buffalo-sauce/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/buffalo-sauce/"&gt;
                 
                     Buffalo Sauce
                 &lt;/a&gt;
@@ -220,7 +220,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/butternut-squash-gnocchi/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/butternut-squash-gnocchi/"&gt;
                 
                     Butternut Squash Gnocchi with Spinach Sauce
                 &lt;/a&gt;
@@ -228,7 +228,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cacio-e-pepe/"&gt;
                 
                     Cacio e Pepe
                 &lt;/a&gt;
@@ -236,7 +236,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/carrot-banana-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/carrot-banana-bread/"&gt;
                 
                     Carrot &amp;amp; Banana Bread
                 &lt;/a&gt;
@@ -244,7 +244,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/carrot-cake/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/carrot-cake/"&gt;
                 
                     Carrot Cake
                 &lt;/a&gt;
@@ -252,7 +252,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cauliflower-gratinee/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cauliflower-gratinee/"&gt;
                 
                     Cauliflower Gratinee
                 &lt;/a&gt;
@@ -260,7 +260,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cheese-bake/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cheese-bake/"&gt;
                 
                     Cheese Bake
                 &lt;/a&gt;
@@ -268,7 +268,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cheesecake/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cheesecake/"&gt;
                 
                     Cheesecake
                 &lt;/a&gt;
@@ -276,7 +276,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chevre-herb-mousse/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chevre-herb-mousse/"&gt;
                 
                     Chevre and Herb Mousse
                 &lt;/a&gt;
@@ -284,7 +284,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-forestier/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chicken-forestier/"&gt;
                 
                     Chicken Forestier
                 &lt;/a&gt;
@@ -292,7 +292,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-picatta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chicken-picatta/"&gt;
                 
                     Chicken Picatta
                 &lt;/a&gt;
@@ -300,7 +300,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chile-relleno-casserole/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chile-relleno-casserole/"&gt;
                 
                     Chile Relleno Casserole
                 &lt;/a&gt;
@@ -308,7 +308,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chile-verde/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chile-verde/"&gt;
                 
                     Chile Verde
                 &lt;/a&gt;
@@ -316,7 +316,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chipotle-crema/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chipotle-crema/"&gt;
                 
                     Chipotle Crema
                 &lt;/a&gt;
@@ -324,7 +324,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chipotle-guacamole/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chipotle-guacamole/"&gt;
                 
                     Chipotle Guacamole
                 &lt;/a&gt;
@@ -332,7 +332,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chocolate-pecan-pie/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chocolate-pecan-pie/"&gt;
                 
                     Chocolate Pecan Pie
                 &lt;/a&gt;
@@ -340,7 +340,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/spritz-cookies/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/spritz-cookies/"&gt;
                 
                     Classic Spritz Cookies 
                 &lt;/a&gt;
@@ -348,7 +348,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/peanut-butter-blossom-cookies/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/peanut-butter-blossom-cookies/"&gt;
                 
                     Classıc Peanut Butter Blossom Cookies
                 &lt;/a&gt;
@@ -356,7 +356,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/coca-cola-ham/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/coca-cola-ham/"&gt;
                 
                     Coca-Cola Ham
                 &lt;/a&gt;
@@ -364,7 +364,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/coconut-curry-chickpeas/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/"&gt;
                 
                     Coconut Curry Chickpeas
                 &lt;/a&gt;
@@ -372,7 +372,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/corn-jalapeno-fritters/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/corn-jalapeno-fritters/"&gt;
                 
                     Corn Jalapeno Fritters
                 &lt;/a&gt;
@@ -380,7 +380,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/country-white-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/country-white-bread/"&gt;
                 
                     Country White Bread
                 &lt;/a&gt;
@@ -388,7 +388,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/crepes/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/crepes/"&gt;
                 
                     Crepes
                 &lt;/a&gt;
@@ -396,7 +396,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/salt-vinegar-potatoes/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/salt-vinegar-potatoes/"&gt;
                 
                     Crispy Salt and Vinegar Potatoes
                 &lt;/a&gt;
@@ -404,7 +404,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/rib-roast/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/rib-roast/"&gt;
                 
                     Cross Rib Roast
                 &lt;/a&gt;
@@ -412,7 +412,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/dill-cottage-cheese-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/dill-cottage-cheese-bread/"&gt;
                 
                     Dill Cottage Cheese Bread
                 &lt;/a&gt;
@@ -420,7 +420,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/hilton-cookies/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/hilton-cookies/"&gt;
                 
                     DoubleTree Cookies
                 &lt;/a&gt;
@@ -428,7 +428,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/dougs-salsa/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/dougs-salsa/"&gt;
                 
                     Doug's Home Made Salsa
                 &lt;/a&gt;
@@ -436,7 +436,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/lentil-sheperds-pie/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/lentil-sheperds-pie/"&gt;
                 
                     Easy Lentil Shepherd’s Pie
                 &lt;/a&gt;
@@ -444,7 +444,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/easy-pizza-dough/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/easy-pizza-dough/"&gt;
                 
                     Easy Pizza Dough
                 &lt;/a&gt;
@@ -452,7 +452,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/veggie-calzone/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/veggie-calzone/"&gt;
                 
                     Easy Vegetarian Calzones
                 &lt;/a&gt;
@@ -460,7 +460,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/feta-walnut-pasta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/feta-walnut-pasta/"&gt;
                 
                     Feta Walnut Pasta
                 &lt;/a&gt;
@@ -468,7 +468,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chile-hot-sauce/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chile-hot-sauce/"&gt;
                 
                     Fresno Chile Hot Sauce
                 &lt;/a&gt;
@@ -476,7 +476,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/greek-salad-walnuts/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/greek-salad-walnuts/"&gt;
                 
                     Greek Salad with Walnuts 
                 &lt;/a&gt;
@@ -484,7 +484,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/corn-salad/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/corn-salad/"&gt;
                 
                     Herby Corn Salad
                 &lt;/a&gt;
@@ -492,7 +492,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/hoisin-stir-fry/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/hoisin-stir-fry/"&gt;
                 
                     Hoisin Stir Fry Bowls with Spicy Peanut Sauce
                 &lt;/a&gt;
@@ -500,7 +500,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/falafel-with-tahini/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/falafel-with-tahini/"&gt;
                 
                     Homemade Falafel with Tahini Sauce
                 &lt;/a&gt;
@@ -508,7 +508,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/indonesian-satay/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/indonesian-satay/"&gt;
                 
                     Indonesian Style Satay
                 &lt;/a&gt;
@@ -516,7 +516,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/instant-pot-mac-and-cheese/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/instant-pot-mac-and-cheese/"&gt;
                 
                     Instant Pot Mac and Cheese
                 &lt;/a&gt;
@@ -524,7 +524,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/irish-soda-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/irish-soda-bread/"&gt;
                 
                     Irish Soda Bread
                 &lt;/a&gt;
@@ -532,7 +532,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/italian-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/italian-bread/"&gt;
                 
                     Italian Bread
                 &lt;/a&gt;
@@ -540,7 +540,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/italian-sausage-potatoes-peppers/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/italian-sausage-potatoes-peppers/"&gt;
                 
                     Italian Sausage with Potatoes and Peppers
                 &lt;/a&gt;
@@ -548,7 +548,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/justin-wilson-bbq-ham/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/justin-wilson-bbq-ham/"&gt;
                 
                     Justin Wilson Barbeque Ham
                 &lt;/a&gt;
@@ -556,7 +556,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/kale-salad-mustard-vinaigrette/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/kale-salad-mustard-vinaigrette/"&gt;
                 
                     Kale Salad with Mustard Vinaigrette
                 &lt;/a&gt;
@@ -564,7 +564,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/kill-city-chili/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/kill-city-chili/"&gt;
                 
                     Kill City Chili
                 &lt;/a&gt;
@@ -572,7 +572,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/carnitas/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/carnitas/"&gt;
                 
                     La Taqueria Carnitas
                 &lt;/a&gt;
@@ -580,7 +580,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/lemon-bars/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/lemon-bars/"&gt;
                 
                     Lemon Bars
                 &lt;/a&gt;
@@ -588,7 +588,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/lentil-sausage-stew/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/lentil-sausage-stew/"&gt;
                 
                     Lentil &amp;amp; Sausage Stew
                 &lt;/a&gt;
@@ -596,7 +596,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/lentil-sloppy-joes/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/lentil-sloppy-joes/"&gt;
                 
                     Lentil Sloppy Joes
                 &lt;/a&gt;
@@ -604,7 +604,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/manga-kalan/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/manga-kalan/"&gt;
                 
                     Manga Kalan (Keralan Mango Curry) 
                 &lt;/a&gt;
@@ -612,7 +612,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/meaty-beany-chili/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/meaty-beany-chili/"&gt;
                 
                     Meaty Beany Chili
                 &lt;/a&gt;
@@ -620,7 +620,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cheddar-fondue/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cheddar-fondue/"&gt;
                 
                     Melting Pot Cheddar Cheese Fondue
                 &lt;/a&gt;
@@ -628,7 +628,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/muffulettas/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/muffulettas/"&gt;
                 
                     Muffulettas
                 &lt;/a&gt;
@@ -636,7 +636,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/nectarine-salsa/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/nectarine-salsa/"&gt;
                 
                     Nectarine Salsa
                 &lt;/a&gt;
@@ -644,7 +644,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/no-knead-herb-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/no-knead-herb-bread/"&gt;
                 
                     No Knead Herb Bread
                 &lt;/a&gt;
@@ -652,7 +652,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/oat-chocolate-bars/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/oat-chocolate-bars/"&gt;
                 
                     Oat 'n Chocolate Bars
                 &lt;/a&gt;
@@ -660,7 +660,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/baked-beef-stew/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/baked-beef-stew/"&gt;
                 
                     Oven-Baked Beef Stew
                 &lt;/a&gt;
@@ -668,7 +668,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/paleo-ginger-molasses-cookies/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/paleo-ginger-molasses-cookies/"&gt;
                 
                     Paleo Ginger Molasses Cookies
                 &lt;/a&gt;
@@ -676,7 +676,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/pappa-al-pomodoro/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/pappa-al-pomodoro/"&gt;
                 
                     Pappa Al Pomodoro
                 &lt;/a&gt;
@@ -684,7 +684,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/pappardelle-corn/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/pappardelle-corn/"&gt;
                 
                     Pappardelle With Corn
                 &lt;/a&gt;
@@ -692,7 +692,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/lemon-cream-caper-pasta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/lemon-cream-caper-pasta/"&gt;
                 
                     Pasta With Lemon Cream and Capers
                 &lt;/a&gt;
@@ -700,7 +700,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/squash-brown-butter-pasta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/squash-brown-butter-pasta/"&gt;
                 
                     Pasta With Sausage, Squash and Sage Brown Butter 
                 &lt;/a&gt;
@@ -708,7 +708,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/pastalaya/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/pastalaya/"&gt;
                 
                     Pastalaya
                 &lt;/a&gt;
@@ -716,7 +716,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/perfect-sauce-gravy-base/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/perfect-sauce-gravy-base/"&gt;
                 
                     Perfect Sauce or Gravy Base
                 &lt;/a&gt;
@@ -724,7 +724,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/pico_de_gallo/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/pico_de_gallo/"&gt;
                 
                     Pico de Gallo
                 &lt;/a&gt;
@@ -732,7 +732,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/potato-soup/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/potato-soup/"&gt;
                 
                     Potato Soup with Bacon and Cheddar
                 &lt;/a&gt;
@@ -740,7 +740,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/kielbasa-potatoes-peppers/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/kielbasa-potatoes-peppers/"&gt;
                 
                     Potatoes, Peppers, and Kielbasa Skillet
                 &lt;/a&gt;
@@ -748,7 +748,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/quick-pizza-dough/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/quick-pizza-dough/"&gt;
                 
                     Quick Pizza Dough
                 &lt;/a&gt;
@@ -756,7 +756,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/ricotta-and-lemon-pasta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/ricotta-and-lemon-pasta/"&gt;
                 
                     Ricotta and Lemon Pasta
                 &lt;/a&gt;
@@ -764,7 +764,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/broc-cheddar-soup/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/broc-cheddar-soup/"&gt;
                 
                     Roasted Broccoli &amp;amp; Cheddar Soup
                 &lt;/a&gt;
@@ -772,7 +772,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/butternut-squash-soup/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/butternut-squash-soup/"&gt;
                 
                     Roasted Butternut Squash Soup
                 &lt;/a&gt;
@@ -780,7 +780,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/runzas/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/runzas/"&gt;
                 
                     Runzas
                 &lt;/a&gt;
@@ -788,7 +788,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/feta-cheese-log/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/feta-cheese-log/"&gt;
                 
                     Savory Feta Cheese Log with Toasted Walnuts and Olives
                 &lt;/a&gt;
@@ -796,7 +796,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/serbian-beef-potato-bake/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/serbian-beef-potato-bake/"&gt;
                 
                     Serbian Ground Beef, Veggie, and Potato Bake
                 &lt;/a&gt;
@@ -804,7 +804,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/cornbread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/cornbread/"&gt;
                 
                     Skillet Cornbread
                 &lt;/a&gt;
@@ -812,7 +812,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/skillet-spanakopita/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/skillet-spanakopita/"&gt;
                 
                     Skillet Spanakopita
                 &lt;/a&gt;
@@ -820,7 +820,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/black-bean-soup/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/black-bean-soup/"&gt;
                 
                     Slow Cooker Black Bean Soup
                 &lt;/a&gt;
@@ -828,7 +828,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-cacciatore/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chicken-cacciatore/"&gt;
                 
                     Slow Cooker Chicken Cacciatore 
                 &lt;/a&gt;
@@ -836,7 +836,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/slow-cooker-pork-tacos/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/slow-cooker-pork-tacos/"&gt;
                 
                     Slow Cooker Pork Tacos
                 &lt;/a&gt;
@@ -844,7 +844,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/slow-cook-pot-roast/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/slow-cook-pot-roast/"&gt;
                 
                     Slow Cooker Pot Roast
                 &lt;/a&gt;
@@ -852,7 +852,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/spinach-bacon-quiche/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/spinach-bacon-quiche/"&gt;
                 
                     Spinach and Bacon Quiche
                 &lt;/a&gt;
@@ -860,7 +860,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/spinach-artichoke-pasta/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/spinach-artichoke-pasta/"&gt;
                 
                     Spinach Artichoke Pasta
                 &lt;/a&gt;
@@ -868,7 +868,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/sweet-potato-black-bean-chili/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/sweet-potato-black-bean-chili/"&gt;
                 
                     Sweet Potato Black Bean Chili
                 &lt;/a&gt;
@@ -876,7 +876,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/sweet-potato-pancakes/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/sweet-potato-pancakes/"&gt;
                 
                     Sweet Potato Pancakes
                 &lt;/a&gt;
@@ -884,7 +884,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/chicken-marsala/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/chicken-marsala/"&gt;
                 
                     The Best Chicken Marsala
                 &lt;/a&gt;
@@ -892,7 +892,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/tricolour-pulao/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/tricolour-pulao/"&gt;
                 
                     Tricolour Pulao
                 &lt;/a&gt;
@@ -900,7 +900,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/white-beans-with-mushrooms-and-marinara/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/"&gt;
                 
                     White Beans with Mushrooms and Marinara
                 &lt;/a&gt;
@@ -908,7 +908,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/white-lasagna/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/white-lasagna/"&gt;
                 
                     White Lasagna
                 &lt;/a&gt;
@@ -916,7 +916,7 @@
 
             &lt;/li&gt;
             &lt;li class="post-list-item"&gt;
-                &lt;a href="http://192.168.1.128:8000/posts/recipes/onion-bread/"&gt;
+                &lt;a href="https://bstreete.github.io/posts/recipes/onion-bread/"&gt;
                 
                     Wry Braid (Onion Bread)
                 &lt;/a&gt;
@@ -927,4 +927,4 @@
 &lt;/div&gt;
 &lt;!-- End post-list post_list_2676d37f6de547838fe70e049ed33c6e --&gt;
 
-&lt;/div&gt;</description><guid>http://192.168.1.128:8000/posts/recipes/recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>https://bstreete.github.io/posts/recipes/recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about nikola)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/categories/nikola.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 22:33:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding Icons</title><link>http://192.168.1.128:8000/posts/tech/adding-icons/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about nikola)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/nikola.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding Icons</title><link>https://bstreete.github.io/posts/tech/adding-icons/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;I spent this afternoon creating and adding a favicon and logo to the webpage.
 The original inspiration was to print out some QR codes with a snazzy logo.
 I used &lt;a href="https://www.canva.com/"&gt;Canva&lt;/a&gt; to create a simple logo using some of their software engineering templates.
@@ -78,7 +78,7 @@ I modified the &lt;code&gt;base.tmpl&lt;/code&gt; to move the logo around a litt
     &amp;lt;/div&amp;gt;
 &amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>gimp</category><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/adding-icons/</guid><pubDate>Thu, 11 Dec 2025 22:02:04 GMT</pubDate></item><item><title>Changing to the Gruberwine Theme</title><link>http://192.168.1.128:8000/posts/tech/changing-to-the-gruberwine-theme/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;/div&gt;</description><category>gimp</category><category>nikola</category><guid>https://bstreete.github.io/posts/tech/adding-icons/</guid><pubDate>Thu, 11 Dec 2025 22:02:04 GMT</pubDate></item><item><title>Changing to the Gruberwine Theme</title><link>https://bstreete.github.io/posts/tech/changing-to-the-gruberwine-theme/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;After converting most of the Hugo posts from toml to Asciidoc, I didn’t like the formatting.
 I tried out a few of the &lt;a href="https://themes.getnikola.com/"&gt;built-in themes&lt;/a&gt; and ended up with the Gruberwine theme.&lt;/p&gt;
 &lt;/div&gt;
@@ -114,14 +114,14 @@ I modified a few of the provided templates to comment out that logic.&lt;/p&gt;
 I duplicated the original template and added a manual index page for recipes that uses a different sort in the short code.
 Since I didn’t specify a start/stop index, it contains all of the recipes on the site, and it’s auto-generated using the existing infrastructure.
 I removed dates from the custom template, because it read better to me.
-See &lt;a href="http://192.168.1.128:8000/posts/recipes/recipe-index/"&gt;the Recipe Index page&lt;/a&gt; for an example sorted alphabetically compared to the default &lt;a href="http://192.168.1.128:8000/categories/cat_recipes"&gt;Recipe Category page&lt;/a&gt;.&lt;/p&gt;
+See &lt;a href="https://bstreete.github.io/posts/recipes/recipe-index/"&gt;the Recipe Index page&lt;/a&gt; for an example sorted alphabetically compared to the default &lt;a href="https://bstreete.github.io/categories/cat_recipes"&gt;Recipe Category page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="listingblock"&gt;
 &lt;div class="title"&gt;Custom Index Page&lt;/div&gt;
 &lt;div class="content"&gt;
 &lt;pre class="highlight"&gt;&lt;code class="language-go" data-lang="go"&gt; {{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}} &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/changing-to-the-gruberwine-theme/</guid><pubDate>Mon, 08 Dec 2025 13:41:32 GMT</pubDate></item><item><title>Migrating from Hugo to Nikola with Asciidoc</title><link>http://192.168.1.128:8000/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+&lt;/div&gt;</description><category>nikola</category><guid>https://bstreete.github.io/posts/tech/changing-to-the-gruberwine-theme/</guid><pubDate>Mon, 08 Dec 2025 13:41:32 GMT</pubDate></item><item><title>Migrating from Hugo to Nikola with Asciidoc</title><link>https://bstreete.github.io/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;I’ve had a small recipe website for a while using Hugo with some custom short-codes to enable additional metadata that I thought would be useful.
 After a few years, I’ve soured a little bit on &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt;, mostly because I don’t use Go much, debugging or adding capabilities was not as intuitive for me.
 I’ve been using &lt;a href="https://docs.asciidoctor.org"&gt;Asciidoctor&lt;/a&gt; for document generation at work, and I wanted to continue playing with that.
@@ -245,4 +245,4 @@ If included, the &lt;code&gt;SITE_URL&lt;/code&gt; was appended to the entire st
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>nikola</category><guid>http://192.168.1.128:8000/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</guid><pubDate>Sun, 07 Dec 2025 14:54:51 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>nikola</category><guid>https://bstreete.github.io/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</guid><pubDate>Sun, 07 Dec 2025 14:54:51 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about italian)</title><link>http://192.168.1.128:8000/</link><description></description><atom:link href="http://192.168.1.128:8000/categories/italian.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Thu, 11 Dec 2025 23:04:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>White Beans with Mushrooms and Marinara</title><link>http://192.168.1.128:8000/posts/recipes/white-beans-with-mushrooms-and-marinara/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about italian)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/italian.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>White Beans with Mushrooms and Marinara</title><link>https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -69,7 +69,7 @@ Serve hot, with garlic bread for dipping!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>italian</category><category>pasta</category><category>vegetarian</category><guid>http://192.168.1.128:8000/posts/recipes/white-beans-with-mushrooms-and-marinara/</guid><pubDate>Thu, 11 Dec 2025 17:53:22 GMT</pubDate></item><item><title>Italian Bread</title><link>http://192.168.1.128:8000/posts/recipes/italian-bread/</link><dc:creator>Amanda Davis</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>italian</category><category>pasta</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/</guid><pubDate>Thu, 11 Dec 2025 17:53:22 GMT</pubDate></item><item><title>Italian Bread</title><link>https://bstreete.github.io/posts/recipes/italian-bread/</link><dc:creator>Amanda Davis</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -147,7 +147,7 @@ Slash the top diagonally across the top every couple of inches with a sharp knif
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>bread</category><category>italian</category><guid>http://192.168.1.128:8000/posts/recipes/italian-bread/</guid><pubDate>Thu, 11 Dec 2025 14:01:23 GMT</pubDate></item><item><title>Cacio e Pepe</title><link>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+&lt;/div&gt;</description><category>bread</category><category>italian</category><guid>https://bstreete.github.io/posts/recipes/italian-bread/</guid><pubDate>Thu, 11 Dec 2025 14:01:23 GMT</pubDate></item><item><title>Cacio e Pepe</title><link>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
 &lt;div class="sectionbody"&gt;
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
@@ -223,4 +223,4 @@ If you use the powdery stuff in the green bottle, it will leave you with a grain
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>http://192.168.1.128:8000/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item></channel></rss>
