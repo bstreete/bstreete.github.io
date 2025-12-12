@@ -5,7 +5,7 @@
 .. category: recipes
 .. description: 
 .. type: text
-.. tags: entree, slow cooker, favorites
+.. tags: entree, slow cooker, favorites, kid approved
 .. author: Budget Bytes
 .. preptime: 10 min
 .. cooktime: 1 hr 20 min
