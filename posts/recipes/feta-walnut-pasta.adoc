@@ -5,7 +5,7 @@
 .. category: recipes
 .. description: 
 .. type: text
-.. tags: entree, favorites
+.. tags: entree, favorites, kid approved
 ///
 
 ## Ingredients

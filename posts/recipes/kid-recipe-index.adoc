@@ -1,0 +1,17 @@
+///
+.. title: Kid Recipe Index
+.. slug: kid-recipe-index
+.. date: 1970-01-01
+.. tags: 
+.. category: masters
+.. author: 
+.. link: 
+.. description: 
+.. type: text
+.. cooktime: 
+.. preptime: 
+///
+
+List of recipes the kids (usually) are happy to eat. 
+
+{{% post-list sort="title" categories="recipes" tags="kid approved" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}}
