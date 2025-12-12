@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Brayden Streeter)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/brayden-streeter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 06:15:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding Icons</title><link>https://bstreete.github.io/posts/tech/adding-icons/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Brayden Streeter)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/brayden-streeter.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Fri, 12 Dec 2025 16:43:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding Icons</title><link>https://bstreete.github.io/posts/tech/adding-icons/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
 &lt;p&gt;I spent this afternoon creating and adding a favicon and logo to the webpage.
 The original inspiration was to print out some QR codes with a snazzy logo.
 I used &lt;a href="https://www.canva.com/"&gt;Canva&lt;/a&gt; to create a simple logo using some of their software engineering templates.
@@ -577,8 +577,8 @@ Mix in tomato mixture.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;
-&lt;!-- Begin post-list post_list_057705cc04a346dfaa3bbbdcf8e9c59b --&gt;
-&lt;/p&gt;&lt;div id="post_list_057705cc04a346dfaa3bbbdcf8e9c59b" class="post-list"&gt;
+&lt;!-- Begin post-list post_list_a0ba63497e88491f97ecd58d1f1bd420 --&gt;
+&lt;/p&gt;&lt;div id="post_list_a0ba63497e88491f97ecd58d1f1bd420" class="post-list"&gt;
     &lt;ul class="post-list"&gt;
             &lt;li class="post-list-item"&gt;
                 &lt;a href="https://bstreete.github.io/posts/recipes/not-butter-chicken/"&gt;
@@ -606,6 +606,6 @@ Mix in tomato mixture.&lt;/p&gt;
             &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-&lt;!-- End post-list post_list_057705cc04a346dfaa3bbbdcf8e9c59b --&gt;
+&lt;!-- End post-list post_list_a0ba63497e88491f97ecd58d1f1bd420 --&gt;
 
 &lt;/div&gt;</description><guid>https://bstreete.github.io/posts/recipes/kid-recipe-index/</guid><pubDate>Thu, 01 Jan 1970 07:00:00 GMT</pubDate></item></channel></rss>
