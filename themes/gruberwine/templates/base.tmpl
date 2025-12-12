@@ -43,13 +43,14 @@
         <!-- Navigation Menu - on top on small screens, down the left on larger -->
 
 		<div class="navlinks">
+
 			<a href="/">
 				<div id="titleauth">
-				    {% if show_blog_title %}
-    					{{ blog_title }}<br /> by {{ blog_author }}
-                    {% else %}
-                        <img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo">
-                    {% endif %}
+					{% if show_blog_title %}
+						{{ blog_title }}<br /> by {{ blog_author }}
+					{% else %}
+						<img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo">
+					{% endif %}
 				</div>
 			</a>
 
