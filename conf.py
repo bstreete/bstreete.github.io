@@ -159,7 +159,7 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archives', 'fa fa-folder-open'),
         ('/categories/index.html', 'Tags', 'fa fa-tags'),
         ("/posts/recipes/recipe-index/", "All Recipes", "fa fa-utensils"),
-        ("/posts/recipes/kid-recipe-index/", "Kid Approved Recipes", "fa fa-hotdog"),
+        ("/posts/recipes/kid-recipe-index/", "Kid Approved Recipes", "fas fa-birthday-cake"),
         ('https://github.com/bstreete/bstreete.github.io', 'Source', 'fa fa-code'),
         ('/rss.xml', 'RSS', 'fa fa-rss'),
     ),
