@@ -1,0 +1,53 @@
+///
+.. title: Converting Ubuntu Desktop to Server
+.. slug: converting-ubuntu-desktop-to-server
+.. date: 2025-12-13 12:28:43 UTC-07:00
+.. tags: ubuntu, home assistant
+.. category: tech
+.. link: 
+.. description: 
+.. type: text
+///
+
+I've got an old laptop I was using to play around with https://www.home-assistant.io/[Home Assistant]. 
+I started with a clean install of Ubuntu desktop, but I realized I didn't need the desktop. 
+I followed this https://askubuntu.com/questions/1313733/convert-ubuntu-desktop-to-server-edition-20-04[Ask Ubuntu] post to install the server version (CLI only). 
+
+```bash
+sudo apt install ubuntu-server
+
+# I got a failure message: 
+E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/landscape-client/landscape-common_24.02-0ubuntu5.6_amd64.deb  404  Not Found [IP: 91.189.91.83 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+# I ran both suggestions: 
+sudo apt-get update
+sudo apt install ubuntu-server --fix-missing
+sudo reboot
+```
+
+After the reboot, I set the default boot version to the server edition. 
+
+```bash
+sudo systemctl set-default multi-user.target
+sudo reboot
+```
+
+After moving over to the server edition, I removed the remaining packages and updated remaining packages. 
+```bash
+sudo apt purge ubuntu-desktop -y && sudo apt autoremove -y && sudo apt autoclean
+sudo apt-get update
+sudo apt-get upgrade
+sudo reboot
+```
+
+After the final reboot: 
+```bash
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-78-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Dec 13 12:45:51 PM MST 2025
+```
