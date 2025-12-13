@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/archive.html</loc>
-  <lastmod>2025-12-12T16:43:00Z</lastmod>
+  <lastmod>2025-12-13T18:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/authors/</loc>
-  <lastmod>2025-12-11T14:03:00Z</lastmod>
+  <lastmod>2025-12-13T18:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/authors/add-a-pinch/</loc>
@@ -214,6 +214,10 @@
   <lastmod>2025-12-11T13:44:00Z</lastmod>
  </url>
  <url>
+  <loc>https://bstreete.github.io/authors/taste-of-home/</loc>
+  <lastmod>2025-12-13T18:46:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://bstreete.github.io/authors/the-bread-machine-cookbook/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -255,7 +259,7 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/categories/</loc>
-  <lastmod>2025-12-11T23:04:00Z</lastmod>
+  <lastmod>2025-12-13T18:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/categories/bread-machine/</loc>
@@ -324,6 +328,10 @@
  <url>
   <loc>https://bstreete.github.io/categories/favorites/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/categories/fudge/</loc>
+  <lastmod>2025-12-13T18:46:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/categories/german/</loc>
@@ -435,47 +443,47 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/index-1.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-10.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-11.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-2.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-3.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-4.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-5.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-6.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-7.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-8.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-9.html</loc>
-  <lastmod>2025-12-12T16:44:00Z</lastmod>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/listings/</loc>
@@ -488,6 +496,14 @@
  <url>
   <loc>https://bstreete.github.io/listings/hello.py.html</loc>
   <lastmod>2025-12-12T16:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/posts/butterscotch-fudge/</loc>
+  <lastmod>2025-12-13T18:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/posts/peanut-butter-fudge/</loc>
+  <lastmod>2025-12-13T18:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/posts/recipes/2am-chili/</loc>
@@ -572,6 +588,10 @@
  <url>
   <loc>https://bstreete.github.io/posts/recipes/butternut-squash-soup/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/posts/recipes/butterscotch-fudge/</loc>
+  <lastmod>2025-12-13T18:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</loc>
@@ -836,6 +856,10 @@
  <url>
   <loc>https://bstreete.github.io/posts/recipes/peanut-butter-blossom-cookies/</loc>
   <lastmod>2025-12-11T13:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/posts/recipes/peanut-butter-fudge/</loc>
+  <lastmod>2025-12-13T18:51:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/posts/recipes/perfect-sauce-gravy-base/</loc>
