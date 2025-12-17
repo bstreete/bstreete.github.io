@@ -1,0 +1,125 @@
+///
+.. title: Adding MQTT and Zigbee to Home Assistant Docker
+.. slug: adding-mqttzigbee-to-home-assistant-docker
+.. date: 2025-12-13 13:32:36 UTC-07:00
+.. tags: mqtt, home assistant, zigbee, docker
+.. category: tech
+.. link: 
+.. description: 
+.. type: text
+///
+
+I found some cheap Zigbee Aqara door and window sensors that I want to incorporate into my Home Assistant setup. 
+Since my "server" is a 10 year old laptop, it doesn't support UEFI boot so I ended up using a Docker container for the Home Assistant server. 
+Zigbee integrations are typically through MQTT protocols, but the official docs reference add-ons (which are not supported in Docker builds).
+I followed the configuration steps from https://dongle.sonoff.tech/guide/dongle-lmg21/connecting_to_zigbee2mqtt/[Sonoff] which included the needed dependencies. 
+
+## Zigbee2MQTT
+
+Zigbee2MQTT converts Zigbee data into MQTT format and forwards it to an MQTT broker. 
+I followed this https://www.zigbee2mqtt.io/guide/installation/02_docker.html[simple guide] to get started. 
+I essentially copy-pasted the `compose.yml` information and tweaked a few paths to match what I wanted. 
+
+.Final compose.yml
+```yaml
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: ghcr.io/koenkk/zigbee2mqtt
+    restart: unless-stopped
+    volumes:
+      - /home/brayden/zigbee2mqtt:/app/data
+      - /run/udev:/run/udev:ro
+    ports:
+      # Frontend port
+      - 8080:8080
+    devices:
+      # Make sure this matched your adapter location - I had to update this based on my configuration
+      - /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_50d8e108cb3aef1189912c1455516304-if00-port0:/dev/ttyUSB0
+```
+
+## MQTT Broker - Mosquitto
+
+I started with an https://cedalo.com/blog/mosquitto-docker-configuration-ultimate-guide/#How_to_install_and_configure_Mosquitto_MQTT_broker_in_Docker_from_scratch[example guide on instantiating a Mosquitto Docker image]. 
+The Sonoff guide recommended a Raspberry Pi set of instructions that did not use Docker. 
+I didn't want to reverse engineer those steps, so I kept looking. 
+The instructions have a `compose.yml` entry towards the bottom of the page that I ended up using nearly verbatim. 
+
+.Final compose.yml
+```yml
+ 
+  mosquitto:
+    container_name: mosquitto
+    image: "eclipse-mosquitto:2"
+    volumes: 
+      - /home/brayden/mosquitto/config:/mosquitto/config
+      - /home/brayden/mosquitto/data:/mosquitto/data 
+      - /home/brayden/mosquitto/log:/mosquitto/log
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    privileged: true 
+    ports:
+      - 1883:1883
+      - 8883:8883
+      - 9001:9001
+
+    networks:
+      - mosquitto
+
+networks:
+  mosquitto:
+    name: mosquitto
+    driver: bridge
+
+```
+
+## Configuring Zigbee2MQTT
+
+Start the new containers first. 
+
+```bash
+$ sudo docker compose up -d
+[+] Running 4/4
+ ✔ Container mosquitto      Running          0.0s
+ ✔ Container homeassistant  Running          0.0s
+ ✔ Container esphome        Running          0.0s
+ ✔ Container zigbee2mqtt    Running          0.0s
+```
+
+Go to the Zigbee2MQTT frontend webserver at port 8080. 
+Example: `http://localhost:8080` for a local install. 
+I filled out the dropdowns with the needed information. 
+Setting the correct USB device for the Sonoff Zigbee dongle was the only thing that took a second to figure out. 
+I hit apply, and the wizard saved the information and restarted the instance. 
+
+The first time I tried it, refreshing the page restarted the wizard. 
+Per the Zigbee2MQTT docs, this indicates something is wrong with my configuration. 
+In my case, the logs showed I set an incorrect device path. 
+
+```bash
+less data/log/2025-12-13.21-11-35/log.log
+z2m: Error: Error: No such file or directory, cannot open /dev/ttyUSB0
+```
+
+Once I fixed the `compose.yml` mapping of the device to `/dev/ttyUSB0`, I couldn't connect MQTT to the Zigbee2MQTT containers. 
+```bash
+[2025-12-13 21:37:40] info:     z2m: Connecting to MQTT server at mqtt://localhost:1883
+[2025-12-13 21:37:40] error:    z2m: MQTT failed to connect, exiting... ()
+``` 
+I played around with this setting a little bit in the `compose.yml`, but was stymied. 
+The Zigbee2MQTT docs recommend using the IP of the docker0 bridge to establish the connection: server: mqtt://172.17.0.1.
+I also tried using the address of the physical host with the same error. 
+
+```bash
+[2025-12-13 21:44:56] info:     z2m: Connecting to MQTT server at mqtt://172.17.0.1:1883
+[2025-12-13 21:44:57] error:    z2m: MQTT failed to connect, exiting... (read ECONNRESET)
+```
+ 
+It ended up being a mistake in the `compose.yml`. 
+I placed the `mosquitto.conf` in the wrong directory, so the default version was used which disables unauthenticated requests from external hosts. 
+Unfortunately, separate containers are considered a different host. 
+Once that was corrected, Zigbee2MQTT successfully finished the configuration wizard. 
+
+From there, I added the MQTT integration into Home Assistant following the https://www.home-assistant.io/integrations/mqtt#setting-up-a-broker[documentation].
+After adding the integration, I simply had to select the "Permit Join" button the Home Assistant dashboard, and pair my Zigbee sensor with the controller. 
+
+image::zigbee2mqtt_bridge.png[]
