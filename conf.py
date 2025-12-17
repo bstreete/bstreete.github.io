@@ -369,7 +369,8 @@ COMPILERS = {
 }
 
 ASCIIDOC_BINARY = "asciidoctor"
-ASCIIDOC_OPTIONS = ""
+ASCIIDOC_OPTIONS = f"-a imagesdir=../../images"
+
 # Enable reST directives that insert the contents of external files such
 # as "include" and "raw." This maps directly to the docutils file_insertion_enabled
 # config. See: https://docutils.sourceforge.io/docs/user/config.html#file-insertion-enabled

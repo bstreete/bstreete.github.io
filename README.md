@@ -50,7 +50,7 @@ A mix of files can be used for the project, as the `conf.py` identifies unique c
 ~/nikola-env/bin/nikola build
 
 # Complete rebuild of the site 
-~/nikola-env/bin/nikola build -a
+~/nikola-env/bin/nikola build -a --conf=local_conf.py
 
 # Run a local webserver for testing
 ~/nikola-env/bin/nikola serve
