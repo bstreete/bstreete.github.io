@@ -528,7 +528,7 @@ tt,
 pre {
 	padding: 0 3px 2px;
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-	font-size: 13px;
+	font-size: 90%;
 	color: #333;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -547,7 +547,7 @@ pre {
 	display: block;
 	padding: 11.5px;
 	margin: 0 0 12px;
-	font-size: 14px;
+	/* font-size: 14px; */
 	line-height: 24px;
 	word-break: break-all;
 	word-wrap: normal;
