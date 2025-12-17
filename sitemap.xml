@@ -11,7 +11,7 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/archive.html</loc>
-  <lastmod>2025-12-13T18:52:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/authors/</loc>
@@ -259,7 +259,7 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/categories/</loc>
-  <lastmod>2025-12-13T18:46:00Z</lastmod>
+  <lastmod>2025-12-17T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/categories/bread-machine/</loc>
@@ -314,6 +314,10 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>https://bstreete.github.io/categories/docker/</loc>
+  <lastmod>2025-12-17T16:39:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://bstreete.github.io/categories/entree/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -358,6 +362,10 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>https://bstreete.github.io/categories/home-assistant/</loc>
+  <lastmod>2025-12-13T19:50:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://bstreete.github.io/categories/indian/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
@@ -380,6 +388,10 @@
  <url>
   <loc>https://bstreete.github.io/categories/main/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/categories/mqtt/</loc>
+  <lastmod>2025-12-17T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/categories/nikola/</loc>
@@ -434,8 +446,16 @@
   <lastmod>2025-12-08T16:22:00Z</lastmod>
  </url>
  <url>
+  <loc>https://bstreete.github.io/categories/ubuntu/</loc>
+  <lastmod>2025-12-13T19:47:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://bstreete.github.io/categories/vegetarian/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/categories/zigbee/</loc>
+  <lastmod>2025-12-17T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/galleries/</loc>
@@ -443,47 +463,47 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/index-1.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-10.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-11.html</loc>
-  <lastmod>2025-12-13T18:52:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-2.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-3.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-4.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-5.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-6.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-7.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-8.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/index-9.html</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/listings/</loc>
@@ -495,15 +515,15 @@
  </url>
  <url>
   <loc>https://bstreete.github.io/listings/hello.py.html</loc>
-  <lastmod>2025-12-12T16:27:00Z</lastmod>
+  <lastmod>2025-12-17T17:08:00Z</lastmod>
  </url>
  <url>
-  <loc>https://bstreete.github.io/posts/butterscotch-fudge/</loc>
-  <lastmod>2025-12-13T18:46:00Z</lastmod>
+  <loc>https://bstreete.github.io/posts/adding-mqttzigbee-to-home-assistant-docker/</loc>
+  <lastmod>2025-12-17T16:39:00Z</lastmod>
  </url>
  <url>
-  <loc>https://bstreete.github.io/posts/peanut-butter-fudge/</loc>
-  <lastmod>2025-12-13T18:50:00Z</lastmod>
+  <loc>https://bstreete.github.io/posts/converting-ubuntu-desktop-to-server/</loc>
+  <lastmod>2025-12-13T19:47:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/posts/recipes/2am-chili/</loc>
@@ -968,6 +988,10 @@
  <url>
   <loc>https://bstreete.github.io/posts/tech/changing-to-the-gruberwine-theme/</loc>
   <lastmod>2025-12-08T16:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</loc>
+  <lastmod>2025-12-17T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://bstreete.github.io/posts/tech/migrating-from-hugo-to-nikola-with-asciidoc/</loc>

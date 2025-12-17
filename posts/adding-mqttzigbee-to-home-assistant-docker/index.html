@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html \ prefix="
+        og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+    " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adding MQTT and Zigbee to Home Assistant Docker | Brayden's Rants and Recipes</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="canonical" href="https://bstreete.github.io/posts/adding-mqttzigbee-to-home-assistant-docker/">
+<link rel="icon" href="../../favicon.png" sizes="40x40">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Brayden Streeter">
+<link rel="prev" href="../tech/converting-ubuntu-desktop-to-server/" title="Converting Ubuntu Desktop to Server" type="text/html">
+<meta property="og:site_name" content="Brayden's Rants and Recipes">
+<meta property="og:title" content="Adding MQTT and Zigbee to Home Assistant Docker">
+<meta property="og:url" content="https://bstreete.github.io/posts/adding-mqttzigbee-to-home-assistant-docker/">
+<meta property="og:description" content='I found some cheap Zigbee Aqara door and window sensors that I want to incorporate into my Home Assistant setup.
+Since my "server" is a 10 year old laptop, it doesn’t support UEFI boot so I ended up u'>
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-12-13T13:32:36-07:00">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="home assistant">
+<meta property="article:tag" content="mqtt">
+<meta property="article:tag" content="zigbee">
+</head>
+<body>
+
+	<a href="#page-content" class="sr-only sr-only-focusable">
+		Skip to main content
+	</a>
+
+	
+
+    <section id="header"><a href="../../">
+			<div class="logo">
+					Brayden's Rants and Recipes
+    		</div>
+			</a>
+    </section><section id="socialNav"><!-- Navigation Menu - on top on small screens, down the left on larger --><div class="navlinks">
+
+			<a href="../../">
+				<div id="titleauth">
+						<img src="https://bstreete.github.io//images/main_logo.png" alt="Brayden's Rants and Recipes" id="logo">
+</div>
+			</a>
+
+            <!-- Navigation links (hidden by default) -->
+			<div id="navmenuitems">
+				            <a href="../../index.html" title="Home">
+                <span class="menuitemtext">Home</span>
+                <span class="menuitemicon"><i class="fa fa-home"></i></span>
+            </a>
+            <a href="../../archive.html" title="Archives">
+                <span class="menuitemtext">Archives</span>
+                <span class="menuitemicon"><i class="fa fa-folder-open"></i></span>
+            </a>
+            <a href="../../categories/index.html" title="Tags">
+                <span class="menuitemtext">Tags</span>
+                <span class="menuitemicon"><i class="fa fa-tags"></i></span>
+            </a>
+            <a href="../recipes/recipe-index/" title="All Recipes">
+                <span class="menuitemtext">All Recipes</span>
+                <span class="menuitemicon"><i class="fa fa-utensils"></i></span>
+            </a>
+            <a href="../recipes/kid-recipe-index/" title="Kid Approved Recipes">
+                <span class="menuitemtext">Kid Approved Recipes</span>
+                <span class="menuitemicon"><i class="fas fa-birthday-cake"></i></span>
+            </a>
+            <a href="https://github.com/bstreete/bstreete.github.io" title="Source">
+                <span class="menuitemtext">Source</span>
+                <span class="menuitemicon"><i class="fa fa-code"></i></span>
+            </a>
+            <a href="../../rss.xml" title="RSS">
+                <span class="menuitemtext">RSS</span>
+                <span class="menuitemicon"><i class="fa fa-rss"></i></span>
+            </a>
+    
+    
+
+			</div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" id="hamburger" class="icon" onclick="toggleNav()">
+				<i class="fa fa-bars">
+				</i>
+			</a>
+		</div>
+
+	</section><section class="page-content"><div class="content" rel="main">
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Adding MQTT and Zigbee to Home Assistant Docker</a></h1>
+
+        <div class="metadata">
+            <p class="dateline"><a href="." rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-13T13:32:36-07:00" itemprop="datePublished" title="2025-12-13">2025-12-13</time></a></p>
+
+                    <p class="sourceline"><a href="index.adoc" class="sourcelink"><i class="fa fa-file-code"></i> Source</a></p>
+
+            
+                <p class="linkline"><a href="../../authors/brayden-streeter/"><i class="fa fa-at"></i> Brayden Streeter</a></p>
+            
+                <div class="tags">
+<h3 class="metadata-title">
+<i class="fa fa-tags"></i> Tags:</h3>
+        <ul itemprop="keywords" class="tags-ul">
+<li><a class="tag p-category" href="../../categories/docker/" rel="tag">docker</a></li>
+            <li><a class="tag p-category" href="../../categories/home-assistant/" rel="tag">home assistant</a></li>
+            <li><a class="tag p-category" href="../../categories/mqtt/" rel="tag">mqtt</a></li>
+            <li><a class="tag p-category" href="../../categories/zigbee/" rel="tag">zigbee</a></li>
+        </ul>
+</div>
+
+        </div>
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="paragraph">
+<p>I found some cheap Zigbee Aqara door and window sensors that I want to incorporate into my Home Assistant setup.
+Since my "server" is a 10 year old laptop, it doesn’t support UEFI boot so I ended up using a Docker container for the Home Assistant server.
+Zigbee integrations are typically through MQTT protocols, but the official docs reference add-ons (which are not supported in Docker builds).
+I followed the configuration steps from <a href="https://dongle.sonoff.tech/guide/dongle-lmg21/connecting_to_zigbee2mqtt/">Sonoff</a> which included the needed dependencies.</p>
+</div>
+<div class="sect1">
+<h3 id="_zigbee2mqtt">Zigbee2MQTT</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Zigbee2MQTT converts Zigbee data into MQTT format and forwards it to an MQTT broker.
+I followed this <a href="https://www.zigbee2mqtt.io/guide/installation/02_docker.html">simple guide</a> to get started.
+I essentially copy-pasted the <code>compose.yml</code> information and tweaked a few paths to match what I wanted.</p>
+</div>
+<div class="listingblock">
+<div class="title">Final compose.yml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: ghcr.io/koenkk/zigbee2mqtt
+    restart: unless-stopped
+    volumes:
+      - /home/brayden/zigbee2mqtt:/app/data
+      - /run/udev:/run/udev:ro
+    ports:
+      # Frontend port
+      - 8080:8080
+    devices:
+      # Make sure this matched your adapter location - I had to update this based on my configuration
+      - /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_50d8e108cb3aef1189912c1455516304-if00-port0:/dev/ttyUSB0</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_mqtt_broker_mosquitto">MQTT Broker - Mosquitto</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I started with an <a href="https://cedalo.com/blog/mosquitto-docker-configuration-ultimate-guide/#How_to_install_and_configure_Mosquitto_MQTT_broker_in_Docker_from_scratch">example guide on instantiating a Mosquitto Docker image</a>.
+The Sonoff guide recommended a Raspberry Pi set of instructions that did not use Docker.
+I didn’t want to reverse engineer those steps, so I kept looking.
+The instructions have a <code>compose.yml</code> entry towards the bottom of the page that I ended up using nearly verbatim.</p>
+</div>
+<div class="listingblock">
+<div class="title">Final compose.yml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yml" data-lang="yml">  mosquitto:
+    container_name: mosquitto
+    image: "eclipse-mosquitto:2"
+    volumes:
+      - /home/brayden/mosquitto/config:/mosquitto/config
+      - /home/brayden/mosquitto/data:/mosquitto/data
+      - /home/brayden/mosquitto/log:/mosquitto/log
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - 1883:1883
+      - 8883:8883
+      - 9001:9001
+
+    networks:
+      - mosquitto
+
+networks:
+  mosquitto:
+    name: mosquitto
+    driver: bridge</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_configuring_zigbee2mqtt">Configuring Zigbee2MQTT</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Start the new containers first.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ sudo docker compose up -d
+[+] Running 4/4
+ ✔ Container mosquitto      Running          0.0s
+ ✔ Container homeassistant  Running          0.0s
+ ✔ Container esphome        Running          0.0s
+ ✔ Container zigbee2mqtt    Running          0.0s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Go to the Zigbee2MQTT frontend webserver at port 8080.
+Example: <code><a href="http://localhost:8080" class="bare">http://localhost:8080</a></code> for a local install.
+I filled out the dropdowns with the needed information.
+Setting the correct USB device for the Sonoff Zigbee dongle was the only thing that took a second to figure out.
+I hit apply, and the wizard saved the information and restarted the instance.</p>
+</div>
+<div class="paragraph">
+<p>The first time I tried it, refreshing the page restarted the wizard.
+Per the Zigbee2MQTT docs, this indicates something is wrong with my configuration.
+In my case, the logs showed I set an incorrect device path.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">less data/log/2025-12-13.21-11-35/log.log
+z2m: Error: Error: No such file or directory, cannot open /dev/ttyUSB0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once I fixed the <code>compose.yml</code> mapping of the device to <code>/dev/ttyUSB0</code>, I couldn’t connect MQTT to the Zigbee2MQTT containers.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">[2025-12-13 21:37:40] info:     z2m: Connecting to MQTT server at mqtt://localhost:1883
+[2025-12-13 21:37:40] error:    z2m: MQTT failed to connect, exiting... ()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I played around with this setting a little bit in the <code>compose.yml</code>, but was stymied.
+The Zigbee2MQTT docs recommend using the IP of the docker0 bridge to establish the connection: server: mqtt://172.17.0.1.
+I also tried using the address of the physical host with the same error.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">[2025-12-13 21:44:56] info:     z2m: Connecting to MQTT server at mqtt://172.17.0.1:1883
+[2025-12-13 21:44:57] error:    z2m: MQTT failed to connect, exiting... (read ECONNRESET)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It ended up being a mistake in the <code>compose.yml</code>.
+I placed the <code>mosquitto.conf</code> in the wrong directory, so the default version was used which disables unauthenticated requests from external hosts.
+Unfortunately, separate containers are considered a different host.
+Once that was corrected, Zigbee2MQTT successfully finished the configuration wizard.</p>
+</div>
+<div class="paragraph">
+<p>From there, I added the MQTT integration into Home Assistant following the <a href="https://www.home-assistant.io/integrations/mqtt#setting-up-a-broker">documentation</a>.
+After adding the integration, I simply had to select the "Permit Join" button the Home Assistant dashboard, and pair my Zigbee sensor with the controller.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../images/zigbee2mqtt_bridge.png" alt="zigbee2mqtt bridge">
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../tech/converting-ubuntu-desktop-to-server/" rel="prev" title="Converting Ubuntu Desktop to Server">Previous post</a>
+            </li>
+        </ul></nav></aside><hr>
+<footer id="footer"><p>Contents © 2025         <a href="mailto:bstreete@users.noreply.github.com">Brayden Streeter</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer></article>
+</div>
+	</section><script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+
+	</script><!-- end fancy dates --><script>
+
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+
+	</script><script src="../../assets/js/ToggleNav.js">
+	</script>
+</body>
+</html>

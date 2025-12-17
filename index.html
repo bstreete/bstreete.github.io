@@ -16,7 +16,7 @@
 <link rel="canonical" href="https://bstreete.github.io/">
 <link rel="icon" href="favicon.png" sizes="40x40">
 <link rel="next" href="index-1.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/recipes/peanut-butter-fudge/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/adding-mqttzigbee-to-home-assistant-docker/" type="text/html">
 </head>
 <body>
 
@@ -85,7 +85,221 @@
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/peanut-butter-fudge/" class="u-url">Peanut Butter Fudge</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/adding-mqttzigbee-to-home-assistant-docker/" class="u-url">Adding MQTT and Zigbee to Home Assistant Docker</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/adding-mqttzigbee-to-home-assistant-docker/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-13T13:32:36-07:00" title="2025-12-13">2025-12-13</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>I found some cheap Zigbee Aqara door and window sensors that I want to incorporate into my Home Assistant setup.
+Since my "server" is a 10 year old laptop, it doesn’t support UEFI boot so I ended up using a Docker container for the Home Assistant server.
+Zigbee integrations are typically through MQTT protocols, but the official docs reference add-ons (which are not supported in Docker builds).
+I followed the configuration steps from <a href="https://dongle.sonoff.tech/guide/dongle-lmg21/connecting_to_zigbee2mqtt/">Sonoff</a> which included the needed dependencies.</p>
+</div>
+<div class="sect1">
+<h3 id="_zigbee2mqtt">Zigbee2MQTT</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Zigbee2MQTT converts Zigbee data into MQTT format and forwards it to an MQTT broker.
+I followed this <a href="https://www.zigbee2mqtt.io/guide/installation/02_docker.html">simple guide</a> to get started.
+I essentially copy-pasted the <code>compose.yml</code> information and tweaked a few paths to match what I wanted.</p>
+</div>
+<div class="listingblock">
+<div class="title">Final compose.yml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: ghcr.io/koenkk/zigbee2mqtt
+    restart: unless-stopped
+    volumes:
+      - /home/brayden/zigbee2mqtt:/app/data
+      - /run/udev:/run/udev:ro
+    ports:
+      # Frontend port
+      - 8080:8080
+    devices:
+      # Make sure this matched your adapter location - I had to update this based on my configuration
+      - /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_50d8e108cb3aef1189912c1455516304-if00-port0:/dev/ttyUSB0</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_mqtt_broker_mosquitto">MQTT Broker - Mosquitto</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I started with an <a href="https://cedalo.com/blog/mosquitto-docker-configuration-ultimate-guide/#How_to_install_and_configure_Mosquitto_MQTT_broker_in_Docker_from_scratch">example guide on instantiating a Mosquitto Docker image</a>.
+The Sonoff guide recommended a Raspberry Pi set of instructions that did not use Docker.
+I didn’t want to reverse engineer those steps, so I kept looking.
+The instructions have a <code>compose.yml</code> entry towards the bottom of the page that I ended up using nearly verbatim.</p>
+</div>
+<div class="listingblock">
+<div class="title">Final compose.yml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yml" data-lang="yml">  mosquitto:
+    container_name: mosquitto
+    image: "eclipse-mosquitto:2"
+    volumes:
+      - /home/brayden/mosquitto/config:/mosquitto/config
+      - /home/brayden/mosquitto/data:/mosquitto/data
+      - /home/brayden/mosquitto/log:/mosquitto/log
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - 1883:1883
+      - 8883:8883
+      - 9001:9001
+
+    networks:
+      - mosquitto
+
+networks:
+  mosquitto:
+    name: mosquitto
+    driver: bridge</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h3 id="_configuring_zigbee2mqtt">Configuring Zigbee2MQTT</h3>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Start the new containers first.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ sudo docker compose up -d
+[+] Running 4/4
+ ✔ Container mosquitto      Running          0.0s
+ ✔ Container homeassistant  Running          0.0s
+ ✔ Container esphome        Running          0.0s
+ ✔ Container zigbee2mqtt    Running          0.0s</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Go to the Zigbee2MQTT frontend webserver at port 8080.
+Example: <code><a href="http://localhost:8080" class="bare">http://localhost:8080</a></code> for a local install.
+I filled out the dropdowns with the needed information.
+Setting the correct USB device for the Sonoff Zigbee dongle was the only thing that took a second to figure out.
+I hit apply, and the wizard saved the information and restarted the instance.</p>
+</div>
+<div class="paragraph">
+<p>The first time I tried it, refreshing the page restarted the wizard.
+Per the Zigbee2MQTT docs, this indicates something is wrong with my configuration.
+In my case, the logs showed I set an incorrect device path.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">less data/log/2025-12-13.21-11-35/log.log
+z2m: Error: Error: No such file or directory, cannot open /dev/ttyUSB0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once I fixed the <code>compose.yml</code> mapping of the device to <code>/dev/ttyUSB0</code>, I couldn’t connect MQTT to the Zigbee2MQTT containers.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">[2025-12-13 21:37:40] info:     z2m: Connecting to MQTT server at mqtt://localhost:1883
+[2025-12-13 21:37:40] error:    z2m: MQTT failed to connect, exiting... ()</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I played around with this setting a little bit in the <code>compose.yml</code>, but was stymied.
+The Zigbee2MQTT docs recommend using the IP of the docker0 bridge to establish the connection: server: mqtt://172.17.0.1.
+I also tried using the address of the physical host with the same error.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">[2025-12-13 21:44:56] info:     z2m: Connecting to MQTT server at mqtt://172.17.0.1:1883
+[2025-12-13 21:44:57] error:    z2m: MQTT failed to connect, exiting... (read ECONNRESET)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It ended up being a mistake in the <code>compose.yml</code>.
+I placed the <code>mosquitto.conf</code> in the wrong directory, so the default version was used which disables unauthenticated requests from external hosts.
+Unfortunately, separate containers are considered a different host.
+Once that was corrected, Zigbee2MQTT successfully finished the configuration wizard.</p>
+</div>
+<div class="paragraph">
+<p>From there, I added the MQTT integration into Home Assistant following the <a href="https://www.home-assistant.io/integrations/mqtt#setting-up-a-broker">documentation</a>.
+After adding the integration, I simply had to select the "Permit Join" button the Home Assistant dashboard, and pair my Zigbee sensor with the controller.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/zigbee2mqtt_bridge.png" alt="zigbee2mqtt bridge">
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/converting-ubuntu-desktop-to-server/" class="u-url">Converting Ubuntu Desktop to Server</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/tech/converting-ubuntu-desktop-to-server/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-13T12:28:43-07:00" title="2025-12-13">2025-12-13</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+<p>I’ve got an old laptop I was using to play around with <a href="https://www.home-assistant.io/">Home Assistant</a>.
+I started with a clean install of Ubuntu desktop, but I realized I didn’t need the desktop.
+I followed this <a href="https://askubuntu.com/questions/1313733/convert-ubuntu-desktop-to-server-edition-20-04">Ask Ubuntu</a> post to install the server version (CLI only).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">sudo apt install ubuntu-server
+
+# I got a failure message:
+E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/landscape-client/landscape-common_24.02-0ubuntu5.6_amd64.deb  404  Not Found [IP: 91.189.91.83 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+
+# I ran both suggestions:
+sudo apt-get update
+sudo apt install ubuntu-server --fix-missing
+sudo reboot</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After the reboot, I set the default boot version to the server edition.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">sudo systemctl set-default multi-user.target
+sudo reboot</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After moving over to the server edition, I removed the remaining packages and updated remaining packages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">sudo apt purge ubuntu-desktop -y &amp;&amp; sudo apt autoremove -y &amp;&amp; sudo apt autoclean
+sudo apt-get update
+sudo apt-get upgrade
+sudo reboot</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After the final reboot:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-78-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Dec 13 12:45:51 PM MST 2025</code></pre>
+</div>
+</div>
+    </div>
+    <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/peanut-butter-fudge/" class="u-url">Peanut Butter Fudge</a></h1>
 
         
         <div class="metadata">
@@ -706,121 +920,6 @@ Beat until foamy.</p>
 </li>
 <li>
 <p>Serve in thick slices with Irish butter and scalding hot tea.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-    </div>
-    <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/quick-pizza-dough/" class="u-url">Quick Pizza Dough</a></h1>
-
-        
-        <div class="metadata">
-            <p class="dateline"><a href="posts/recipes/quick-pizza-dough/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-11T06:42:36-07:00" title="2025-12-11">2025-12-11</time></a></p>
-
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div class="sect1">
-<h3 id="_ingredients">Ingredients</h3>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 cups all-purpose flour (or 1:1 whole wheat)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 tsp kosher salt</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 tbsp instant yeast</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3 tbsp olive oil</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h3 id="_directions">Directions</h3>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Mix the dry &amp; wet ingredients separately, then combine.
-Knead in the food processor until it holds into a ball (adding more flour through the feed tube). By hand, knead in ~1/4 cup more flour ~5 minutes.</p>
-</li>
-<li>
-<p>Turn the bowl over the dough (upside down) and let rise 15 minutes (prep your toppings now).</p>
-</li>
-<li>
-<p>Stretch, top and bake 425F ~20 minutes.
-Makes 2 crusts.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-    </div>
-    <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/peanut-butter-blossom-cookies/" class="u-url">Classıc Peanut Butter Blossom Cookies</a></h1>
-
-        
-        <div class="metadata">
-            <p class="dateline"><a href="posts/recipes/peanut-butter-blossom-cookies/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-11T06:36:04-07:00" title="2025-12-11">2025-12-11</time></a></p>
-
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div class="sect1">
-<h3 id="_ingredients">Ingredients</h3>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup granulated sugar</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup packed brown sugar</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup creamy peanut butter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup butter, softened</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 egg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 1/2 cups AP Flour</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3/4 teaspoon baking soda</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 teaspoon baking powder</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Additional granulated sugar</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">About 36 HERSHEY’S KISSES milk chocolate candies, unwrapped</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h3 id="_instrucfions">Instrucfions</h3>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Heat oven to 375°F.
-In large bowl, beat 1/2 cup granulated sugar, the brown sugar, peanut butfer, butter and egg with electric mixer on medium speed, or mix with spoon, until well blended.
-Stir in flour, baking soda and baking powder until dough forms.</p>
-</li>
-<li>
-<p>Shape dough into 1-inch balls; roll in additional granulated sugar.
-On ungreased cookie sheets, place about 2 inches apart.</p>
-</li>
-<li>
-<p>Bake 8 to 10 minutes or until edges are light golden brown.
-Immediately press 1 milk chocolate candy in center of each cookie.
-Remove from cookie sheets to cooling rack.</p>
 </li>
 </ol>
 </div>
