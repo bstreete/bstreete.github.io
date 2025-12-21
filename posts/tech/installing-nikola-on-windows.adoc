@@ -2,7 +2,7 @@
 .. title: Installing Nikola on Windows
 .. slug: installing-nikola-on-windows
 .. date: 2025-12-20 07:03:31 UTC-07:00
-.. tags: windows, nikola
+.. tags: windows, nikola, asciidoctor
 .. category: tech
 .. link: 
 .. description: 
@@ -36,6 +36,65 @@ Scanning posts......done!
 
 The `./cache` and `./output` directories did not contain any generated output. 
 I only see CSS and images copied over. 
-Running as an administrator didn't fix anything either.
+Running as an administrator didn't change anything.
 I didn't see any security actions taken by antivirus. 
 Googling for Windows specific issues against Nikola did not bring up any obvious fixes. 
+
+I modified `loader.py` in the Nikola source to dump all of the tasks when raising an error. 
+Nikola : 
+```bash
+render_pages
+redirect
+render_listings
+copy_files
+...
+copy_assets
+...
+render_taxonomies
+...
+render_sources
+...
+scale_images
+...
+render_posts
+render_posts:timeline_changes
+render_posts:cache\posts\tech\installing-nikola-on-windows.html
+```
+
+I noticed that all of my posts were being rendered as pages __and__ posts. 
+I started poking at the post/pages definitions in conf.py. I realized I had duplicate entries for posts: 
+```python
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.adoc", "posts", "post.tmpl"),
+    ("posts/tech/*.adoc", "tech", "post.tmpl"),
+    ("posts/recipes/*.adoc", "recipes", "post.tmpl"),
+)
+```
+
+Removing the `tech` and `recipes` entries corrected the duplicate entry issue. 
+
+```python
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.adoc", "posts", "post.tmpl"),
+)
+```
+
+I still received file not found errors. 
+Since previously created posts were failing to compile, I started with checking the compiler paths. 
+I always forget this, but on Windows Asciidoctor is typically invoked via script. 
+I tweaked `conf.py` to include alternate paths depending on the OS.
+```python
+import os   # To cover OS specific installs - Asciidoctor
+
+# ... 
+
+if os.name == 'nt':
+    ASCIIDOC_BINARY = "asciidoctor.bat"
+else: 
+    ASCIIDOC_BINARY = "asciidoctor"
+```
+
+After that, I was able to compile successfully. 
+I have not had a chance to test this on Linux yet, but I'm confident that this should "just work" across my dev environments moving forward. 
