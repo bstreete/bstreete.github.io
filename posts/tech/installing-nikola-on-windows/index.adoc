@@ -1,0 +1,100 @@
+///
+.. title: Installing Nikola on Windows
+.. slug: installing-nikola-on-windows
+.. date: 2025-12-20 07:03:31 UTC-07:00
+.. tags: windows, nikola, asciidoctor
+.. category: tech
+.. link: 
+.. description: 
+.. type: text
+///
+
+I was unsuccessful regenerating the Nikola website on a Windows 11 box. 
+I followed the startup guide and installed dependencies. 
+I ended up with a slightly different version of each tool, but I didn't think it would be fatal. 
+
+```powershell
+PS C:\Users\Brayden\repos\recipes> python --version
+Python 3.13.3
+[2025-12-20 07:44:45] INFO: Nikola: Did you mean "version"?
+PS C:\Users\Brayden\repos\recipes> ..\nikola-env\Scripts\nikola.exe --version 
+Nikola v8.3.3
+PS C:\Users\Brayden\repos\recipes> asciidoctor --version
+Asciidoctor 2.0.26 [https://asciidoctor.org]
+Runtime Environment (ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x64-mingw-ucrt]) (lc:IBM437 fs:UTF-8 in:UTF-8 ex:UTF-8)
+```
+
+Every attempt to regenerate the site raised the following error before I added any new posts.
+
+```powershell
+..\nikola-env\Scripts\nikola.exe build
+Scanning posts......done!
+[2025-12-20 07:44:12] ERROR: Nikola: Error loading tasks. An unhandled exception occurred.
+[2025-12-20 07:44:12] ERROR: Nikola: doit.exceptions.InvalidTask: Task generation 'render_site' has duplicated definition of 'render_posts:cache\posts\tech\installing-nikola-on-windows.html'
+[2025-12-20 07:44:12] WARNING: Nikola: To see more details, run Nikola in debug mode (set environment variable NIKOLA_DEBUG=1) or use NIKOLA_SHOW_TRACEBACKS=1
+``` 
+
+The `./cache` and `./output` directories did not contain any generated output. 
+I only see CSS and images copied over. 
+Running as an administrator didn't change anything.
+I didn't see any security actions taken by antivirus. 
+Googling for Windows specific issues against Nikola did not bring up any obvious fixes. 
+
+I modified `loader.py` in the Nikola source to dump all of the tasks when raising an error. 
+Nikola : 
+```bash
+render_pages
+redirect
+render_listings
+copy_files
+...
+copy_assets
+...
+render_taxonomies
+...
+render_sources
+...
+scale_images
+...
+render_posts
+render_posts:timeline_changes
+render_posts:cache\posts\tech\installing-nikola-on-windows.html
+```
+
+I noticed that all of my posts were being rendered as pages __and__ posts. 
+I started poking at the post/pages definitions in conf.py. I realized I had duplicate entries for posts: 
+```python
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.adoc", "posts", "post.tmpl"),
+    ("posts/tech/*.adoc", "tech", "post.tmpl"),
+    ("posts/recipes/*.adoc", "recipes", "post.tmpl"),
+)
+```
+
+Removing the `tech` and `recipes` entries corrected the duplicate entry issue. 
+
+```python
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.adoc", "posts", "post.tmpl"),
+)
+```
+
+I still received file not found errors. 
+Since previously created posts were failing to compile, I started with checking the compiler paths. 
+I always forget this, but on Windows Asciidoctor is typically invoked via script. 
+I tweaked `conf.py` to include alternate paths depending on the OS.
+```python
+import os   # To cover OS specific installs - Asciidoctor
+
+# ... 
+
+if os.name == 'nt':
+    ASCIIDOC_BINARY = "asciidoctor.bat"
+else: 
+    ASCIIDOC_BINARY = "asciidoctor"
+```
+
+After that, I was able to compile successfully. 
+I have not had a chance to test this on Linux yet, but I'm confident that this should "just work" across my dev environments moving forward. 

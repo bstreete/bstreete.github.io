@@ -1,133 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Sunset Oriental Cookbook)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/sunset-oriental-cookbook.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Indonesian Style Satay</title><link>https://bstreete.github.io/posts/recipes/indonesian-satay/</link><dc:creator>Sunset Oriental Cookbook</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Sunset Oriental Cookbook)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/sunset-oriental-cookbook.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Indonesian Style Satay</title><link>https://bstreete.github.io/posts/recipes/indonesian-satay/</link><dc:creator>Sunset Oriental Cookbook</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_protein_ingredients"&gt;Protein Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 pounds lean boneless beef (sirloin or top round), pork (butt or leg), or chicken&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 clove garlic, minced or pressed&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons soy sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon salad oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon ground cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon ground coriander&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_basting_sauce_ingredients"&gt;Basting Sauce Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tablespoons lemon juice&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons soy sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon ground cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon ground coriander&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_peanut_sauce_ingredients"&gt;Peanut Sauce Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup water&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2/3 cup creamy or crunchy peanut butter&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cloves garlic, minced or pressed&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons brown sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 tablespoons lemon juice&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon soy sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 to 1/2 teaspoon chili paste or crushed red pepper&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_protein_directions"&gt;Protein Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cut meat into 3/4 inch cubes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Stir together garlic, soy, oil, cumin, and coriander.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add meat and stir to coat evenly. Cover and refrigerate for 1 1/2 to 2 hours.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;After refrigerating, thread cubes of meat onto bamboo skewers. Place on grill at medium heat, or place on a rack in broiler about 4 to 6 inches below heat.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cook, turning often, until done. 8 to 10 minutes for beef, 15 minutes for pork, 12 minutes for chicken.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Three minutes before end of estimated cooking time, brush meat with basting sauce. Serve with peanut sauce and chili sauce.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_basting_sauce_directions"&gt;Basting Sauce Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a small bowl, combine all ingredients.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_peanut_sauce_directions"&gt;Peanut Sauce Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a small pan, combine water, peanut butter, and garlic.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cook over medium heat, stirring, until mixture boils and thickens.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Remove from heat and stir in brown sugar, lemon juice, soy sauce, and chili paste or crushed red pepper.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Let cool to room temperature before serving.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Thin with water to make a medium-thick sauce.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>entree</category><category>favorites</category><category>grill</category><guid>https://bstreete.github.io/posts/recipes/indonesian-satay/</guid><pubDate>Sun, 29 Mar 2020 15:48:12 GMT</pubDate></item></channel></rss>

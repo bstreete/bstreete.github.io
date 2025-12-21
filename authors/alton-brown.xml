@@ -1,116 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Alton Brown)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/alton-brown.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Carrot Cake</title><link>https://bstreete.github.io/posts/recipes/carrot-cake/</link><dc:creator>Alton Brown</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts by Alton Brown)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/authors/alton-brown.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Carrot Cake</title><link>https://bstreete.github.io/posts/recipes/carrot-cake/</link><dc:creator>Alton Brown</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_optional_ingredients"&gt;Optional Ingredients&lt;/h4&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Raisins and walnuts are an optional (and welcome) addition to the cake mix.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_cake_ingredients"&gt;Cake Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Unsalted butter, for the pan&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;12 ounces, approximately 2 1/2 cups, all-purpose flour, plus - extra for pan&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;12 ounces grated carrots, medium grate, approximately 6 medium&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon baking powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon baking soda&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon ground allspice&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon ground cinnamon&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon freshly ground nutmeg&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 teaspoon salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;10 ounces sugar, approximately 1 1/3 cups&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 ounces dark brown sugar, approximately 1/4 cup firmly packed&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 large eggs&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;6 ounces plain yogurt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;6 ounces vegetable oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_frosting_ingredients"&gt;Frosting Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8 ounces cream cheese&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 ounces unsalted butter, room temperature&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon vanilla extract&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;9 ounces powdered sugar, sifted, approximately 2 cups&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_cake_directions"&gt;Cake Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Preheat oven to 350 degrees F.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Butter and flour a 9-inch round and 3-inch deep cake pan. Line the bottom with parchment paper. Set aside.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Put the carrots into a large mixing bowl and set aside.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Put the flour, baking powder, baking soda, spices, and salt in the bowl of a food processor and process for 5 seconds. Add this mixture to the carrots and toss until they are well-coated with the flour.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In the bowl of the food processor combine the sugar, brown sugar, eggs, and yogurt.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;With the processor still running drizzle in the vegetable oil. Pour this mixture into the carrot mixture and stir until just combined. Pour into the prepared cake pan and bake on the middle rack of the oven for 45 minutes. Reduce the heat to 325 degrees F and bake for another 20 minutes or until the cake reaches 205 to 210 degrees F in the center.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Remove the pan from the oven and allow cake to cool 15 minutes in the pan. After 15 minutes, turn the cake out onto a rack and allow cake to cool completely. Frost with cream cheese frosting after cake has cooled completely.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_frosting_directions"&gt;Frosting Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In the bowl of a stand mixer with paddle attachment, combine the cream cheese and butter on medium just until blended. Add the vanilla and beat until combined. With the speed on low, add the powdered sugar in 4 batches and beat until smooth between each addition.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Place the frosting in the refrigerator for 5 to 10 minutes before using.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>dessert</category><guid>https://bstreete.github.io/posts/recipes/carrot-cake/</guid><pubDate>Mon, 23 Dec 2019 22:20:32 GMT</pubDate></item></channel></rss>

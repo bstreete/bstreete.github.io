@@ -1,196 +1,390 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about home assistant)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/home-assistant.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding MQTT and Zigbee to Home Assistant Docker</title><link>https://bstreete.github.io/posts/adding-mqttzigbee-to-home-assistant-docker/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about home assistant)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/home-assistant.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Adding MQTT and Zigbee to Home Assistant Docker</title><link>https://bstreete.github.io/posts/tech/adding-mqttzigbee-to-home-assistant-docker/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+
 &lt;p&gt;I found some cheap Zigbee Aqara door and window sensors that I want to incorporate into my Home Assistant setup.
+
 Since my "server" is a 10 year old laptop, it doesn’t support UEFI boot so I ended up using a Docker container for the Home Assistant server.
+
 Zigbee integrations are typically through MQTT protocols, but the official docs reference add-ons (which are not supported in Docker builds).
+
 I followed the configuration steps from &lt;a href="https://dongle.sonoff.tech/guide/dongle-lmg21/connecting_to_zigbee2mqtt/"&gt;Sonoff&lt;/a&gt; which included the needed dependencies.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_zigbee2mqtt"&gt;Zigbee2MQTT&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Zigbee2MQTT converts Zigbee data into MQTT format and forwards it to an MQTT broker.
+
 I followed this &lt;a href="https://www.zigbee2mqtt.io/guide/installation/02_docker.html"&gt;simple guide&lt;/a&gt; to get started.
+
 I essentially copy-pasted the &lt;code&gt;compose.yml&lt;/code&gt; information and tweaked a few paths to match what I wanted.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="title"&gt;Final compose.yml&lt;/div&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;  zigbee2mqtt:
+
     container_name: zigbee2mqtt
+
     image: ghcr.io/koenkk/zigbee2mqtt
+
     restart: unless-stopped
+
     volumes:
+
       - /home/brayden/zigbee2mqtt:/app/data
+
       - /run/udev:/run/udev:ro
+
     ports:
+
       # Frontend port
+
       - 8080:8080
+
     devices:
+
       # Make sure this matched your adapter location - I had to update this based on my configuration
+
       - /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_50d8e108cb3aef1189912c1455516304-if00-port0:/dev/ttyUSB0&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_mqtt_broker_mosquitto"&gt;MQTT Broker - Mosquitto&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;I started with an &lt;a href="https://cedalo.com/blog/mosquitto-docker-configuration-ultimate-guide/#How_to_install_and_configure_Mosquitto_MQTT_broker_in_Docker_from_scratch"&gt;example guide on instantiating a Mosquitto Docker image&lt;/a&gt;.
+
 The Sonoff guide recommended a Raspberry Pi set of instructions that did not use Docker.
+
 I didn’t want to reverse engineer those steps, so I kept looking.
+
 The instructions have a &lt;code&gt;compose.yml&lt;/code&gt; entry towards the bottom of the page that I ended up using nearly verbatim.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="title"&gt;Final compose.yml&lt;/div&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-yml" data-lang="yml"&gt;  mosquitto:
+
     container_name: mosquitto
+
     image: "eclipse-mosquitto:2"
+
     volumes:
+
       - /home/brayden/mosquitto/config:/mosquitto/config
+
       - /home/brayden/mosquitto/data:/mosquitto/data
+
       - /home/brayden/mosquitto/log:/mosquitto/log
+
       - /etc/localtime:/etc/localtime:ro
+
     restart: unless-stopped
+
     privileged: true
+
     ports:
+
       - 1883:1883
+
       - 8883:8883
+
       - 9001:9001
 
+
+
     networks:
+
       - mosquitto
 
+
+
 networks:
+
   mosquitto:
+
     name: mosquitto
+
     driver: bridge&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_configuring_zigbee2mqtt"&gt;Configuring Zigbee2MQTT&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Start the new containers first.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;$ sudo docker compose up -d
+
 [+] Running 4/4
+
  ✔ Container mosquitto      Running          0.0s
+
  ✔ Container homeassistant  Running          0.0s
+
  ✔ Container esphome        Running          0.0s
+
  ✔ Container zigbee2mqtt    Running          0.0s&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Go to the Zigbee2MQTT frontend webserver at port 8080.
+
 Example: &lt;code&gt;&lt;a href="http://localhost:8080" class="bare"&gt;http://localhost:8080&lt;/a&gt;&lt;/code&gt; for a local install.
+
 I filled out the dropdowns with the needed information.
+
 Setting the correct USB device for the Sonoff Zigbee dongle was the only thing that took a second to figure out.
+
 I hit apply, and the wizard saved the information and restarted the instance.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;The first time I tried it, refreshing the page restarted the wizard.
+
 Per the Zigbee2MQTT docs, this indicates something is wrong with my configuration.
+
 In my case, the logs showed I set an incorrect device path.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;less data/log/2025-12-13.21-11-35/log.log
+
 z2m: Error: Error: No such file or directory, cannot open /dev/ttyUSB0&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Once I fixed the &lt;code&gt;compose.yml&lt;/code&gt; mapping of the device to &lt;code&gt;/dev/ttyUSB0&lt;/code&gt;, I couldn’t connect MQTT to the Zigbee2MQTT containers.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;[2025-12-13 21:37:40] info:     z2m: Connecting to MQTT server at mqtt://localhost:1883
+
 [2025-12-13 21:37:40] error:    z2m: MQTT failed to connect, exiting... ()&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;I played around with this setting a little bit in the &lt;code&gt;compose.yml&lt;/code&gt;, but was stymied.
+
 The Zigbee2MQTT docs recommend using the IP of the docker0 bridge to establish the connection: server: mqtt://172.17.0.1.
+
 I also tried using the address of the physical host with the same error.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;[2025-12-13 21:44:56] info:     z2m: Connecting to MQTT server at mqtt://172.17.0.1:1883
+
 [2025-12-13 21:44:57] error:    z2m: MQTT failed to connect, exiting... (read ECONNRESET)&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;It ended up being a mistake in the &lt;code&gt;compose.yml&lt;/code&gt;.
+
 I placed the &lt;code&gt;mosquitto.conf&lt;/code&gt; in the wrong directory, so the default version was used which disables unauthenticated requests from external hosts.
+
 Unfortunately, separate containers are considered a different host.
+
 Once that was corrected, Zigbee2MQTT successfully finished the configuration wizard.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;From there, I added the MQTT integration into Home Assistant following the &lt;a href="https://www.home-assistant.io/integrations/mqtt#setting-up-a-broker"&gt;documentation&lt;/a&gt;.
+
 After adding the integration, I simply had to select the "Permit Join" button the Home Assistant dashboard, and pair my Zigbee sensor with the controller.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="imageblock"&gt;
+
 &lt;div class="content"&gt;
-&lt;img src="https://bstreete.github.io/images/zigbee2mqtt_bridge.png" alt="zigbee2mqtt bridge"&gt;
+
+&lt;img src="https://bstreete.github.io/posts/images/zigbee2mqtt_bridge.png" alt="zigbee2mqtt bridge"&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
-&lt;/div&gt;</description><category>docker</category><category>home assistant</category><category>mqtt</category><category>zigbee</category><guid>https://bstreete.github.io/posts/adding-mqttzigbee-to-home-assistant-docker/</guid><pubDate>Sat, 13 Dec 2025 20:32:36 GMT</pubDate></item><item><title>Converting Ubuntu Desktop to Server</title><link>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+
+&lt;/div&gt;</description><category>docker</category><category>home assistant</category><category>mqtt</category><category>zigbee</category><guid>https://bstreete.github.io/posts/tech/adding-mqttzigbee-to-home-assistant-docker/</guid><pubDate>Sat, 13 Dec 2025 20:32:36 GMT</pubDate></item><item><title>Converting Ubuntu Desktop to Server</title><link>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+
 &lt;p&gt;I’ve got an old laptop I was using to play around with &lt;a href="https://www.home-assistant.io/"&gt;Home Assistant&lt;/a&gt;.
+
 I started with a clean install of Ubuntu desktop, but I realized I didn’t need the desktop.
+
 I followed this &lt;a href="https://askubuntu.com/questions/1313733/convert-ubuntu-desktop-to-server-edition-20-04"&gt;Ask Ubuntu&lt;/a&gt; post to install the server version (CLI only).&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;sudo apt install ubuntu-server
 
+
+
 # I got a failure message:
+
 E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/landscape-client/landscape-common_24.02-0ubuntu5.6_amd64.deb  404  Not Found [IP: 91.189.91.83 80]
+
 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
 
+
+
 # I ran both suggestions:
+
 sudo apt-get update
+
 sudo apt install ubuntu-server --fix-missing
+
 sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;After the reboot, I set the default boot version to the server edition.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;sudo systemctl set-default multi-user.target
+
 sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;After moving over to the server edition, I removed the remaining packages and updated remaining packages.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;sudo apt purge ubuntu-desktop -y &amp;amp;&amp;amp; sudo apt autoremove -y &amp;amp;&amp;amp; sudo apt autoclean
+
 sudo apt-get update
+
 sudo apt-get upgrade
+
 sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;After the final reboot:&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-78-generic x86_64)
 
+
+
  * Documentation:  https://help.ubuntu.com
+
  * Management:     https://landscape.canonical.com
+
  * Support:        https://ubuntu.com/pro
 
+
+
  System information as of Sat Dec 13 12:45:51 PM MST 2025&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>home assistant</category><category>ubuntu</category><guid>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</guid><pubDate>Sat, 13 Dec 2025 19:28:43 GMT</pubDate></item></channel></rss>

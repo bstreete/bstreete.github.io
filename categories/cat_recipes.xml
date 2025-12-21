@@ -1,641 +1,1328 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about recipes)</title><link>https://bstreete.github.io/</link><description>Saved recipes for future cooking attempts. Sorted from newest to oldest.</description><atom:link href="https://bstreete.github.io/categories/cat_recipes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Peanut Butter Fudge</title><link>https://bstreete.github.io/posts/recipes/peanut-butter-fudge/</link><dc:creator>All Recipes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about recipes)</title><link>https://bstreete.github.io/</link><description>Saved recipes for future cooking attempts. Sorted from newest to oldest.</description><atom:link href="https://bstreete.github.io/categories/cat_recipes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Peanut Butter Fudge</title><link>https://bstreete.github.io/posts/recipes/peanut-butter-fudge/</link><dc:creator>All Recipes</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;½ cup butter&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups package brown sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;½ cup milk&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup peanut butter&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon vanilla extract&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 cups confectioners' sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Note: modified the sugar and peanut butter amounts compared to the original recipe.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Melt butter in a medium saucepan over medium heat
+
 Stir in brown sugar and milk.
+
 Bring to a boil and boil for 2 minutes, stirring frequently.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Remove the pot from heat; stir in peanut butter and vanilla.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Place confectioners' sugar in a large mixing bowl.
+
 Pour in peanut butter mixture and beat with an electric mixer until smooth.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Pour peanut butter mixture into an 8x8-inch dish.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Chill until firm before slicing, about 1 hour.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>dessert</category><category>fudge</category><guid>https://bstreete.github.io/posts/recipes/peanut-butter-fudge/</guid><pubDate>Sat, 13 Dec 2025 18:48:03 GMT</pubDate></item><item><title>Butterscotch Fudge</title><link>https://bstreete.github.io/posts/recipes/butterscotch-fudge/</link><dc:creator>Taste of Home</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon plus 2 tablespoons butter, divided&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1-2/3 cups sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2/3 cup evaporated milk&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 teaspoon salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups miniature marshmallows&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 package (10 to 11 ounces) butterscotch chips&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup chopped walnuts, toasted&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon maple flavoring&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Line an 8-in. square pan with foil and grease the foil with 1 teaspoon butter; set aside.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a large saucepan, combine the sugar, milk, salt and remaining 2 tablespoons butter.
+
 Cook and stir over medium heat until mixture comes to a boil.
+
 Boil for 5 minutes, stirring constantly.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Remove from heat; add the marshmallows, chips, nuts and maple flavoring.
+
 Stir until marshmallows and chips are melted.
+
 Spoon into prepared pan.
+
 Let stand until set.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Using foil, lift fudge out of pan.
+
 Discard foil; cut fudge into 1-in squares.
+
 Store in an airtight container at room temperature.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>dessert</category><category>favorites</category><category>fudge</category><guid>https://bstreete.github.io/posts/recipes/butterscotch-fudge/</guid><pubDate>Sat, 13 Dec 2025 18:44:24 GMT</pubDate></item><item><title>Coconut Curry Chickpeas</title><link>https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 yellow onion&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cloves garlic&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp grated fresh ginger&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 Tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1.5 Tbsp curry powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 15oz. cans chickpeas, drained&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 8oz. can tomato sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 13.5oz. can full-fat coconut milk&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 oz. chopped kale (about 3 cups)&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Dice the onion, mince the garlic, and grate the ginger.
+
 Add the onion, garlic, and ginger to a large deep skillet along with the olive oil.
+
 Sauté the aromatics over medium-low heat for about five minutes, or until the onions are soft and translucent.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add the curry powder and cumin to the skillet and continue to stir and cook for about one minute more to toast the spices.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Drain the chickpeas, then add them to the skillet along with the tomato sauce and coconut milk.
+
 Stir everything to combine.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Turn the heat up to medium-high to bring the sauce up to a simmer.
+
 Once simmering, turn the heat back down to medium-low and allow the curry to continue to simmer for 15 minutes, stirring occasionally.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add the kale and stir it into the sauce.
+
 Continue to cook and stir until the kale has wilted to your desired tenderness (I cook for about 5 minutes more).
+
 Finally, taste the curry and add salt to taste (about ½ tsp).
+
 Serve hot with rice or bread for dipping!&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>curry</category><category>indian</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/coconut-curry-chickpeas/</guid><pubDate>Thu, 11 Dec 2025 17:58:07 GMT</pubDate></item><item><title>White Beans with Mushrooms and Marinara</title><link>https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;8 oz. mushrooms&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 Tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 pinch salt and pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cloves garlic&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups marinara (or more to your liking)&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 15oz. cans butter beans&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 tsp dried basil&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 pinch crushed red pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 oz. mozzarella&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Preheat the oven to 400ºF.
+
 Wash and slice the mushrooms.
+
 Add the mushrooms, olive oil, and a pinch of salt and pepper to a deep skillet.
+
 Sauté the mushrooms until they have wilted and all the moisture in the skillet has evaporated.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;While the mushrooms are sautéing, mince the garlic, drain and rinse the butter beans.
+
 Add the garlic to the skillet with the mushrooms and sauté for 2 minutes more.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add the rinsed butter beans, marinara, basil, and red pepper to the skillet.
+
 Stir everything to combine, then allow it to heat through, stirring occasionally.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;While the skillet is heating through, shred the mozzarella.
+
 Top the skillet with the mozzarella, then cover the skillet with foil.
+
 Transfer the skillet to the oven and bake for 5-7 minutes, or until the cheese is melted.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Once the cheese has melted, remove the foil, switch the oven to broil, and broil the skillet for a few minutes more to brown the cheese (watch closely, as browning can happen quickly with the broiler).
+
 Serve hot, with garlic bread for dipping!&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_notes"&gt;Notes&lt;/h4&gt;
+
 &lt;div class="ulist"&gt;
+
 &lt;ul&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;If you don’t have an oven safe skillet, simply transfer the beans, mushrooms, and marinara to a casserole dish before baking with the cheese.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ul&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>italian</category><category>pasta</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/white-beans-with-mushrooms-and-marinara/</guid><pubDate>Thu, 11 Dec 2025 17:53:22 GMT</pubDate></item><item><title>Italian Bread</title><link>https://bstreete.github.io/posts/recipes/italian-bread/</link><dc:creator>Amanda Davis</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 ½ tablespoons active dry yeast 2 packets&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;½ cup warm water 110F&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;½ teaspoon granulated sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups hot water hot to the touch, not boiling (115-120F)&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tablespoons granulated sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;½ cup vegetable oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;5-6 cups all-purpose flour add more if needed to get to a pliable dough&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large egg white for brushing on loaves&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_instructions"&gt;Instructions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Dissolve yeast, 1/2 cup warm water (110F), and 1/2 teaspoon granulated sugar in a small bowl.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a large bowl or stand mixer, combine 2 cups hot water (115-120F), 3 tablespoons granulated sugar, the salt, and the oil.
+
 Add 3 cups of flour to the mixture in this large bowl/mixer and mix well.
+
 Stir in yeast mixture.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add 2 - 3 cups more flour and mix until well blended. (At this point your dough will still be quite sticky).
+
 Leave in bowl, cover with a towel and let rise for 1 hour.
+
 (If using a mixer, remove the bowl from the mixer and cover.
+
 Otherwise your paddle attachment or dough hook will get covered in dough when it rises).
+
 NO KNEADING IS REQUIRED.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;After the rise, if the dough is too sticky to handle, add more flour until its workable.
+
 For some people this can be up to a cup or more!
+
 Just don’t dry out the dough. Add by quarter cupfuls until its workable.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Divide dough into 2 (or 3 if you want smaller loaves) pieces.
+
 Roll out each piece on a floured surface into the length desired then roll up lengthwise like a jelly roll.
+
 If it’s still too sticky, add more flour until it’s workable but not dry.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Put on a greased cookie sheet, sealed side down, and tuck the ends under.
+
 Slash the top diagonally across the top every couple of inches with a sharp knife.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cover and let loaves rise 30 more minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;While loaves are rising, preheat oven to 400 degrees Fahrenheit.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Whisk the egg white and brush over the top of loaves.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Bake for 25 - 30 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>bread</category><category>italian</category><guid>https://bstreete.github.io/posts/recipes/italian-bread/</guid><pubDate>Thu, 11 Dec 2025 14:01:23 GMT</pubDate></item><item><title>30 Minute Dinner Rolls</title><link>https://bstreete.github.io/posts/recipes/30-minute-dinner-rolls/</link><dc:creator>Holly Nilsson</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup warm water&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;⅓ cup vegetable oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;¼ cup granulated sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons active dry yeast&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large egg beaten&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon unsalted butter softened&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 to 4 cups all-purpose flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;⅛ cup milk room temperature&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_notes"&gt;Notes&lt;/h4&gt;
+
 &lt;div class="ulist"&gt;
+
 &lt;ul&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;If baking in a 9x13 pan, I make 15 rolls.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;If baking in a 10x15 pan, I make 18 rolls.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ul&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Preheat oven to 400*F.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a large bowl, combine 1 cup water, oil, sugar, and yeast.
+
 Let sit until yeast is bubbly (about 8 minutes).
+
 Stir in beaten egg, softened butter, and salt.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;With a stand mixer or by hand, add flour, one cup at a time until you have a soft dough that isn’t sticky.
+
 Knead by hand 10 minutes or 5 minutes with a stand mixer.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Divide dough into 18 even pieces, and form into balls.
+
 Place in a greased pan and cover with parchment paper and a kitchen towel.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Let rise 10 minutes in a warm place.
+
 (You can allow them to rise up to an additional 30 minutes if time allows).&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Lightly brush with milk and bake on the middle rack for 10-12 minutes or just until browned.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>bread</category><guid>https://bstreete.github.io/posts/recipes/30-minute-dinner-rolls/</guid><pubDate>Thu, 11 Dec 2025 13:55:24 GMT</pubDate></item><item><title>Irish Soda Bread</title><link>https://bstreete.github.io/posts/recipes/irish-soda-bread/</link><dc:creator>Maureen O'Reilly</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 cups soft wheat flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 cup granulated sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 teaspoons baking powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 heaping teaspoons caraway seeds&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup raisins (half golden, soaked in hot water for 15 minutes)&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup unsalted butter&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/3 cups whole buttermilk&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 egg&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon baking soda&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Preheat oven to 350 degrees.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Combine in a large bowl 4 cups soft wheat flour, 1/4 cup granulated sugar, 1 1/2 teaspoons baking powder, 2 heaping teaspoons of caraway seeds, and 1 cup raisins (half golden, soaked in hot water for 15 minutes).&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Crumble in 1/2 cup unsalted butter with your fingers until the mixture is fragrant with butter, caraway and flour, and pieces of butter are pea-size or larger.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a second bowl, mix together 1 1/3 cups whole buttermilk, 1 egg and 1 teaspoon baking soda.
+
 Beat until foamy.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add to dry ingredients and combine to make a stiff dough, stopping just when flour disappears.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Grease a 9-inch round pan (glass works well).&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Place dough in pan and lightly shape into a dome.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Sprinkle liberally with flour.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Using a sharp knife, cut a cross a half-inch deep into the top.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Bake in preheated oven approximately 1 hour.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cool in pan 5 minutes, then turn out onto a rack to cool.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Serve in thick slices with Irish butter and scalding hot tea.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>bread</category><category>irish</category><guid>https://bstreete.github.io/posts/recipes/irish-soda-bread/</guid><pubDate>Thu, 11 Dec 2025 13:49:57 GMT</pubDate></item><item><title>Quick Pizza Dough</title><link>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups all-purpose flour (or 1:1 whole wheat)&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp kosher salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tbsp instant yeast&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup hot tap water&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Mix the dry &amp;amp; wet ingredients separately, then combine.
+
 Knead in the food processor until it holds into a ball (adding more flour through the feed tube). By hand, knead in ~1/4 cup more flour ~5 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Turn the bowl over the dough (upside down) and let rise 15 minutes (prep your toppings now).&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Stretch, top and bake 425F ~20 minutes.
+
 Makes 2 crusts.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</guid><pubDate>Thu, 11 Dec 2025 13:42:36 GMT</pubDate></item><item><title>Classıc Peanut Butter Blossom Cookies</title><link>https://bstreete.github.io/posts/recipes/peanut-butter-blossom-cookies/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup granulated sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup packed brown sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup creamy peanut butter&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup butter, softened&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 egg&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 cups AP Flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3/4 teaspoon baking soda&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 teaspoon baking powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Additional granulated sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;About 36 HERSHEY’S KISSES milk chocolate candies, unwrapped&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_instrucfions"&gt;Instrucfions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Heat oven to 375°F.
+
 In large bowl, beat 1/2 cup granulated sugar, the brown sugar, peanut butfer, butter and egg with electric mixer on medium speed, or mix with spoon, until well blended.
+
 Stir in flour, baking soda and baking powder until dough forms.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Shape dough into 1-inch balls; roll in additional granulated sugar.
+
 On ungreased cookie sheets, place about 2 inches apart.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Bake 8 to 10 minutes or until edges are light golden brown.
+
 Immediately press 1 milk chocolate candy in center of each cookie.
+
 Remove from cookie sheets to cooling rack.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>cookies</category><guid>https://bstreete.github.io/posts/recipes/peanut-butter-blossom-cookies/</guid><pubDate>Thu, 11 Dec 2025 13:36:04 GMT</pubDate></item><item><title>Cacio e Pepe</title><link>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3/4 tsp salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 lb dry spaghetti&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 Tbsp salted butter, divided&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp coarsely ground black pepper plus more for garnish&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup Parmesan, grated, plus more for garnish&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In a large skillet bring 6 cups of water and 3/4 teaspoon of salt to a boil.
+
 Add the dry spaghetti and cook for two minutes less than the package directions call for.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Reserve a cup of pasta water before draining the spaghetti.
+
 Place the spaghetti in a bowl and set it close to the stove to keep it warm.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;In the same pan you cooked the spaghetti, melt 2 tablespoons of butter with the black pepper over medium heat.
+
 Cook until fragrant.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add 1/2 cup of the reserved pasta water to the pan and stir until a glossy sauce forms.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Turn the heat down to low and add the spaghetti to the pan.
+
 Top with the grated parmesan and the remaining 2 tablespoons of butter.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Use tongs to quickly mix the parmesan, butter, spaghetti, and pepper sauce until a creamy sauce forms.
+
 Serve immediately and garnish with additional pepper and parmesan cheese.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_suggestions"&gt;Suggestions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="ulist"&gt;
+
 &lt;ul&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;I like to use a long noodle-shaped pasta with some texture and toothiness so the sauce can cling to it without overpowering it.
+
 While tonnarelli is the traditional pasta used in this recipe, spaghetti or bucatini works just as great.
+
 Steer clear of linguine and angel hair, which will fall apart quickly and become a gummy mess.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;If using unsalted butter, add 1/4 teaspoon of salt to the sauce.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;If using finely ground black pepper (like the kind that comes pre-ground), use 1/2 teaspoon.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Try to use fresh parmesan, which will actually melt.
+
 If you use the powdery stuff in the green bottle, it will leave you with a grainy sauce.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ul&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>italian</category><category>kid approved</category><category>pasta</category><guid>https://bstreete.github.io/posts/recipes/cacio-e-pepe/</guid><pubDate>Thu, 11 Dec 2025 01:31:39 GMT</pubDate></item></channel></rss>

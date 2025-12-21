@@ -1,430 +1,882 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about chili)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/chili.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Boilermaker Tailgate Chili</title><link>https://bstreete.github.io/posts/recipes/boilermaker-tailgate-chili/</link><dc:creator>All Recipes</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about chili)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/chili.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Boilermaker Tailgate Chili</title><link>https://bstreete.github.io/posts/recipes/boilermaker-tailgate-chili/</link><dc:creator>All Recipes</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 pounds ground beef chuck&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 pound bulk Italian sausage&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 (15 ounce) cans chili beans, drained&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 (15 ounce) can chili beans in spicy sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 (28 ounce) cans diced tomatoes with juice&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 (6 ounce) can tomato paste&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large yellow onion, chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 stalks celery, chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 green bell pepper, seeded and chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 red bell pepper, seeded and chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 green chile peppers, seeded and chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon bacon bits&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 cubes beef bouillon&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup beer&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 cup chili powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon Worcestershire sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon minced garlic&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon dried oregano&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 teaspoons ground cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 teaspoons hot pepper sauce (e.g. Tabasco™)&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon dried basil&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon ground black pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon cayenne pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon paprika&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon white sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 (10.5 ounce) bag corn chips such as Fritos®&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 (8 ounce) package shredded Cheddar cheese&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;eat a large stock pot over medium-high heat. Crumble the ground chuck and sausage into the hot pan, and cook until evenly browned. Drain off excess grease.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;our in the chili beans, spicy chili beans, diced tomatoes and tomato paste. Add the onion, celery, green and red bell peppers, chile peppers, bacon bits, bouillon, and beer. Season with chili powder, Worcestershire sauce, garlic, oregano, cumin, hot pepper sauce, basil, salt, pepper, cayenne, paprika, and sugar. Stir to blend, then cover and simmer over low heat for at least 2 hours, stirring occasionally.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;fter 2 hours, taste, and adjust salt, pepper, and chili powder if necessary. The longer the chili simmers, the better it will taste. Remove from heat and serve, or refrigerate, and serve the next day.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;o serve, ladle into bowls, and top with corn chips and shredded Cheddar cheese.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>chili</category><category>entree</category><guid>https://bstreete.github.io/posts/recipes/boilermaker-tailgate-chili/</guid><pubDate>Wed, 25 Dec 2019 14:53:27 GMT</pubDate></item><item><title>Skillet Cornbread</title><link>https://bstreete.github.io/posts/recipes/cornbread/</link><dc:creator>Budget Bytes</dc:creator><description>&lt;div class="sect3"&gt;
+
 &lt;h5 id="_notes"&gt;Notes&lt;/h5&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;This is a modified version of the original recipe. The chili recipe associated with the cornbread was omitted as I prefer a [different chili recipe](../meaty-beany-chili). The cornbread is quite tasty, but can be cooked independently.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Cornbread goes great with honey and/or butter.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup yellow cornmeal&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup all-purpose flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 cup sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 tsp baking powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 tsp salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup milk&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large egg&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 cup cooking oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Instructions&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Begin to preheat the oven to 425ºF. In a large bowl, stir together the cornmeal, flour, sugar, baking powder, and salt until very well combined. In a separate bowl, whisk together the milk, egg, and oil. Pour the milk mixture into the bowl with the cornmeal mixture and stir just until everything is moistened.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Pour the mixture into the oiled skillet.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Transfer the skillet to the fully preheated oven and bake for 25 minutes, or until the cornbread is golden brown on the surface.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>bread</category><category>chili</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/cornbread/</guid><pubDate>Mon, 23 Dec 2019 22:31:52 GMT</pubDate></item><item><title>Meaty Beany Chili</title><link>https://bstreete.github.io/posts/recipes/meaty-beany-chili/</link><dc:creator>The PPK</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 yellow onion, diced medium&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 green pepper, seeded, diced medium&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;6 cloves garlic, minced&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 jalapenos, thinly sliced (seeded, if you want it less - spicy)&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 to 4 tablespoons mild chili powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon dried mexican oregano&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 teaspoons ground cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 teaspoons salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Several dashes fresh black pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/8th teaspoon ground cloves&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups water (plus extra as needed) - stock is an acceptable substitute&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup dried brown lentils&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 28 oz can crushed tomatoes&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 cups cooked kidney beans, rinsed and drained (15 oz - can)&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 cups cooked black beans, rinsed and drained (15 oz - can)&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon pure maple syrup&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons lime juice&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Set your slow cooker to “sear.”Saute the onion, green pepper and jalapeno in the oil with a big pinch of salt for 5 to 7 minutes, until onion is translucent.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add the garlic, and saute until fragrant, about 30 seconds. Add remaining ingredients, cover and set to slow cook for at least 8 hours. Lentils should be very tender.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Taste for salt and seasoning, and thin with a little water if necessary.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>chili</category><category>entree</category><category>favorites</category><category>slow cooker</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/meaty-beany-chili/</guid><pubDate>Thu, 19 Dec 2019 16:59:01 GMT</pubDate></item><item><title>2am Chili</title><link>https://bstreete.github.io/posts/recipes/2am-chili/</link><dc:creator>Reddit</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tablespoons flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon basil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon onion powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 teaspoons chili powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 teaspoons cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon cayenne&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon garlic powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 teaspoons sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 to 4 cloves of garlic&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 onion&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 bell pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 1/2 pounds of ground beef&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 15oz can of tomato sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 15oz can of diced tomatoes&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 15oz can of corn&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 15oz can of kidney beans&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 can of beer (optional)&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Brown the beef in a skillet.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Drain cans of corn and beans.
+
 Combine contents of all cans into pot.
+
 Bring pot to a boil, then reduce heat to simmer.
+
 Add meat when finished browning.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Saute garlic, onion, and pepper in skillet.
+
 Add vegetables to pot.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add remaining ingredients to pot and mix.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cook for a few hours (longer cooking improves flavor).
+
 Can cook in pressure cooker at about 30 minutes at pressure.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Serve with crackers and cheese.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_tips"&gt;Tips&lt;/h4&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;Can cook the spices in the grease left from browning the ground beef before cooking the vegetables for a richer flavor.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>chili</category><category>dinner</category><category>main</category><guid>https://bstreete.github.io/posts/recipes/2am-chili/</guid><pubDate>Thu, 19 Dec 2019 16:53:33 GMT</pubDate></item><item><title>Kill City Chili</title><link>https://bstreete.github.io/posts/recipes/kill-city-chili/</link><dc:creator>Saveur</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 1/2 lbs ground beef&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 c dark chile powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 1/2 tbsp curry powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 cloves garlic, finely chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large yellow onion, diced&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 medium green bell pepper, diced&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 16 oz cans kideny beans, drained and rinsed&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 28 oz can crushed tomatoes&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Kosher salt and ground black pepper, to taste&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tbsp chopped cilantro, plus more for garnish&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 c grated Monterey Jack cheese for serving&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Sour cream for serving&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Heat oil in a 6 qt saucepan over medium high heat. Add beef and cook, stirring and breaking up meat into small pieces, until browned, 5 to 7 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add chile and curry powders, garlic, 3/4 the onion, and bell pepper. Cook, stirring occasionally, until vegetables are soft, 8 to 10 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add beans, tomatoes, salt, and pepper. Bring to a boil. Reduce heat to meidum, simmer, stirring occasionally until chili is thick, about 30 minutes. Stir in cilantro.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Ladle into bowls, garnish with remaining onion, plus cilantro, cheese, and sour cream.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>chili</category><category>entree</category><guid>https://bstreete.github.io/posts/recipes/kill-city-chili/</guid><pubDate>Thu, 19 Dec 2019 16:37:59 GMT</pubDate></item><item><title>Sweet Potato Black Bean Chili</title><link>https://bstreete.github.io/posts/recipes/sweet-potato-black-bean-chili/</link><dc:creator>All Recipes</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 lbs sweet potatoes, peeled and cubed&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 tsp ground dried chipotle pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 tsp salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 onion, diced&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 cloves garlic, minced&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 red bell pepper, diced&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 jalapeno pepper, sliced&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 tbsp ancho chile powder, or to taste&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tbsp ground cumin&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 tsp dried oregano&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 (28 oz) can diced tomatoes&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 c water, or more as needed&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tbsp cornmeal&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp salt, or to taste&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp white sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp unsweetened cocoa powder&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 (15 oz) cans black beans, washed and drained&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 pinch cayenne pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 c sour cream for garnish (optional)&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 c chopped fresh cilantro (optional)&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Preheat oven to 400 degrees. Line a baking sheet with parchment paper or a silicone baking mat. Combine sweet potatoes, chipotle pepper, 1/2 tsp salt, and 1 tbsp olive oil in a large bowl and toss to coat. Spread sweet potatoes on the prepared baking sheet in a single layer.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Roast sweet potatoes in the preheated oven until the outside is crunchy and inside is tender, 20 to 25 minutes. Allow to cool to room temperature.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cook and stir remaining 1 tbsp olive oil, onion, garlic, bell pepper, jalapeno, anncho chile powder, cumin, and dried oregano together in a large pot or dutch oven over medium heat. Cook and stir until onion is softened, about 5 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Pour tomatoes and water into the onion mixture and bring to a simmer. Add cornmeal, 1 tsp salt, sugar, and cocoa powder. Bring to a simmer, stirring constantly, reduce heat to low and simmer for 30 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Stir black beans and cooled sweet potatoes into the onion-tomato mixture. Add more water if mixture is too thick. Simmer until heated through, about 15 minutes. Season with salt and cayenne pepper to taste. Serve topped with sour cream and cilantro.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>chili</category><category>entree</category><category>favorites</category><category>vegetarian</category><guid>https://bstreete.github.io/posts/recipes/sweet-potato-black-bean-chili/</guid><pubDate>Thu, 19 Dec 2019 01:05:59 GMT</pubDate></item></channel></rss>

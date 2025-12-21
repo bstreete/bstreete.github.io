@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html \ prefix="
+<html prefix="
         og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     " vocab="http://ogp.me/ns" lang="en">
 <head>
@@ -16,7 +16,7 @@
 <link rel="canonical" href="https://bstreete.github.io/">
 <link rel="icon" href="favicon.png" sizes="40x40">
 <link rel="next" href="index-1.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/adding-mqttzigbee-to-home-assistant-docker/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/tech/installing-nikola-on-windows/" type="text/html">
 </head>
 <body>
 
@@ -85,156 +85,519 @@
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/adding-mqttzigbee-to-home-assistant-docker/" class="u-url">Adding MQTT and Zigbee to Home Assistant Docker</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/installing-nikola-on-windows/" class="u-url">Installing Nikola on Windows</a></h1>
 
         
         <div class="metadata">
-            <p class="dateline"><a href="posts/adding-mqttzigbee-to-home-assistant-docker/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-13T13:32:36-07:00" title="2025-12-13">2025-12-13</time></a></p>
+            <p class="dateline"><a href="posts/tech/installing-nikola-on-windows/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-20T07:03:31-07:00" title="2025-12-20">2025-12-20</time></a></p>
 
         </div>
     </header><div class="p-summary entry-summary">
     <div class="paragraph">
+
+<p>I was unsuccessful regenerating the Nikola website on a Windows 11 box.
+
+I followed the startup guide and installed dependencies.
+
+I ended up with a slightly different version of each tool, but I didn’t think it would be fatal.</p>
+
+</div>
+
+<div class="listingblock">
+
+<div class="content">
+
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">PS C:\Users\Brayden\repos\recipes&gt; python --version
+
+Python 3.13.3
+
+[2025-12-20 07:44:45] INFO: Nikola: Did you mean "version"?
+
+PS C:\Users\Brayden\repos\recipes&gt; ..\nikola-env\Scripts\nikola.exe --version
+
+Nikola v8.3.3
+
+PS C:\Users\Brayden\repos\recipes&gt; asciidoctor --version
+
+Asciidoctor 2.0.26 [https://asciidoctor.org]
+
+Runtime Environment (ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x64-mingw-ucrt]) (lc:IBM437 fs:UTF-8 in:UTF-8 ex:UTF-8)</code></pre>
+
+</div>
+
+</div>
+
+<div class="paragraph">
+
+<p>Every attempt to regenerate the site raised the following error before I added any new posts.</p>
+
+</div>
+
+<div class="listingblock">
+
+<div class="content">
+
+<pre class="highlight"><code class="language-powershell" data-lang="powershell">..\nikola-env\Scripts\nikola.exe build
+
+Scanning posts......done!
+
+[2025-12-20 07:44:12] ERROR: Nikola: Error loading tasks. An unhandled exception occurred.
+
+[2025-12-20 07:44:12] ERROR: Nikola: doit.exceptions.InvalidTask: Task generation 'render_site' has duplicated definition of 'render_posts:cache\posts\tech\installing-nikola-on-windows.html'
+
+[2025-12-20 07:44:12] WARNING: Nikola: To see more details, run Nikola in debug mode (set environment variable NIKOLA_DEBUG=1) or use NIKOLA_SHOW_TRACEBACKS=1</code></pre>
+
+</div>
+
+</div>
+
+<div class="paragraph">
+
+<p>The <code>./cache</code> and <code>./output</code> directories did not contain any generated output.
+
+I only see CSS and images copied over.
+
+Running as an administrator didn’t change anything.
+
+I didn’t see any security actions taken by antivirus.
+
+Googling for Windows specific issues against Nikola did not bring up any obvious fixes.</p>
+
+</div>
+
+<div class="paragraph">
+
+<p>I modified <code>loader.py</code> in the Nikola source to dump all of the tasks when raising an error.
+
+Nikola :</p>
+
+</div>
+
+<div class="listingblock">
+
+<div class="content">
+
+<pre class="highlight"><code class="language-bash" data-lang="bash">render_pages
+
+redirect
+
+render_listings
+
+copy_files
+
+...
+
+copy_assets
+
+...
+
+render_taxonomies
+
+...
+
+render_sources
+
+...
+
+scale_images
+
+...
+
+render_posts
+
+render_posts:timeline_changes
+
+render_posts:cache\posts\tech\installing-nikola-on-windows.html</code></pre>
+
+</div>
+
+</div>
+
+<div class="paragraph">
+
+<p>I noticed that all of my posts were being rendered as pages <em>and</em> posts.
+
+I started poking at the post/pages definitions in conf.py. I realized I had duplicate entries for posts:</p>
+
+</div>
+
+<div class="listingblock">
+
+<div class="content">
+
+<pre class="highlight"><code class="language-python" data-lang="python">POSTS = (
+
+    ("posts/*.rst", "posts", "post.tmpl"),
+
+    ("posts/*.adoc", "posts", "post.tmpl"),
+
+    ("posts/tech/*.adoc", "tech", "post.tmpl"),
+
+    ("posts/recipes/*.adoc", "recipes", "post.tmpl"),
+
+)</code></pre>
+
+</div>
+
+</div>
+
+<div class="paragraph">
+
+<p>Removing the <code>tech</code> and <code>recipes</code> entries corrected the duplicate entry issue.</p>
+
+</div>
+
+<div class="listingblock">
+
+<div class="content">
+
+<pre class="highlight"><code class="language-python" data-lang="python">POSTS = (
+
+    ("posts/*.rst", "posts", "post.tmpl"),
+
+    ("posts/*.adoc", "posts", "post.tmpl"),
+
+)</code></pre>
+
+</div>
+
+</div>
+
+<div class="paragraph">
+
+<p>I still received file not found errors.
+
+Since previously created posts were failing to compile, I started with checking the compiler paths.
+
+I always forget this, but on Windows Asciidoctor is typically invoked via script.
+
+I tweaked <code>conf.py</code> to include alternate paths depending on the OS.</p>
+
+</div>
+
+<div class="listingblock">
+
+<div class="content">
+
+<pre class="highlight"><code class="language-python" data-lang="python">import os   # To cover OS specific installs - Asciidoctor
+
+
+
+# ...
+
+
+
+if os.name == 'nt':
+
+    ASCIIDOC_BINARY = "asciidoctor.bat"
+
+else:
+
+    ASCIIDOC_BINARY = "asciidoctor"</code></pre>
+
+</div>
+
+</div>
+
+<div class="paragraph">
+
+<p>After that, I was able to compile successfully.
+
+I have not had a chance to test this on Linux yet, but I’m confident that this should "just work" across my dev environments moving forward.</p>
+
+</div>
+    </div>
+    <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/adding-mqttzigbee-to-home-assistant-docker/" class="u-url">Adding MQTT and Zigbee to Home Assistant Docker</a></h1>
+
+        
+        <div class="metadata">
+            <p class="dateline"><a href="posts/tech/adding-mqttzigbee-to-home-assistant-docker/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-13T13:32:36-07:00" title="2025-12-13">2025-12-13</time></a></p>
+
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div class="paragraph">
+
 <p>I found some cheap Zigbee Aqara door and window sensors that I want to incorporate into my Home Assistant setup.
+
 Since my "server" is a 10 year old laptop, it doesn’t support UEFI boot so I ended up using a Docker container for the Home Assistant server.
+
 Zigbee integrations are typically through MQTT protocols, but the official docs reference add-ons (which are not supported in Docker builds).
+
 I followed the configuration steps from <a href="https://dongle.sonoff.tech/guide/dongle-lmg21/connecting_to_zigbee2mqtt/">Sonoff</a> which included the needed dependencies.</p>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_zigbee2mqtt">Zigbee2MQTT</h3>
+
 <div class="sectionbody">
+
 <div class="paragraph">
+
 <p>Zigbee2MQTT converts Zigbee data into MQTT format and forwards it to an MQTT broker.
+
 I followed this <a href="https://www.zigbee2mqtt.io/guide/installation/02_docker.html">simple guide</a> to get started.
+
 I essentially copy-pasted the <code>compose.yml</code> information and tweaked a few paths to match what I wanted.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="title">Final compose.yml</div>
+
 <div class="content">
+
 <pre class="highlight"><code class="language-yaml" data-lang="yaml">  zigbee2mqtt:
+
     container_name: zigbee2mqtt
+
     image: ghcr.io/koenkk/zigbee2mqtt
+
     restart: unless-stopped
+
     volumes:
+
       - /home/brayden/zigbee2mqtt:/app/data
+
       - /run/udev:/run/udev:ro
+
     ports:
+
       # Frontend port
+
       - 8080:8080
+
     devices:
+
       # Make sure this matched your adapter location - I had to update this based on my configuration
+
       - /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_50d8e108cb3aef1189912c1455516304-if00-port0:/dev/ttyUSB0</code></pre>
+
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_mqtt_broker_mosquitto">MQTT Broker - Mosquitto</h3>
+
 <div class="sectionbody">
+
 <div class="paragraph">
+
 <p>I started with an <a href="https://cedalo.com/blog/mosquitto-docker-configuration-ultimate-guide/#How_to_install_and_configure_Mosquitto_MQTT_broker_in_Docker_from_scratch">example guide on instantiating a Mosquitto Docker image</a>.
+
 The Sonoff guide recommended a Raspberry Pi set of instructions that did not use Docker.
+
 I didn’t want to reverse engineer those steps, so I kept looking.
+
 The instructions have a <code>compose.yml</code> entry towards the bottom of the page that I ended up using nearly verbatim.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="title">Final compose.yml</div>
+
 <div class="content">
+
 <pre class="highlight"><code class="language-yml" data-lang="yml">  mosquitto:
+
     container_name: mosquitto
+
     image: "eclipse-mosquitto:2"
+
     volumes:
+
       - /home/brayden/mosquitto/config:/mosquitto/config
+
       - /home/brayden/mosquitto/data:/mosquitto/data
+
       - /home/brayden/mosquitto/log:/mosquitto/log
+
       - /etc/localtime:/etc/localtime:ro
+
     restart: unless-stopped
+
     privileged: true
+
     ports:
+
       - 1883:1883
+
       - 8883:8883
+
       - 9001:9001
 
+
+
     networks:
+
       - mosquitto
 
+
+
 networks:
+
   mosquitto:
+
     name: mosquitto
+
     driver: bridge</code></pre>
+
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_configuring_zigbee2mqtt">Configuring Zigbee2MQTT</h3>
+
 <div class="sectionbody">
+
 <div class="paragraph">
+
 <p>Start the new containers first.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">$ sudo docker compose up -d
+
 [+] Running 4/4
+
  ✔ Container mosquitto      Running          0.0s
+
  ✔ Container homeassistant  Running          0.0s
+
  ✔ Container esphome        Running          0.0s
+
  ✔ Container zigbee2mqtt    Running          0.0s</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>Go to the Zigbee2MQTT frontend webserver at port 8080.
+
 Example: <code><a href="http://localhost:8080" class="bare">http://localhost:8080</a></code> for a local install.
+
 I filled out the dropdowns with the needed information.
+
 Setting the correct USB device for the Sonoff Zigbee dongle was the only thing that took a second to figure out.
+
 I hit apply, and the wizard saved the information and restarted the instance.</p>
+
 </div>
+
 <div class="paragraph">
+
 <p>The first time I tried it, refreshing the page restarted the wizard.
+
 Per the Zigbee2MQTT docs, this indicates something is wrong with my configuration.
+
 In my case, the logs showed I set an incorrect device path.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">less data/log/2025-12-13.21-11-35/log.log
+
 z2m: Error: Error: No such file or directory, cannot open /dev/ttyUSB0</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>Once I fixed the <code>compose.yml</code> mapping of the device to <code>/dev/ttyUSB0</code>, I couldn’t connect MQTT to the Zigbee2MQTT containers.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">[2025-12-13 21:37:40] info:     z2m: Connecting to MQTT server at mqtt://localhost:1883
+
 [2025-12-13 21:37:40] error:    z2m: MQTT failed to connect, exiting... ()</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>I played around with this setting a little bit in the <code>compose.yml</code>, but was stymied.
+
 The Zigbee2MQTT docs recommend using the IP of the docker0 bridge to establish the connection: server: mqtt://172.17.0.1.
+
 I also tried using the address of the physical host with the same error.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">[2025-12-13 21:44:56] info:     z2m: Connecting to MQTT server at mqtt://172.17.0.1:1883
+
 [2025-12-13 21:44:57] error:    z2m: MQTT failed to connect, exiting... (read ECONNRESET)</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>It ended up being a mistake in the <code>compose.yml</code>.
+
 I placed the <code>mosquitto.conf</code> in the wrong directory, so the default version was used which disables unauthenticated requests from external hosts.
+
 Unfortunately, separate containers are considered a different host.
+
 Once that was corrected, Zigbee2MQTT successfully finished the configuration wizard.</p>
+
 </div>
+
 <div class="paragraph">
+
 <p>From there, I added the MQTT integration into Home Assistant following the <a href="https://www.home-assistant.io/integrations/mqtt#setting-up-a-broker">documentation</a>.
+
 After adding the integration, I simply had to select the "Permit Join" button the Home Assistant dashboard, and pair my Zigbee sensor with the controller.</p>
+
 </div>
+
 <div class="imageblock">
+
 <div class="content">
-<img src="images/zigbee2mqtt_bridge.png" alt="zigbee2mqtt bridge">
+
+<img src="posts/images/zigbee2mqtt_bridge.png" alt="zigbee2mqtt bridge">
 </div>
+
 </div>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/converting-ubuntu-desktop-to-server/" class="u-url">Converting Ubuntu Desktop to Server</a></h1>
@@ -246,57 +609,109 @@ After adding the integration, I simply had to select the "Permit Join" button th
         </div>
     </header><div class="p-summary entry-summary">
     <div class="paragraph">
+
 <p>I’ve got an old laptop I was using to play around with <a href="https://www.home-assistant.io/">Home Assistant</a>.
+
 I started with a clean install of Ubuntu desktop, but I realized I didn’t need the desktop.
+
 I followed this <a href="https://askubuntu.com/questions/1313733/convert-ubuntu-desktop-to-server-edition-20-04">Ask Ubuntu</a> post to install the server version (CLI only).</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">sudo apt install ubuntu-server
 
+
+
 # I got a failure message:
+
 E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/landscape-client/landscape-common_24.02-0ubuntu5.6_amd64.deb  404  Not Found [IP: 91.189.91.83 80]
+
 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
 
+
+
 # I ran both suggestions:
+
 sudo apt-get update
+
 sudo apt install ubuntu-server --fix-missing
+
 sudo reboot</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>After the reboot, I set the default boot version to the server edition.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">sudo systemctl set-default multi-user.target
+
 sudo reboot</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>After moving over to the server edition, I removed the remaining packages and updated remaining packages.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">sudo apt purge ubuntu-desktop -y &amp;&amp; sudo apt autoremove -y &amp;&amp; sudo apt autoclean
+
 sudo apt-get update
+
 sudo apt-get upgrade
+
 sudo reboot</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>After the final reboot:</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-bash" data-lang="bash">Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-78-generic x86_64)
 
+
+
  * Documentation:  https://help.ubuntu.com
+
  * Management:     https://landscape.canonical.com
+
  * Support:        https://ubuntu.com/pro
 
+
+
  System information as of Sat Dec 13 12:45:51 PM MST 2025</code></pre>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/peanut-butter-fudge/" class="u-url">Peanut Butter Fudge</a></h1>
@@ -308,8 +723,11 @@ sudo reboot</code></pre>
         </div>
     </header><div class="p-summary entry-summary">
     <div class="sect1">
+
 <h3 id="_ingredients">Ingredients</h3>
+
 <div class="sectionbody">
+
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -318,49 +736,84 @@ sudo reboot</code></pre>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">½ cup butter</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 cups package brown sugar</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">½ cup milk</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 cup peanut butter</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon vanilla extract</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">3 cups confectioners' sugar</p></td>
+
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
+
 <p>Note: modified the sugar and peanut butter amounts compared to the original recipe.</p>
+
 </div>
+
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_directions">Directions</h3>
+
 <div class="sectionbody">
+
 <div class="olist arabic">
+
 <ol class="arabic">
 <li>
+
 <p>Melt butter in a medium saucepan over medium heat
+
 Stir in brown sugar and milk.
+
 Bring to a boil and boil for 2 minutes, stirring frequently.</p>
+
 </li>
+
 <li>
+
 <p>Remove the pot from heat; stir in peanut butter and vanilla.</p>
+
 </li>
+
 <li>
+
 <p>Place confectioners' sugar in a large mixing bowl.
+
 Pour in peanut butter mixture and beat with an electric mixer until smooth.</p>
+
 </li>
+
 <li>
+
 <p>Pour peanut butter mixture into an 8x8-inch dish.</p>
+
 </li>
+
 <li>
+
 <p>Chill until firm before slicing, about 1 hour.</p>
+
 </li>
+
 </ol>
 </div>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/butterscotch-fudge/" class="u-url">Butterscotch Fudge</a></h1>
@@ -372,8 +825,11 @@ Pour in peanut butter mixture and beat with an electric mixer until smooth.</p>
         </div>
     </header><div class="p-summary entry-summary">
     <div class="sect1">
+
 <h3 id="_ingredients">Ingredients</h3>
+
 <div class="sectionbody">
+
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -382,51 +838,86 @@ Pour in peanut butter mixture and beat with an electric mixer until smooth.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon plus 2 tablespoons butter, divided</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1-2/3 cups sugar</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2/3 cup evaporated milk</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1/2 teaspoon salt</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 cups miniature marshmallows</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 package (10 to 11 ounces) butterscotch chips</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup chopped walnuts, toasted</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon maple flavoring</p></td>
+
 </tr>
 </tbody>
 </table>
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_directions">Directions</h3>
+
 <div class="sectionbody">
+
 <div class="olist arabic">
+
 <ol class="arabic">
 <li>
+
 <p>Line an 8-in. square pan with foil and grease the foil with 1 teaspoon butter; set aside.</p>
+
 </li>
+
 <li>
+
 <p>In a large saucepan, combine the sugar, milk, salt and remaining 2 tablespoons butter.
+
 Cook and stir over medium heat until mixture comes to a boil.
+
 Boil for 5 minutes, stirring constantly.</p>
+
 </li>
+
 <li>
+
 <p>Remove from heat; add the marshmallows, chips, nuts and maple flavoring.
+
 Stir until marshmallows and chips are melted.
+
 Spoon into prepared pan.
+
 Let stand until set.</p>
+
 </li>
+
 <li>
+
 <p>Using foil, lift fudge out of pan.
+
 Discard foil; cut fudge into 1-in squares.
+
 Store in an airtight container at room temperature.</p>
+
 </li>
+
 </ol>
 </div>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/tech/adding-icons/" class="u-url">Adding Icons</a></h1>
@@ -438,84 +929,163 @@ Store in an airtight container at room temperature.</p>
         </div>
     </header><div class="p-summary entry-summary">
     <div class="paragraph">
+
 <p>I spent this afternoon creating and adding a favicon and logo to the webpage.
+
 The original inspiration was to print out some QR codes with a snazzy logo.
+
 I used <a href="https://www.canva.com/">Canva</a> to create a simple logo using some of their software engineering templates.
+
 I made a simpler version of the icon to use as a favicon for the webpage.</p>
+
 </div>
+
 <div class="paragraph">
+
 <p>After downloading the PNGs, I opened the images in <a href="https://www.gimp.org/">GIMP</a>.
+
 I added a transparent layer to the image, then deleted the outside white sections of the image to get the desired shapes.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="title">Adding favicon and Logo to conf.py</div>
+
 <div class="content">
+
 <pre class="highlight"><code class="language-python" data-lang="python">FAVICONS = (
+
     ("icon", "/favicon.png", "40x40"),
+
 )
 
+
+
 # Note: I used the {SITE_URL} to provide an absolute path, I had issues with relative
+
 # pathing on non-root level pages.
+
 LOGO_URL = f'{SITE_URL}/images/main_logo.png'</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>After adding the new images, I noticed the logo placement was wonky.
+
 The current template I’m using expects a banner style logo across the top of the page.
+
 Since I wanted a smaller round logo, that didn’t quite fit correctly.
+
 I modified the <code>base.tmpl</code> to move the logo around a little bit:</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="title">Removing the Logo from the Header</div>
+
 <div class="content">
+
 <pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- Was --&gt;
+
 &lt;div class="logo"&gt;
+
     {% if logo_url %}
+
         &lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&gt;
+
     {% else %}
+
         &lt;div id="nologoimage"&gt;
+
             {{ blog_title }}
+
         &lt;/div&gt;
+
     {% endif %}
+
 &lt;/div&gt;
 
-&lt;!-- Is --&gt;
-&lt;div class="logo"&gt;
-    {% if logo_url %}
-        {{ blog_title }}
-    {% else %}
-        &lt;div id="nologoimage"&gt;
-            {{ blog_title }}
-        &lt;/div&gt;
-    {% endif %}
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Adding the Logo to the Nav Bar</div>
-<div class="content">
-<pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- Was --&gt;
-&lt;a href="/"&gt;
-    &lt;div id="titleauth"&gt;
-        {% if show_blog_title %}
-            {{ blog_title }}&lt;br /&gt; by {{ blog_author }}
-        {% else %}
-            by {{ blog_author }}
-        {% endif %}
-    &lt;/div&gt;
-&lt;/a&gt;
+
 
 &lt;!-- Is --&gt;
-&lt;a href="/"&gt;
-    &lt;div id="titleauth"&gt;
-        {% if show_blog_title %}
-            {{ blog_title }}&lt;br /&gt; by {{ blog_author }}
-        {% else %}
-            &lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&gt;
-        {% endif %}
-    &lt;/div&gt;
-&lt;/a&gt;</code></pre>
+
+&lt;div class="logo"&gt;
+
+    {% if logo_url %}
+
+        {{ blog_title }}
+
+    {% else %}
+
+        &lt;div id="nologoimage"&gt;
+
+            {{ blog_title }}
+
+        &lt;/div&gt;
+
+    {% endif %}
+
+&lt;/div&gt;</code></pre>
+
 </div>
+
+</div>
+
+<div class="listingblock">
+
+<div class="title">Adding the Logo to the Nav Bar</div>
+
+<div class="content">
+
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- Was --&gt;
+
+&lt;a href="/"&gt;
+
+    &lt;div id="titleauth"&gt;
+
+        {% if show_blog_title %}
+
+            {{ blog_title }}&lt;br /&gt; by {{ blog_author }}
+
+        {% else %}
+
+            by {{ blog_author }}
+
+        {% endif %}
+
+    &lt;/div&gt;
+
+&lt;/a&gt;
+
+
+
+&lt;!-- Is --&gt;
+
+&lt;a href="/"&gt;
+
+    &lt;div id="titleauth"&gt;
+
+        {% if show_blog_title %}
+
+            {{ blog_title }}&lt;br /&gt; by {{ blog_author }}
+
+        {% else %}
+
+            &lt;img src="{{ logo_url }}" alt="{{ blog_title|e }}" id="logo"&gt;
+
+        {% endif %}
+
+    &lt;/div&gt;
+
+&lt;/a&gt;</code></pre>
+
+</div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/coconut-curry-chickpeas/" class="u-url">Coconut Curry Chickpeas</a></h1>
@@ -527,8 +1097,11 @@ I modified the <code>base.tmpl</code> to move the logo around a little bit:</p>
         </div>
     </header><div class="p-summary entry-summary">
     <div class="sect1">
+
 <h3 id="_ingredients">Ingredients</h3>
+
 <div class="sectionbody">
+
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -537,58 +1110,98 @@ I modified the <code>base.tmpl</code> to move the logo around a little bit:</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 yellow onion</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 cloves garlic</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 tsp grated fresh ginger</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 Tbsp olive oil</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1.5 Tbsp curry powder</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 tsp cumin</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 15oz. cans chickpeas, drained</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 8oz. can tomato sauce</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 13.5oz. can full-fat coconut milk</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">4 oz. chopped kale (about 3 cups)</p></td>
+
 </tr>
 </tbody>
 </table>
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_directions">Directions</h3>
+
 <div class="sectionbody">
+
 <div class="olist arabic">
+
 <ol class="arabic">
 <li>
+
 <p>Dice the onion, mince the garlic, and grate the ginger.
+
 Add the onion, garlic, and ginger to a large deep skillet along with the olive oil.
+
 Sauté the aromatics over medium-low heat for about five minutes, or until the onions are soft and translucent.</p>
+
 </li>
+
 <li>
+
 <p>Add the curry powder and cumin to the skillet and continue to stir and cook for about one minute more to toast the spices.</p>
+
 </li>
+
 <li>
+
 <p>Drain the chickpeas, then add them to the skillet along with the tomato sauce and coconut milk.
+
 Stir everything to combine.</p>
+
 </li>
+
 <li>
+
 <p>Turn the heat up to medium-high to bring the sauce up to a simmer.
+
 Once simmering, turn the heat back down to medium-low and allow the curry to continue to simmer for 15 minutes, stirring occasionally.</p>
+
 </li>
+
 <li>
+
 <p>Add the kale and stir it into the sauce.
+
 Continue to cook and stir until the kale has wilted to your desired tenderness (I cook for about 5 minutes more).
+
 Finally, taste the curry and add salt to taste (about ½ tsp).
+
 Serve hot with rice or bread for dipping!</p>
+
 </li>
+
 </ol>
 </div>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/white-beans-with-mushrooms-and-marinara/" class="u-url">White Beans with Mushrooms and Marinara</a></h1>
@@ -600,8 +1213,11 @@ Serve hot with rice or bread for dipping!</p>
         </div>
     </header><div class="p-summary entry-summary">
     <div class="sect1">
+
 <h3 id="_ingredients">Ingredients</h3>
+
 <div class="sectionbody">
+
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -610,65 +1226,118 @@ Serve hot with rice or bread for dipping!</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8 oz. mushrooms</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 Tbsp olive oil</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 pinch salt and pepper</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 cloves garlic</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 cups marinara (or more to your liking)</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 15oz. cans butter beans</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1/2 tsp dried basil</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 pinch crushed red pepper</p></td>
+
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4 oz. mozzarella</p></td>
+
+<td class="tableblock halign-left valign-top"></td>
+
 </tr>
 </tbody>
 </table>
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_directions">Directions</h3>
+
 <div class="sectionbody">
+
 <div class="olist arabic">
+
 <ol class="arabic">
 <li>
+
 <p>Preheat the oven to 400ºF.
+
 Wash and slice the mushrooms.
+
 Add the mushrooms, olive oil, and a pinch of salt and pepper to a deep skillet.
+
 Sauté the mushrooms until they have wilted and all the moisture in the skillet has evaporated.</p>
+
 </li>
+
 <li>
+
 <p>While the mushrooms are sautéing, mince the garlic, drain and rinse the butter beans.
+
 Add the garlic to the skillet with the mushrooms and sauté for 2 minutes more.</p>
+
 </li>
+
 <li>
+
 <p>Add the rinsed butter beans, marinara, basil, and red pepper to the skillet.
+
 Stir everything to combine, then allow it to heat through, stirring occasionally.</p>
+
 </li>
+
 <li>
+
 <p>While the skillet is heating through, shred the mozzarella.
+
 Top the skillet with the mozzarella, then cover the skillet with foil.
+
 Transfer the skillet to the oven and bake for 5-7 minutes, or until the cheese is melted.</p>
+
 </li>
+
 <li>
+
 <p>Once the cheese has melted, remove the foil, switch the oven to broil, and broil the skillet for a few minutes more to brown the cheese (watch closely, as browning can happen quickly with the broiler).
+
 Serve hot, with garlic bread for dipping!</p>
+
 </li>
+
 </ol>
 </div>
+
 <div class="sect2">
+
 <h4 id="_notes">Notes</h4>
+
 <div class="ulist">
+
 <ul>
 <li>
+
 <p>If you don’t have an oven safe skillet, simply transfer the beans, mushrooms, and marinara to a casserole dish before baking with the cheese.</p>
+
 </li>
+
 </ul>
 </div>
+
 </div>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/italian-bread/" class="u-url">Italian Bread</a></h1>
@@ -680,8 +1349,11 @@ Serve hot, with garlic bread for dipping!</p>
         </div>
     </header><div class="p-summary entry-summary">
     <div class="sect1">
+
 <h3 id="_ingredients">Ingredients</h3>
+
 <div class="sectionbody">
+
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -690,73 +1362,136 @@ Serve hot, with garlic bread for dipping!</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 ½ tablespoons active dry yeast 2 packets</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">½ cup warm water 110F</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">½ teaspoon granulated sugar</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 cups hot water hot to the touch, not boiling (115-120F)</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3 tablespoons granulated sugar</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 tablespoon salt</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">½ cup vegetable oil</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">5-6 cups all-purpose flour add more if needed to get to a pliable dough</p></td>
+
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 large egg white for brushing on loaves</p></td>
+
+<td class="tableblock halign-left valign-top"></td>
+
 </tr>
 </tbody>
 </table>
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_instructions">Instructions</h3>
+
 <div class="sectionbody">
+
 <div class="olist arabic">
+
 <ol class="arabic">
 <li>
+
 <p>Dissolve yeast, 1/2 cup warm water (110F), and 1/2 teaspoon granulated sugar in a small bowl.</p>
+
 </li>
+
 <li>
+
 <p>In a large bowl or stand mixer, combine 2 cups hot water (115-120F), 3 tablespoons granulated sugar, the salt, and the oil.
+
 Add 3 cups of flour to the mixture in this large bowl/mixer and mix well.
+
 Stir in yeast mixture.</p>
+
 </li>
+
 <li>
+
 <p>Add 2 - 3 cups more flour and mix until well blended. (At this point your dough will still be quite sticky).
+
 Leave in bowl, cover with a towel and let rise for 1 hour.
+
 (If using a mixer, remove the bowl from the mixer and cover.
+
 Otherwise your paddle attachment or dough hook will get covered in dough when it rises).
+
 NO KNEADING IS REQUIRED.</p>
+
 </li>
+
 <li>
+
 <p>After the rise, if the dough is too sticky to handle, add more flour until its workable.
+
 For some people this can be up to a cup or more!
+
 Just don’t dry out the dough. Add by quarter cupfuls until its workable.</p>
+
 </li>
+
 <li>
+
 <p>Divide dough into 2 (or 3 if you want smaller loaves) pieces.
+
 Roll out each piece on a floured surface into the length desired then roll up lengthwise like a jelly roll.
+
 If it’s still too sticky, add more flour until it’s workable but not dry.</p>
+
 </li>
+
 <li>
+
 <p>Put on a greased cookie sheet, sealed side down, and tuck the ends under.
+
 Slash the top diagonally across the top every couple of inches with a sharp knife.</p>
+
 </li>
+
 <li>
+
 <p>Cover and let loaves rise 30 more minutes.</p>
+
 </li>
+
 <li>
+
 <p>While loaves are rising, preheat oven to 400 degrees Fahrenheit.</p>
+
 </li>
+
 <li>
+
 <p>Whisk the egg white and brush over the top of loaves.</p>
+
 </li>
+
 <li>
+
 <p>Bake for 25 - 30 minutes.</p>
+
 </li>
+
 </ol>
 </div>
+
 </div>
+
 </div>
     </div>
     <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/30-minute-dinner-rolls/" class="u-url">30 Minute Dinner Rolls</a></h1>
@@ -768,8 +1503,11 @@ Slash the top diagonally across the top every couple of inches with a sharp knif
         </div>
     </header><div class="p-summary entry-summary">
     <div class="sect1">
+
 <h3 id="_ingredients">Ingredients</h3>
+
 <div class="sectionbody">
+
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -778,152 +1516,124 @@ Slash the top diagonally across the top every couple of inches with a sharp knif
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 cup warm water</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">⅓ cup vegetable oil</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">¼ cup granulated sugar</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">2 tablespoons active dry yeast</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 large egg beaten</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 tablespoon unsalted butter softened</p></td>
+
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 teaspoon salt</p></td>
+
 <td class="tableblock halign-left valign-top"><p class="tableblock">3 to 4 cups all-purpose flour</p></td>
+
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">⅛ cup milk room temperature</p></td>
+
+<td class="tableblock halign-left valign-top"></td>
+
 </tr>
 </tbody>
 </table>
 <div class="sect2">
+
 <h4 id="_notes">Notes</h4>
+
 <div class="ulist">
+
 <ul>
 <li>
+
 <p>If baking in a 9x13 pan, I make 15 rolls.</p>
+
 </li>
+
 <li>
+
 <p>If baking in a 10x15 pan, I make 18 rolls.</p>
+
 </li>
+
 </ul>
 </div>
+
 </div>
+
 </div>
+
 </div>
+
 <div class="sect1">
+
 <h3 id="_directions">Directions</h3>
+
 <div class="sectionbody">
+
 <div class="olist arabic">
+
 <ol class="arabic">
 <li>
+
 <p>Preheat oven to 400*F.</p>
+
 </li>
+
 <li>
+
 <p>In a large bowl, combine 1 cup water, oil, sugar, and yeast.
+
 Let sit until yeast is bubbly (about 8 minutes).
+
 Stir in beaten egg, softened butter, and salt.</p>
+
 </li>
+
 <li>
+
 <p>With a stand mixer or by hand, add flour, one cup at a time until you have a soft dough that isn’t sticky.
+
 Knead by hand 10 minutes or 5 minutes with a stand mixer.</p>
+
 </li>
+
 <li>
+
 <p>Divide dough into 18 even pieces, and form into balls.
+
 Place in a greased pan and cover with parchment paper and a kitchen towel.</p>
+
 </li>
+
 <li>
+
 <p>Let rise 10 minutes in a warm place.
+
 (You can allow them to rise up to an additional 30 minutes if time allows).</p>
+
 </li>
+
 <li>
+
 <p>Lightly brush with milk and bake on the middle rack for 10-12 minutes or just until browned.</p>
+
 </li>
+
 </ol>
 </div>
-</div>
-</div>
-    </div>
-    <hr></article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="posts/recipes/irish-soda-bread/" class="u-url">Irish Soda Bread</a></h1>
 
-        
-        <div class="metadata">
-            <p class="dateline"><a href="posts/recipes/irish-soda-bread/" rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2025-12-11T06:49:57-07:00" title="2025-12-11">2025-12-11</time></a></p>
+</div>
 
-        </div>
-    </header><div class="p-summary entry-summary">
-    <div class="sect1">
-<h3 id="_ingredients">Ingredients</h3>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4 cups soft wheat flour</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/4 cup granulated sugar</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 1/2 teaspoons baking powder</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2 heaping teaspoons caraway seeds</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 cup raisins (half golden, soaked in hot water for 15 minutes)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/2 cup unsalted butter</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 1/3 cups whole buttermilk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 egg</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h3 id="_directions">Directions</h3>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Preheat oven to 350 degrees.</p>
-</li>
-<li>
-<p>Combine in a large bowl 4 cups soft wheat flour, 1/4 cup granulated sugar, 1 1/2 teaspoons baking powder, 2 heaping teaspoons of caraway seeds, and 1 cup raisins (half golden, soaked in hot water for 15 minutes).</p>
-</li>
-<li>
-<p>Crumble in 1/2 cup unsalted butter with your fingers until the mixture is fragrant with butter, caraway and flour, and pieces of butter are pea-size or larger.</p>
-</li>
-<li>
-<p>In a second bowl, mix together 1 1/3 cups whole buttermilk, 1 egg and 1 teaspoon baking soda.
-Beat until foamy.</p>
-</li>
-<li>
-<p>Add to dry ingredients and combine to make a stiff dough, stopping just when flour disappears.</p>
-</li>
-<li>
-<p>Grease a 9-inch round pan (glass works well).</p>
-</li>
-<li>
-<p>Place dough in pan and lightly shape into a dome.</p>
-</li>
-<li>
-<p>Sprinkle liberally with flour.</p>
-</li>
-<li>
-<p>Using a sharp knife, cut a cross a half-inch deep into the top.</p>
-</li>
-<li>
-<p>Bake in preheated oven approximately 1 hour.</p>
-</li>
-<li>
-<p>Cool in pan 5 minutes, then turn out onto a rack to cool.</p>
-</li>
-<li>
-<p>Serve in thick slices with Irish butter and scalding hot tea.</p>
-</li>
-</ol>
-</div>
-</div>
 </div>
     </div>
     <hr></article>

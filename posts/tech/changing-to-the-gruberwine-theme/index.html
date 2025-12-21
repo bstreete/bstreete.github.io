@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html \ prefix="
+<html prefix="
         og: http://ogp.me/ns# article: http://ogp.me/ns/article#
     " vocab="http://ogp.me/ns" lang="en">
 <head>
@@ -21,11 +21,16 @@
 <meta property="og:title" content="Changing to the Gruberwine Theme">
 <meta property="og:url" content="https://bstreete.github.io/posts/tech/changing-to-the-gruberwine-theme/">
 <meta property="og:description" content="After converting most of the Hugo posts from toml to Asciidoc, I didn’t like the formatting.
+
 I tried out a few of the built-in themes and ended up with the Gruberwine theme.
 
 
 
-# Installing gruberwine">
+
+
+
+
+# Installing grube">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2025-12-08T06:41:32-07:00">
 <meta property="article:tag" content="nikola">
@@ -115,48 +120,91 @@ I tried out a few of the built-in themes and ended up with the Gruberwine theme.
         </div>
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div class="paragraph">
+
 <p>After converting most of the Hugo posts from toml to Asciidoc, I didn’t like the formatting.
+
 I tried out a few of the <a href="https://themes.getnikola.com/">built-in themes</a> and ended up with the Gruberwine theme.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-sh" data-lang="sh"># Installing gruberwine
+
 nikola theme -i gruberwine</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>I didn’t like the default behavior of using link metadata as the title link on index pages.
+
 I modified a few of the provided templates to comment out that logic.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="content">
+
 <pre class="highlight"><code class="language-go" data-lang="go">{# Original Version
+
     {% if post.meta('link') %}
+
         &lt;/a&gt;&lt;a href="{{ post.meta('link') }}" class="u-url"&gt;
+
     {% endif %}
+
+
 
     {% if post.should_show_title() %}
+
         {{ post.title() }}
+
     {% endif %}
+
 #}
 
+
+
 {# Modified Version #}
+
 {# Force permalinks here instead of external links like in original #}
+
 {{ post.title() }}</code></pre>
+
 </div>
+
 </div>
+
 <div class="paragraph">
+
 <p>I liked the provided <code>post_list_with_expansion</code> template used for index pages, but I realized I wanted to have multiple types of index pages sorted by date or alphabetized.
+
 I duplicated the original template and added a manual index page for recipes that uses a different sort in the short code.
+
 Since I didn’t specify a start/stop index, it contains all of the recipes on the site, and it’s auto-generated using the existing infrastructure.
+
 I removed dates from the custom template, because it read better to me.
+
 See <a href="../../recipes/recipe-index/">the Recipe Index page</a> for an example sorted alphabetically compared to the default <a href="../../../categories/cat_recipes">Recipe Category page</a>.</p>
+
 </div>
+
 <div class="listingblock">
+
 <div class="title">Custom Index Page</div>
+
 <div class="content">
+
 <pre class="highlight"><code class="language-go" data-lang="go"> {{% post-list sort="title" categories="recipes" template="post_list_with_expansion_with_hidden_dates.tmpl" %}} {{% /post-list %}} </code></pre>
+
 </div>
+
 </div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">

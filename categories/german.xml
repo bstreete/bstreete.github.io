@@ -1,112 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about german)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/german.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Runzas</title><link>https://bstreete.github.io/posts/recipes/runzas/</link><dc:creator>Cage</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about german)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/german.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Runzas</title><link>https://bstreete.github.io/posts/recipes/runzas/</link><dc:creator>Cage</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_dough_ingredients"&gt;Dough Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 1/2 to 5 1/2 cups of flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup sugar&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 packages dry yeast&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3/4 cup milk&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3/4 cup water&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup shortening or oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 eggs&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_filling_ingredients"&gt;Filling Ingredients&lt;/h4&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 pounds ground beef&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 onions chopped&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 cups shredded cabbage&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;4 tablespoons butter&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon seasoning salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/4 teaspoon pepper&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tablespoon worcestershire sauce&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon oregano&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 teaspoon marjoram&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_dough_directions"&gt;Dough Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Mix 4 cups of flour wiht sugar, salt, and shortening.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Heat milk, water, and yeast until warm (120 to 130 degrees). Mix into flour mixture.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add eggs. Beat with electric mixer on low speed for 30 seconds, then on high for 3 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Stir in remainder of flour. Dough should be soft and sticky.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Knead for 3 minutes. Cover with clean towel and let rest for 20 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Roll out thin (3/16 inches thick) and cut into 6 to 7 inch squares.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect2"&gt;
+
 &lt;h4 id="_filling_directions"&gt;Filling Directions&lt;/h4&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Brown hamburger with onion, worcestershire sauce, oregano, and marjoram.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Steam cabbage until done (very quicky). Drain cabbage and squeeze out water. Melt butter into warm cabbage.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Add salt and pepper to beef. Stir in cabbage.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Fill dough squares with 2 scoops of beef mixture and pinch dough edges together.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Bake 20 minutes at 350 degrees.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>family</category><category>german</category><category>side</category><guid>https://bstreete.github.io/posts/recipes/runzas/</guid><pubDate>Sun, 05 Apr 2020 14:39:03 GMT</pubDate></item></channel></rss>

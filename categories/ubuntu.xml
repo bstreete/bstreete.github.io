@@ -1,54 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about ubuntu)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/ubuntu.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Converting Ubuntu Desktop to Server</title><link>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about ubuntu)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/ubuntu.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Converting Ubuntu Desktop to Server</title><link>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</link><dc:creator>Brayden Streeter</dc:creator><description>&lt;div class="paragraph"&gt;
+
 &lt;p&gt;I’ve got an old laptop I was using to play around with &lt;a href="https://www.home-assistant.io/"&gt;Home Assistant&lt;/a&gt;.
+
 I started with a clean install of Ubuntu desktop, but I realized I didn’t need the desktop.
+
 I followed this &lt;a href="https://askubuntu.com/questions/1313733/convert-ubuntu-desktop-to-server-edition-20-04"&gt;Ask Ubuntu&lt;/a&gt; post to install the server version (CLI only).&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;sudo apt install ubuntu-server
 
+
+
 # I got a failure message:
+
 E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/landscape-client/landscape-common_24.02-0ubuntu5.6_amd64.deb  404  Not Found [IP: 91.189.91.83 80]
+
 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
 
+
+
 # I ran both suggestions:
+
 sudo apt-get update
+
 sudo apt install ubuntu-server --fix-missing
+
 sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;After the reboot, I set the default boot version to the server edition.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;sudo systemctl set-default multi-user.target
+
 sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;After moving over to the server edition, I removed the remaining packages and updated remaining packages.&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;sudo apt purge ubuntu-desktop -y &amp;amp;&amp;amp; sudo apt autoremove -y &amp;amp;&amp;amp; sudo apt autoclean
+
 sudo apt-get update
+
 sudo apt-get upgrade
+
 sudo reboot&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="paragraph"&gt;
+
 &lt;p&gt;After the final reboot:&lt;/p&gt;
+
 &lt;/div&gt;
+
 &lt;div class="listingblock"&gt;
+
 &lt;div class="content"&gt;
+
 &lt;pre class="highlight"&gt;&lt;code class="language-bash" data-lang="bash"&gt;Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-78-generic x86_64)
 
+
+
  * Documentation:  https://help.ubuntu.com
+
  * Management:     https://landscape.canonical.com
+
  * Support:        https://ubuntu.com/pro
 
+
+
  System information as of Sat Dec 13 12:45:51 PM MST 2025&lt;/code&gt;&lt;/pre&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>home assistant</category><category>ubuntu</category><guid>https://bstreete.github.io/posts/tech/converting-ubuntu-desktop-to-server/</guid><pubDate>Sat, 13 Dec 2025 19:28:43 GMT</pubDate></item></channel></rss>

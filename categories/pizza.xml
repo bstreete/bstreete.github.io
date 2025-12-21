@@ -1,176 +1,374 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about pizza)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/pizza.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Wed, 17 Dec 2025 17:08:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick Pizza Dough</title><link>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brayden's Rants and Recipes (Posts about pizza)</title><link>https://bstreete.github.io/</link><description></description><atom:link href="https://bstreete.github.io/categories/pizza.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:bstreete@users.noreply.github.com"&gt;Brayden Streeter&lt;/a&gt; </copyright><lastBuildDate>Sun, 21 Dec 2025 15:10:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick Pizza Dough</title><link>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</link><dc:creator>Suzanne Lenzer</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups all-purpose flour (or 1:1 whole wheat)&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp kosher salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tbsp instant yeast&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;3 tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup hot tap water&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Mix the dry &amp;amp; wet ingredients separately, then combine.
+
 Knead in the food processor until it holds into a ball (adding more flour through the feed tube). By hand, knead in ~1/4 cup more flour ~5 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Turn the bowl over the dough (upside down) and let rise 15 minutes (prep your toppings now).&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Stretch, top and bake 425F ~20 minutes.
+
 Makes 2 crusts.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/quick-pizza-dough/</guid><pubDate>Thu, 11 Dec 2025 13:42:36 GMT</pubDate></item><item><title>Easy Vegetarian Calzones</title><link>https://bstreete.github.io/posts/recipes/veggie-calzone/</link><dc:creator>Bon Appetit</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 small head of broccoli&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;5 Tbsp. extra-virgin olive oil, divided&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Kosher salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 lb. pizza dough (Recommend [this quick dough recipe](../easy-pizza-dough))&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 cups low-moisture grated mozzarella&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 cup fresh ricotta&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup grated Parmesan, plus more for serving&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 tsp. red pepper flakes&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large garlic clove&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 lemon&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1/2 cup basil leaves&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 large egg&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Jarred marinara sauce (for serving)&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Preheat oven to 400°. Trim end of stem from 1 head of broccoli, then use a vegetable peeler to remove thick woody exterior of stalk (you can eat the broccoli stalk—it’s the best part!). Coarsely chop entire head of broccoli into 1/2 pieces.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Toss broccoli on a rimmed baking sheet with 3 Tbsp. oil; season generously with salt. Roast, tossing once halfway through, until broccoli is browned all over and tender, 20-25 minutes. Let cool.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;While broccoli is roasting, remove 1 lb. pizza dough from refrigerator and let sit at room temperature (this will make it easier to stretch). Divide into 4 equal pieces and cover loosely with plastic wrap.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Combine 2 cups mozzarella, 1 cup ricotta, 1/2 cup Parmesan, and 1/2 tsp. red pepper flakes in a medium bowl. Peel 1 garlic clove and grate on a microplane into bowl, then finely grate zest of 1 lemon into bowl (save remaining lemon for another use).&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Stack 1/2 cup basil leaves on top of each other and roll into a cigar shape. Slice leaves crosswise as thinly as possible (you can do this in 2 batches if needed). Add basil shreds to bowl.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Season cheese mixture with salt, then scrape in roasted broccoli (save the baking sheet, which you’re going to use it to bake the calzones). Stir with a flexible spatula to incorporate.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Drizzle 1 Tbsp. oil over reserved baking sheet and spread around with fingers to coat surface. Beat 1 egg in a small bowl with a fork until no streaks remain.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Working one piece at a time, roll out dough on a clean dry surface to an 8 round. Brush a thin coating of egg wash around perimeter of dough. Spoon one-quarter of the cheese mixture 1. onto one side of dough.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Fold empty half of dough down over filling and press firmly all around edge to seal the two sides to form a half-moon shape. Press really firmly to prevent the calzones from opening 1. during baking. Repeat with remaining pieces of dough and filling, transferring each to prepared sheet as they’re done, spacing evenly.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Brush dough all over with remaining egg wash.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Do a final crimp around each calzone: fold the outermost 1/2 of border back up and over itself, pinching like crazy to seal.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Bake calzones until dough is golden brown all over and bottom is well browned, 30-35 minutes. Transfer calzones to a wire rack. Poke a tiny hole with the tip of a knife into each 1. calzone to let steam escape.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Cut calzones in half and serve with marinara sauce alongside. Top with more grated Parmesan.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>entree</category><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/veggie-calzone/</guid><pubDate>Mon, 09 Nov 2020 23:15:25 GMT</pubDate></item><item><title>Easy Pizza Dough</title><link>https://bstreete.github.io/posts/recipes/easy-pizza-dough/</link><dc:creator>Betty Crocker</dc:creator><description>&lt;div class="sect1"&gt;
+
 &lt;h3 id="_ingredients"&gt;Ingredients&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;table class="tableblock frame-all grid-all stretch"&gt;
+
 &lt;colgroup&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;col style="width: 50%;"&gt;
+
 &lt;/colgroup&gt;
+
 &lt;tbody&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 c warm water&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 package of yeast&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
 &lt;tr&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;1 tsp salt&lt;/p&gt;&lt;/td&gt;
+
 &lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 1/2 c of flour&lt;/p&gt;&lt;/td&gt;
+
 &lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;2 Tbsp olive oil&lt;/p&gt;&lt;/td&gt;
+
+&lt;td class="tableblock halign-left valign-top"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+
 &lt;/tbody&gt;
+
 &lt;/table&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;div class="sect1"&gt;
+
 &lt;h3 id="_directions"&gt;Directions&lt;/h3&gt;
+
 &lt;div class="sectionbody"&gt;
+
 &lt;div class="olist arabic"&gt;
+
 &lt;ol class="arabic"&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Dissolve yeast in warm water&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Mix in flour, salt, and oil in 20 hard strokes. (Don’t overmix)&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Let rest 20 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Flour your hands, and divide into two portions.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;On an oiled and cornmealed pan, pat the dough into an ~ 11 in. circle using your hands.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Bake at 425 for 10 minutes.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;li&gt;
+
 &lt;p&gt;Remove from oven and add toppings. Return to oven for another 10 minutes or until the edges are golden brown.&lt;/p&gt;
+
 &lt;/li&gt;
+
 &lt;/ol&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;
+
 &lt;/div&gt;</description><category>bread</category><category>pizza</category><guid>https://bstreete.github.io/posts/recipes/easy-pizza-dough/</guid><pubDate>Thu, 19 Dec 2019 16:23:16 GMT</pubDate></item></channel></rss>
