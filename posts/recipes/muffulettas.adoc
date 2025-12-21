@@ -23,6 +23,7 @@ Pronounced moof-uh-leh-tuh
 | 3 slices swiss cheese
 | 6 slices genoa salame 
 | 4 tablespoons olive salad
+|
 |===
 
 ### Olive Salad Ingredients
@@ -39,7 +40,7 @@ Pronounced moof-uh-leh-tuh
 | 1/2 cup vegetable oil
 | 1/2 teaspoon oregano
 | 1/2 teaspoon black pepper 
-
+|
 |===
 
 ## Directions
