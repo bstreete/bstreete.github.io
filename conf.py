@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import time
+import os   # To cover OS specific installs - Asciidoctor
 
 # !! This is the configuration of Nikola. !! #
 # !!  You should edit it to your liking.  !! #
@@ -273,11 +274,10 @@ THEME_CONFIG = {
 #         ("pages/*.md", {"en": "pages", "de": "seiten"}, "page.tmpl"),
 #     )
 
+
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.adoc", "posts", "post.tmpl"),
-    ("posts/tech/*.adoc", "tech", "post.tmpl"),
-    ("posts/recipes*.adoc", "recipes", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
@@ -368,7 +368,12 @@ COMPILERS = {
     "asciidoc": ['.adoc']
 }
 
-ASCIIDOC_BINARY = "asciidoctor"
+
+if os.name == 'nt':
+    ASCIIDOC_BINARY = "asciidoctor.bat"
+else: 
+    ASCIIDOC_BINARY = "asciidoctor"
+
 ASCIIDOC_OPTIONS = f"-a imagesdir=../../images"
 
 # Enable reST directives that insert the contents of external files such
