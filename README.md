@@ -1,3 +1,5 @@
+This is the source code for my personal recipe website and blog. It was originally created as a static website using Hugo. After a few years, I moved to Nikola for site generation.
+
 ## Dependencies
 
 Follow the [Nikola Getting Started Guide](https://getnikola.com/getting-started.html) to install standard dependencies. 
