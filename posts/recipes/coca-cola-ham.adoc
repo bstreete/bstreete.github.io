@@ -5,7 +5,7 @@
 .. category: recipes
 .. description: 
 .. type: text
-.. tags: dinner, holiday, family
+.. tags: entree, holiday, family
 .. author: Linda Kelly
 ///
 
