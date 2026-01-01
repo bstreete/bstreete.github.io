@@ -5,7 +5,7 @@
 .. category: recipes
 .. description: 
 .. type: text
-.. tags: sauce, entree
+.. tags: sauce, entree, fondue
 .. author: CopyKat Recipes
 .. link: https://copykat.com/melting-pot-cheddar-cheese-fondue/
 .. cooktime: 20 min
